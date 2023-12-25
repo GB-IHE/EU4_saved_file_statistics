@@ -14,7 +14,7 @@ namespace EU4_saved_file_statistics
         private List<string> SaveFileData = new List<string>(); // the save file line by line
 
         // opens and stores the file
-        public void openFile(string filePath)
+        public SaveFile(string filePath)
         {
             try
             {

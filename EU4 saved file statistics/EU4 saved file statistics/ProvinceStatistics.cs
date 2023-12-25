@@ -3,6 +3,7 @@ using System.CodeDom;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -16,6 +17,8 @@ namespace EU4_saved_file_statistics
 
         private int startLineProvincesInTheSaveFile;
         private int endLineProvincesInTheSaveFile;
+
+        private int FIRST_PROVINCE_ID = 1;
 
         private Dictionary<int, ProvinceData> Provinces = new Dictionary<int, ProvinceData>();
 
@@ -90,13 +93,11 @@ namespace EU4_saved_file_statistics
             } // end for
         } // end void
 
-
-
-        // for each id (key), fill the struct ProvinceData with the statistics that we want
+        // for each id (key), fill the struct ProvinceData with the statistics that we want for the province
         private void createProvinceStatisticsForAllIds()
         {
             var ids = Provinces.Keys.ToArray();
-            // fill it with start and end line for the specific province id (which we need to analyze the other sutff
+            // fill it with start and end line for the specific province id (which we need to analyze the other sutff)
             foreach (var id in ids)
             {
                 ProvinceData _provinceData = Provinces[id];
@@ -112,6 +113,7 @@ namespace EU4_saved_file_statistics
                 Provinces[id] = _provinceData;
             }
 
+            // fill the _provinceData with other stuff based on the start and end line already stored
             foreach (var id in ids)
             {
                 ProvinceData _provinceData = Provinces[id];
@@ -120,88 +122,143 @@ namespace EU4_saved_file_statistics
                 string owner = getProvinceOwner(id);
                 _provinceData.owner = owner;
 
+                string controler = getProvinceContoler(id);
+                _provinceData.controler = controler;
+
                 Provinces[id] = _provinceData;
             }
         }
 
         // filling the struct ProvinceData with data for a specific province (ID)
+
+        // get the start line in the save file for the specific proivnce id
         private int getProvinceStartLine(int id)
         {
             // on the form -1={
-            // -2={
+            // -2={ etc
             // we can get it by the pattern that the first char is not a space but a -
             const char START_LINE_CHAR = '-';
 
+            // for the first id we seach from the start line of the province section in the start file
+            // for the id after the first one, we start the search from the line after the end of the last province
+            int startLineInTheSaveFile = id == FIRST_PROVINCE_ID ? startLineProvincesInTheSaveFile : Provinces[id - 1].endLineInTheSaveFile + 1;
+
             // find the start line of provinces in the save file
-            for (int i = startLineProvincesInTheSaveFile; i < endLineProvincesInTheSaveFile; i++)
+            for (int i = startLineInTheSaveFile; i < endLineProvincesInTheSaveFile; i++)
             {
                 string line = saveFile.getLineData(i);
-                if (line.Length == 0)
+                if (line.Length == 0) // if empty line, go on to the next line
                     continue;
 
                 char lineFirstChar = line[0];
-                if (lineFirstChar.Equals(START_LINE_CHAR))
-                    return i;
+                if (lineFirstChar.Equals(START_LINE_CHAR)) // check if we have a province tag
+                {
+                    Regex rx = new Regex(@"-(.*?)="); // https://stackoverflow.com/questions/49239218/get-string-between-character-using-regex-c-sharp
+                    string idString = rx.Match(line).Groups[1].Value;
+                    int foundId = Int32.Parse(idString);
+
+                    // if we have found the right id, then return the row number - else go on
+                    if (foundId == id)
+                        return i;
+                }
             }
-            return -1; // no end line found
+            return -1; // no end line found -> this will result in an error later on
         }
 
+        // get the end line in the save file for the specific proivnce id
         private int getProvinceEndLine(int id)
         {
             const string END_LINE_TEXT = "	}";
 
+            // scan the save file from start line of the specific id to the end of the province data
+            ProvinceData provinceData = Provinces[id];
+            int startLineInTheSaveFile = provinceData.startLineInTheSaveFile;
+
             // find the start line of provinces in the save file
-            for (int i = startLineProvincesInTheSaveFile; i < endLineProvincesInTheSaveFile; i++)
+            for (int i = startLineInTheSaveFile; i < endLineProvincesInTheSaveFile; i++)
             {
                 string line = saveFile.getLineData(i);
                 if (line == END_LINE_TEXT)
                     return i;
             }
-            return -1; // no end line found
+            return -1; // no end line found -> this will result in an error later on
         }
 
+        // get the province owner
         private string getProvinceOwner(int id)
         {
-
-            // here we need a patter, shoudl start with
-
-
-
-            const string ID_LINE_TEXT = "		owner=";
-
-            // get the province data for the specified ID and its start and end line in the data
-            ProvinceData _provinceData = Provinces[id];
-            int startLineInTheSaveFile = _provinceData.startLineInTheSaveFile;
-            int endLineInTheSaveFile = _provinceData.endLineInTheSaveFile;
-
+            // On the form: '		owner="SWE"'
+            const string START_LINE_TEXT = "		owner=";
 
             // find the province owner of the province within the specified line ranges
-            for (int i = startLineInTheSaveFile; i < endLineInTheSaveFile; i++)
+            for (int i = startLineProvince(id); i < endLineProvince(id); i++)
             {
                 string line = saveFile.getLineData(i);
-                Boolean ownerTag = line.StartsWith(ID_LINE_TEXT);
+                Boolean ownerTag = line.StartsWith(START_LINE_TEXT);
                 if (ownerTag)
-                {
-
-
-
-
-                    line = line.Replace('"', '-'); // remove quotation marks
-                // https://stackoverflow.com/questions/13024073/regex-c-sharp-extract-text-within-double-quotes
-                // https://stackoverflow.com/questions/9133220/regex-matches-c-sharp-double-quotes
-                    Regex rx = new Regex(@"-(.*?)-");
-
-
-
-
-                    string owner = rx.Match(line).Groups[1].Value;
-                    return owner; // everything between the qoutation marks in: owner="SWE"
-                }
+                    return getTextBetweenQuotationMarks(line); // everything between the qoutation marks in: owner="SWE"
             }
-            return "NONE";
+            return "NONE"; // no province owner found inside the province line range
         }
 
+        private string getProvinceContoler(int id)
+        {
+            // On the form: '		controller="SWE"'
+            const string START_LINE_TEXT = "		controller=";
+
+            // find the province controler of the province within the specified line ranges
+            for (int i = startLineProvince(id); i < endLineProvince(id); i++)
+            {
+                string line = saveFile.getLineData(i);
+                Boolean controlerTag = line.StartsWith(START_LINE_TEXT);
+                if (controlerTag)
+                    return getTextBetweenQuotationMarks(line); // everything between the qoutation marks in: controler="SWE"
+            }
+            return "NONE"; // no province controler found inside the province line range
+        }
+
+
+
+
+
+
+
+        // returns the start and end lines for the specific province id
+        private int startLineProvince(int id)
+        {
+            ProvinceData _provinceData = Provinces[id];
+            return _provinceData.startLineInTheSaveFile;
+        }
+        private int endLineProvince(int id)
+        {
+            ProvinceData _provinceData = Provinces[id];
+            return _provinceData.endLineInTheSaveFile;
+        }
+
+        /*
+           returns everything between the first quotation qutation marks
+            https://stackoverflow.com/questions/13024073/regex-c-sharp-extract-text-within-double-quotes
+            https://stackoverflow.com/questions/69377127/how-can-i-access-string-values-in-results-view-where-the-number-of-results-may-v
+        */
+        private string getTextBetweenQuotationMarks(string line)
+        {
+            var stringArray = line.Split('"').Where((item, index) => index % 2 != 0);
+            return stringArray.ToArray()[0];
+        }
+
+
+
         // Accessible outside the class
+        public int[] provinceIds()
+        {
+            return Provinces.Keys.ToArray();
+        }
+
+        public ProvinceData provinceData(int i)
+        {
+            return Provinces[i];
+        }
+
         public string provinceOwner(string provinceName)
         {
             return "";
