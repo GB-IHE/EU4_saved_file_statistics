@@ -9,14 +9,18 @@ namespace EU4_saved_file_statistics
 {
     internal class ExportStatistics
     {
-        private string path;
-        public void setPath (string path)
+        private readonly string path;
+        private readonly ProvinceStatistics provinceStatistics;
+
+        ExportStatistics(string path, ProvinceStatistics provinceStatistics)
         {
             this.path = path;
+            this.provinceStatistics = provinceStatistics;
         }
+
         public void createOutputFile()
         {
-
+            // for each province ID, get the struct and print out all the stuff
         }
     }
 }
