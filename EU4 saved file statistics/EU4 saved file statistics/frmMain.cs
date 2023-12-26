@@ -16,21 +16,24 @@ using System.Windows.Forms;
 * @date - $time$ 
 * 
 * We have the followinig classes:
+*   AnalyzeAndExport - Runs the other classes and child classes based on the user input
+*       
 *   SaveFile - loads the save file line by line, constructor filePath
 *   
 *   Statistics - a parent class that creates statistics for a specific filePath, constructor SaveFile
-*       ProvinceStatistics - a child class that creates statistics regarding the provinces in the save file (uses the province ID as key), gets the SaveFile in the constructor from its parent class statstics
-*          ProvinceData is a struct where the data for the ProvinceStatistics are stored
+*       IDData is a struct where the data for each ID (province ID, country etc) are stored - used by each statistics class
+*       ProvinceStatistics - a child class that creates statistics regarding the provinces in the save file (uses the province ID as key)
 *          
-*   ExportStatistics - a parent class that exports statistics to a specific folder for all the statistics we want to analyze
-*       ExportProvinceStatistics - a child class that exports the province statistics, constructed by outputFolder, outputFileName, and Statistics (outputFileName = base output file name, suffixes are added by the class)
+*   ExportStatistics - a parent class that exports statistics to a specific folder for all the statistics we want to analyze constructed by outputFolder, outputFileName, and Statistics (outputFileName = base output file name, suffixes are added by the class)
+*       ExportProvinceStatistics - a child class that exports the province statistics
 *       
-*       
-* Note that current output file will be deleted and new output files will be created
+* Note that current output file will be deleted and new output files will be created in the same folder as the save files.
 */
 
 
 // we have to make the user choce an output folder - now the files are saved in the same folder as the save file
+// ask the user if he wants to overwrite the output file....
+// generate sensible output file names
 
 namespace EU4_saved_file_statistics
 {
@@ -56,29 +59,13 @@ namespace EU4_saved_file_statistics
             string saveFileName = @"\mp_Crimea1553_01_01 non compressed.eu4";
             string saveFilePath = directory + saveFileName;
             string baseOutputFileName = Path.GetFileNameWithoutExtension(saveFilePath);
-
-            // load save file
-            SaveFile debugSaveFile = new SaveFile(saveFilePath);
-
-            // make statistics
-
-            // analyze the save file
-            Statistics debugStatistics = new Statistics(debugSaveFile);
-            debugStatistics.createStatistics(); 
-
-            // export the statistics file
-            ExportStatistics exportStats = new ExportStatistics(directory, baseOutputFileName, debugStatistics);
-            exportStats.exportStatistics();
-
+            AnalyzeAndExport debugRun = new AnalyzeAndExport(saveFilePath, directory, baseOutputFileName);
             // done
             MessageBox.Show("File exported!", "Yippie");
         }
 
         private void btnExportStats_Click(object sender, EventArgs e)
         {
-            // ask the user if he wants to overwrite the output file....
-            // generate sensible output file names
-
             if (lstFiles.Items.Count == 0)
             {
                 Message("Error", "No file has been selected. Press ok to close this dialog and try again.");
@@ -95,18 +82,17 @@ namespace EU4_saved_file_statistics
                     continue;
                 }
 
-                // load the save file
-                SaveFile saveFile = new SaveFile(filePathSaveFile); 
-
-                // analyze the save file
-                Statistics stats = new Statistics(saveFile);
-                stats.createStatistics();
-
-                // export the statistics file
                 string outputFolder = Path.GetDirectoryName(filePathSaveFile); // output folder will be the same as the input folder
                 string baseOutputFileName = Path.GetFileNameWithoutExtension(filePathSaveFile); // output file name will be the same as the input file name + "_statistics.csv"
-                ExportStatistics exportStats = new ExportStatistics(outputFolder, baseOutputFileName, stats);
-                exportStats.exportStatistics();
+                
+                try
+                { 
+                    AnalyzeAndExport debugRun = new AnalyzeAndExport(filePathSaveFile, outputFolder, baseOutputFileName);
+                } 
+                catch (Exception error)
+                {
+                    Message("Error", error.ToString());
+                }
             }
             MessageBox.Show("Analyzed all files that could be analyzed!", "Yippie");
         }
