@@ -11,22 +11,19 @@ using static System.Net.WebRequestMethods;
 
 namespace EU4_saved_file_statistics
 {
-    public class ProvinceStatistics
+    public class ProvinceStatistics : Statistics
     {
-        private readonly SaveFile saveFile;
-
         private int startLineProvincesInTheSaveFile;
         private int endLineProvincesInTheSaveFile;
 
-        private int FIRST_PROVINCE_ID = 1;
+        private readonly int FIRST_PROVINCE_ID = 1;
 
         private Dictionary<int, ProvinceData> Provinces = new Dictionary<int, ProvinceData>();
 
         // get the start and end line in the saved file for the provinces
         // get the specific start line and end line for all provinces
-        public ProvinceStatistics(SaveFile saveFile)
+        public ProvinceStatistics(SaveFile saveFile) : base(saveFile)
         {
-            this.saveFile = saveFile;
             getProvinceStartAndEndLinesInTheSaveFile();
             getAllIdsFromSaveFile();
             createProvinceStatisticsForAllIds();
@@ -50,17 +47,16 @@ namespace EU4_saved_file_statistics
             }
 
             // find the end line of provinces in the save file
-            for(int i = startLineProvincesInTheSaveFile; i < lenghtOfFile; i++)
+            for (int i = startLineProvincesInTheSaveFile; i < lenghtOfFile; i++)
             {
                 string line = saveFile.getLineData(i);
                 if (line == END_LINE_TEXT)
                 {
                     endLineProvincesInTheSaveFile = i;
                     break;
-                }
-            }
-
-        }
+                } // end if
+            } // end loop
+        } // end void
 
         // fill the dictonary Provinces with the keys, IDs and a province data struct with the ID
         private void getAllIdsFromSaveFile()
@@ -118,13 +114,14 @@ namespace EU4_saved_file_statistics
             {
                 ProvinceData _provinceData = Provinces[id];
 
-                // fill it with other stuff
-                string owner = getProvinceOwner(id);
-                _provinceData.owner = owner;
+                // fill it with other statistics (that we acctally print later on)
+                _provinceData.owner = getProvinceOwner(id);
+                _provinceData.controler = getProvinceContoler(id);
+                _provinceData.name = getProvinceName(id);
+                _provinceData.religion = getProvinceReligion(id);
+                _provinceData.culture = getProvinceCulture(id);
 
-                string controler = getProvinceContoler(id);
-                _provinceData.controler = controler;
-
+                // update the struct in the dictonary Provinces with the statistics added
                 Provinces[id] = _provinceData;
             }
         }
@@ -184,28 +181,46 @@ namespace EU4_saved_file_statistics
             return -1; // no end line found -> this will result in an error later on
         }
 
-        // get the province owner
+        // get stats
         private string getProvinceOwner(int id)
         {
             // On the form: '		owner="SWE"'
             const string START_LINE_TEXT = "		owner=";
-
-            // find the province owner of the province within the specified line ranges
-            for (int i = startLineProvince(id); i < endLineProvince(id); i++)
-            {
-                string line = saveFile.getLineData(i);
-                Boolean ownerTag = line.StartsWith(START_LINE_TEXT);
-                if (ownerTag)
-                    return getTextBetweenQuotationMarks(line); // everything between the qoutation marks in: owner="SWE"
-            }
-            return "NONE"; // no province owner found inside the province line range
+            return tagsWithStartPattern(id, START_LINE_TEXT);
         }
-
         private string getProvinceContoler(int id)
         {
             // On the form: '		controller="SWE"'
             const string START_LINE_TEXT = "		controller=";
+            return tagsWithStartPattern(id, START_LINE_TEXT);
+        }
+        private string getProvinceName(int id)
+        {
+            // On the form: '		controller="SWE"'
+            const string START_LINE_TEXT = "		name=";
+            return tagsWithStartPattern(id, START_LINE_TEXT);
+        }
+        private string getProvinceReligion(int id)
+        {
+            // On the form: '		controller="SWE"'
+            const string START_LINE_TEXT = "		religion="; // 			religion=orthodox for hisotry later in the file
+            return tagsWithStartPattern(id, START_LINE_TEXT);
+        }
+        private string getProvinceCulture(int id)
+        {
+            // On the form: '		controller="SWE"'
+            const string START_LINE_TEXT = "		culture=";
+            return tagsWithStartPattern(id, START_LINE_TEXT);
+        }
 
+
+
+        /**
+         * returns the value for all tags (like name, owner, controler, religion etc) on the form like : '		controller="SWE"'
+         * that is there is a start pattern text to match for the province id
+         */
+        private string tagsWithStartPattern(int id, in string START_LINE_TEXT)
+        {
             // find the province controler of the province within the specified line ranges
             for (int i = startLineProvince(id); i < endLineProvince(id); i++)
             {
@@ -242,6 +257,7 @@ namespace EU4_saved_file_statistics
         */
         private string getTextBetweenQuotationMarks(string line)
         {
+            // if there is nothing inside the getTextBetweenQuotationMarks........... add a bolean to tagsWithStartPattern, culture and religion do not have quations
             var stringArray = line.Split('"').Where((item, index) => index % 2 != 0);
             return stringArray.ToArray()[0];
         }
@@ -257,16 +273,6 @@ namespace EU4_saved_file_statistics
         public ProvinceData provinceData(int i)
         {
             return Provinces[i];
-        }
-
-        public string provinceOwner(string provinceName)
-        {
-            return "";
-        }
-
-        public string provinceOwner(int provinceId)
-        {
-            return "";
         }
     }
 }

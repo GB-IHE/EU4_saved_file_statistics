@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExportProvinceStatistics.cs" />
+    <Compile Include="ExportStatistics.cs" />
     <Compile Include="ProvinceData.cs" />
     <Compile Include="ProvinceStatistics.cs" />
     <Compile Include="SaveFile.cs" />
@@ -98,6 +99,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

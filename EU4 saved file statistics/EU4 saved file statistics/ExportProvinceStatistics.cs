@@ -14,56 +14,45 @@ using CsvHelper;
 
 namespace EU4_saved_file_statistics
 {
-    internal class ExportProvinceStatistics
+    internal class ExportProvinceStatistics : ExportStatistics
     {
-        public ExportProvinceStatistics(string filePath, ProvinceStatistics provinceStatistics)
-        {
-            this.filePath = filePath;
-            this.provinceStatistics = provinceStatistics;
+        private readonly ProvinceStatistics provinceStatistics;
+        private readonly string filePath;
 
-            printHeaders(filePath);
+        private readonly Boolean APPEND = true; // appends output to the output file
+        private readonly string[] HEADERS = { "ID", "Name", "Owner", "Controler", "Religion", "Culture" };         // the column headers for this output
+
+        public ExportProvinceStatistics(string outputFolder, string baseOutputFileName, Statistics statistics) : base(outputFolder, baseOutputFileName, statistics)
+        {
+            provinceStatistics = statistics.getProvinceStatistics();
+
+            const string FILE_SUFFIX = "_province statistics.csv";
+            filePath = outputFolder + @"\" + baseOutputFileName + FILE_SUFFIX;
+            deleteOldOutputFiles(filePath);
+
+            printHeaders(filePath, HEADERS);
             printStatistics(filePath);
         }
 
-        private readonly string filePath;
-        private readonly ProvinceStatistics provinceStatistics;
-        private readonly Boolean APPEND = true;
-
-        // the column headers
-        private readonly string[] HEADERS = { "ID", "Owner" };
-
-        // returns the province data as an array for the specific id to be printed
+        // returns the province data that we want to print from the provinceData struct in Statistics statistics as an array for the specific id
         private string[] provinceDataOutput (in ProvinceData provinceData)
         {
             // get all the data that we want to print for the province and fill it into a string array
             string[] outputData = new string[10];
 
-            // fill the array with data
-            int id = provinceData.id;
-            outputData[0] = id.ToString();
-
-            string owner = provinceData.owner;
-            outputData[1] = owner;
+            // fill the array with data (note that we need the corresponding headers in HEADERS)
+            outputData[0] = provinceData.id.ToString(); // key: id
+            outputData[1] = provinceData.name;
+            outputData[2] = provinceData.owner;
+            outputData[3] = provinceData.controler;
+            outputData[4] = provinceData.religion;
+            outputData[5] = provinceData.culture;
 
             // return the array
             return outputData;
         }
 
-        // prints the column headers in the file
-        private void printHeaders(string filePath)
-        {
-            using (var textWriter = new StreamWriter(filePath, APPEND, System.Text.Encoding.GetEncoding("iso-8859-1")))
-            {
-                var outputFile = new CsvWriter(textWriter, CultureInfo.InvariantCulture);
-                foreach (string header in HEADERS)
-                {
-                    outputFile.WriteField(header);
-                } // end for each entry in HEADERS
-                outputFile.NextRecord(); // provinces after headerss
-            } // end using the file
-        } // end void
-
-        // print stats
+        // printStatistics for each province
         private void printStatistics(string filePath)
         {
             // province statistics
@@ -76,13 +65,13 @@ namespace EU4_saved_file_statistics
             } // end for each id
         } // end void
 
-        // print stats for specific id
+        // print stats for specific province id
         private void printProvinceStatistics(int id)
         {
             // get the struct ProvinceData for the specific province (id) from the dictonary in provinceStatistics
             ProvinceData provinceData = provinceStatistics.provinceData(id);
 
-            // get the output that we want for the specific province
+            // get the output that we want for the specific province (id)
             string[] outputData = provinceDataOutput(provinceData);
 
             // print the data, column by column for all entries in outputData

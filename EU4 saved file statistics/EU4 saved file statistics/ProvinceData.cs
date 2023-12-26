@@ -14,5 +14,7 @@ namespace EU4_saved_file_statistics
         public string name { get; set; }
         public string owner { get; set; }
         public string controler { get; set; }
+        public string religion { get; set; }
+        public string culture { get; set; }
     }
 }
