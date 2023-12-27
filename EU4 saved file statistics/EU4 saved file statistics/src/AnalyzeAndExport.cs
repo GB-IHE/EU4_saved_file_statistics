@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace EU4_saved_file_statistics
 {
     /// <summary>
-    /// Loads the save file, creates statistics for each type of statistics, and exports this to a statistics file
+    /// Loads the save file, creates statistics for each type of statistics, and exports this to a statistics file.
     /// </summary>
     public class AnalyzeAndExport
     {
@@ -35,7 +35,7 @@ namespace EU4_saved_file_statistics
         }
 
         /// <summary>
-        /// Creates statistics for each type of statistics
+        /// Creates statistics from the save file for each type of statistics.
         /// </summary>
         private void createStatistics()
         {
@@ -43,7 +43,7 @@ namespace EU4_saved_file_statistics
         }
 
         /// <summary>
-        /// Export statistics for each type of statistics
+        /// Export statistics for each type of statistics.
         /// </summary>
         private void exportStatistics(string outputDirectory, string baseOutputFileName)
         {

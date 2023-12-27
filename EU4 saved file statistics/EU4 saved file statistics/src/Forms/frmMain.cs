@@ -48,18 +48,21 @@ namespace EU4_saved_file_statistics
             lstFiles.DragDrop += lstFiles_DragDrop;
             lstFiles.DragEnter += lstFiles_DragEnter;
 
-            //if we are not in visual studio running the code - we shall NEVER enter debug mode, no matter what we have set it to in our own tests
+            // run debug if we are in dubug mode
             if (System.Diagnostics.Debugger.IsAttached)
                 debug();
         }
 
         private void debug()
         {
-            string directory = @"C:\Users\Gunnar Brådvik\Documents\Programmering\EU4_saved_file_statistics\Save files"; //Directory.GetCurrentDirectory();
+            string currDirectory = Directory.GetCurrentDirectory();
+            string saveFileDirectory = Path.GetFullPath(Path.Combine(currDirectory, @"..\..\..\..\", "Save files"));
             string saveFileName = @"\mp_Crimea1553_01_01 non compressed.eu4";
-            string saveFilePath = directory + saveFileName;
+            string saveFilePath = saveFileDirectory + saveFileName;
             string baseOutputFileName = Path.GetFileNameWithoutExtension(saveFilePath);
-            AnalyzeAndExport debugRun = new AnalyzeAndExport(saveFilePath, directory, baseOutputFileName);
+
+            AnalyzeAndExport debugRun = new AnalyzeAndExport(saveFilePath, saveFileDirectory, baseOutputFileName);
+
             // done
             MessageBox.Show("File exported!", "Yippie");
         }
@@ -102,7 +105,7 @@ namespace EU4_saved_file_statistics
             //https://www.c-sharpcorner.com/UploadFile/mahesh/openfiledialog-in-C-Sharp/
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
-                //RestoreDirectory = true, //check how we can combine this with initial directory
+                RestoreDirectory = true,
                 CheckFileExists = true,
                 CheckPathExists = true,
                 Multiselect = true,
@@ -113,7 +116,7 @@ namespace EU4_saved_file_statistics
             };
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                foreach (string file in openFileDialog1.FileNames) //adds each file to the lstbox
+                foreach (string file in openFileDialog1.FileNames) // Add each file to the lstbox
                     CheckandAddFiles(file);
         }
         private void btnClear_Click(object sender, EventArgs e)
@@ -147,25 +150,19 @@ namespace EU4_saved_file_statistics
         // non control voids
         private void CheckandAddFiles(string file)
         {
-            if (Path.GetExtension(file) != SAVE_FILE_EXTENSION) //if we add a non EU4 file
-            {
+            if (Path.GetExtension(file) != SAVE_FILE_EXTENSION) // If we add a non EU4 file
                 Message("Error adding an input with the wrong format", 
                         "The inputfile has to be an " + SAVE_FILE_EXTENSION + " file." +
                         "\n\nThe file " + file + " cannot be added to the list.");
-            }
-            else if (lstFiles.Items.Cast<Object>().Any(x => x.ToString() == file)) //checks if we already have the file in the list
-            {
+            else if (lstFiles.Items.Cast<Object>().Any(x => x.ToString() == file)) // Checks if we already have the file in the list
                 Message("Error adding the same input file twice", 
                         "There is already an input file in the file list with the path:\n" 
                         + file + "\n\nIt cannot be added twice by the program.");
-            }
             else
-            {
                 lstFiles.Items.Add(file);
-            }
 
-            //this is used in order to check if we have any files that we can run
-            if (lstFiles.Items.Count == 0) //no files, no way to run the program
+            // This is used in order to check if we have any files that we can run
+            if (lstFiles.Items.Count == 0) // No files, no way to run the program
                 EnableRunOptions(false);
             else
                 EnableRunOptions(true);
@@ -178,7 +175,10 @@ namespace EU4_saved_file_statistics
             result = MessageBox.Show(message, caption, buttons);
         }
 
-        //enabales and deenables the btn:s that can be used to run the program
+        /// <summary>
+        /// Enabales and deenables the btn:s that can be used to run the program
+        /// </summary>
+        /// <param name="enable"></param>
         private void EnableRunOptions(bool enable)
         {
             btnExportStats.Enabled = enable; // cannot export without anything analyzed to export
