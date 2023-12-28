@@ -74,35 +74,25 @@ namespace EU4_saved_file_statistics
         }
 
         /// <summary>
-        /// Get the start line in the save file for the specific ID (for instance a province or a country).
+        /// Fill the IDData with end line for the specific province id (which we need to analyze the other sutff)
         /// </summary>
-        /// <param name="id">The id, 2 for province or SWE for country for instance</param>
-        /// <param name="endLinePreviousID">The last line of the previous ID in the save file, for instance province 1.</param>
-        /// <param name="START_LINE_CHAR">The start line char that identifies the ID, for instance "-" for provinces.</param>
-        /// <param name="PATTERN">The pattern that the ID is withing, for instance "-4001=" </param>
-        /// <returns></returns>
-        internal int getIdStartLine(string id, int endLinePreviousID, in char START_LINE_CHAR, in string PATTERN)
+        internal void findTheEndLineInTheSaveFileForAllIDs()
         {
-            // find the start line of id in the save file
-            for (int i = endLinePreviousID; i < endLineOfTheSectionInTheSaveFile; i++)
+            var ids = statisticsData.Keys.ToArray();
+            for (int i = 0; i < ids.Count(); i++)
             {
-                string line = saveFile.getLineData(i);
-                if (line.Length == 0) // if empty line, go on to the next line
-                    continue;
+                string id = ids[i];
+                IDData _provinceData = statisticsData[id];
 
-                char lineFirstChar = line[0];
-                if (lineFirstChar.Equals(START_LINE_CHAR)) // check if we have a tag for the ID
-                {
-                    Regex rx = new Regex(PATTERN);
-                    string idString = rx.Match(line).Groups[1].Value;
-                    string foundId = idString;
+                int endLineInTheSaveFile;
+                if (i == ids.Count() - 1)
+                    endLineInTheSaveFile = endLineOfTheSectionInTheSaveFile; // the line of the end of the section in the save file - we have no more IDs
+                else
+                    endLineInTheSaveFile = statisticsData[ids[i + 1]].startLineInTheSaveFile - 1; // the line before the start of the next province
 
-                    // if we have found the right id, then return the row number - else go on
-                    if (foundId == id)
-                        return i;
-                }
+                _provinceData.endLineInTheSaveFile = endLineInTheSaveFile;
+                statisticsData[id] = _provinceData;
             }
-            return -1; // no end line found -> this will result in an error later on
         }
 
         /// <summary>
@@ -146,6 +136,25 @@ namespace EU4_saved_file_statistics
                     return getTextAfterChar(line, '=');        // everything after "="
             }
             return "NONE"; // nothing found inside the tag (province, country) line range
+        }
+
+
+        /// <summary>
+        /// Checks if a string only contains uppercase chars.
+        /// </summary>
+        /// <param name="inputString"></param>
+        /// <returns></returns>
+        internal bool IsAllUpper(string inputString)
+        {
+            foreach (char c in inputString)
+                if (char.IsLower(c))
+                    return false;
+            return true;
+        }
+
+        public bool IsNumeric(string str)
+        {
+            return str.All(c => "0123456789".Contains(c));
         }
 
         /// <summary>

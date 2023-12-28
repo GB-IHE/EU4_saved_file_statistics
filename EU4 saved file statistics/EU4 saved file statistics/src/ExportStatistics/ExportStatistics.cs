@@ -25,16 +25,26 @@ namespace EU4_saved_file_statistics
         internal readonly Boolean APPEND = true;
 
         /// <summary>
-        /// Main class for all export statistics classes.
+        /// Class for all export statistics.
         /// </summary>
         /// <param name="outputFolder">The folder for the output file.</param>
         /// <param name="baseOutputFileName">The name of the output file, a suffix is added based on the type of statistics.</param>
         /// <param name="statistics">The analyzed statistics that is to be printed.</param>
-        public ExportStatistics(string outputFolder, string baseOutputFileName, Statistics statistics)
+        /// /// <param name="outputFileSuffix">The suffix to be added to the output file.</param>
+        public ExportStatistics(string outputFolder, string baseOutputFileName, Statistics statistics, string outputFileSuffix)
         {
-            this.outputFolder = outputFolder;
-            this.baseOutputFileName = baseOutputFileName;
-            this.statistics = statistics;
+            // this could be generlized - remove specfic output classes for each and just take OUTPUT_FILE_SUFFIX as input
+            string filePath = outputFolder + @"\" + baseOutputFileName + outputFileSuffix;
+            deleteOldOutputFiles(filePath);
+
+            StreamWriter textWriter = new StreamWriter(filePath, APPEND, System.Text.Encoding.GetEncoding("iso-8859-1"));
+            CsvWriter outputFile = new CsvWriter(textWriter, CultureInfo.InvariantCulture);
+
+            Dictionary<string, IDData> proviceStatisticsData = statistics.getStatisticsData(); // statistics for all province IDs
+
+            printHeaders(statistics, outputFile, proviceStatisticsData);
+            printStatisticsForEachID(statistics, outputFile);
+            textWriter.Close();
         }
 
         /// <summary>

@@ -16,6 +16,7 @@ namespace EU4_saved_file_statistics
         // Class objects created within the class
         private SaveFile saveFile;
         private ProvinceStatistics provinceStats;
+        private CountryStatistics countryStats;
 
         /// <summary>
         /// 
@@ -40,6 +41,7 @@ namespace EU4_saved_file_statistics
         private void createStatistics()
         {
             provinceStats = new ProvinceStatistics(saveFile);
+            countryStats = new CountryStatistics(saveFile);
         }
 
         /// <summary>
@@ -47,7 +49,9 @@ namespace EU4_saved_file_statistics
         /// </summary>
         private void exportStatistics(string outputDirectory, string baseOutputFileName)
         {
-            ExportProvinceStatistics exportProvinceStats = new ExportProvinceStatistics(outputDirectory, baseOutputFileName, provinceStats);
+            const string OUTPUT_FILE_SUFFIX_PROVINCES = "_province statistics.csv";
+            ExportStatistics exportProvinceStats = new ExportStatistics(outputDirectory, baseOutputFileName, provinceStats, OUTPUT_FILE_SUFFIX_PROVINCES);
+            //ExportStatistics exportCountryStats = new ExportStatistics(outputDirectory, baseOutputFileName, countryStats);
         }
     }
 }

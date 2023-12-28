@@ -24,8 +24,7 @@ using System.Windows.Forms;
 *       IDData is a struct where the data for each ID (province ID, country etc) are stored - used by each statistics class
 *       ProvinceStatistics - a child class that creates statistics regarding the provinces in the save file (uses the province ID as key)
 *          
-*   ExportStatistics - a parent class that exports statistics to a specific folder for all the statistics we want to analyze constructed by outputFolder, outputFileName, and Statistics (outputFileName = base output file name, suffixes are added by the class)
-*       ExportProvinceStatistics - a child class that exports the province statistics
+*   ExportStatistics - class that exports statistics to a specific folder for all the statistics we want to analyze constructed by outputFolder, outputFileName, Statistics, and the file suffix)
 *       
 * Note that current output file will be deleted and new output files will be created in the same folder as the save files.
 */

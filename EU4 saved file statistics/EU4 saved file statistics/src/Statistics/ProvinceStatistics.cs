@@ -16,8 +16,6 @@ namespace EU4_saved_file_statistics
     /// </summary>
     public class ProvinceStatistics : Statistics
     {
-        readonly private string FIRST_PROVINCE_ID = "1";
-
         /// <summary>
         ///     1) Get the specific start line and end line for the province section in the save file.
         ///     2) Get the IDs for all the provinces in the save file together with the start and end line of stat specific province ID in the save file.
@@ -26,24 +24,30 @@ namespace EU4_saved_file_statistics
         public ProvinceStatistics(SaveFile saveFile) : base(saveFile)
         {
             // Get the start and end line in the saved file for the provinces
-            const string START_LINE_TEXT = "provinces={";   // without tabs, line 147276 in the example file
-            const string END_LINE_TEXT = "}";               // without tabs, line 921682 in the example file
+            const string START_LINE_TEXT = "provinces={";             // without tabs, line 147276 in the example file
+            const string END_LINE_TEXT = "countries={";               // next section, line 921682 in the example file
             startLineOfTheSectionInTheSaveFile = getFirstLineOfDataSection(START_LINE_TEXT);
-            endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT);
+            endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 1;
 
-            getAllIdsFromSaveFile();
+            // Get all the province IDs from the save file
+            getAllProvinceIdsAndStartLineFromSaveFile();
+            findTheEndLineInTheSaveFileForAllIDs();
+
+            // Get all the variables for each ID
             createProvinceStatisticsForAllIds();
         }
 
         /// <summary>
-        ///     Fill the dictonary Provinces with the keys (IDs) and a province data struct with the ID of each of the provinces.
+        /// Fill the dictonary IDs with the keys (IDs) and a province data struct with the ID of each of the provinces.
+        /// ///     We also fill the start line for each ID, the line where we identified the tag.
         /// </summary>
-        private void getAllIdsFromSaveFile()
+        /// <param name="START_LINE_CHAR">Char that marks the start of the entry.</param>
+        /// <param name="PATTERN_OF_THE_ID">Pattern of how the ID is formatted.</param>
+        /// 
+        internal void getAllProvinceIdsAndStartLineFromSaveFile()
         {
-            // on the form -1={
-            // -2={
-            // etc.
-            const char START_LINE_CHAR = '-';
+            const char START_LINE_CHAR = '-';             // on the form -1={ -2={ etc.
+            const string PATTERN_OF_THE_ID = @"-(.*?)=";  // take the line value and remove "-" and everything after "=" to get the id of the province
 
             // find the start line of provinces in the save file
             for (int i = startLineOfTheSectionInTheSaveFile; i < endLineOfTheSectionInTheSaveFile; i++)
@@ -55,13 +59,18 @@ namespace EU4_saved_file_statistics
                 char lineFirstChar = line[0];
                 if (lineFirstChar.Equals(START_LINE_CHAR))
                 {
-                    // take the line value and remove "-" and everything after "=" to get the id of the province
-                    Regex rx = new Regex(@"-(.*?)=");
+                    Regex rx = new Regex(PATTERN_OF_THE_ID);
                     string id = rx.Match(line).Groups[1].Value;
 
-                    // add it to the province data
+                    // add it to the data struct and the data lsit
                     IDData _provinceData = new IDData();
                     _provinceData.id = id;
+
+                    // add start line
+                    int startLineInTheSaveFile = i;
+                    _provinceData.startLineInTheSaveFile = startLineInTheSaveFile;
+
+                    // add the IDData object to the list
                     statisticsData.Add(id, _provinceData);
                 } // end if
             } // end for
@@ -72,31 +81,7 @@ namespace EU4_saved_file_statistics
         /// </summary>
         private void createProvinceStatisticsForAllIds()
         {
-            // fill it with start and end line for the specific province id (which we need to analyze the other sutff)
             var ids = statisticsData.Keys.ToArray();
-            for (int i = 0; i < ids.Count(); i++)
-            {
-                string id = ids[i];
-                IDData _provinceData = statisticsData[id];
-
-                // start line
-                // for the first id we seach from the start line of the province section in the start file
-                // for the id after the first one, we start the search from the line after the end of the last province
-                int startLineInTheSaveFile = id == FIRST_PROVINCE_ID ? startLineOfTheSectionInTheSaveFile : statisticsData[ids[i - 1]].endLineInTheSaveFile + 1;              
-                const char START_LINE_CHAR = '-';  // on the form -1={, -2={ etc.
-                const string PATTERN = @"-(.*?)="; // we can get it by the pattern that the first char is not a space but a -
-                int startLine = getIdStartLine(id, startLineInTheSaveFile, START_LINE_CHAR, PATTERN);
-                _provinceData.startLineInTheSaveFile = startLine;
-                statisticsData[id] = _provinceData;
-
-                // end line
-                // scan the save file from start line of the specific id to the end of the province data
-                const string END_LINE_TEXT = "	}";
-                int endLine = getIdEndLine(id, startLineInTheSaveFile, END_LINE_TEXT);
-                _provinceData.endLineInTheSaveFile = endLine;
-                statisticsData[id] = _provinceData;
-            }
-
             // fill the _provinceData with other stuff based on the start and end line already stored
             foreach (var id in ids)
             {
