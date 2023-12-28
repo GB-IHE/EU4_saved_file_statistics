@@ -19,7 +19,7 @@ namespace EU4_saved_file_statistics
         private CountryStatistics countryStats;
 
         /// <summary>
-        /// 
+        /// Analyze the save file and export the statistics from it;
         /// </summary>
         /// <param name="saveFilePath">Path of the save file to analyze.</param>
         /// <param name="outputDirectory">Path where to save the output files.</param>
@@ -30,6 +30,7 @@ namespace EU4_saved_file_statistics
             createStatistics();
             exportStatistics(outputDirectory, baseOutputFileName);
         }
+
         private void openSaveFile(string saveFilePath)
         {
             saveFile = new SaveFile(saveFilePath);
@@ -50,8 +51,10 @@ namespace EU4_saved_file_statistics
         private void exportStatistics(string outputDirectory, string baseOutputFileName)
         {
             const string OUTPUT_FILE_SUFFIX_PROVINCES = "_province statistics.csv";
+            const string OUTPUT_FILE_SUFFIX_COUNTRIES = "_country statistics.csv";
+
             ExportStatistics exportProvinceStats = new ExportStatistics(outputDirectory, baseOutputFileName, provinceStats, OUTPUT_FILE_SUFFIX_PROVINCES);
-            //ExportStatistics exportCountryStats = new ExportStatistics(outputDirectory, baseOutputFileName, countryStats);
+            ExportStatistics exportCountryStats = new ExportStatistics(outputDirectory, baseOutputFileName, countryStats, OUTPUT_FILE_SUFFIX_COUNTRIES);
         }
     }
 }

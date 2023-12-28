@@ -12,7 +12,6 @@ namespace EU4_saved_file_statistics
     /// </summary>
     public class CountryStatistics : Statistics
     {
-        private readonly string FIRST_COUNTRY_ID = "---";
         /// <summary>
         ///     1) Get the specific start line and end line for the countries section in the save file.
         ///     2) Get the IDs for all the countries in the save file together with the start and end line of stat specific countries ID in the save file.
@@ -27,14 +26,20 @@ namespace EU4_saved_file_statistics
             endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 11;
 
             // Get all the province IDs from the save file       
-            //getAllCountryIdsAndStartLineFromSaveFile();
-            //findTheEndLineInTheSaveFileForAllIDs();
+            getAllCountryIdsAndStartLinesFromSaveFile();
+            findAllEndLinesInTheSaveFileForAllIDs();
 
             // Get all the variables for each ID
-            //createCountryStatisticsForAllIds();
+            // Get all the variables for each ID based on the methods that we want to use
+            List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
+            {
+                getGovernmentRank
+            };
+
+            addStatisticsForAllIds(listOfMethodsUsedToGatherStatistics);
         }
 
-        private void getAllCountryIdsAndStartLineFromSaveFile()
+        private void getAllCountryIdsAndStartLinesFromSaveFile()
         {
             // on the form '	SWE={"
             const string PATTERN_OF_THE_ID = @"(.*?)=";  // take the line value and remove "-" and everything after "=" to get the id of the province
@@ -47,10 +52,10 @@ namespace EU4_saved_file_statistics
                     continue;
 
 
-                Regex thingsArouondCountryTag = new Regex(@"(.*?)=");
+                Regex thingsArouondCountryTag = new Regex(@"\t(.*?)=");
                 string possibleCountryTag = thingsArouondCountryTag.Match(line).Groups[1].Value;
 
-                if (possibleCountryTag.Length == 3 && IsAllUpper(possibleCountryTag))
+                if (possibleCountryTag.Length == 3 && IsAllUpper(possibleCountryTag) && ! IsNumeric(possibleCountryTag))
                 {
                     Regex rx = new Regex(PATTERN_OF_THE_ID);
                     string id = rx.Match(line).Groups[1].Value;
@@ -64,5 +69,17 @@ namespace EU4_saved_file_statistics
             } // end for
         } // end void
 
+        // Stats for a specific thing, like country ruler
+        private string[] getGovernmentRank(string id)
+        {
+            // On the form: '		owner="SWE"'
+            const string HEADER = "Government rank";
+
+            const string START_LINE_TEXT = "		government_rank=";
+            const bool QUOTATION_AROUND_THE_DATA = false;
+            string governmentRank = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, governmentRank };
+        }
     }
 }

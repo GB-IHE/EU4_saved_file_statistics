@@ -4,7 +4,9 @@ using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EU4_saved_file_statistics
 {
@@ -19,7 +21,7 @@ namespace EU4_saved_file_statistics
         internal int endLineOfTheSectionInTheSaveFile;
 
         /// <summary>
-        /// Data for all provinces, countries etc. <ID (string), data for the ID>
+        /// Data for all provinces, countries etc. <ID (string), data for the specific ID>
         /// </summary>
         internal Dictionary<string, IDData> statisticsData = new Dictionary<string, IDData>();
 
@@ -27,12 +29,6 @@ namespace EU4_saved_file_statistics
         {
             this.saveFile = saveFile;
         }
-
-        /// <summary>
-        /// Get the statistics for the akk  (used when we print out the province statstics)
-        /// </summary>
-        /// <returns>The province statistics class created</returns>
-        public Dictionary<string, IDData> getStatisticsData() { return statisticsData; }
 
         /// <summary>
         ///  Get the specific start line for the section in the save file.
@@ -76,42 +72,65 @@ namespace EU4_saved_file_statistics
         /// <summary>
         /// Fill the IDData with end line for the specific province id (which we need to analyze the other sutff)
         /// </summary>
-        internal void findTheEndLineInTheSaveFileForAllIDs()
+        internal void findAllEndLinesInTheSaveFileForAllIDs()
         {
             var ids = statisticsData.Keys.ToArray();
             for (int i = 0; i < ids.Count(); i++)
             {
                 string id = ids[i];
-                IDData _provinceData = statisticsData[id];
+                IDData idData = statisticsData[id];
 
                 int endLineInTheSaveFile;
-                if (i == ids.Count() - 1)
+                if (i == ids.Count() - 1) // sedond last ID
                     endLineInTheSaveFile = endLineOfTheSectionInTheSaveFile; // the line of the end of the section in the save file - we have no more IDs
                 else
                     endLineInTheSaveFile = statisticsData[ids[i + 1]].startLineInTheSaveFile - 1; // the line before the start of the next province
 
-                _provinceData.endLineInTheSaveFile = endLineInTheSaveFile;
-                statisticsData[id] = _provinceData;
+                idData.endLineInTheSaveFile = endLineInTheSaveFile;
+                statisticsData[id] = idData;
             }
         }
 
         /// <summary>
-        /// Get the end line in the save file for the specific ID, such as a proivnce or a country.
+        /// For each id (key), call the function addIDData to fill the struct IDData with the statistics that we want for the specific province/country. 
         /// </summary>
-        /// <param name="id">ID, such as province or country.</param>
-        /// <param name="startLineInTheSaveFile">Start line of the ID in the save file.</param>
-        /// <param name="END_LINE_TEXT">The text of the end line for this specific type of content, such as province or country.</param>
-        /// <returns></returns>
-        internal int getIdEndLine(string id, int startLineInTheSaveFile, in string END_LINE_TEXT)
+        /// <param name="listOfMethodsUsedToGatherStatistic">The methods used to get the ID Data for the specific case, like provinces or countries.</param>
+        internal void addStatisticsForAllIds(List<Func<string, string[]>> listOfMethodsUsedToGatherStatistic)
         {
-            // find the start line of provinces in the save file
-            for (int i = startLineInTheSaveFile; i < endLineOfTheSectionInTheSaveFile; i++)
+            var ids = statisticsData.Keys.ToArray();
+
+            // Update the struct in the dictonary statisticsData with statistics that will be added for the IDs one by one
+            var tasks = new List<Task>();
+            foreach (string id in ids)
             {
-                string line = saveFile.getLineData(i);
-                if (line == END_LINE_TEXT)
-                    return i;
+                var task = Task.Run(() => addStatisticsForOneID(id, listOfMethodsUsedToGatherStatistic));
+                tasks.Add(task);
             }
-            return -1; // no end line found -> this will result in an error later on
+            Task.WaitAll(tasks.ToArray());
+        }
+
+        /// <summary>
+        /// Adds statistics for a specific ID that is to be printed later on.
+        /// </summary>
+        /// <param name="id">ID of the province.</param>
+        /// <param name="listOfMethodsUsedToGatherStatistics">The methods used to get the ID Data for the specific case, like provinces or countries.</param>
+        /// <returns>A filled IDData with statistics.</returns>
+        internal void addStatisticsForOneID(string id, List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics)
+        {
+            IDData idData = statisticsData[id];             // Get the ID stats form data struct for the specific id
+            idData.idStats = new List<Tuple<string, string>>();
+
+            idData.idStats.Add(new Tuple<string, string>("ID", id.ToString()));
+
+            foreach (Func<string, string[]> method in listOfMethodsUsedToGatherStatistics)
+            {
+                string[] headerAndValue = method(id);
+                string header = headerAndValue[0];
+                string value = headerAndValue[1];
+                idData.idStats.Add(new Tuple<string, string>(header, value));
+            }
+
+            statisticsData[id] = idData;
         }
 
         /// <summary>
@@ -138,7 +157,6 @@ namespace EU4_saved_file_statistics
             return "NONE"; // nothing found inside the tag (province, country) line range
         }
 
-
         /// <summary>
         /// Checks if a string only contains uppercase chars.
         /// </summary>
@@ -154,28 +172,28 @@ namespace EU4_saved_file_statistics
 
         public bool IsNumeric(string str)
         {
-            return str.All(c => "0123456789".Contains(c));
+            return str.Any(char.IsDigit);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="id">Start and line for the specific id (province)</param>
-        /// <returns>Start line for the specific id (province)</returns>
+        /// <param name="id"></param>
+        /// <returns>Start line for the specific id (province, country etc.)</returns>
         internal int startLineID(string id)
         {
-            IDData _idData = statisticsData[id];
-            return _idData.startLineInTheSaveFile;
+            IDData idData = statisticsData[id];
+            return idData.startLineInTheSaveFile;
         }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id"></param>
-        /// <returns>End line for the specific id (province)</returns>
+        /// <returns>End line for the specific id (province, country etc.)</returns>
         internal int endLineID(string id)
         {
-            IDData _idData = statisticsData[id];
-            return _idData.endLineInTheSaveFile;
+            IDData idData = statisticsData[id];
+            return idData.endLineInTheSaveFile;
         }
 
         /// <summary>
@@ -201,25 +219,10 @@ namespace EU4_saved_file_statistics
         }
 
         /// <summary>
-        ///      Returns all the province IDs, country IDs etc.
+        /// Get the statistics for the all IDs (used when we print out the province statstics)
         /// </summary>
-        public string[] ids()
-        {
-            return statisticsData.Keys.ToArray();
-        }
-
-        /// <summary>
-        ///      Returns data for a specific ID (province, country).
-        /// </summary>
-        public IDData dataForOneID(string id)
-        {
-            return statisticsData[id];
-        }
-
-        /// <summary>
-        ///      Returns data for a all IDs (province, countries).
-        /// </summary>
-        public Dictionary<string, IDData> dataForAllIDs()
+        /// <returns>The province statistics class created</returns>
+        public Dictionary<string, IDData> getStatisticsData()
         {
             return statisticsData;
         }

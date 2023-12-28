@@ -7,6 +7,8 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web;
+using System.Xml.Linq;
 using static System.Net.WebRequestMethods;
 
 namespace EU4_saved_file_statistics
@@ -30,21 +32,27 @@ namespace EU4_saved_file_statistics
             endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 1;
 
             // Get all the province IDs from the save file
-            getAllProvinceIdsAndStartLineFromSaveFile();
-            findTheEndLineInTheSaveFileForAllIDs();
+            getAllProvinceIdsAndStartLinesFromSaveFile();
+            findAllEndLinesInTheSaveFileForAllIDs();
 
-            // Get all the variables for each ID
-            createProvinceStatisticsForAllIds();
+            // Get all the variables for each ID based on the methods that we want to use
+            List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
+            {
+                getProvinceName,
+                getProvinceOwner,
+                getProvinceContoler,
+                getProvinceReligion,
+                getProvinceCulture
+            };
+
+            addStatisticsForAllIds(listOfMethodsUsedToGatherStatistics);
         }
 
         /// <summary>
         /// Fill the dictonary IDs with the keys (IDs) and a province data struct with the ID of each of the provinces.
-        /// ///     We also fill the start line for each ID, the line where we identified the tag.
+        /// We also fill the start line for each ID, the line where we identified the tag.
         /// </summary>
-        /// <param name="START_LINE_CHAR">Char that marks the start of the entry.</param>
-        /// <param name="PATTERN_OF_THE_ID">Pattern of how the ID is formatted.</param>
-        /// 
-        internal void getAllProvinceIdsAndStartLineFromSaveFile()
+        internal void getAllProvinceIdsAndStartLinesFromSaveFile()
         {
             const char START_LINE_CHAR = '-';             // on the form -1={ -2={ etc.
             const string PATTERN_OF_THE_ID = @"-(.*?)=";  // take the line value and remove "-" and everything after "=" to get the id of the province
@@ -63,75 +71,74 @@ namespace EU4_saved_file_statistics
                     string id = rx.Match(line).Groups[1].Value;
 
                     // add it to the data struct and the data lsit
-                    IDData _provinceData = new IDData();
-                    _provinceData.id = id;
+                    IDData provinceData = new IDData();
+                    provinceData.id = id;
 
                     // add start line
                     int startLineInTheSaveFile = i;
-                    _provinceData.startLineInTheSaveFile = startLineInTheSaveFile;
+                    provinceData.startLineInTheSaveFile = startLineInTheSaveFile;
 
                     // add the IDData object to the list
-                    statisticsData.Add(id, _provinceData);
+                    statisticsData.Add(id, provinceData);
                 } // end if
             } // end for
         } // end void
 
-        /// <summary>
-        ///     For each id (key), fill the struct ProvinceData with the statistics that we want for the specific province together with its start and end line in the save file.
-        /// </summary>
-        private void createProvinceStatisticsForAllIds()
-        {
-            var ids = statisticsData.Keys.ToArray();
-            // fill the _provinceData with other stuff based on the start and end line already stored
-            foreach (var id in ids)
-            {
-                // Get the province stats form data struct for the specific id
-                IDData _provinceData = statisticsData[id];
-                _provinceData.idStats = new List<Tuple<string, string>>();
-
-                // Fill it with other statistics (that we acctally print later on)
-                _provinceData.idStats.Add(new Tuple<string, string>("ID", id.ToString()));
-                _provinceData.idStats.Add(new Tuple<string, string>("Owner", getProvinceOwner(id)));
-                _provinceData.idStats.Add(new Tuple<string, string>("Name", getProvinceName(id)));
-                _provinceData.idStats.Add(new Tuple<string, string>("Controler", getProvinceContoler(id)));
-                _provinceData.idStats.Add(new Tuple<string, string>("Religion", getProvinceReligion(id)));
-                _provinceData.idStats.Add(new Tuple<string, string>("Culture", getProvinceCulture(id)));
-
-                // Update the struct in the dictonary Provinces with the statistics added
-                statisticsData[id] = _provinceData;
-            }
-        }
-
         // Stats for a specific thing, like province owner or province controler
-        private string getProvinceOwner(string id)
+        private string[] getProvinceOwner(string id)
         {
             // On the form: '		owner="SWE"'
+            const string HEADER = "Owner";
+
             const string START_LINE_TEXT = "		owner=";
-            return tagsWithStartPattern(id, START_LINE_TEXT, true);
+            const bool QUOTATION_AROUND_THE_DATA = true;
+            string owner = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] {HEADER, owner};
         }
-        private string getProvinceContoler(string id)
+        private string[] getProvinceContoler(string id)
         {
+            const string HEADER = "Controler";
+
             // On the form: '		controller="SWE"'
             const string START_LINE_TEXT = "		controller=";
-            return tagsWithStartPattern(id, START_LINE_TEXT, true);
+            const bool QUOTATION_AROUND_THE_DATA = true;
+            string controler = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, controler };
         }
-        private string getProvinceName(string id)
+        private string[] getProvinceName(string id)
         {
+            const string HEADER = "Name";
+
             // On the form: '		name="Stockholm"'
             const string START_LINE_TEXT = "		name=";
-            return tagsWithStartPattern(id, START_LINE_TEXT, true);
+            const bool QUOTATION_AROUND_THE_DATA = true;
+            string name = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, name };
         }
-        private string getProvinceReligion(string id)
+        private string[] getProvinceReligion(string id)
         {
+            const string HEADER = "Religion";
+
             // On the form: '		religion=protestant'
             const string START_LINE_TEXT = "		religion="; // 			religion=orthodox for hisotry later in the file
-            return tagsWithStartPattern(id, START_LINE_TEXT, false);
+            const bool QUOTATION_AROUND_THE_DATA = false;
+            string religion = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, religion };
         }
-        private string getProvinceCulture(string id)
+        private string[] getProvinceCulture(string id)
         {
+            const string HEADER = "Culture";
+
             // On the form: '		controller=greek'
             const string START_LINE_TEXT = "		culture=";
-            return tagsWithStartPattern(id, START_LINE_TEXT, false);
+            const bool QUOTATION_AROUND_THE_DATA = false;
+            string culture = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, culture };
         }
     }
 }

@@ -63,7 +63,7 @@ namespace EU4_saved_file_statistics
             AnalyzeAndExport debugRun = new AnalyzeAndExport(saveFilePath, saveFileDirectory, baseOutputFileName);
 
             // done
-            MessageBox.Show("File exported!", "Yippie");
+            MessageBox.Show("Files exported!", "Yippie");
         }
 
         private void btnExportStats_Click(object sender, EventArgs e)
@@ -96,7 +96,7 @@ namespace EU4_saved_file_statistics
                     Message("Error", error.ToString());
                 }
             }
-            MessageBox.Show("Analyzed all files that could be analyzed!", "Yippie");
+            MessageBox.Show("Analyzed all files that could be analyzed and exported them to the saved game folder!", "Yippie");
         }
 
         private void btnBrowseFiles_Click(object sender, EventArgs e)
