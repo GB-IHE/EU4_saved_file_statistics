@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//https://stackoverflow.com/questions/18757097/writing-data-into-csv-file-in-c-sharp 
-//https://www.youtube.com/watch?v=fRaSeLYYrcQ&ab_channel=RobertsDevTalk
+// https://stackoverflow.com/questions/18757097/writing-data-into-csv-file-in-c-sharp 
+// https://www.youtube.com/watch?v=fRaSeLYYrcQ&ab_channel=RobertsDevTalk
 // https://riptutorial.com/csv-helper/learn/100000/getting-started
 
 namespace EU4_saved_file_statistics
@@ -20,12 +20,13 @@ namespace EU4_saved_file_statistics
     {
         internal readonly string outputFolder;
         internal readonly string baseOutputFileName; // base name, suffixes added later on, like: mp_Crimea1553_01_01 non compressed_provice statistics.csv
-        internal readonly Statistics statistics;
+        internal readonly Dictionary<string, IDData> statisticsData;
+        internal CsvWriter outputFile;
 
         internal readonly Boolean APPEND = true;
 
         /// <summary>
-        /// Class for all export statistics.
+        /// Export statistics to a .csv file.
         /// </summary>
         /// <param name="outputFolder">The folder for the output file.</param>
         /// <param name="baseOutputFileName">The name of the output file, a suffix is added based on the type of statistics.</param>
@@ -33,17 +34,20 @@ namespace EU4_saved_file_statistics
         /// /// <param name="outputFileSuffix">The suffix to be added to the output file.</param>
         public ExportStatistics(string outputFolder, string baseOutputFileName, Statistics statistics, string outputFileSuffix)
         {
-            // this could be generlized - remove specfic output classes for each and just take OUTPUT_FILE_SUFFIX as input
+            // create file path and delete old output files
             string filePath = outputFolder + @"\" + baseOutputFileName + outputFileSuffix;
             deleteOldOutputFiles(filePath);
 
+            // statistics for all province IDs
+            statisticsData = statistics.getStatisticsData();
+
+            // output file
             StreamWriter textWriter = new StreamWriter(filePath, APPEND, System.Text.Encoding.GetEncoding("iso-8859-1"));
-            CsvWriter outputFile = new CsvWriter(textWriter, CultureInfo.InvariantCulture);
+            outputFile = new CsvWriter(textWriter, CultureInfo.InvariantCulture);
 
-            Dictionary<string, IDData> proviceStatisticsData = statistics.getStatisticsData(); // statistics for all province IDs
-
-            printHeaders(statistics, outputFile, proviceStatisticsData);
-            printStatisticsForEachID(statistics, outputFile);
+            // print and close
+            printHeaders();
+            printStatisticsForEachID();
             textWriter.Close();
         }
 
@@ -60,12 +64,10 @@ namespace EU4_saved_file_statistics
         /// <summary>
         /// Prints the column headers in the output file based on the key value in the statstics for one id (same headers for all provinces, countries etc).
         /// </summary>
-        /// <param name="statisticsObject">The specific statistic object to be printed.</param>
-        /// <param name="outputFile">The output file to print to.</param>
-        internal void printHeaders(Statistics statisticsObject, CsvWriter outputFile, Dictionary<string, IDData> statisticsData)
+        internal void printHeaders()
         {
-            IDData dataIDOne = statisticsData.ElementAt(0).Value;         // statstics for first tag, province, country etc (same column names for all provinces, countries)
-            List<Tuple<string, string>> statisticsIDOne = dataIDOne.idStats;
+            IDData dataFirstID = statisticsData.ElementAt(0).Value;         // statstics for first tag, province, country etc (same column names for all provinces, countries)
+            List<Tuple<string, string>> statisticsIDOne = dataFirstID.idStats;
             foreach (var ouputData in statisticsIDOne)
             {
                 string columnName = ouputData.Item1; // key
@@ -77,11 +79,8 @@ namespace EU4_saved_file_statistics
         /// <summary>
         /// Print statistics for each output in the list of tuple in province statstics for each ID, province, country etc. 
         /// </summary>
-        /// <param name="statisticsObject">The specific statistic object to be printed.</param>
-        /// <param name="outputFile">The output file to print to.</param>
-        internal void printStatisticsForEachID(Statistics statisticsObject, CsvWriter outputFile)
+        internal void printStatisticsForEachID()
         {
-            Dictionary<string, IDData> statisticsData = statisticsObject.getStatisticsData(); // statistics for all IDs
             foreach (var datID in statisticsData.Values)
             {
                 List<Tuple<string, string>> statisticsID = datID.idStats;

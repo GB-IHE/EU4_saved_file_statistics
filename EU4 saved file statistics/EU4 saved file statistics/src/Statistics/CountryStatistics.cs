@@ -19,18 +19,17 @@ namespace EU4_saved_file_statistics
         /// </summary>
         public CountryStatistics(SaveFile saveFile) : base(saveFile)
         {
-            // Get the start and end line in the saved file for the countries
+            // Get the start and end line in the saved file for the countries section
             const string START_LINE_TEXT = "countries={";                   // without tabs, line 921682 in the example file
             const string END_LINE_TEXT = "active_advisors={";               // Next section, line 3173769 in the example file
             startLineOfTheSectionInTheSaveFile = getFirstLineOfDataSection(START_LINE_TEXT);
-            endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 11;
+            endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 1;
 
             // Get all the province IDs from the save file       
             getAllCountryIdsAndStartLinesFromSaveFile();
             findAllEndLinesInTheSaveFileForAllIDs();
 
-            // Get all the variables for each ID
-            // Get all the variables for each ID based on the methods that we want to use
+            // Get all the variables for each ID based on the methods that we use
             List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
             {
                 getGovernmentRank
@@ -42,9 +41,9 @@ namespace EU4_saved_file_statistics
         private void getAllCountryIdsAndStartLinesFromSaveFile()
         {
             // on the form '	SWE={"
-            const string PATTERN_OF_THE_ID = @"(.*?)=";  // take the line value and remove "-" and everything after "=" to get the id of the province
+            const string PATTERN_OF_THE_ID = @"(.*?)=";  // take the line value and remove everything after "=" to get the id of the country (like SWE)
 
-            // find the start line of provinces in the save file
+            // find the start line of country in the save file
             for (int i = startLineOfTheSectionInTheSaveFile; i < endLineOfTheSectionInTheSaveFile; i++)
             {
                 string line = saveFile.getLineData(i);
@@ -68,7 +67,7 @@ namespace EU4_saved_file_statistics
             } // end for
         } // end void
 
-        // Stats for a specific thing, like country ruler
+        // Stats for a specific thing, government rank
         private string[] getGovernmentRank(string id)
         {
             // On the form: '		owner="SWE"'

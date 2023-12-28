@@ -118,14 +118,17 @@ namespace EU4_saved_file_statistics
         internal void addStatisticsForOneID(string id, List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics)
         {
             IDData idData = statisticsData[id];             // Get the ID stats form data struct for the specific id
-            idData.idStats = new List<Tuple<string, string>>();
 
-            idData.idStats.Add(new Tuple<string, string>("ID", id.ToString()));
+            // Create a new list of tuples in the IDData data struct with the ouput to be analyzed and later printed
+            idData.idStats = new List<Tuple<string, string>>
+            {
+                new Tuple<string, string>("ID", id) // We already have the ID in the struct, add it to the list to be printed
+            };
 
             foreach (Func<string, string[]> method in listOfMethodsUsedToGatherStatistics)
             {
                 string[] headerAndValue = method(id);
-                string header = headerAndValue[0];
+                string header = headerAndValue[0]; // key value
                 string value = headerAndValue[1];
                 idData.idStats.Add(new Tuple<string, string>(header, value));
             }

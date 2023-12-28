@@ -13,6 +13,11 @@ namespace EU4_saved_file_statistics
     /// </summary>
     public class AnalyzeAndExport
     {
+        // Input strings used within the class
+        private readonly string saveFilePath;
+        private readonly string outputDirectory;
+        private readonly string baseOutputFileName;
+
         // Class objects created within the class
         private SaveFile saveFile;
         private ProvinceStatistics provinceStats;
@@ -26,12 +31,16 @@ namespace EU4_saved_file_statistics
         /// <param name="baseOutputFileName">Base name of the output files (suffixes are created later).</param>
         public AnalyzeAndExport(string saveFilePath, string outputDirectory, string baseOutputFileName) 
         {
-            openSaveFile(saveFilePath);
+            this.saveFilePath = saveFilePath;
+            this.outputDirectory = outputDirectory;
+            this.baseOutputFileName = baseOutputFileName;
+
+            openSaveFile();
             createStatistics();
-            exportStatistics(outputDirectory, baseOutputFileName);
+            exportStatistics();
         }
 
-        private void openSaveFile(string saveFilePath)
+        private void openSaveFile()
         {
             saveFile = new SaveFile(saveFilePath);
         }
@@ -48,7 +57,7 @@ namespace EU4_saved_file_statistics
         /// <summary>
         /// Export statistics for each type of statistics.
         /// </summary>
-        private void exportStatistics(string outputDirectory, string baseOutputFileName)
+        private void exportStatistics()
         {
             const string OUTPUT_FILE_SUFFIX_PROVINCES = "_province statistics.csv";
             const string OUTPUT_FILE_SUFFIX_COUNTRIES = "_country statistics.csv";

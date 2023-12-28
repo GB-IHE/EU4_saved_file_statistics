@@ -25,7 +25,7 @@ namespace EU4_saved_file_statistics
         /// </summary>
         public ProvinceStatistics(SaveFile saveFile) : base(saveFile)
         {
-            // Get the start and end line in the saved file for the provinces
+            // Get the start and end line in the saved file for the province section
             const string START_LINE_TEXT = "provinces={";             // without tabs, line 147276 in the example file
             const string END_LINE_TEXT = "countries={";               // next section, line 921682 in the example file
             startLineOfTheSectionInTheSaveFile = getFirstLineOfDataSection(START_LINE_TEXT);
@@ -35,7 +35,7 @@ namespace EU4_saved_file_statistics
             getAllProvinceIdsAndStartLinesFromSaveFile();
             findAllEndLinesInTheSaveFileForAllIDs();
 
-            // Get all the variables for each ID based on the methods that we want to use
+            // Get all the variables for each ID based on the methods that we use
             List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
             {
                 getProvinceName,
