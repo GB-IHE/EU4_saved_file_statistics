@@ -51,7 +51,6 @@ namespace EU4_saved_file_statistics
                 if (line.Length == 0) // if empty line, just go on to the next line
                     continue;
 
-
                 Regex thingsArouondCountryTag = new Regex(@"\t(.*?)=");
                 string possibleCountryTag = thingsArouondCountryTag.Match(line).Groups[1].Value;
 
