@@ -18,8 +18,6 @@ namespace EU4_saved_file_statistics
     /// </summary>
     internal class ExportStatistics
     {
-        internal readonly string outputFolder;
-        internal readonly string baseOutputFileName; // base name, suffixes added later on, like: mp_Crimea1553_01_01 non compressed_provice statistics.csv
         internal readonly Dictionary<string, IDData> statisticsData;
         internal CsvWriter outputFile;
 
@@ -29,23 +27,23 @@ namespace EU4_saved_file_statistics
         /// Export statistics to a .csv file.
         /// </summary>
         /// <param name="outputFolder">The folder for the output file.</param>
-        /// <param name="baseOutputFileName">The name of the output file, a suffix is added based on the type of statistics.</param>
+        /// <param name="baseOutputFileName">The name of the output file, a suffix is added to it based on the type of statistics.</param>
         /// <param name="statistics">The analyzed statistics that is to be printed.</param>
         /// /// <param name="outputFileSuffix">The suffix to be added to the output file.</param>
         public ExportStatistics(string outputFolder, string baseOutputFileName, Statistics statistics, string outputFileSuffix)
         {
-            // create file path and delete old output files
+            // Create the file path and delete old output files
             string filePath = outputFolder + @"\" + baseOutputFileName + outputFileSuffix;
             deleteOldOutputFiles(filePath);
 
-            // statistics for all province IDs
+            // Get statistics for all province IDs
             statisticsData = statistics.getStatisticsData();
 
-            // output file
+            // Open output file
             StreamWriter textWriter = new StreamWriter(filePath, APPEND, System.Text.Encoding.GetEncoding("iso-8859-1"));
             outputFile = new CsvWriter(textWriter, CultureInfo.InvariantCulture);
 
-            // print and close
+            // Print to the file and close it
             printHeaders();
             printStatisticsForEachID();
             textWriter.Close();

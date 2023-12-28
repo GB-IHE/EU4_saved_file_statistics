@@ -67,7 +67,7 @@ namespace EU4_saved_file_statistics
             } // end for
         } // end void
 
-        // Stats for a specific thing, government rank
+        // Stats for a specific thing, i.e. government rank
         private string[] getGovernmentRank(string id)
         {
             // On the form: '		owner="SWE"'

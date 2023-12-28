@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 /**
 * @author Gunnar Brådvik
 * E-mail: gunnar@bradvik.se
 *
-* @date - $time$ 
+* @2023
 * 
 * We have the followinig classes:
 *   AnalyzeAndExport - Runs the other classes and child classes based on the user input
@@ -27,11 +31,14 @@ using System.Windows.Forms;
 *   ExportStatistics - class that exports statistics to a specific folder for all the statistics we want to analyze constructed by outputFolder, outputFileName, Statistics, and the file suffix)
 *       
 * Note that current output file will be deleted and new output files will be created in the same folder as the save files.
+* If we want to analyze something new will need:
+*   A child class of statisticts wher we find the start line of the class and add analyze methods for what we want to check
+*   Create such a class object in the AnalyzeAndExport class
+*   Create another class object of ExportStatistics with the new child class as input
 */
 
 
 // we have to make the user choce an output folder - now the files are saved in the same folder as the save file
-// ask the user if he wants to overwrite the output file....
 // generate sensible output file names
 
 namespace EU4_saved_file_statistics
@@ -39,34 +46,47 @@ namespace EU4_saved_file_statistics
     public partial class frmMain : Form
     {
         private readonly string SAVE_FILE_EXTENSION = ".eu4";
+        public Progress<int> progress;
+        public IProgress<string> progressText;
+
+        // https://stackoverflow.com/questions/68652535/using-iprogress-when-reporting-progress-for-async-await-code-vs-progress-bar-con
+        // https://stackoverflow.com/questions/19768718/updating-progressbar-external-class
+        // https://stackoverflow.com/questions/22699048/why-does-task-waitall-not-block-or-cause-a-deadlock-here (this one is really good)
 
         public frmMain()
         {
             InitializeComponent();
 
+            // Enable drag and drop
             lstFiles.DragDrop += lstFiles_DragDrop;
             lstFiles.DragEnter += lstFiles_DragEnter;
 
+            // Kepps track of the progress
+            progress = new Progress<int>(value => prgTotalProgress.Value = value);
+            progressText = new Progress<string>(s => lstFiles.Items.Add(s));
+
             // run debug if we are in dubug mode
-            if (System.Diagnostics.Debugger.IsAttached)
-                debug();
+            //if (System.Diagnostics.Debugger.IsAttached)
+            //debug();
         }
 
         private void debug()
         {
             string currDirectory = Directory.GetCurrentDirectory();
-            string saveFileDirectory = Path.GetFullPath(Path.Combine(currDirectory, @"..\..\..\..\", "Save files"));
+            string outputFolder = Path.GetFullPath(Path.Combine(currDirectory, @"..\..\..\..\", "Save files"));
             string saveFileName = @"\mp_Crimea1553_01_01 non compressed.eu4";
-            string saveFilePath = saveFileDirectory + saveFileName;
-            string baseOutputFileName = Path.GetFileNameWithoutExtension(saveFilePath);
+            string filePathSaveFile = outputFolder + saveFileName;
+            string baseOutputFileName = Path.GetFileNameWithoutExtension(filePathSaveFile);
 
-            AnalyzeAndExport debugRun = new AnalyzeAndExport(saveFilePath, saveFileDirectory, baseOutputFileName);
+            new AnalyzeAndExport(filePathSaveFile, outputFolder, baseOutputFileName, 
+                                 progress, 1, progressText);
 
             // done
             MessageBox.Show("Files exported!", "Yippie");
+            resetProgress();
         }
 
-        private void btnExportStats_Click(object sender, EventArgs e)
+        private async void btnExportStats_Click(object sender, EventArgs e)
         {
             if (lstFiles.Items.Count == 0)
             {
@@ -74,29 +94,55 @@ namespace EU4_saved_file_statistics
                 return;
             }
 
-            // do the work for the save files one by one
-            for (int i = 0; i < lstFiles.Items.Count; i++)
+            // Showing the user that we are now analyzing files
+            lblStatus.Text = "Working...";
+            lblListTitle.Text = "Progress status of the analyzis of the file(s)";
+            btnBrowseFiles.Enabled = false;
+            EnableRunOptions(false);
+
+            // Analyze the files
+            string[] saveFiles = lstFiles.Items.OfType<string>().ToArray();
+            lstFiles.Items.Clear(); // we use lstFiles as our progress report now
+            await analyzeSaveFiles(saveFiles);
+            
+            // Return to normal
+            Message("Yippie", "Analyzed all files that could be analyzed and exported them to the saved game folder!");
+            resetProgress();
+            btnBrowseFiles.Enabled = true;
+        }
+
+        /// <summary>
+        /// Does the work for each of the save files and returns when all of the job is done.
+        /// </summary>
+        /// <param name="saveFiles">String array of the save file paths.</param>
+        /// <returns></returns>
+        private Task analyzeSaveFiles(string[] saveFiles)
+        {
+            int numberOfFiles = saveFiles.Count();
+            var tasks = new List<Task>();
+
+            for (int i = 0; i < numberOfFiles; i++)
             {
-                string filePathSaveFile = lstFiles.Items[i].ToString();
+                string filePathSaveFile = saveFiles[i];
                 if (!File.Exists(filePathSaveFile))
                 {
-                    Message("Error", "File " + filePathSaveFile + " does not exist. This file will not be loaded.");
+                    Message("Error", "File " + filePathSaveFile + " does not exist. This file will not be analyzed.");
                     continue;
                 }
-
-                string outputFolder = Path.GetDirectoryName(filePathSaveFile); // output folder will be the same as the input folder
-                string baseOutputFileName = Path.GetFileNameWithoutExtension(filePathSaveFile); // output file name will be the same as the input file name + "_statistics.csv"
-                
                 try
-                { 
-                    AnalyzeAndExport debugRun = new AnalyzeAndExport(filePathSaveFile, outputFolder, baseOutputFileName);
-                } 
+                {
+                    string outputFolder = Path.GetDirectoryName(filePathSaveFile); // output folder will be the same as the input folder
+                    string baseOutputFileName = Path.GetFileNameWithoutExtension(filePathSaveFile); // output file name will be the same as the input file name + "_statistics.csv"
+                    var task = Task.Run(() => new AnalyzeAndExport(filePathSaveFile, outputFolder, baseOutputFileName,
+                                                                   progress, numberOfFiles, progressText));
+                    tasks.Add(task);
+                }
                 catch (Exception error)
                 {
                     Message("Error", error.ToString());
                 }
             }
-            MessageBox.Show("Analyzed all files that could be analyzed and exported them to the saved game folder!", "Yippie");
+            return Task.WhenAll(tasks.ToArray());
         }
 
         private void btnBrowseFiles_Click(object sender, EventArgs e)
@@ -168,10 +214,11 @@ namespace EU4_saved_file_statistics
         }
         private void Message(string caption, string message)
         {
-            Cursor.Current = Cursors.Default; //in some cases we have the loading cursor active...
+            Cursor.Current = Cursors.Default; // in some cases we have the loading cursor active...
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             DialogResult result;
             result = MessageBox.Show(message, caption, buttons);
+
         }
 
         /// <summary>
@@ -180,7 +227,17 @@ namespace EU4_saved_file_statistics
         /// <param name="enable"></param>
         private void EnableRunOptions(bool enable)
         {
+            btnClear.Enabled = enable;
             btnExportStats.Enabled = enable; // cannot export without anything analyzed to export
+            Refresh();
+        }
+        private void resetProgress()
+        {
+            EnableRunOptions(false);
+            lblListTitle.Text = "List of save files";
+            lblStatus.Text = "Waiting for work";
+            lstFiles.Items.Clear();
+            prgTotalProgress.Value = 0;
             Refresh();
         }
     }
