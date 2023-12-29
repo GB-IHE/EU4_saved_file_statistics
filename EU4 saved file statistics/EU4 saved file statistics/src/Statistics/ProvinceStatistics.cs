@@ -31,7 +31,7 @@ namespace EU4_saved_file_statistics
             startLineOfTheSectionInTheSaveFile = getFirstLineOfDataSection(START_LINE_TEXT);
             endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 1;
 
-            // Get all the province IDs from the save file
+            // Get all the province IDs from the save file as well as start and end line for each ID
             getAllProvinceIdsAndStartLinesFromSaveFile();
             findAllEndLinesInTheSaveFileForAllIDs();
 
@@ -87,9 +87,9 @@ namespace EU4_saved_file_statistics
         // Stats for a specific thing, like province owner or province controler
         private string[] getProvinceOwner(string id)
         {
-            // On the form: '		owner="SWE"'
             const string HEADER = "Owner";
 
+            // On the form: '		owner="SWE"'
             const string START_LINE_TEXT = "		owner=";
             const bool QUOTATION_AROUND_THE_DATA = true;
             string owner = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);

@@ -25,14 +25,17 @@ namespace EU4_saved_file_statistics
             startLineOfTheSectionInTheSaveFile = getFirstLineOfDataSection(START_LINE_TEXT);
             endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 1;
 
-            // Get all the province IDs from the save file       
+            // Get all the country IDs from the save file as well as start and end line as well as start and end line for each ID    
             getAllCountryIdsAndStartLinesFromSaveFile();
             findAllEndLinesInTheSaveFileForAllIDs();
 
             // Get all the variables for each ID based on the methods that we use
             List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
             {
-                getGovernmentRank
+                getGovernmentRank,
+                getAverageUnrest,
+                getAverageAutonomy,
+                getEstimatedMonthlyIncome
             };
 
             addStatisticsForAllIds(listOfMethodsUsedToGatherStatistics);
@@ -70,7 +73,6 @@ namespace EU4_saved_file_statistics
         // Stats for a specific thing, i.e. government rank
         private string[] getGovernmentRank(string id)
         {
-            // On the form: '		owner="SWE"'
             const string HEADER = "Government rank";
 
             const string START_LINE_TEXT = "		government_rank=";
@@ -78,6 +80,36 @@ namespace EU4_saved_file_statistics
             string governmentRank = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
 
             return new string[2] { HEADER, governmentRank };
+        }
+        private string[] getAverageUnrest(string id)
+        {
+            const string HEADER = "Average Unrest";
+
+            const string START_LINE_TEXT = "		average_unrest=";
+            const bool QUOTATION_AROUND_THE_DATA = false;
+            string averageUnrest = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, averageUnrest };
+        }
+        private string[] getAverageAutonomy(string id)
+        {
+            const string HEADER = "Average Autonomy";
+
+            const string START_LINE_TEXT = "		average_autonomy=";
+            const bool QUOTATION_AROUND_THE_DATA = false;
+            string averageAutonomy = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, averageAutonomy };
+        }
+        private string[] getEstimatedMonthlyIncome(string id)
+        {
+            const string HEADER = "Estimated Monthly Income";
+
+            const string START_LINE_TEXT = "		estimated_monthly_income=";
+            const bool QUOTATION_AROUND_THE_DATA = false;
+            string estimatedMonthlyIncome = tagsWithStartPattern(id, START_LINE_TEXT, QUOTATION_AROUND_THE_DATA);
+
+            return new string[2] { HEADER, estimatedMonthlyIncome };
         }
     }
 }

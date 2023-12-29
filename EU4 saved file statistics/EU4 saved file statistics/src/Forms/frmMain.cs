@@ -37,6 +37,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 *   Create another class object of ExportStatistics with the new child class as input
 */
 
+// https://stackoverflow.com/questions/68652535/using-iprogress-when-reporting-progress-for-async-await-code-vs-progress-bar-con
+// https://stackoverflow.com/questions/19768718/updating-progressbar-external-class
+// https://stackoverflow.com/questions/22699048/why-does-task-waitall-not-block-or-cause-a-deadlock-here (this one is really good)
 
 // we have to make the user choce an output folder - now the files are saved in the same folder as the save file
 // generate sensible output file names
@@ -48,10 +51,6 @@ namespace EU4_saved_file_statistics
         private readonly string SAVE_FILE_EXTENSION = ".eu4";
         public Progress<int> progress;
         public IProgress<string> progressText;
-
-        // https://stackoverflow.com/questions/68652535/using-iprogress-when-reporting-progress-for-async-await-code-vs-progress-bar-con
-        // https://stackoverflow.com/questions/19768718/updating-progressbar-external-class
-        // https://stackoverflow.com/questions/22699048/why-does-task-waitall-not-block-or-cause-a-deadlock-here (this one is really good)
 
         public frmMain()
         {
@@ -66,8 +65,8 @@ namespace EU4_saved_file_statistics
             progressText = new Progress<string>(s => lstFiles.Items.Add(s));
 
             // run debug if we are in dubug mode
-            //if (System.Diagnostics.Debugger.IsAttached)
-            //debug();
+            if (System.Diagnostics.Debugger.IsAttached)
+                debug();
         }
 
         private void debug()
@@ -109,40 +108,6 @@ namespace EU4_saved_file_statistics
             Message("Yippie", "Analyzed all files that could be analyzed and exported them to the saved game folder!");
             resetProgress();
             btnBrowseFiles.Enabled = true;
-        }
-
-        /// <summary>
-        /// Does the work for each of the save files and returns when all of the job is done.
-        /// </summary>
-        /// <param name="saveFiles">String array of the save file paths.</param>
-        /// <returns></returns>
-        private Task analyzeSaveFiles(string[] saveFiles)
-        {
-            int numberOfFiles = saveFiles.Count();
-            var tasks = new List<Task>();
-
-            for (int i = 0; i < numberOfFiles; i++)
-            {
-                string filePathSaveFile = saveFiles[i];
-                if (!File.Exists(filePathSaveFile))
-                {
-                    Message("Error", "File " + filePathSaveFile + " does not exist. This file will not be analyzed.");
-                    continue;
-                }
-                try
-                {
-                    string outputFolder = Path.GetDirectoryName(filePathSaveFile); // output folder will be the same as the input folder
-                    string baseOutputFileName = Path.GetFileNameWithoutExtension(filePathSaveFile); // output file name will be the same as the input file name + "_statistics.csv"
-                    var task = Task.Run(() => new AnalyzeAndExport(filePathSaveFile, outputFolder, baseOutputFileName,
-                                                                   progress, numberOfFiles, progressText));
-                    tasks.Add(task);
-                }
-                catch (Exception error)
-                {
-                    Message("Error", error.ToString());
-                }
-            }
-            return Task.WhenAll(tasks.ToArray());
         }
 
         private void btnBrowseFiles_Click(object sender, EventArgs e)
@@ -239,6 +204,40 @@ namespace EU4_saved_file_statistics
             lstFiles.Items.Clear();
             prgTotalProgress.Value = 0;
             Refresh();
+        }
+
+        /// <summary>
+        /// Does the work for each of the save files and returns when all of the job is done.
+        /// </summary>
+        /// <param name="saveFiles">String array of the save file paths.</param>
+        /// <returns></returns>
+        private Task analyzeSaveFiles(string[] saveFiles)
+        {
+            int numberOfFiles = saveFiles.Count();
+            var tasks = new List<Task>();
+
+            for (int i = 0; i < numberOfFiles; i++)
+            {
+                string filePathSaveFile = saveFiles[i];
+                if (!File.Exists(filePathSaveFile))
+                {
+                    Message("Error", "File " + filePathSaveFile + " does not exist. This file will not be analyzed.");
+                    continue;
+                }
+                try
+                {
+                    string outputFolder = Path.GetDirectoryName(filePathSaveFile); // output folder will be the same as the input folder
+                    string baseOutputFileName = Path.GetFileNameWithoutExtension(filePathSaveFile); // output file name will be the same as the input file name + "_statistics.csv"
+                    var task = Task.Run(() => new AnalyzeAndExport(filePathSaveFile, outputFolder, baseOutputFileName,
+                                                                   progress, numberOfFiles, progressText));
+                    tasks.Add(task);
+                }
+                catch (Exception error)
+                {
+                    Message("Error", error.ToString());
+                }
+            }
+            return Task.WhenAll(tasks.ToArray());
         }
     }
 }
