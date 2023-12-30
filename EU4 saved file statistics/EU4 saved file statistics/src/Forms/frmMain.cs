@@ -33,10 +33,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 *   ExportStatistics - a class that exports statistics to a specific folder for all the statistics we want to analyze constructed by outputFolder, outputFileName, Statistics, and the file suffix)
 *       
 * Note that current output file will be deleted and new output files will be created in the same folder as the save files.
-* If we want to analyze something new will need:
-*   A new child class of statisticts wher we find the start line of the class and add analyze methods for what we want to check
-*   Create a class object of this new class in the AnalyzeAndExport createStatistics() method
-*   Create another class object of ExportStatistics in the AnalyzeAndExport exportStatistics() method with the new child class object as input
+* If we want to analyze something new will need to:
+*   1) Create a new child class of statisticts wher we find the start line of the class and add analyze methods for what we want to check
+*   2) Add the class object of this new class in the AnalyzeAndExport createStatistics() method to the Dictonary stats
 */
 
 // https://stackoverflow.com/questions/68652535/using-iprogress-when-reporting-progress-for-async-await-code-vs-progress-bar-con
@@ -82,24 +81,24 @@ namespace EU4_saved_file_statistics
             var analysis = new AnalyzeAndExport(filePathSaveFile, outputFolder, baseOutputFileName, 
                                                 progress, 1, progressText);
 
-            await analysis.analyze();
-            analysis.exportStatistics();
+            await analysis.runAnalyze();
 
             // done
             MessageBox.Show("Files exported!", "Yippie");
             resetProgress();
         }
 
-        private void btnExportStats_Click(object sender, EventArgs e)
+        private async void btnExportStats_Click(object sender, EventArgs e)
         {
             if (lstFiles.Items.Count == 0)
                 Message("Error", "No file has been selected. Press ok to close this dialog and try again.");
             else
             {
-                // Analyze the files
                 string[] saveFiles = lstFiles.Items.OfType<string>().ToArray();
-                analyzeSaveFiles(saveFiles);
-            }
+                await analyzeSaveFiles(saveFiles);
+                Refresh();
+                runMode(false); // runMode(True) is within analyzeSaveFiles since it does not work otherwise
+            } 
         }
 
         private void btnBrowseFiles_Click(object sender, EventArgs e)
@@ -203,15 +202,9 @@ namespace EU4_saved_file_statistics
         /// </summary>
         /// <param name="saveFiles">String array of the save file paths.</param>
         /// <returns></returns>
-        private async void analyzeSaveFiles(string[] saveFiles)
+        private async Task analyzeSaveFiles(string[] saveFiles)
         {
-            // Showing the user that we are now analyzing files
-            lstFiles.Items.Clear(); // we use lstFiles as our progress report now
-            lblStatus.Text = "Working...";
-            lblListTitle.Text = "Progress status of the analyzis of the file(s)";
-            btnBrowseFiles.Enabled = false;
-            EnableRunOptions(false);
-
+            runMode(true);
             // Checks what files that can be analysed
             List<AnalyzeAndExport> analysisToDo = new List<AnalyzeAndExport>();
             int numberOfFiles = saveFiles.Count();
@@ -229,28 +222,43 @@ namespace EU4_saved_file_statistics
                 }
             }
 
-            // Analysis the files one by one
+            // Now that we have check that the file exists, analyze the files one by one
+            var tasks = new List<Task>();
             int numberOfAnalysis = analysisToDo.Count();
             for (int i = 0; i < numberOfAnalysis; i++) 
             {
                 try
                 {
                     var analysis = analysisToDo[i];
-                    await analysis.analyze();
-                    analysis.exportStatistics();
+                    tasks.Add(Task.Run(async () => await analysis.runAnalyze()));
                 }
                 catch (Exception error)
                 {
                     Message("Error", error.ToString());
                 }
-                progressText.Report("\n");
+                //progressText.Report("\n");
             }
 
-            // Return the user to normal
-            progressText.Report("Done");
-            Message("Yippie", "Analyzed all files that could be analyzed and exported them to the saved game folder!");
-            resetProgress();
-            btnBrowseFiles.Enabled = true;
+            await Task.WhenAll(tasks.ToArray());
         } // end void
+
+        private void runMode(Boolean run)
+        {
+            if (run) // Show the user that we are now analyzing files and supress run optoions
+            {
+                lstFiles.Items.Clear(); // we use lstFiles as our progress report now
+                lblStatus.Text = "Working...";
+                lblListTitle.Text = "Progress status of the analyzis of the file(s)";
+                btnBrowseFiles.Enabled = false;
+                EnableRunOptions(false);
+            }
+            else // Return the user to normal
+            {
+                progressText.Report("Done");
+                Message("Yippie", "Analyzed all files that could be analyzed and exported them to the same folder as the save file is located in!");
+                resetProgress();
+                btnBrowseFiles.Enabled = true;
+            }
+        }
     }
 }

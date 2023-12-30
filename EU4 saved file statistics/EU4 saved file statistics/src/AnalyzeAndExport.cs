@@ -22,8 +22,7 @@ namespace EU4_saved_file_statistics
 
         // Class objects created within the class
         private SaveFile saveFile;
-        private ProvinceStatistics provinceStats;
-        private CountryStatistics countryStats;
+        private Dictionary<string, Statistics> stats = new Dictionary<string, Statistics>();
 
         // Progress in frmMain
         IProgress<int> progress;
@@ -52,47 +51,81 @@ namespace EU4_saved_file_statistics
             this.progressText = progressText;
         }
 
+        /// <summary>
+        /// Open the save file and analyze it.
+        /// </summary>
+        /// <returns>Returns first when all analyses have been run and these have been exported.</returns>
+        public async Task runAnalyze()
+        {
+            const int PROGRESS_LOADING_SAVE_FILE = 10;
+            const int PROGRESS_ANALYSIS = 80 + PROGRESS_LOADING_SAVE_FILE;
+
+            // Tell the user that we are starting
+            progressText.Report("Work for " + baseOutputFileName + " has started...");
+
+            // Load the save file
+            openSaveFile();
+            currentProgress += PROGRESS_LOADING_SAVE_FILE / numberOfFiles;
+            addAndReportProgress(currentProgress);
+
+            // Create statistics
+            await createStatistic();
+            currentProgress += PROGRESS_ANALYSIS / numberOfFiles;
+            addAndReportProgress(currentProgress);
+
+            // Export statistics after the analysis is done
+            await exportStatistics();
+            currentProgress += MAX_PROGRESS / numberOfFiles;
+            addAndReportProgress(currentProgress);
+
+            // Tell the user that we are done
+            progressText.Report("Work for " + baseOutputFileName + " has finnished!");
+        }
+
         private void openSaveFile()
         {
             progressText.Report("Opening save file for " + baseOutputFileName + "...");
             saveFile = new SaveFile(saveFilePath);
-            //const int PROGRESS_TO_ADD = 10;
-            //addAndReportProgress(PROGRESS_TO_ADD);
-            progressText.Report("Save file for " + baseOutputFileName + "has been opend...");
         }
 
         /// <summary>
-        /// Export statistics for each type of statistics.
+        /// Create statistics for each of the statitics child classes.
         /// </summary>
-        public void exportStatistics()
+        /// <returns>Returns when all statistics are created.</returns>
+        private Task createStatistic()
         {
-            progressText.Report("Exporting statistics for " + baseOutputFileName + "...");
-            const string OUTPUT_FILE_SUFFIX_PROVINCES = "_province statistics.csv";
-            const string OUTPUT_FILE_SUFFIX_COUNTRIES = "_country statistics.csv";
+            // all analysis to be done
+            var tasks = new List<Task>();
 
-            new ExportStatistics(outputDirectory, baseOutputFileName, provinceStats, OUTPUT_FILE_SUFFIX_PROVINCES);
-            new ExportStatistics(outputDirectory, baseOutputFileName, countryStats, OUTPUT_FILE_SUFFIX_COUNTRIES);
-            setProgress(MAX_PROGRESS);
+            // statitics classes
+            progressText.Report("Creating statistics for " + baseOutputFileName + "..."); ;
+            tasks.Add(Task.Run(() => stats.Add("_province statistics.csv", new ProvinceStatistics(saveFile))));
+            tasks.Add(Task.Run(() => stats.Add("_country statistics.csv", new CountryStatistics(saveFile))));
+
+            // all done
+            return Task.WhenAll(tasks.ToArray());
         }
 
-        public Task analyze()
+        /// <summary>
+        /// Export statistics for each type of statistics in stats sepeleratly.
+        /// </summary>
+        /// <returns>Retruns when all statistics has been exported.</returns>
+        private Task exportStatistics()
         {
-            progressText.Report("Work for " + baseOutputFileName + " has started...");
-            openSaveFile();
-            setProgress(10);
-
+            // all analysis to be done
             var tasks = new List<Task>();
-            
-            // provinces
-            var provinceAnalysis = Task.Run(() => provinceStats = new ProvinceStatistics(saveFile));
-            tasks.Add(provinceAnalysis);
-            progressText.Report("Analyzing province statistics for " + baseOutputFileName + "..."); ;
 
-            // countries
-            var countryAnalysis = Task.Run(() => countryStats = new CountryStatistics(saveFile));
-            tasks.Add(countryAnalysis);
-            progressText.Report("Analyzing country statistics for " + baseOutputFileName + "...");
+            progressText.Report("Exporting statistics for " + baseOutputFileName + "...");
 
+            // loop each statistic class with its file suffix in the dictornary stats and create ouput for each of the objects
+            foreach (var statistics in stats)
+            {
+                string fileSuffix = statistics.Key.ToString();
+                Statistics statObj = statistics.Value;
+                tasks.Add(Task.Run(() => new ExportStatistics(outputDirectory, baseOutputFileName, statObj, fileSuffix)));
+            }
+
+            // done
             return Task.WhenAll(tasks.ToArray());
         }
 
