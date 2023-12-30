@@ -129,7 +129,7 @@ namespace EU4_saved_file_statistics
         // lst things
         private void lstFiles_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Delete)
+            if (e.KeyCode == Keys.Delete && btnBrowseFiles.Enabled == true)
                 if (lstFiles.SelectedItems.Count != 0)
                     while (lstFiles.SelectedIndex != -1)
                         lstFiles.Items.RemoveAt(lstFiles.SelectedIndex);
