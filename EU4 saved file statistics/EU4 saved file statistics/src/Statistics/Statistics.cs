@@ -11,15 +11,13 @@ using System.Windows.Forms;
 namespace EU4_saved_file_statistics
 {
     /// <summary>
-    /// Stores the save file and make it usable for all the child classes (different statistics).
-    /// Stores all the statistic classes (child classes) that we create when we run createStatistics.
+    /// Common functions and variables for the child classes with specific statistics
     /// </summary>
-    public class Statistics
+    public abstract class Statistics
     {
         internal readonly SaveFile saveFile;
         internal int startLineOfTheSectionInTheSaveFile; // start and end line of the section in the save file (for instance province section) - used when we search for specific provinces, countries etc
         internal int endLineOfTheSectionInTheSaveFile;
-
         /// <summary>
         /// Data for all provinces, countries etc. <ID (string), data for the specific ID>
         /// </summary>
@@ -28,6 +26,28 @@ namespace EU4_saved_file_statistics
         public Statistics(SaveFile saveFile)
         {
             this.saveFile = saveFile;
+        }
+
+        /// <summary>
+        /// 1) Get the specific start line and end line for the countries section in the save file.
+        /// 2) Get the IDs for all the countries in the save file together with the start and end line of stat specific countries ID in the save file.
+        /// 3) Add statistics for each of the countries.
+        /// </summary>
+        /// <param name="START_LINE_TEXT">The text that marks the start of the section.</param>
+        /// <param name="END_LINE_TEXT">The text that marks the end of the section.</param>
+        /// <param name="listOfMethodsUsedToGatherStatistics">The methods used to create the statistics.</param>
+        internal void createStatistics(in string START_LINE_TEXT, in string END_LINE_TEXT, List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics)
+        {
+            // Get the start and end line in the saved file for the province section
+            startLineOfTheSectionInTheSaveFile = getFirstLineOfDataSection(START_LINE_TEXT);
+            endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 1;
+
+            // Get all the province IDs from the save file as well as start and end line for each ID
+            getAllIdsAndStartLinesFromSaveFile();
+            findAllEndLinesInTheSaveFileForAllIDs();
+
+            // Get all the variables for each ID based on the methods that we use
+            addStatisticsForAllIds(listOfMethodsUsedToGatherStatistics);
         }
 
         /// <summary>
@@ -67,6 +87,24 @@ namespace EU4_saved_file_statistics
                     return i;
             } // end loop
             return -1;
+        }
+
+        /// <summary>
+        /// We have different mehtods for finding the IDs and start lines for each statistical category in the child classes.
+        /// </summary>
+        internal abstract void getAllIdsAndStartLinesFromSaveFile();
+
+        /// <summary>
+        ///  Creates a new ID data struct for the new ID found in the data and adds the IDData object to the list
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="startLineOfTheID"></param>
+        internal void addIDAndStartLineToTheStatisticsData(string id, int startLineOfTheID)
+        {
+            IDData idData = new IDData();
+            idData.id = id;
+            idData.startLineInTheSaveFile = startLineOfTheID;
+            statisticsData.Add(id, idData);
         }
 
         /// <summary>

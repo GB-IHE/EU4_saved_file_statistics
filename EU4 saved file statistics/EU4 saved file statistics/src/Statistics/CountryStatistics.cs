@@ -13,23 +13,14 @@ namespace EU4_saved_file_statistics
     public class CountryStatistics : Statistics
     {
         /// <summary>
-        ///     1) Get the specific start line and end line for the countries section in the save file.
-        ///     2) Get the IDs for all the countries in the save file together with the start and end line of stat specific countries ID in the save file.
-        ///     3) Add statistics for each of the countries.
+        /// Defines the start and end lines for the data section. Also defines the specific functions we want to use to gather the statistics.
         /// </summary>
+        /// <param name="saveFile"></param>
         public CountryStatistics(SaveFile saveFile) : base(saveFile)
         {
-            // Get the start and end line in the saved file for the countries section
             const string START_LINE_TEXT = "countries={";                   // without tabs, line 921682 in the example file
             const string END_LINE_TEXT = "active_advisors={";               // Next section, line 3173769 in the example file
-            startLineOfTheSectionInTheSaveFile = getFirstLineOfDataSection(START_LINE_TEXT);
-            endLineOfTheSectionInTheSaveFile = getLastLineOfDataSection(startLineOfTheSectionInTheSaveFile, END_LINE_TEXT) - 1;
 
-            // Get all the country IDs from the save file as well as start and end line as well as start and end line for each ID    
-            getAllCountryIdsAndStartLinesFromSaveFile();
-            findAllEndLinesInTheSaveFileForAllIDs();
-
-            // Get all the variables for each ID based on the methods that we use
             List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
             {
                 getGovernmentRank,
@@ -38,13 +29,14 @@ namespace EU4_saved_file_statistics
                 getEstimatedMonthlyIncome
             };
 
-            addStatisticsForAllIds(listOfMethodsUsedToGatherStatistics);
+            createStatistics(START_LINE_TEXT, END_LINE_TEXT, listOfMethodsUsedToGatherStatistics);
         }
 
-        private void getAllCountryIdsAndStartLinesFromSaveFile()
+        internal override void getAllIdsAndStartLinesFromSaveFile()
         {
             // on the form '	SWE={"
             const string PATTERN_OF_THE_ID = @"(.*?)=";  // take the line value and remove everything after "=" to get the id of the country (like SWE)
+            const int LENGTH_OF_THE_COUNTRY_TAG = 3;
 
             // find the start line of country in the save file
             for (int i = startLineOfTheSectionInTheSaveFile; i < endLineOfTheSectionInTheSaveFile; i++)
@@ -53,19 +45,16 @@ namespace EU4_saved_file_statistics
                 if (line.Length == 0) // if empty line, just go on to the next line
                     continue;
 
+                // get rid of the tab space and the '=' and then check if this is a country tag, it must be of the lengt 3, upper case and non numeric
                 Regex thingsArouondCountryTag = new Regex(@"\t(.*?)=");
                 string possibleCountryTag = thingsArouondCountryTag.Match(line).Groups[1].Value;
 
-                if (possibleCountryTag.Length == 3 && IsAllUpper(possibleCountryTag) && ! IsNumeric(possibleCountryTag))
+                if (possibleCountryTag.Length == LENGTH_OF_THE_COUNTRY_TAG && IsAllUpper(possibleCountryTag) && !IsNumeric(possibleCountryTag))
                 {
+                    // ge the country ID and the add it together with the start line to the statistics data
                     Regex rx = new Regex(PATTERN_OF_THE_ID);
                     string id = rx.Match(line).Groups[1].Value;
-
-                    // add it to the data struct and the data lsit
-                    IDData _idData = new IDData();
-                    _idData.id = id;
-                    _idData.startLineInTheSaveFile = i;
-                    statisticsData.Add(id, _idData);
+                    addIDAndStartLineToTheStatisticsData(id, i);
                 } // end if
             } // end for
         } // end void

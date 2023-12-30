@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace EU4_saved_file_statistics
 {
@@ -32,7 +33,7 @@ namespace EU4_saved_file_statistics
         private readonly int numberOfFiles;
 
         /// <summary>
-        /// Analyze the save file and export the statistics from it;
+        /// Analyze one save file and export the statistics from it.
         /// </summary>
         /// <param name="saveFilePath">Path of the save file to analyze.</param>
         /// <param name="outputDirectory">Path where to save the output files.</param>
@@ -49,56 +50,21 @@ namespace EU4_saved_file_statistics
             this.progress = progress;
             this.numberOfFiles = numberOfFiles;
             this.progressText = progressText;
-
-            openSaveFile();
-            createStatistics();
-            exportStatistics();
-            progressText.Report("Work for " + baseOutputFileName + " is completed!");
         }
 
         private void openSaveFile()
         {
             progressText.Report("Opening save file for " + baseOutputFileName + "...");
             saveFile = new SaveFile(saveFilePath);
-            const int PROGRESS_TO_ADD = 10;
-            addAndReportProgress(PROGRESS_TO_ADD);
-        }
-
-        /// <summary>
-        /// Creates statistics from the save file for each type of statistics.
-        /// </summary>
-        private void createStatistics()
-        {
-            const int STATISTICS_CLASSES = 2;
-            const int PROGRESS_TO_ADD = 80 / STATISTICS_CLASSES;
-
-            progressText.Report("Analyzing province statistics for " + baseOutputFileName + "...");
-            provinceStats = new ProvinceStatistics(saveFile);
-            addAndReportProgress(PROGRESS_TO_ADD);
-
-            progressText.Report("Analyzing country statistics for " + baseOutputFileName + "...");
-            countryStats = new CountryStatistics(saveFile);
-            addAndReportProgress(PROGRESS_TO_ADD);
-        }
-
-        private void addAndReportProgress(int progressToAdd)
-        {
-            progressToAdd /= numberOfFiles;
-            currentProgress = currentProgress + progressToAdd > MAX_PROGRESS ? MAX_PROGRESS : currentProgress + progressToAdd;
-            progress.Report(currentProgress);
-        }
-
-        private void setProgress(int totalProgress)
-        {
-            totalProgress /= numberOfFiles;
-            totalProgress = totalProgress > MAX_PROGRESS ? MAX_PROGRESS : totalProgress;
-            progress.Report(totalProgress);
+            //const int PROGRESS_TO_ADD = 10;
+            //addAndReportProgress(PROGRESS_TO_ADD);
+            progressText.Report("Save file for " + baseOutputFileName + "has been opend...");
         }
 
         /// <summary>
         /// Export statistics for each type of statistics.
         /// </summary>
-        private void exportStatistics()
+        public void exportStatistics()
         {
             progressText.Report("Exporting statistics for " + baseOutputFileName + "...");
             const string OUTPUT_FILE_SUFFIX_PROVINCES = "_province statistics.csv";
@@ -107,6 +73,49 @@ namespace EU4_saved_file_statistics
             new ExportStatistics(outputDirectory, baseOutputFileName, provinceStats, OUTPUT_FILE_SUFFIX_PROVINCES);
             new ExportStatistics(outputDirectory, baseOutputFileName, countryStats, OUTPUT_FILE_SUFFIX_COUNTRIES);
             setProgress(MAX_PROGRESS);
+        }
+
+        public Task analyze()
+        {
+            progressText.Report("Work for " + baseOutputFileName + " has started...");
+            openSaveFile();
+            setProgress(10);
+
+            var tasks = new List<Task>();
+            
+            // provinces
+            var provinceAnalysis = Task.Run(() => provinceStats = new ProvinceStatistics(saveFile));
+            tasks.Add(provinceAnalysis);
+            progressText.Report("Analyzing province statistics for " + baseOutputFileName + "..."); ;
+
+            // countries
+            var countryAnalysis = Task.Run(() => countryStats = new CountryStatistics(saveFile));
+            tasks.Add(countryAnalysis);
+            progressText.Report("Analyzing country statistics for " + baseOutputFileName + "...");
+
+            return Task.WhenAll(tasks.ToArray());
+        }
+
+        /// <summary>
+        /// Add progress with a specific value.
+        /// </summary>
+        /// <param name="progressToAdd"></param>
+        private void addAndReportProgress(int progressToAdd)
+        {
+            progressToAdd /= numberOfFiles;
+            currentProgress = currentProgress + progressToAdd > MAX_PROGRESS ? MAX_PROGRESS : currentProgress + progressToAdd;
+            progress.Report(currentProgress);
+        }
+
+        /// <summary>
+        /// Set the progress to a fixed value.
+        /// </summary>
+        /// <param name="totalProgress"></param>
+        private void setProgress(int totalProgress)
+        {
+            totalProgress /= numberOfFiles;
+            totalProgress = totalProgress > MAX_PROGRESS ? MAX_PROGRESS : totalProgress;
+            progress.Report(totalProgress);
         }
     }
 }
