@@ -61,7 +61,7 @@ namespace EU4_saved_file_statistics
             const int PROGRESS_ANALYSIS = 80 + PROGRESS_LOADING_SAVE_FILE;
 
             // Tell the user that we are starting
-            progressText.Report("Work for " + baseOutputFileName + " has started...");
+            progressText.Report("Work for " + baseOutputFileName + " has been started...");
 
             // Load the save file
             openSaveFile();
@@ -79,7 +79,7 @@ namespace EU4_saved_file_statistics
             addAndReportProgress(currentProgress);
 
             // Tell the user that we are done
-            progressText.Report("Work for " + baseOutputFileName + " has finnished!");
+            progressText.Report("Work for " + baseOutputFileName + " has been finnished!");
         }
 
         private void openSaveFile()
@@ -97,10 +97,11 @@ namespace EU4_saved_file_statistics
             // all analysis to be done
             var tasks = new List<Task>();
 
-            // statitics classes
+            // statistics classes to be created for analysis and export, the key value is the file suffix to the file name
             progressText.Report("Creating statistics for " + baseOutputFileName + "..."); ;
             tasks.Add(Task.Run(() => stats.Add("_province statistics.csv", new ProvinceStatistics(saveFile))));
             tasks.Add(Task.Run(() => stats.Add("_country statistics.csv", new CountryStatistics(saveFile))));
+            tasks.Add(Task.Run(() => stats.Add("_player statistics.csv", new PlayerStatistics(saveFile))));
 
             // all done
             return Task.WhenAll(tasks.ToArray());

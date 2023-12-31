@@ -18,8 +18,8 @@ namespace EU4_saved_file_statistics
         /// <param name="saveFile"></param>
         public CountryStatistics(SaveFile saveFile) : base(saveFile)
         {
-            const string START_LINE_TEXT = "countries={";                   // without tabs, line 921682 in the example file
-            const string END_LINE_TEXT = "active_advisors={";               // Next section, line 3173769 in the example file
+            const string START_OF_THIS_SECTION_TEXT = "countries={";                   // without tabs, line 921682 in the example file
+            const string START_OF_NEXT_SECTION_TEXT = "active_advisors={";               // Next section, line 3173769 in the example file
 
             List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
             {
@@ -29,7 +29,7 @@ namespace EU4_saved_file_statistics
                 getEstimatedMonthlyIncome
             };
 
-            createStatistics(START_LINE_TEXT, END_LINE_TEXT, listOfMethodsUsedToGatherStatistics);
+            createStatistics(START_OF_THIS_SECTION_TEXT, START_OF_NEXT_SECTION_TEXT, listOfMethodsUsedToGatherStatistics);
         }
 
         internal override void getAllIdsAndStartLinesFromSaveFile()

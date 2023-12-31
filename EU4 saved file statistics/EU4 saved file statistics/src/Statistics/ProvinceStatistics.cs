@@ -24,8 +24,8 @@ namespace EU4_saved_file_statistics
         /// <param name="saveFile"></param>
         public ProvinceStatistics(SaveFile saveFile) : base(saveFile)
         {
-            const string START_LINE_TEXT = "provinces={";             // without tabs, line 147276 in the example file
-            const string END_LINE_TEXT = "countries={";               // next section, line 921682 in the example file
+            const string START_OF_THIS_SECTION_TEXT = "provinces={";             // without tabs, line 147276 in the example file
+            const string START_OF_NEXT_SECTION_TEXT = "countries={";               // next section, line 921682 in the example file
 
             List<Func<string, string[]>> listOfMethodsUsedToGatherStatistics = new List<Func<string, string[]>>()
             {
@@ -36,7 +36,7 @@ namespace EU4_saved_file_statistics
                 getProvinceCulture
             };
 
-            createStatistics(START_LINE_TEXT, END_LINE_TEXT, listOfMethodsUsedToGatherStatistics);
+            createStatistics(START_OF_THIS_SECTION_TEXT, START_OF_NEXT_SECTION_TEXT, listOfMethodsUsedToGatherStatistics);
         }
 
         /// <summary>

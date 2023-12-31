@@ -1,0 +1,4942 @@
+ID,Name,Owner,Controler,Religion,Culture
+1,Stockholm,PLC,PLC,catholic,swedish
+2,Östergötland,PLC,PLC,catholic,swedish
+3,Kalmar,PLC,PLC,catholic,swedish
+4,Bergslagen,PLC,PLC,catholic,swedish
+5,Värmland,PLC,PLC,catholic,swedish
+6,Lund,PLC,PLC,catholic,swedish
+7,Skaraborg,PLC,PLC,catholic,swedish
+8,Dalaskogen,FRA,FRA,protestant,swedish
+9,Hälsingland,PLC,PLC,catholic,swedish
+10,Jämtland,FRA,FRA,protestant,norwegian
+11,Västerbotten,PLC,PLC,catholic,swedish
+12,Sjælland,GER,GER,protestant,danish
+13,Slesvig,FRA,FRA,protestant,danish
+14,Fyn,GER,GER,protestant,danish
+15,Vestjylland,FRA,FRA,protestant,danish
+16,Bohuslän,NOR,NOR,protestant,norwegian
+17,Akershus,FRA,FRA,protestant,norwegian
+18,Lappland,PLC,PLC,catholic,sapmi
+19,Österbotten,PLC,PLC,catholic,polish
+20,Trøndelag,FRA,FRA,protestant,norwegian
+21,Hålogaland,FRA,FRA,protestant,norwegian
+22,Opplanda,FRA,FRA,protestant,norwegian
+23,Bergenhus,FRA,FRA,protestant,norwegian
+24,Stavanger,FRA,FRA,protestant,norwegian
+25,Gotland,PLC,PLC,catholic,prussian
+26,Halland,PLC,PLC,catholic,swedish
+27,Åbo,PLC,PLC,catholic,swedish
+28,Nyland,PLC,PLC,catholic,polish
+29,Tavastland,PLC,PLC,catholic,polish
+30,Viborg,PLC,PLC,catholic,novgorodian
+31,Savolax,PLC,PLC,catholic,polish
+32,Kexholm,PLC,PLC,catholic,novgorodian
+33,Neva,PLC,PLC,catholic,novgorodian
+34,Ingermanland,PLC,PLC,catholic,novgorodian
+35,Ösel,PLC,PLC,catholic,estonian
+36,Reval,PLC,PLC,catholic,estonian
+37,Livland,PLC,PLC,catholic,latvian
+38,Riga,PLC,PLC,catholic,polish
+39,Goldingen,PLC,PLC,catholic,lithuanian
+40,Memel,PLC,PLC,catholic,lithuanian
+41,Königsberg,PLC,PLC,catholic,prussian
+42,Warmia,PLC,PLC,catholic,prussian
+43,Danzig,PLC,PLC,catholic,prussian
+44,Hamburg,GER,GER,protestant,lower_saxon
+45,Lübeck,GER,GER,protestant,lower_saxon
+46,Rostock,GER,GER,protestant,pommeranian
+47,Stralsund,PLC,PLC,catholic,polish
+48,Kolberg,PLC,PLC,catholic,polish
+49,Neumark,PLC,PLC,catholic,saxon
+50,Berlin,PLC,PLC,catholic,saxon
+51,Ruppin,GER,GER,protestant,saxon
+52,Magdeburg,GER,GER,protestant,saxon
+53,Lüneburg,GER,GER,protestant,lower_saxon
+54,Stade,FRA,RUM,protestant,lower_saxon
+55,Oldenburg,FRA,FRA,protestant,hannoverian
+56,Osnabrück,FRA,FRA,protestant,hannoverian
+57,Brunswick,GER,GER,protestant,lower_saxon
+58,Anhalt,GER,GER,protestant,saxon
+59,Wittenberg,GER,GER,protestant,saxon
+60,Bautzen,PLC,PLC,catholic,saxon
+61,Dresden,GER,GER,protestant,saxon
+62,Leipzig,GER,GER,protestant,saxon
+63,Erfurt,GER,GER,protestant,saxon
+64,Landshut,GER,GER,protestant,bavarian
+65,München,GER,GER,protestant,bavarian
+66,Bamberg,GER,GER,protestant,franconian
+67,Nürnberg,NUM,NUM,protestant,franconian
+68,Memmingen,GER,GER,protestant,swabian
+69,Dortmund,FRA,FRA,protestant,hannoverian
+70,Stuttgart,ITA,ITA,catholic,swabian
+71,Ansbach,GER,GER,protestant,franconian
+72,Breisgau,ITA,ITA,catholic,swabian
+73,Inntal,HAB,HAB,reformed,austrian
+74,Baden,FRA,FRA,protestant,swabian
+75,Straßburg,FRA,FRA,protestant,swabian
+76,Salzburg,SLZ,REB,protestant,bavarian
+77,Heidelberg,FRA,FRA,protestant,hessian
+78,Mainz,FRA,FRA,protestant,hessian
+79,Würzburg,GER,GER,protestant,franconian
+80,Trier,FRA,FRA,protestant,hessian
+81,Oberhessen,GER,GER,protestant,hessian
+82,Westfalen,FRA,FRA,protestant,hannoverian
+83,Nassau,FRA,FRA,protestant,hessian
+84,Berg,FRA,FRA,protestant,hessian
+85,Köln,FRA,REB,protestant,hessian
+86,Münster,FRA,FRA,protestant,hannoverian
+87,Calais,FRA,FRA,protestant,wallonian
+88,Artois,FRA,FRA,protestant,wallonian
+89,Picardie,FRA,FRA,protestant,cosmopolitan_french
+90,Bruges,FRA,FRA,protestant,flemish
+91,Hainaut,FRA,FRA,protestant,wallonian
+92,Brussels,FRA,FRA,protestant,flemish
+93,Liège,FRA,FRA,protestant,wallonian
+94,Luxemburg,FRA,FRA,protestant,wallonian
+95,Breda,FRA,FRA,protestant,dutch
+96,Zeeland,FRA,FRA,protestant,dutch
+97,Amsterdam,FRA,FRA,protestant,dutch
+98,Utrecht,FRA,FRA,protestant,dutch
+99,Gelre,FRA,FRA,protestant,dutch
+100,Friesland,FRA,FRA,protestant,frisian
+101,Genoa,ITA,ITA,catholic,ligurian
+102,Nice,ITA,ITA,catholic,ligurian
+103,Turin,ITA,ITA,catholic,piedmontese
+104,Milan,ITA,ITA,catholic,lombard
+105,Parma,ITA,ITA,catholic,lombard
+106,Modena,ITA,ITA,catholic,romagnan
+107,Brescia,ITA,ITA,catholic,lombard
+108,Verona,ITA,ITA,catholic,venetian
+109,Mantua,ITA,ITA,catholic,romagnan
+110,Trentino,ITA,ITA,catholic,venetian
+111,Friuli,ITA,ITA,catholic,venetian
+112,Venezia,ITA,ITA,catholic,venetian
+113,Ferrara,ITA,ITA,catholic,romagnan
+114,Ravenna,ITA,ITA,catholic,romagnan
+115,Pisa,ITA,ITA,catholic,tuscan
+116,Firenze,ITA,ITA,catholic,tuscan
+117,Siena,ITA,ITA,catholic,tuscan
+118,Roma,ITA,ITA,catholic,umbrian
+119,Ancona,ITA,ITA,catholic,umbrian
+120,Abruzzi,ITA,ITA,catholic,neapolitan
+121,Napoli,ITA,ITA,catholic,neapolitan
+122,Salento,ITA,ITA,catholic,neapolitan
+123,Calabria,ITA,ITA,catholic,sicilian
+124,Messina,SPA,SPA,catholic,sicilian
+125,Palermo,SPA,SPA,catholic,sicilian
+126,Malta,SPA,SPA,catholic,maltese
+127,Sassari,ITA,ITA,catholic,sardinian
+128,Unterkärnten,ITA,ITA,reformed,austrian
+129,Krain,ITA,ITA,reformed,slovene
+130,Istria,ITA,ITA,reformed,dalmatian
+131,Zagreb,RUM,GBR,reformed,croatian
+132,Steiermark,SLZ,SLZ,reformed,austrian
+133,Ob der Enns,RUM,ITA,reformed,austrian
+134,Wien,RUM,FRA,protestant,austrian
+135,Sopron,RUM,GBR,reformed,croatian
+136,Split,DAL,DAL,orthodox,dalmatian
+137,Ragusa,DAL,DAL,catholic,dalmatian
+138,Zeta,RUM,FRA,orthodox,serbian
+139,Hum,RUM,FRA,orthodox,bosnian
+140,Bosnia,RUM,ITA,orthodox,bosnian
+141,Smederevo,RUM,FRA,orthodox,serbian
+142,Corfu,RUM,RUM,orthodox,greek
+143,Vlorë,ALB,ALB,orthodox,albanian
+144,Epirus,RUM,RUM,orthodox,greek
+145,Morea,RUM,RUM,orthodox,greek
+146,Athens,RUM,REB,orthodox,greek
+147,Thessaly,RUM,REB,orthodox,greek
+148,Macedonia,RUM,RUM,sunni,greek
+149,Edirne,RUM,RUM,sunni,greek
+150,Nikopol,RUM,ITA,sunni,bulgarian
+151,Constantinople,RUM,FRA,sunni,turkish
+152,Varasd,RUM,GBR,reformed,croatian
+153,Pest,RUM,ITA,reformed,hungarian
+154,Hont,RUM,FRA,reformed,slovak
+155,Békés,RUM,ITA,orthodox,hungarian
+156,Temes,RUM,FRA,sunni,transylvanian
+157,Bihar,RUM,RUM,orthodox,transylvanian
+158,Maros,RUM,RUM,reformed,transylvanian
+159,Silistria,RUM,RUM,sunni,bulgarian
+160,Oltenia,RUM,RUM,orthodox,romanian
+161,Tîrgoviste,RUM,RUM,orthodox,romanian
+162,Zemplén,RUM,REB,reformed,slovak
+163,Crete,GBR,GBR,orthodox,greek
+164,Naxos,RUM,ITA,orthodox,greek
+165,Bern,ITA,ITA,catholic,swiss
+166,Waldstätte,ITA,ITA,catholic,swiss
+167,Caux,FRA,FRA,protestant,normand
+168,Caen,FRA,FRA,protestant,normand
+169,Armor,GBR,GBR,anglican,breton
+170,Finistère,GBR,GBR,anglican,breton
+171,Vannetais,GBR,GBR,anglican,breton
+172,Nantais,GBR,GBR,anglican,breton
+173,Labourd,FRA,FRA,catholic,gascon
+174,Bordeaux,FRA,FRA,catholic,gascon
+175,Armagnac,SPA,SPA,catholic,gascon
+176,Béarn,SPA,SPA,catholic,gascon
+177,Maine,FRA,FRA,protestant,cosmopolitan_french
+178,Anjou,FRA,FRA,protestant,cosmopolitan_french
+179,Berry,FRA,FRA,protestant,cosmopolitan_french
+180,Haut-Poitou,FRA,FRA,protestant,cosmopolitan_french
+181,Rethel,FRA,FRA,protestant,wallonian
+182,Valois,FRA,FRA,protestant,cosmopolitan_french
+183,Paris,FRA,FRA,protestant,cosmopolitan_french
+184,Orleanais,FRA,FRA,protestant,cosmopolitan_french
+185,Nemours,FRA,FRA,protestant,cosmopolitan_french
+186,Reims,FRA,FRA,protestant,cosmopolitan_french
+187,Barrois,FRA,FRA,protestant,burgundian
+188,Metz,FRA,FRA,protestant,burgundian
+189,Lothringen,FRA,FRA,protestant,burgundian
+190,Bourbonnais,FRA,FRA,protestant,cosmopolitan_french
+191,Nivernais,FRA,FRA,protestant,burgundian
+192,Dijonnais,FRA,FRA,protestant,burgundian
+193,Franche-Comté,FRA,FRA,protestant,burgundian
+194,Périgord,SPA,SPA,catholic,gascon
+195,Limousin,FRA,FRA,protestant,gascon
+196,Toulouse,SPA,SPA,catholic,occitain
+197,Roussillon,SPA,SPA,catholic,catalan
+198,Rouergue,SPA,SPA,catholic,occitain
+199,Auvergne,FRA,FRA,protestant,occitain
+200,Montpellier,SPA,SPA,catholic,occitain
+201,Marseille,SPA,SPA,catholic,occitain
+202,Avignon,SPA,SPA,catholic,occitain
+203,Lyonnais,FRA,FRA,protestant,occitain
+204,Dauphiné,FRA,FRA,protestant,occitain
+205,Chambery,FRA,FRA,protestant,occitain
+206,Corunna,SPA,SPA,catholic,galician
+207,Asturias,SPA,SPA,catholic,leonese
+208,León,SPA,SPA,catholic,leonese
+209,Vizcaya,SPA,SPA,catholic,basque
+210,Navarra,SPA,SPA,catholic,basque
+211,Huesca,SPA,SPA,catholic,aragonese
+212,Girona,SPA,SPA,catholic,catalan
+213,Barcelona,SPA,SPA,catholic,catalan
+214,Zaragoza,SPA,SPA,catholic,aragonese
+215,Valladolid,SPA,SPA,catholic,castillian
+216,Salamanca,SPA,SPA,catholic,leonese
+217,Madrid,SPA,SPA,catholic,castillian
+218,Badajoz,SPA,SPA,catholic,andalucian
+219,Toledo,SPA,SPA,catholic,castillian
+220,València,SPA,SPA,catholic,catalan
+221,Murcia,SPA,SPA,catholic,andalucian
+222,Almería,SPA,SPA,catholic,andalucian
+223,Granada,SPA,SPA,catholic,andalucian
+224,Sevilla,SPA,SPA,catholic,andalucian
+225,Córdoba,SPA,SPA,catholic,andalucian
+226,Gibraltar,SPA,SPA,catholic,andalucian
+227,Lisboa,GBR,GBR,catholic,portugese
+228,Beira,GBR,GBR,anglican,portugese
+229,Beja,GBR,GBR,catholic,portugese
+230,Algarve,GBR,GBR,catholic,portugese
+231,Porto,GBR,GBR,anglican,portugese
+232,Bragança,GBR,GBR,anglican,portugese
+233,Cornwall,GBR,GBR,anglican,cornish
+234,Hampshire,GBR,GBR,anglican,english
+235,Kent,GBR,GBR,anglican,english
+236,London,GBR,GBR,anglican,english
+237,Oxford,GBR,GBR,anglican,english
+238,Essex,GBR,GBR,anglican,english
+239,Gloucester,GBR,GBR,anglican,english
+240,Shrewsbury,GBR,GBR,anglican,english
+241,Glamorgan,GBR,GBR,anglican,welsh
+242,Gwynedd,GBR,GBR,anglican,welsh
+243,Lincolnshire,GBR,GBR,anglican,english
+244,Lancashire,GBR,GBR,anglican,english
+245,York,GBR,GBR,anglican,english
+246,Northumberland,GBR,GBR,anglican,english
+247,Cumbria,GBR,GBR,anglican,english
+248,Lothian,GBR,GBR,anglican,scottish
+249,Ayrshire,GBR,GBR,anglican,scottish
+250,Perth,GBR,GBR,anglican,highland_scottish
+251,Aberdeen,GBR,GBR,anglican,scottish
+252,Inverness,GBR,GBR,anglican,highland_scottish
+253,Outer Hebrides,GBR,GBR,anglican,highland_scottish
+254,Poznan,PLC,PLC,catholic,polish
+255,Kalisz,PLC,PLC,catholic,polish
+256,Plock,PLC,PLC,catholic,polish
+257,Warszawa,PLC,PLC,catholic,polish
+258,Sieradz,PLC,PLC,catholic,polish
+259,Sandomierz,PLC,PLC,catholic,polish
+260,Lublin,PLC,PLC,catholic,polish
+261,Halicz,PLC,PLC,catholic,ruthenian
+262,Krakow,PLC,PLC,catholic,polish
+263,Ratibor,PLC,PLC,catholic,schlesian
+264,Breslau,PLC,PLC,catholic,saxon
+265,Brno,PLC,PLC,catholic,czech
+266,Prague,BOH,BOH,protestant,czech
+267,Plzen,BOH,BOH,protestant,czech
+268,Suceava,PLC,PLC,catholic,ruthenian
+269,Podlasie,PLC,PLC,catholic,polish
+270,Trakai,PLC,PLC,catholic,lithuanian
+271,Samogitia,PLC,PLC,catholic,lithuanian
+272,Vilna,PLC,PLC,catholic,lithuanian
+273,Latgalia,PLC,PLC,catholic,polish
+274,Pskov,PLC,PLC,catholic,novgorodian
+275,Polotsk,PLC,PLC,catholic,polish
+276,Minsk,PLC,PLC,catholic,polish
+277,Brest,PLC,PLC,catholic,polish
+278,Pinsk,PLC,PLC,catholic,ruthenian
+279,Volhynia,PLC,PLC,catholic,ruthenian
+280,Kiev,PLC,PLC,catholic,ruthenian
+281,Podolia,PLC,PLC,catholic,ruthenian
+282,Yedisan,PLC,PLC,catholic,ruthenian
+283,Zaporozhia,PLC,PLC,catholic,ruthenian
+284,Crimea,PLC,PLC,catholic,crimean
+285,Caffa,PLC,PLC,catholic,pontic_greek
+286,Azov,PLC,PLC,catholic,crimean
+287,Kuban,PLC,PLC,catholic,crimean
+288,Lower Don,PLC,PLC,catholic,mishary
+289,Chernigov,PLC,PLC,catholic,ruthenian
+290,Poltava,PLC,PLC,catholic,ruthenian
+291,Kharkov,PLC,PLC,catholic,ruthenian
+292,Mogilev,PLC,PLC,catholic,ruthenian
+293,Smolensk,PLC,PLC,catholic,ruthenian
+294,Tver,PLC,PLC,catholic,russian
+295,Moskva,PLC,PLC,catholic,russian
+296,Kaluga,PLC,PLC,catholic,russian
+297,Bryansk,PLC,PLC,catholic,russian
+298,Kursk,PLC,PLC,catholic,ruthenian
+299,Voronezh,PLC,PLC,catholic,ruthenian
+300,Tula,PLC,PLC,catholic,russian
+301,Ryazan,PLC,PLC,catholic,russian
+302,Tambov,PLC,PLC,catholic,mishary
+303,Saratov,PLC,PLC,catholic,mishary
+304,Penza,PLC,PLC,catholic,russian
+305,Perm,PLC,PLC,catholic,polish
+306,Nizhny Novgorod,PLC,PLC,catholic,russian
+307,Vladimir,PLC,PLC,catholic,russian
+308,Yaroslavl,PLC,PLC,catholic,russian
+309,Olonets,PLC,PLC,catholic,novgorodian
+310,Novgorod,PLC,PLC,catholic,novgorodian
+311,Kholm,PLC,PLC,catholic,novgorodian
+312,Beloozero,PLC,PLC,catholic,novgorodian
+313,Soroka,PLC,PLC,catholic,novgorodian
+314,Vologda,PLC,PLC,catholic,russian
+315,Finnmark,PLC,PLC,catholic,polish
+316,Kocaeli,RUM,RUM,sunni,turkish
+317,Hüdavendigar,RUM,RUM,sunni,turkish
+318,Sugla,RUM,RUM,sunni,turkish
+319,Mentese,RUM,RUM,sunni,turkish
+320,Rhodes,GBR,GBR,anglican,greek
+321,Cyprus,ACH,ACH,orthodox,greek
+322,Kütahya,RUM,RUM,sunni,turkish
+323,Konya,RUM,RUM,sunni,turkish
+324,Karaman,RUM,RUM,sunni,turkish
+325,Kastamonu,RUM,RUM,sunni,turkish
+326,Ankara,RUM,RUM,sunni,turkish
+327,Adana,RUM,RUM,sunni,turkish
+328,Sinop,RUM,RUM,sunni,turkish
+329,Sivas,RUM,RUM,sunni,turkish
+330,Trebizond,PER,PER,sunni,persian
+331,Erzurum,RUM,RUM,coptic,armenian
+332,Marash,RUM,RUM,sunni,turkish
+333,Mallorca,SPA,SPA,catholic,catalan
+334,Tangiers,SPA,SPA,catholic,moroccan
+335,Melilla,SPA,SPA,sunni,berber
+336,Tlemcen,TLC,TLC,protestant,berber
+337,Oran,FRA,REB,protestant,algerian
+338,Mitidja,FRA,REB,protestant,algerian
+339,Kabylia,ITA,ITA,sunni,berber
+340,Constantine,ITA,REB,sunni,berber
+341,Tunis,ITA,RUM,catholic,tunisian
+342,Gharb,SPA,SPA,catholic,moroccan
+343,Fez,SPA,SPA,catholic,moroccan
+344,Marrakech,SPA,SPA,catholic,moroccan
+345,Abda,SPA,SPA,catholic,moroccan
+346,Tafilalt,FRA,FRA,protestant,moroccan
+347,Ifni,SPA,SPA,sunni,berber
+348,Sus,FRA,REB,protestant,berber
+349,Figuig,TLC,TLC,protestant,berber
+350,Laghouat,ITA,ITA,sunni,algerian
+351,Biskra,ITA,ITA,sunni,berber
+352,Gafsa,ITA,RUM,sunni,tunisian
+353,Tataouine,ITA,RUM,sunni,tunisian
+354,Tripoli,ITA,RUM,sunni,tunisian
+355,Sirt,ITA,RUM,catholic,tunisian
+356,Benghazi,RUM,RUM,sunni,al_misr_arabic
+357,Darnah,RUM,RUM,sunni,al_misr_arabic
+358,Alexandria,RUM,RUM,sunni,al_misr_arabic
+359,Fayyum,RUM,RUM,sunni,al_misr_arabic
+360,Qus,RUM,RUM,sunni,al_misr_arabic
+361,Cairo,RUM,RUM,sunni,al_misr_arabic
+362,Rosetta,RUM,RUM,sunni,al_misr_arabic
+363,Damietta,RUM,RUM,sunni,al_misr_arabic
+364,Gaza,RUM,RUM,sunni,al_suryah_arabic
+365,Sinai,RUM,RUM,sunni,bedouin_arabic
+366,Gran Canaria,SPA,SPA,catholic,castillian
+367,The Azores,GBR,GBR,anglican,portugese
+368,Madeira,GBR,GBR,anglican,portugese
+369,Orkney,GBR,GBR,anglican,norwegian
+370,Reykjavik,GBR,GBR,anglican,icelandic
+371,Akureyri,GBR,GBR,anglican,icelandic
+372,Tyrone,GBR,GBR,anglican,irish
+373,Pale,GBR,GBR,anglican,irish
+374,Leinster,GBR,GBR,anglican,irish
+375,Limerick,GBR,GBR,anglican,irish
+376,Connaught,GBR,GBR,anglican,irish
+377,Aleppo,RUM,RUM,sunni,al_suryah_arabic
+378,Tarabulus,RUM,RUM,sunni,al_suryah_arabic
+379,Jerusalem,RUM,RUM,sunni,al_suryah_arabic
+380,Al Karak,RUM,RUM,sunni,bedouin_arabic
+381,Ajlun,RUM,RUM,sunni,al_suryah_arabic
+382,Damascus,RUM,RUM,sunni,al_suryah_arabic
+383,Tabuk,RUM,RUM,sunni,bedouin_arabic
+384,Medina,RUM,RUM,sunni,hejazi_culture
+385,Mecca,RUM,REB,sunni,hejazi_culture
+386,Bishah,RUM,RUM,sunni,hejazi_culture
+387,Mokha,RUM,RUM,sunni,yemeni_culture
+388,Aden,RUM,RUM,sunni,yemeni_culture
+389,Mukalla,RUM,RUM,sunni,yemeni_culture
+390,Sana'a,RUM,RUM,sunni,yemeni_culture
+391,Najran,RUM,RUM,sunni,yemeni_culture
+392,Al-Arid,RUM,RUM,sunni,bedouin_arabic
+393,Jabal Shammar,RUM,RUM,sunni,bedouin_arabic
+394,Al-Qatif,RUM,RUM,sunni,gulf_arabic
+395,Qatar,RUM,RUM,sunni,gulf_arabic
+396,Bahrain,RUM,RUM,sunni,gulf_arabic
+397,Bani Yas,RUM,RUM,sunni,gulf_arabic
+398,Qawasim,RUM,RUM,sunni,gulf_arabic
+399,Batinah,PER,PER,sunni,omani_culture
+400,Muscat,BHA,BHA,ibadi,omani_culture
+401,Dhofar,PER,PER,sunni,mahri_culture
+402,Qishn,HDR,HDR,sunni,mahri_culture
+403,Nizwa,PER,PER,sunni,omani_culture
+404,Liwa,RUM,RUM,sunni,gulf_arabic
+405,Tadmor,RUM,RUM,sunni,bedouin_arabic
+406,Haditha,PER,PER,sunni,al_iraqiya_arabic
+407,Ar Raqqa,RUM,RUM,sunni,al_suryah_arabic
+408,Basra,PER,PER,sunni,al_iraqiya_arabic
+409,Karbala,PER,PER,sunni,al_iraqiya_arabic
+410,Baghdad,PER,PER,sunni,al_iraqiya_arabic
+411,Mosul,PER,PER,sunni,kurdish
+412,Ahvaz,PER,PER,sunni,al_iraqiya_arabic
+413,Khorramabad,PER,PER,sunni,luri
+414,Hamadan,PER,PER,sunni,luri
+415,Kirkuk,PER,PER,sunni,kurdish
+416,Tabriz,PER,PER,sunni,azerbaijani
+417,Lahijan,PER,PER,sunni,mazandarani
+418,Diyarbakir,RUM,RUM,sunni,kurdish
+419,Yerevan,PER,PER,sunni,armenian
+420,Ganja,PER,PER,sunni,azerbaijani
+421,Shirvan,PER,PER,sunni,azerbaijani
+422,Imereti,PER,PER,sunni,georgian
+423,Tbilisi,PER,PER,sunni,georgian
+424,Ardabil,PER,PER,sunni,azerbaijani
+425,Dagestan,PER,PER,sunni,dagestani
+426,Amol,PER,PER,sunni,mazandarani
+427,Qumis,PER,PER,sunni,khorasani
+428,Teheran,PER,PER,sunni,persian
+429,Isfahan,PER,PER,sunni,persian
+430,Dashtistan,PER,PER,sunni,persian
+431,Mogostan,PER,PER,sunni,persian
+432,Kerman,PER,PER,sunni,persian
+433,Yazd,PER,PER,sunni,persian
+434,Quhistan,BHA,BHA,sikhism,rajput
+435,Zaranj,PER,PER,sunni,khorasani
+436,Birjand,PER,PER,sunni,khorasani
+437,Kopet Dag,PER,PER,sunni,turkmeni
+438,Karakum,PER,PER,sunni,turkmeni
+439,Mangyshlak,PER,PER,sunni,nogaybak
+440,Qaraqalpak,PER,PER,sunni,uzbehk
+441,Khiva,PER,PER,sunni,uzbehk
+442,Bukhara,PER,PER,sunni,uzbehk
+443,Ustyurt,PER,PER,sunni,nogaybak
+444,Charjuy,PER,PER,sunni,uzbehk
+445,Merv,PER,PER,sunni,turkmeni
+446,Herat,PER,PER,sunni,khorasani
+447,Kandahar,PER,PER,sunni,afghani
+448,Gazni,PER,PER,sunni,afghani
+449,Ghor,PER,PER,sunni,afghani
+450,Balkh,PER,PER,sunni,afghani
+451,Kabul,PER,PER,sunni,afghani
+452,Badakhshan,AFG,AFG,sunni,afghani
+453,Qarshi,PER,PER,sunni,uzbehk
+454,Samarkand,PER,PER,sunni,uzbehk
+455,Kyzylkum,PER,PER,sunni,khazak
+456,Turkestan,PLC,PLC,catholic,khazak
+457,Tashkent,PER,PER,sunni,uzbehk
+458,Kokand,PER,PER,sunni,uzbehk
+459,Taraz,PLC,PLC,catholic,khazak
+460,Uzkend,PER,PER,sunni,kirgiz
+461,Almaty,PLC,PLC,catholic,khazak
+462,Odishi,PER,PER,sunni,georgian
+463,Circassia,PLC,PLC,catholic,circassian
+464,Astrakhan,PLC,PLC,catholic,astrakhani
+465,Nogay,PLC,PLC,catholic,nogaybak
+466,Sarai,PLC,PLC,catholic,astrakhani
+467,Borisoglebsk,PLC,PLC,catholic,mishary
+468,Manych,PLC,PLC,catholic,astrakhani
+469,Ryn,PLC,PLC,catholic,nogaybak
+470,Bayuly,PLC,PLC,catholic,nogaybak
+471,Alimuly,PLC,PLC,catholic,nogaybak
+472,Zhetyru,PLC,PLC,catholic,nogaybak
+473,Samara,PLC,PLC,catholic,russian
+474,Yaik,PLC,PLC,catholic,russian
+475,Bashkortostan,PLC,PLC,catholic,polish
+476,Kypshak,PLC,PLC,catholic,khazak
+477,Nadym,PLC,PLC,catholic,khazak
+478,Argyn,PLC,PLC,catholic,khazak
+479,Kerey,PLC,PLC,catholic,polish
+480,Pegaya Orda,PLC,PLC,catholic,polish
+481,Bermuda,GBR,GBR,catholic,portugese
+482,Bahamas,C02,C02,catholic,castillian
+483,Turks Islands,C10,C10,catholic,castillian
+484,Havana,C10,C10,catholic,mexican
+485,Moron,C10,C10,catholic,mexican
+486,Guantanamo,C10,C10,catholic,mexican
+487,Jamaica,C10,C10,catholic,mexican
+488,Zui,C10,C10,catholic,mexican
+489,Tortuga,C10,C10,catholic,mexican
+490,Bani,C10,C10,catholic,mexican
+491,Aruba,C10,C10,catholic,mexican
+492,Borikén,C10,C10,catholic,mexican
+493,St. Thomas,C10,C10,catholic,mexican
+494,St. Kitts,C10,C10,catholic,mexican
+495,Antigua,C10,C10,catholic,mexican
+496,Guadelupe,C10,C10,catholic,mexican
+497,Dominica,C10,C10,catholic,mexican
+498,Martinique,C10,C10,catholic,mexican
+499,St. Lucia,C10,C10,catholic,mexican
+500,St. Vincent,C10,C10,catholic,mexican
+501,Barbados,C10,C10,catholic,mexican
+502,Trinidad,C23,C23,protestant,carib
+503,Kutch,BHA,BHA,sikhism,saurashtri
+504,Thatta,BHA,BHA,sikhism,sindhi
+505,Sehwan,BHA,BHA,sikhism,sindhi
+506,Multan,BHA,BHA,sikhism,panjabi
+507,Lahore,BHA,BHA,sikhism,panjabi
+508,Kashmir,BHA,BHA,sikhism,panjabi
+509,Kangra,BHA,BHA,sikhism,pahari
+510,Sirhind,BHA,BHA,sikhism,panjabi
+511,Garhwal,BHA,BHA,sikhism,pahari
+512,Jangladesh,BHA,BHA,sikhism,rajput
+513,Jaisalmer,BHA,BHA,sikhism,rajput
+514,Marwar,BHA,BHA,sikhism,rajput
+515,Girnar,BHA,BHA,sikhism,saurashtri
+516,Baroda,BHA,BHA,sikhism,gujarati
+517,Surat,BHA,BHA,sikhism,gujarati
+518,Chittor,BHA,BHA,sikhism,rajput
+519,Dhundar,BHA,BHA,sikhism,rajput
+520,Mewat,BHA,BHA,sikhism,rajput
+521,Rajkot,BHA,BHA,sikhism,saurashtri
+522,Delhi,BHA,BHA,sikhism,kanauji
+523,Lucknow,BHA,BHA,sikhism,avadhi
+524,Central Doab,BHA,BHA,sikhism,kanauji
+525,Gird,BHA,BHA,sikhism,rajput
+526,Mandu,BHA,BHA,sikhism,malvi
+527,Burhanpur,BHA,BHA,sikhism,marathi
+528,Hadoti,BHA,BHA,sikhism,rajput
+529,Thana,BHA,BHA,sikhism,marathi
+530,Dabhol,BHA,BHA,sikhism,marathi
+531,North Kanara,BHA,BHA,sikhism,kannada
+532,Raichur,BHA,BHA,hinduism,kannada
+533,Mysore,BHA,BHA,sikhism,kannada
+534,Calicut,BHA,BHA,sikhism,tamil
+535,Kochin,BHA,BHA,sikhism,tamil
+536,Madurai,BHA,BHA,sikhism,tamil
+537,Venad,BHA,BHA,sikhism,tamil
+538,Kongu,BHA,BHA,sikhism,tamil
+539,Tondainadu,BHA,BHA,sikhism,tamil
+540,Cuddalore,BHA,BHA,sikhism,tamil
+541,Vijayanagar,BHA,BHA,hinduism,kannada
+542,Golconda,BHA,BHA,sikhism,telegu
+543,Velanadu,BHA,BHA,sikhism,telegu
+544,Ahmadnagar,BHA,BHA,sikhism,marathi
+545,Daulatabad,BHA,BHA,sikhism,marathi
+546,East Berar,BHA,BHA,sikhism,gondi
+547,Bastar,BHA,BHA,hinduism,gondi
+548,Illichpur,BHA,BHA,sikhism,marathi
+549,Kalingandhra,BHA,BHA,hinduism,telegu
+550,Mahakoshal,BHA,BHA,sikhism,malvi
+551,Mandla,BHA,BHA,sikhism,gondi
+552,Cuttack,BHA,BHA,sikhism,oriya
+553,Sambalpur,BHA,BHA,sikhism,garjati
+554,Baisi Rajya,BHA,BHA,sikhism,nepali
+555,Jaunpur,BHA,BHA,sikhism,avadhi
+556,Lower Doab,BHA,BHA,sikhism,avadhi
+557,Katmandu,BHA,BHA,vajrayana,nepali
+558,Pataliputra,BHA,BHA,sikhism,bihari
+559,Jhansi,BHA,BHA,sikhism,malvi
+560,Jharkhand,BHA,BHA,sikhism,bihari
+561,Bengal Delta,BHA,BHA,sikhism,bengali
+562,Koch,BHA,BHA,sikhism,bengali
+563,Gauda,BHA,BHA,sikhism,bengali
+564,Dhaka,BHA,BHA,sikhism,bengali
+565,Paro,BHA,BHA,buddhism,tibetan
+566,Assam,BHA,BHA,sikhism,assamese
+567,Silhet,BHA,BHA,hinduism,bengali
+568,Chittagong,BHA,BHA,sikhism,bengali
+569,Bijapur,BHA,BHA,sikhism,kannada
+570,Naga,BHA,BHA,sikhism,chin
+571,Darrang,BHA,BHA,sikhism,assamese
+572,Kotte,BHA,BHA,sikhism,sinhala
+573,Cachar,BHA,BHA,sikhism,chin
+574,The Andamans,PER,PER,sunni,persian
+575,Gwadar,BHA,BHA,sikhism,sindhi
+576,Kalat,BHA,BHA,sikhism,sindhi
+577,Quetta,BHA,BHA,sikhism,panjabi
+578,Roh,AFG,AFG,sunni,afghani
+579,Mrauk U,BHA,BHA,sikhism,bengali
+580,Kale,BHA,BHA,buddhism,chin
+581,Sagaing,BHA,BHA,sunni,burmese
+582,Mong Yang,BHA,BHA,sikhism,shan
+583,Hsenwi,BHA,BHA,sikhism,shan
+584,Ava,BHA,BHA,sikhism,burmese
+585,Taungoo,BHA,BHA,sikhism,burmese
+586,Pegu,BHA,BHA,buddhism,mon
+587,Kengtung,BHA,BHA,sikhism,shan
+588,Mong Nai,BHA,BHA,sikhism,shan
+589,Chiang Mai,AYU,AYU,buddhism,northern_thai
+590,Martaban,BHA,BHA,sikhism,burmese
+591,Tavoy,BHA,BHA,buddhism,mon
+592,Ratchaburi,BHA,BHA,buddhism,central_thai
+593,Nakhon Si Thammara,BHA,BHA,buddhism,central_thai
+594,Pattani,BHA,BHA,buddhism,malayan
+595,Perak,AYU,AYU,buddhism,malayan
+596,Malacca,GBR,GBR,buddhism,malayan
+597,Johor,GBR,GBR,buddhism,malayan
+598,Pahang,AYU,AYU,buddhism,malayan
+599,Kelantan,AYU,AYU,buddhism,malayan
+600,Ayutthaya,AYU,AYU,buddhism,central_thai
+601,Sukhothai,BHA,BHA,buddhism,central_thai
+602,Chiang Rai,AYU,AYU,buddhism,northern_thai
+603,Nakhon Thung Yai,AYU,AYU,buddhism,central_thai
+604,Oudong,AYU,AYU,buddhism,khmer
+605,Prey Nokor,AYU,AYU,buddhism,khmer
+606,Panduranga,AYU,AYU,buddhism,khmer
+607,Vijaya,ANN,ANN,mahayana,cham
+608,Attapeu,CHK,CHK,buddhism,lao
+609,Angkor,AYU,AYU,buddhism,khmer
+610,Thanh Hoa,WUU,WUU,mahayana,vietnamese
+611,Sikhottabong,AYU,AYU,buddhism,lao
+612,Khorat,AYU,AYU,buddhism,khmer
+613,Dong Kinh,WUU,WUU,mahayana,vietnamese
+614,Vientiane,AYU,AYU,buddhism,lao
+615,Luang Prabang,AYU,AYU,buddhism,lao
+616,Cao Bang,TOK,TOK,mahayana,vietnamese
+617,Kutaraja,GBR,GBR,anglican,acehnese
+618,Riau,PSA,PSA,sunni,sumatran
+619,Batak,GBR,GBR,hinduism,sumatran
+620,Siak,GBR,GBR,buddhism,sumatran
+621,Bengkulu,GBR,GBR,hinduism,sumatran
+622,Palembang,GBR,GBR,hinduism,sumatran
+623,Tulangbewang,GBR,GBR,buddhism,sumatran
+624,Banten,AYU,AYU,buddhism,sundanese
+625,Kawali,AYU,AYU,buddhism,sundanese
+626,Karta,AYU,AYU,buddhism,javanese
+627,Blambangan,AYU,AYU,buddhism,javanese
+628,Surabaya,AYU,AYU,buddhism,javanese
+629,Demak,AYU,AYU,buddhism,javanese
+630,Kalapa,AYU,AYU,buddhism,sundanese
+631,Bali,AYU,AYU,buddhism,javanese
+632,Sumbawa,AYU,AYU,buddhism,javanese
+633,Flores,GBR,GBR,catholic,portugese
+634,Sumba,HDR,REB,sunni,yemeni_culture
+635,West Timor,HDR,HDR,sunni,yemeni_culture
+636,Brunei,KUT,KUT,sunni,bornean
+637,Api-Api,KUT,KUT,sunni,bornean
+638,Kutai,KUT,KUT,sunni,bornean
+639,Banjar,KUT,KUT,sunni,bornean
+640,Sambas,KUT,KUT,sunni,bornean
+641,Makassar,AYU,AYU,buddhism,sulawesi
+642,Kolaka,AYU,AYU,buddhism,sulawesi
+643,Poso,JAP,JAP,mahayana,sulawesi
+644,Manado,WUU,WUU,animism,sulawesi
+645,Buru,GBR,GBR,animism,moluccan
+646,Ambon,GBR,GBR,animism,moluccan
+647,Ceram,GBR,GBR,anglican,moluccan
+648,Halmahera,GBR,GBR,anglican,english
+649,Ternate,GBR,GBR,animism,moluccan
+650,Tidore,GBR,GBR,animism,moluccan
+651,Sulu,WUU,WUU,sunni,filipino
+652,Maguindanao,WUU,WUU,animism,filipino
+653,Lanao,WUU,WUU,animism,wu
+654,Samar,WUU,WUU,animism,filipino
+655,Palawan,BEI,BEI,sunni,filipino
+656,Manila,WUU,WUU,animism,filipino
+657,Ilocos,JAP,JAP,mahayana,filipino
+658,Cagayan,SPA,SPA,animism,filipino
+659,Lingga,BHA,BHA,hinduism,sumatran
+660,Sibsongbanna,AYU,AYU,buddhism,shan
+661,Dali,AYU,AYU,buddhism,bai
+662,Yunnan,AYU,REB,buddhism,bai
+663,Guangnan,WUU,WUU,buddhism,bai
+664,Lingyun,WUU,WUU,confucianism,hakka
+665,Shiuhing,WUU,WUU,confucianism,cantonese
+666,Kingchow,WUU,WUU,confucianism,chimin
+667,Canton,WUU,WUU,confucianism,cantonese
+668,Macau,WUU,WUU,confucianism,cantonese
+669,Fuzhou,MNG,MNG,confucianism,chimin
+670,Ganzhou,MNG,MNG,confucianism,hakka
+671,Changsha,WUU,WUU,confucianism,xiang
+672,Wuling,MNG,MNG,catholic,xiang
+673,Zhenyuan,WUU,WUU,buddhism,miao
+674,Guiyang,WUU,WUU,animism,hakka
+675,Umung,AYU,AYU,animism,yi
+676,Shigatse,BHA,BHA,vajrayana,tibetan
+677,Lhasa,AYU,AYU,buddhism,tibetan
+678,Tachienlu,AYU,AYU,buddhism,tibetan
+679,Chengdu,WUU,WUU,confucianism,sichuanese
+680,Chongqing,PLC,PLC,catholic,sichuanese
+681,Yichang,PLC,PLC,catholic,sichuanese
+682,Wuchang,MNG,MNG,catholic,hubei
+683,Nanchang,MNG,MNG,confucianism,gan
+684,Hangzhou,MNG,MNG,confucianism,wu
+685,Yangzhou,MNG,MNG,catholic,jianghuai
+686,Anqing,MNG,MNG,catholic,jianghuai
+687,Nanyang,MNG,MNG,catholic,zhongyuan
+688,Kaifeng,MNG,MNG,catholic,zhongyuan
+689,Hanzhong,PLC,PLC,catholic,xibei
+690,Qingzhou,MNG,MNG,confucianism,shandong_culture
+691,Jinan,MNG,MNG,confucianism,shandong_culture
+692,Huaiqing,MNG,MNG,catholic,jin
+693,Taiyuan,PLC,PLC,catholic,jin
+694,Pingyang,MNG,MNG,catholic,jin
+695,Hejian,MNG,MNG,catholic,chihan
+696,Baoding,MNG,MNG,catholic,chihan
+697,Datong,PLC,PLC,catholic,jin
+698,Ningxia,PLC,PLC,catholic,xibei
+699,Lanzhou,PLC,PLC,catholic,xibei
+700,Xi'an,MNG,MNG,catholic,xibei
+701,Ordos,PLC,PLC,catholic,mongol
+702,Hohhot,PLC,PLC,catholic,mongol
+703,Chengde,PLC,PLC,catholic,chahar
+704,Ningyuan,MNG,MNG,catholic,chihan
+705,Gyegu,PLC,PLC,catholic,tibetan
+706,Tsaidam,PLC,PLC,catholic,oirats
+707,Yumen,PLC,PLC,catholic,oirats
+708,Zhangye,PLC,PLC,catholic,xibei
+709,Alxa,PLC,PLC,catholic,mongol
+710,Hotan,PER,PER,sunni,uyghur
+711,Qarqan,PER,PER,sunni,uyghur
+712,Aksu,PER,PER,sunni,uyghur
+713,Bechbaliq,PLC,PLC,catholic,uyghur
+714,Hoboksar,PLC,PLC,catholic,oirats
+715,Urumqi,PLC,PLC,catholic,uyghur
+716,Tannu Uriankhai,PLC,PLC,catholic,polish
+717,Kherlen,PLC,PLC,catholic,khalkha
+718,Kobdo,PLC,PLC,catholic,oirats
+719,Uliastai,PLC,PLC,catholic,khalkha
+720,Dornogovi,PLC,PLC,catholic,khalkha
+721,Setsen,PLC,PLC,catholic,khalkha
+722,Jirem,PLC,PLC,catholic,chahar
+723,Xilin Gol,PLC,PLC,catholic,mongol
+724,Hulunbuir,PLC,PLC,catholic,buryat
+725,Cicigar,KRC,KRC,tengri_pagan_reformed,chahar
+726,Shenyang,PLC,PLC,catholic,chahar
+727,Aigun,PLC,PLC,tengri_pagan_reformed,manchu
+728,Tuwan,PLC,PLC,tengri_pagan_reformed,manchu
+729,Bohori,NHX,NHX,animism,manchu
+730,Girin,PLC,PLC,confucianism,manchu
+731,Ilan Hala,PLC,PLC,confucianism,manchu
+732,Hamheung,PLC,PLC,catholic,korean
+733,Hwangju,PLC,PLC,confucianism,korean
+734,Wonju,PLC,PLC,catholic,korean
+735,Hanseong,PLC,PLC,confucianism,korean
+736,Sangju,KOR,KOR,confucianism,korean
+737,Jeonju,KOR,KOR,confucianism,korean
+738,Sakam,WUU,WUU,animism,chimin
+739,Kashgar,PER,PER,sunni,uyghur
+740,Chanderi,BHA,BHA,sikhism,malvi
+741,Cumana,C23,C23,protestant,swedish
+742,Angostura,C23,C23,catholic,portugese
+743,Essequibo,C23,C23,protestant,saxon
+744,Demerara,C04,C04,catholic,brazilian
+745,Paramaribo,C04,C04,catholic,brazilian
+746,Cayenne,C04,C04,catholic,brazilian
+747,Amapa,C04,C04,catholic,brazilian
+748,Belem,C04,C04,catholic,brazilian
+749,Maranhao,C04,C04,catholic,brazilian
+750,Crato,C04,C04,catholic,brazilian
+751,Ceara,C04,C04,catholic,brazilian
+752,Oeiras,C04,C04,catholic,brazilian
+753,Rio Grande,C04,C04,catholic,brazilian
+754,Paraiba,C04,C04,catholic,brazilian
+755,Pernambuco,C04,C04,catholic,brazilian
+756,Bahia,C04,C04,catholic,portugese
+757,Ilheus,C04,C04,catholic,portugese
+758,Goias,C04,C04,catholic,brazilian
+759,Diamantina,C04,C04,catholic,brazilian
+760,Porto Seguro,C04,C04,catholic,portugese
+761,Espirito Santo,C04,C04,catholic,brazilian
+762,Sao Tome,C04,C04,catholic,brazilian
+763,Rio de Janeiro,C04,C04,catholic,brazilian
+764,Santo Amaro,C04,C04,catholic,brazilian
+765,Minas Gerais,C04,C04,catholic,brazilian
+766,Sao Vicente,C04,C04,catholic,portugese
+767,Ortelsburg,PLC,PLC,catholic,prussian
+768,Guayra,C04,C04,catholic,portugese
+769,Curitiba,C04,C04,catholic,brazilian
+770,Braslaw,PLC,PLC,catholic,lithuanian
+771,Vitebsk,PLC,PLC,catholic,ruthenian
+772,Uruguay,C09,C09,catholic,platinean
+773,Banda Oriental,C09,C09,catholic,platinean
+774,Al-Junaynah,ITA,ITA,shamanism,tunjur
+775,Asuncion,C09,C09,anglican,platinean
+776,Concepcion,C09,C09,animism,tupinamba
+777,Corrientes,C09,C09,anglican,castillian
+778,Rio de la Plata,C09,C09,catholic,castillian
+779,Tandil,C09,C09,catholic,platinean
+780,Candelaria,C09,C09,catholic,platinean
+781,Puerto Deseado,C09,C09,catholic,castillian
+782,Tierra del Fuego,C09,C09,anglican,english
+783,Kawesqar,C09,C09,anglican,platinean
+784,Huillimapu,C09,C09,catholic,platinean
+785,Pehuenmapu,C09,C09,anglican,platinean
+786,Carmen,C09,C09,catholic,platinean
+787,Picunmapu,C09,C09,catholic,platinean
+788,Angoche,GBR,RUM,sunni,swahili
+789,Mtetwa,GBR,RUM,anglican,portugese
+790,Chaco Austral,C09,C09,catholic,castillian
+791,Catamarca,C09,C09,catholic,platinean
+792,Copiapo,C09,C09,catholic,castillian
+793,Iquique,C17,REB,catholic,platinean
+794,Jujuy,C09,C09,inti,diaguita
+795,Potosi,C15,C15,inti,aimara
+796,Arica,C09,C09,catholic,platinean
+797,Oruro,C15,C15,inti,aimara
+798,Mbwila,GBR,RUM,catholic,mbundu
+799,Chaco Boreal,PTG,PTG,animism,tupinamba
+800,Chiquitos,C15,C15,catholic,platinean
+801,Cochabamba,C15,C15,catholic,platinean
+802,Chuquiabo,C15,C15,inti,aimara
+803,Moxos,C15,C15,catholic,platinean
+804,Puno,C15,C15,inti,aimara
+805,Arequipa,C15,C15,catholic,platinean
+806,Nazca,C15,C15,catholic,platinean
+807,Abancay,C15,C15,inti,inca
+808,Cuzco,C15,C15,inti,inca
+809,Lima,C15,C15,inti,inca
+810,Huancavelica,C15,C15,inti,inca
+811,Jauja,C15,C15,inti,inca
+812,Chanchan,C15,C15,inti,chimuan
+813,Cajamarca,INC,INC,inti,inca
+814,Huanuco,INC,REB,inti,inca
+815,Iquitos,C14,C14,catholic,platinean
+816,Tumbes,C14,C14,inti,chimuan
+817,Canari,C14,C14,inti,cara
+818,Canelos,C14,C14,catholic,platinean
+819,Guayaquil,C14,C14,inti,cara
+820,Quito,C14,C14,inti,cara
+821,Quijos,C14,C14,catholic,platinean
+822,Caqueta,C14,C14,catholic,platinean
+823,Cauca,C14,C14,catholic,mexican
+824,Mariquita,C14,C14,catholic,mexican
+825,Bogota,C14,C14,inti,muisca
+826,Choco,C14,C14,catholic,platinean
+827,Antioquía,C14,C14,protestant,platinean
+828,Cartagena,C14,C14,catholic,platinean
+829,Magdalena,C14,C14,catholic,platinean
+830,Maracaibo,C14,C14,catholic,platinean
+831,Caracas,C14,C14,catholic,platinean
+832,Tunja,C14,C14,inti,muisca
+833,Algoa Bay,GBR,RUM,catholic,portugese
+834,Barinas,C14,C14,catholic,platinean
+835,Panama,C14,C14,catholic,mexican
+836,Chorotega,C08,C08,catholic,mexican
+837,Nicaragua,C08,C08,catholic,mexican
+838,Mosquito,C08,C08,catholic,mexican
+839,Pipil,C08,C08,mesoamerican_religion,highland_mayan
+840,Honduras,C08,C08,catholic,mexican
+841,Guatemala,C08,C08,mesoamerican_religion,highland_mayan
+842,Petén,C08,C08,mesoamerican_religion,putun
+843,Belize,C08,C08,mesoamerican_religion,yucatec
+844,Zapotec,C08,C08,mesoamerican_religion,zapotek
+845,Campeche,C08,C08,mesoamerican_religion,yucatec
+846,Sotuta,C08,C08,mesoamerican_religion,yucatec
+847,Mixtec,C08,C08,nahuatl,mixtec
+848,Tohancapan,C08,C08,nahuatl,totonac
+849,Tlapanec,C08,C08,nahuatl,tlapanec
+850,Tlaxcala,C08,C08,nahuatl,aztek
+851,Zacatula,C11,C11,nahuatl,tlapanec
+852,Mexico,C08,C08,nahuatl,aztek
+853,Tlapacoyan,C08,C08,nahuatl,aztek
+854,Sayultecas,C08,C08,nahuatl,tepic
+855,Totorames,C08,C08,catholic,mexican
+856,Zacatecas,C08,C08,totemism,mescalero
+857,Guachichil,C08,C08,totemism,lipan
+858,Tamaulipas,C08,C08,mesoamerican_religion,wastek
+859,Sinaloa,C08,C08,catholic,mexican
+860,Tepehuan,C08,C08,catholic,mexican
+861,Coahuila,C08,C08,totemism,apache
+862,Yaqui,C08,C08,catholic,mexican
+863,Suma,C08,C08,totemism,mescalero
+864,Concho,C08,C08,catholic,mexican
+865,Cochimi,C08,C08,catholic,mexican
+866,Guaycura,C08,C08,catholic,mexican
+867,Cahuilla,C18,C18,protestant,piman
+868,Chumash,C18,C18,protestant,piman
+869,T'epot'aha'l,C18,C18,protestant,mexican
+870,Lakisamni,C18,C18,catholic,mexican
+871,Pomo,C18,C18,catholic,mexican
+872,Shayuusht'la,C20,C20,catholic,catalan
+873,Tsinuk,C20,C20,protestant,mexican
+874,Duwamish,C20,C20,catholic,catalan
+875,Tachii'nii,C18,C18,protestant,navajo
+876,Yavapé,C18,C18,protestant,piman
+877,Akimel,C08,C08,catholic,mexican
+878,Kinyaa'aanii,C08,C08,catholic,mexican
+879,Ndee,C08,C08,totemism,navajo
+880,Ohkay Owingeh,C08,C08,totemism,pueblo
+881,Tsiahahéndé,C08,C08,totemism,mescalero
+882,Mashgaléndé,C08,C08,totemism,mescalero
+883,Tche Sha,C08,C08,catholic,mexican
+884,Auia,C08,C08,totemism,caddo
+885,Gulgahén,C08,C08,totemism,mescalero
+886,Waco,C08,C08,totemism,wichita
+887,Tickanwa'tic,C08,C08,totemism,caddo
+888,Atakapa,C08,C08,totemism,caddo
+889,Nawunena,C08,C08,totemism,wichita
+890,Tokinahyup,C08,C08,catholic,mexican
+891,Naisha,C08,C08,totemism,pawnee
+892,Kitkit'ish,C13,C13,anglican,american
+893,Chitimacha,C13,C13,totemism,natchez
+894,Kadohadacho,C13,C13,totemism,caddo
+895,Anilco,C13,C13,totemism,yoron
+896,Yscani,C13,C13,anglican,american
+897,Casqui,C13,C13,totemism,yoron
+898,Kanza,C13,C13,totemism,shoshone
+899,Pahatsi,C13,C13,totemism,yoron
+900,Tamaroa,C13,C13,totemism,illini
+901,Tsawi,C13,C13,anglican,american
+902,Niuachi,C13,C13,totemism,anishinabe
+903,Omaha,C13,C13,anglican,american
+904,Wahpetunwan,C02,C02,catholic,irish
+905,Baxoje,C02,C02,catholic,irish
+906,Ithanktunwanna,C02,C02,catholic,irish
+907,Ithanktunwan,C02,C02,catholic,irish
+908,Sisithunwan,C02,C02,totemism,dakota
+909,Nueta,C02,C02,catholic,irish
+910,Makoua,C12,C12,totemism,anishinabe
+911,Baawitigon,C13,C13,totemism,anishinabe
+912,Osaakiiwaki,C13,C13,totemism,illini
+913,Meskwaki,C02,C02,totemism,arapaho
+914,Ho-Chunk,C02,C02,catholic,irish
+915,Peewareewa,C02,C02,catholic,irish
+916,Kaskankaham,C02,C02,totemism,anishinabe
+917,Cahokia,C02,C02,totemism,illini
+918,Chucalissa,C13,C13,totemism,chickasaw
+919,Chickasha,C02,C02,totemism,chickasaw
+920,Chahta,C13,C13,totemism,choctaw
+921,Ishenoca,C02,C02,totemism,natchez
+922,Tohome,C02,C02,totemism,choctaw
+923,Pensacola,C02,C02,totemism,choctaw
+924,Tawasa,C02,C02,totemism,choctaw
+925,Coweta,C02,C02,totemism,creek
+926,Ais,C02,C02,totemism,yamasee
+927,Timucua,C02,C02,totemism,yamasee
+928,Apalachee,C02,C02,totemism,creek
+929,Guale,C02,C02,totemism,yamasee
+930,Kasihta,C02,C02,totemism,creek
+931,Coosa,C02,C02,totemism,creek
+932,Issati,C02,C02,totemism,catawba
+933,Iswa,C02,C02,totemism,iroquois
+934,Tsoyaha,C13,C13,totemism,yuchi
+935,Chiaha,C02,C02,totemism,yuchi
+936,Joara,C02,C02,totemism,catawba
+937,Skarureh,C02,C02,totemism,iroquois
+938,Pomouik,C02,C02,totemism,powhatan
+939,Kaskinampo,C02,C02,totemism,shawnee
+940,Kentahke,C02,C02,catholic,irish
+941,Ouasioto,C13,C13,totemism,yuchi
+942,Waayaahtanwa,C13,C13,totemism,mesquakie
+943,Atchakangouen,C13,C13,protestant,miami
+944,Bodewadmik,C02,C02,catholic,irish
+945,Michigami,C02,C02,totemism,anishinabe
+946,Hotaawathipi,C02,C02,totemism,shawnee
+947,Kentaientonga,C02,C02,totemism,tionontate
+948,Ohiyo,C12,C12,totemism,illini
+949,Monacan,C02,C02,catholic,irish
+950,Chesapeake,C02,C02,totemism,powhatan
+951,Kanawha,C02,C02,catholic,irish
+952,Powhatan,C02,C02,totemism,powhatan
+953,Piscataway,C02,C02,totemism,powhatan
+954,Erielhonan,C02,C02,catholic,irish
+955,Conestoga,C02,C02,totemism,susquehannock
+956,Sakimauchheening,C02,C02,totemism,delaware
+957,Wicontiss,C02,C02,totemism,shawnee
+958,Onodowaga,C13,C13,totemism,iroquois
+959,Gayogohono,C02,C02,totemism,iroquois
+960,Onondagaono,C02,C02,totemism,iroquois
+961,Onyo'taaka,C02,C02,totemism,iroquois
+962,Unami,C02,C02,catholic,irish
+963,Machkantowoon,C02,C02,totemism,mahican
+964,Kanien'kehaka,C02,C02,totemism,iroquois
+965,Manahahttan,C02,C02,totemism,susquehannock
+966,Nipmuc,C02,C02,catholic,irish
+967,Narraganset,C02,C02,catholic,irish
+968,Massachusett,C02,C02,totemism,massachusset
+969,Mahican,C02,C02,catholic,irish
+970,Amoskeag,C02,C02,catholic,irish
+971,Penapawsket,C02,C02,catholic,irish
+972,Nuu-chah-nulth,C20,C20,mahayana,japanese
+973,Skwxwu'mesh,C20,C20,mahayana,japanese
+974,Kwakwaka'wakw,C20,C20,mahayana,japanese
+975,Tsimshian,SAL,SAL,totemism,salish
+976,Tlingit,C20,C20,catholic,mexican
+977,Yakutat,C20,C20,catholic,mexican
+978,Kenai,C20,REB,totemism,haida
+979,Unangan,C20,C20,catholic,catalan
+980,Beothuk,C12,C12,catholic,irish
+981,Taqamkuk,C12,C12,protestant,danish
+982,Onamagag,C12,C12,protestant,danish
+983,Epagoitgnag,C12,C12,protestant,danish
+984,Segepenegatic,C12,C12,protestant,danish
+985,Petkootkweak,C12,C12,protestant,danish
+986,Gespegeogag,C12,C12,protestant,danish
+987,Onguhiara,C13,C13,totemism,tionontate
+988,Attignawantan,C12,C12,totemism,huron
+989,Attigneenongnahac,C02,C02,totemism,huron
+990,Maisouna,C12,C12,totemism,laurentian
+991,Odishkwaagamiig,C12,C12,totemism,algonquin
+992,Weskarini,C12,C12,totemism,algonquin
+993,Osheaga,C12,C12,totemism,laurentian
+994,Stadacona,C12,C12,totemism,laurentian
+995,Toutouskak,C12,C12,totemism,algonquin
+996,Oumamiwek,C12,C12,protestant,danish
+997,Chisedec,C12,C12,protestant,danish
+998,Qikirmiut,C12,C12,protestant,danish
+999,Cisasipi,C12,C12,totemism,anishinabe
+1000,Iyiyiw,C12,C12,protestant,danish
+1001,Marameg,C12,C12,totemism,anishinabe
+1002,Abitibi,C12,C12,protestant,danish
+1003,Mosoni,C12,C12,protestant,danish
+1004,Attawapiskat,C12,C12,protestant,danish
+1005,Mushkegowuk,C12,C12,protestant,danish
+1006,Ahiarmiut,C12,C12,protestant,danish
+1007,Gojijiwininiwag,C12,C12,protestant,danish
+1008,Wiinibig,C12,C12,totemism,bungi
+1009,Atikaki,C12,C12,totemism,plains_cree
+1010,Manitowapow,C02,C02,totemism,chiwere
+1011,Kinougeoulini,C12,C12,protestant,danish
+1012,Satsuma,JAP,JAP,mahayana,kyushuan
+1013,Cheongju,KOR,KOR,confucianism,korean
+1014,Bungo,JAP,JAP,mahayana,kyushuan
+1015,Okinawa,JAP,JAP,mahayana,kyushuan
+1016,Ha Tinh,WUU,WUU,mahayana,vietnamese
+1017,Suo,JAP,JAP,mahayana,japanese
+1018,Izumo,JAP,JAP,mahayana,japanese
+1019,Harima,JAP,JAP,mahayana,japanese
+1020,Kyoto,JAP,JAP,mahayana,japanese
+1021,Settsu,JAP,JAP,mahayana,japanese
+1022,Indrapura,ANN,ANN,mahayana,cham
+1023,Echizen,JAP,JAP,mahayana,japanese
+1024,Echigo,JAP,JAP,mahayana,togoku
+1025,Uzen,JAP,JAP,mahayana,togoku
+1026,Rikuzen,JAP,JAP,mahayana,togoku
+1027,Hitachi,JAP,JAP,mahayana,togoku
+1028,Musashi,JAP,JAP,mahayana,togoku
+1029,Kai,JAP,JAP,mahayana,togoku
+1030,Owari,JAP,JAP,mahayana,togoku
+1031,Kamikawa,NHX,NHX,animism,ainu
+1032,The Kurils,JAP,JAP,mahayana,togoku
+1033,Enchiw,NHX,NHX,animism,ainu
+1034,Kamchatka,JAP,JAP,mahayana,kamchatkan
+1035,Penzhina,JAP,JAP,mahayana,japanese
+1036,Kolyma,JAP,JAP,mahayana,kamchatkan
+1037,Omolon,JAP,JAP,mahayana,japanese
+1038,Karalveyem,JAP,JAP,mahayana,japanese
+1039,Verkhoyansk,PLC,PLC,catholic,polish
+1040,Suntar Khayata,PLC,PLC,catholic,polish
+1041,Gizhiga,JAP,JAP,mahayana,japanese
+1042,Sakha,PLC,PLC,catholic,polish
+1043,Okhotsk,PLC,PLC,catholic,polish
+1044,Tauisk,PLC,PLC,catholic,polish
+1045,Yakut,PLC,PLC,catholic,polish
+1046,Maya,PLC,PLC,catholic,polish
+1047,Jugjur,PLC,PLC,catholic,polish
+1048,Miyoo Gasan,PLC,PLC,tengri_pagan_reformed,nivkh
+1049,Haiilanboo,PLC,PLC,tengri_pagan_reformed,evenk
+1050,Tyr,PLC,PLC,tengri_pagan_reformed,nivkh
+1051,Aldan,PLC,PLC,catholic,polish
+1052,Stanovoy,PLC,PLC,catholic,polish
+1053,Hinggan,PLC,PLC,catholic,evenk
+1054,Mukhtuya,PLC,PLC,catholic,polish
+1055,Kirenga,PLC,PLC,catholic,polish
+1056,Barguzin,PLC,PLC,catholic,polish
+1057,Ude,PLC,PLC,catholic,polish
+1058,Onan Gol,PLC,PLC,catholic,polish
+1059,East Tunguska,PLC,PLC,catholic,polish
+1060,Irkutsk,PLC,PLC,catholic,polish
+1061,West Tunguska,PLC,PLC,catholic,polish
+1062,Angara,PLC,PLC,catholic,polish
+1063,Sayan,PLC,PLC,catholic,polish
+1064,Tomsk,NONE,NONE,tengri_pagan_reformed,ostyaki
+1065,Kuznetsk,PLC,PLC,catholic,polish
+1066,Altai Uriankhai,PLC,PLC,catholic,polish
+1067,Turukhan,NONE,NONE,tengri_pagan_reformed,samoyed
+1068,Ket,NONE,NONE,tengri_pagan_reformed,ostyaki
+1069,Surgut,NONE,NONE,tengri_pagan_reformed,samoyed
+1070,Narim,NONE,NONE,tengri_pagan_reformed,samoyed
+1071,Irtesh,PLC,PLC,catholic,polish
+1072,Obdorsk,PLC,PLC,catholic,polish
+1073,Berezov,PLC,PLC,catholic,polish
+1074,Sibir,PLC,PLC,catholic,ostyaki
+1075,Tyumen,PLC,PLC,catholic,polish
+1076,Kurgan,PLC,PLC,catholic,polish
+1077,Solikamsk,PLC,PLC,catholic,polish
+1078,Tura,PLC,PLC,catholic,polish
+1079,Viatka,PLC,PLC,catholic,russian
+1080,Pelym,PLC,PLC,catholic,polish
+1081,Simbirsk,PLC,PLC,catholic,russian
+1082,Kazan,PLC,PLC,catholic,russian
+1083,Vetluga,PLC,PLC,catholic,russian
+1084,Wadjuk,C21,C21,dreamtime,nyoongah
+1085,Paredarerme,C16,C16,catholic,portugese
+1086,Kaurna,C19,C19,catholic,catalan
+1087,Wurundjeri,C19,C19,catholic,catalan
+1088,Wergaia,C19,C19,catholic,catalan
+1089,Wiradjuri,C16,C16,dreamtime,gamilaraay
+1090,Eora,C16,C16,catholic,portugese
+1091,Kamilaroi,C16,C16,dreamtime,aboriginal
+1092,Gubbi-Gubbi,C21,C21,dreamtime,aboriginal
+1093,Yagalingu,C21,C21,dreamtime,gamilaraay
+1094,Turrbal,C19,C19,dreamtime,gamilaraay
+1095,Falklands,GBR,GBR,anglican,castillian
+1096,Cape Verde,GBR,GBR,catholic,portugese
+1097,Fernando Po,GBR,GBR,catholic,portugese
+1098,St. Helena,GBR,GBR,catholic,castillian
+1099,Socotra,PER,PER,sunni,mahri_culture
+1100,Mahe,GBR,PER,anglican,portugese
+1101,Hollhavai,JAP,JAP,mahayana,japanese
+1102,Mauritius,GBR,GBR,anglican,portugese
+1103,Île Bourbon,GBR,PER,catholic,portugese
+1104,Eiriksfjord,PLC,PLC,catholic,polish
+1105,Vestbygden,PLC,PLC,catholic,polish
+1106,Te Tai Tokerau,TTT,TTT,animism,maori
+1107,Taranaki,TNK,TNK,animism,maori
+1108,Te Moana a Toi,TEA,TEA,animism,maori
+1109,Timaru,C16,C16,catholic,portugese
+1110,Agadir,SPA,SPA,protestant,berber
+1111,Arguin,FRA,REB,sunni,berber
+1112,Trarza,GBR,RUM,sunni,fulani
+1113,Cayor,JOL,JOL,shamanism,senegambian
+1114,Gabu,JOL,JOL,shamanism,senegambian
+1115,Brakna,ITA,RUM,catholic,fulani
+1116,Wolof,ITA,RUM,catholic,lombard
+1117,Futa Jallon,ITA,RUM,catholic,fulani
+1118,Sierra Leone,GBR,RUM,catholic,portugese
+1119,Grain Coast,GBR,RUM,anglican,portugese
+1120,Bambuk,ITA,RUM,catholic,fulani
+1121,Bure,ITA,RUM,catholic,mali
+1122,Bagoe,ITA,RUM,catholic,dyola
+1123,Segu,ITA,RUM,shamanism,bambara
+1124,Joma,ITA,RUM,catholic,mali
+1125,Kong,ITA,RUM,catholic,dyola
+1126,Ivory Coast,GBR,RUM,catholic,portugese
+1127,Tuat,NONE,NONE,sunni,tuareg
+1128,Taudeni,ITA,ITA,sunni,tuareg
+1129,Azawad,ITA,ITA,sunni,tuareg
+1130,Tadmekka,ITA,RUM,sunni,tuareg
+1131,Massina,ITA,RUM,shamanism,bambara
+1132,Timbuktu,ITA,RUM,sunni,tuareg
+1133,Gao,ITA,RUM,catholic,songhai
+1134,Jenne,ITA,RUM,catholic,bozo
+1135,Yatenga,ITA,RUM,catholic,lombard
+1136,Gurma,ITA,RUM,shamanism,mossi
+1137,Wagadugu,ITA,RUM,catholic,mossi
+1138,Kumasi,ITA,RUM,shamanism,aka
+1139,Gold Coast,GBR,RUM,shamanism,aka
+1140,Abomey,ITA,RUM,catholic,fon
+1141,Whydah,GBR,RUM,shamanism,fon
+1142,Dendi,ITA,RUM,sunni,songhai
+1143,Borgu,ITA,RUM,catholic,dagomba
+1144,Oyo,ITA,RUM,shamanism,yorumba
+1145,Nupe,ITA,RUM,shamanism,nupe
+1146,Ife,ITA,RUM,shamanism,yorumba
+1147,Benin,GBR,RUM,shamanism,yorumba
+1148,Gobir,ITA,RUM,sunni,hausa
+1149,Katsina,ITA,RUM,catholic,hausa
+1150,Zamfara,ITA,RUM,shamanism,hausa
+1151,Bonny,SPA,SPA,shamanism,sawabantu
+1152,Idah,ITA,RUM,catholic,nupe
+1153,Pindinga,ITA,RUM,catholic,nupe
+1154,Zazzau,ITA,RUM,catholic,lombard
+1155,Kano,ITA,RUM,sunni,hausa
+1156,Damagaram,ITA,RUM,sunni,tuareg
+1157,Borno,ITA,RUM,catholic,kanuri
+1158,Kanem,ITA,RUM,sunni,kanuri
+1159,Bagirmi,ITA,RUM,shamanism,bilala
+1160,Mandara,ITA,RUM,catholic,kanuri
+1161,Bauchi,ITA,RUM,sunni,hausa
+1162,Wukari,NONE,NONE,shamanism,jukun
+1163,Calabar,SPA,SPA,catholic,sawabantu
+1164,Cameroon,SPA,SPA,shamanism,sawabantu
+1165,Gabon,SPA,SPA,shamanism,kongolese
+1166,Loango,GBR,RUM,shamanism,kongolese
+1167,Luanda,GBR,RUM,shamanism,mbundu
+1168,Mbamba,GBR,RUM,shamanism,kongolese
+1169,Anziku,GBR,RUM,catholic,kongolese
+1170,Mpemba,GBR,RUM,catholic,kongolese
+1171,Ndongo,GBR,RUM,catholic,mbundu
+1172,Benguela,GBR,RUM,anglican,mbundu
+1173,Namibia,NONE,NONE,NONE,NONE
+1174,Ezorongondo,SPA,SPA,catholic,khoisan
+1175,Lesser Namaqualand,GBR,RUM,anglican,portugese
+1176,Roggeveld,GBR,RUM,anglican,portugese
+1177,Cape,GBR,RUM,catholic,irish
+1178,Great Karoo,GBR,RUM,catholic,portugese
+1179,Swellendam,GBR,RUM,catholic,portugese
+1180,Xhosa,GBR,RUM,anglican,portugese
+1181,Natal,GBR,RUM,catholic,portugese
+1182,Matsolo,GBR,RUM,catholic,portugese
+1183,Inhambane,GBR,RUM,shamanism,nguni
+1184,Zimbabwe,GBR,RUM,shamanism,shona
+1185,Butua,GBR,RUM,shamanism,shona
+1186,Sofala,GBR,RUM,sunni,shona
+1187,Sena,GBR,RUM,shamanism,shona
+1188,Massapa,GBR,RUM,shamanism,shona
+1189,Shangwe,GBR,RUM,shamanism,shona
+1190,Zumbo,GBR,RUM,shamanism,shona
+1191,Tete,GBR,RUM,shamanism,shona
+1192,Quelimane,GBR,RUM,sunni,nyasa
+1193,Menabe,SKA,SKA,shamanism,madagasque
+1194,Besalampy,SKA,SKA,shamanism,madagasque
+1195,Mozambique,GBR,ZAN,sunni,swahili
+1196,Kilwa,GBR,ZAN,sunni,swahili
+1197,Mzizima,RUM,RUM,shamanism,swahili
+1198,Lindi,RUM,RUM,sunni,swahili
+1199,Bagamoyo,RUM,RUM,shamanism,swahili
+1200,Tanga,RUM,RUM,shamanism,swahili
+1201,Zanzibar,GBR,RUM,sunni,swahili
+1202,Mombasa,MLI,MLI,sunni,swahili
+1203,Malindi,MLI,MLI,sunni,swahili
+1204,Lamu,MLI,MLI,sunni,swahili
+1205,Mogadishu,RUM,RUM,sunni,somali
+1206,Qardho,RUM,RUM,sunni,somali
+1207,Ogaden,OGD,OGD,sunni,oromo
+1208,Degehabur,OGD,OGD,sunni,oromo
+1209,Berbera,RUM,RUM,sunni,somali
+1210,Dawaro,RUM,RUM,shamanism,oromo
+1211,Harer,RUM,RUM,sunni,oromo
+1212,Zeila,RUM,RUM,sunni,somali
+1213,Shewa,RUM,RUM,shamanism,oromo
+1214,Wollo,RUM,RUM,coptic,amhara
+1215,Tajura,RUM,RUM,sunni,afar
+1216,Tegali,DAM,DAM,coptic,nubian
+1217,Fazughli,DAM,DAM,shamanism,oromo
+1218,Sidamo,WLY,WLY,coptic,oromo
+1219,Darfur,ITA,ITA,shamanism,tunjur
+1220,Bayuda,RUM,REB,coptic,nubian
+1221,El Obeid,RUM,RUM,coptic,nubian
+1222,Gezira,RUM,RUM,coptic,nubian
+1223,Gojjam,DAM,DAM,shamanism,oromo
+1224,Gonder,RUM,RUM,coptic,amhara
+1225,Butana,RUM,RUM,coptic,nubian
+1226,Beja,BEJ,BEJ,coptic,beja
+1227,Aksum,RUM,RUM,coptic,tigray
+1228,Dongola,MAK,MAK,coptic,nubian
+1229,Berber,BEJ,BEJ,coptic,beja
+1230,Massawa,MED,MED,coptic,tigray
+1231,Aswan,RUM,RUM,sunni,al_misr_arabic
+1232,Suakin,BEJ,BEJ,coptic,beja
+1233,Kharga,RUM,RUM,sunni,al_misr_arabic
+1234,Qasr Ibrim,MAK,MAK,coptic,nubian
+1235,Guam,JAP,JAP,mahayana,japanese
+1236,Rabaul,GBR,GBR,catholic,portugese
+1237,Hanuabada,GBR,GBR,catholic,portugese
+1238,Solomon Islands,GBR,GBR,catholic,portugese
+1239,Vanuatu,GBR,GBR,catholic,portugese
+1240,Hawaii,GBR,GBR,animism,polynesian
+1241,Kiribati,GBR,GBR,catholic,portugese
+1242,Viti Levu,VIL,VIL,animism,melanesian
+1243,Samoa,SAM,SAM,animism,polynesian
+1244,Tuamotu Islands,SPA,SPA,catholic,catalan
+1245,Manokwari,GBR,GBR,catholic,portugese
+1246,Ata Whenua,C16,C16,catholic,portugese
+1247,Corsica,ITA,ITA,catholic,sardinian
+1248,Maldives,BHA,BHA,hinduism,malayalam
+1249,Yola,NONE,NONE,shamanism,jukun
+1250,Vänern,NONE,NONE,NONE,NONE
+1251,Vättern,NONE,NONE,NONE,NONE
+1252,Gulf of Bothnia,NONE,NONE,NONE,NONE
+1253,Eastern Sea of Åland,NONE,NONE,NONE,NONE
+1254,Gulf of Finland,NONE,NONE,NONE,NONE
+1255,Western Baltic Sea,NONE,NONE,NONE,NONE
+1256,Gulf of Riga,NONE,NONE,NONE,NONE
+1257,Southern Baltic Sea,NONE,NONE,NONE,NONE
+1258,Öresund,NONE,NONE,NONE,NONE
+1259,Kattegat,NONE,NONE,NONE,NONE
+1260,Lake Peipus,NONE,NONE,NONE,NONE
+1261,Ladoga,NONE,NONE,NONE,NONE
+1262,Onega,NONE,NONE,NONE,NONE
+1263,Barents Sea,NONE,NONE,NONE,NONE
+1264,Lofoten Sea,NONE,NONE,NONE,NONE
+1265,Northern Norwegian Sea,NONE,NONE,NONE,NONE
+1266,Southern Norwegian Sea,NONE,NONE,NONE,NONE
+1267,Skagerrak,NONE,NONE,NONE,NONE
+1268,Helgoland Bight,NONE,NONE,NONE,NONE
+1269,Coast of Holland,NONE,NONE,NONE,NONE
+1270,Dogger Bank,NONE,NONE,NONE,NONE
+1271,Straits of Dover,NONE,NONE,NONE,NONE
+1272,The Channel,NONE,NONE,NONE,NONE
+1273,Taveta,NONE,NONE,shamanism,bantu
+1274,Coast of Brittany,NONE,NONE,NONE,NONE
+1275,Quiberon Bay,NONE,NONE,NONE,NONE
+1276,Cote D'Argent,NONE,NONE,NONE,NONE
+1277,Bay of Biscay,NONE,NONE,NONE,NONE
+1278,Cantabrian Sea,NONE,NONE,NONE,NONE
+1279,Tyne,NONE,NONE,NONE,NONE
+1280,Firth of Forth,NONE,NONE,NONE,NONE
+1281,Coast of Shetland,NONE,NONE,NONE,NONE
+1282,Moray Firth,NONE,NONE,NONE,NONE
+1283,North Channel,NONE,NONE,NONE,NONE
+1284,Irish Sea,NONE,NONE,NONE,NONE
+1285,St. George's Channel,NONE,NONE,NONE,NONE
+1286,Donegal Bay,NONE,NONE,NONE,NONE
+1287,Dingle Bay,NONE,NONE,NONE,NONE
+1288,Celtic Sea,NONE,NONE,NONE,NONE
+1289,Western Approaches,NONE,NONE,NONE,NONE
+1290,Cape Finisterre,NONE,NONE,NONE,NONE
+1291,Lusitanian Sea,NONE,NONE,NONE,NONE
+1292,Gulf of Cadiz,NONE,NONE,NONE,NONE
+1293,Straits of Gibraltar,NONE,NONE,NONE,NONE
+1294,Gulf of Almeria,NONE,NONE,NONE,NONE
+1295,Gulf of Valencia,NONE,NONE,NONE,NONE
+1296,Gulf of Lion,NONE,NONE,NONE,NONE
+1297,Cote D'Azur,NONE,NONE,NONE,NONE
+1298,Ligurian Sea,NONE,NONE,NONE,NONE
+1299,Coast of the Faeroes,NONE,NONE,NONE,NONE
+1300,Western Mediterranean,NONE,NONE,NONE,NONE
+1301,Barbary Coast,NONE,NONE,NONE,NONE
+1302,Cape Bon,NONE,NONE,NONE,NONE
+1303,Tyrrenean Sea,NONE,NONE,NONE,NONE
+1304,Bay of Napoli,NONE,NONE,NONE,NONE
+1305,Gulf of Gabes,NONE,NONE,NONE,NONE
+1306,Sao Tome,GBR,GBR,catholic,portugese
+1307,Straits of Messina,NONE,NONE,NONE,NONE
+1308,Gulf of Venice,NONE,NONE,NONE,NONE
+1309,Adriatic Sea,NONE,NONE,NONE,NONE
+1310,Straits of Otranto,NONE,NONE,NONE,NONE
+1311,Gulf of Taranto,NONE,NONE,NONE,NONE
+1312,Ionian Sea,NONE,NONE,NONE,NONE
+1313,Gulf of Sirte,NONE,NONE,NONE,NONE
+1314,Gulf of Bomba,NONE,NONE,NONE,NONE
+1315,Bay of Alexandria,NONE,NONE,NONE,NONE
+1316,Palestinian Coast,NONE,NONE,NONE,NONE
+1317,Gulf of Cyprus,NONE,NONE,NONE,NONE
+1318,Spiš,RUM,RUM,reformed,slovak
+1319,Aegean Sea,NONE,NONE,NONE,NONE
+1320,Sea of Marmara,NONE,NONE,NONE,NONE
+1321,Gulf of Varna,NONE,NONE,NONE,NONE
+1322,Gulf of Odessa,NONE,NONE,NONE,NONE
+1323,Sea of Azov,NONE,NONE,NONE,NONE
+1324,Eastern Black Sea,NONE,NONE,NONE,NONE
+1325,Lake Balaton,NONE,NONE,NONE,NONE
+1326,Caspian Sea,NONE,NONE,NONE,NONE
+1327,Aral Sea,NONE,NONE,NONE,NONE
+1328,Gulf of Suez,NONE,NONE,NONE,NONE
+1329,Red Sea,NONE,NONE,NONE,NONE
+1330,Bab el Mandeb,NONE,NONE,NONE,NONE
+1331,Gulf of Aden,NONE,NONE,NONE,NONE
+1332,Gulf of Oman,NONE,NONE,NONE,NONE
+1333,Gulf of Masirah,NONE,NONE,NONE,NONE
+1334,Straits of Hormuz,NONE,NONE,NONE,NONE
+1335,Persian Gulf,NONE,NONE,NONE,NONE
+1336,Coast of Makran,NONE,NONE,NONE,NONE
+1337,Coast of Gujarat,NONE,NONE,NONE,NONE
+1338,Konkan Coast,NONE,NONE,NONE,NONE
+1339,Malabar Coast,NONE,NONE,NONE,NONE
+1340,Comorin Cape,NONE,NONE,NONE,NONE
+1341,Coast of Coromandel,NONE,NONE,NONE,NONE
+1342,Coast of Orissa,NONE,NONE,NONE,NONE
+1343,Ganges Delta,NONE,NONE,NONE,NONE
+1344,Arakan Coast,NONE,NONE,NONE,NONE
+1345,Irrawady Delta,NONE,NONE,NONE,NONE
+1346,Eastern Bay of Bengal,NONE,NONE,NONE,NONE
+1347,Andaman Sea,NONE,NONE,NONE,NONE
+1348,Straits of Malacca,NONE,NONE,NONE,NONE
+1349,Nicobar Islands,NONE,NONE,NONE,NONE
+1350,Coast of Aceh,NONE,NONE,NONE,NONE
+1351,Coast of Sumatra,NONE,NONE,NONE,NONE
+1352,Sunda Strait,NONE,NONE,NONE,NONE
+1353,Coast of Java,NONE,NONE,NONE,NONE
+1354,Coast of Blambangan,NONE,NONE,NONE,NONE
+1355,Straits of Lombok,NONE,NONE,NONE,NONE
+1356,Sawu Sea,NONE,NONE,NONE,NONE
+1357,Flores Sea,NONE,NONE,NONE,NONE
+1358,Java Sea,NONE,NONE,NONE,NONE
+1359,Straits of Makassar,NONE,NONE,NONE,NONE
+1360,Karimata Strait,NONE,NONE,NONE,NONE
+1361,Straits of Johor,NONE,NONE,NONE,NONE
+1362,Malayan Sea,NONE,NONE,NONE,NONE
+1363,Coast of Sarawak,NONE,NONE,NONE,NONE
+1364,Cape Cà Mau,NONE,NONE,NONE,NONE
+1365,Gulf of Siam,NONE,NONE,NONE,NONE
+1366,Cam Ranh Bay,NONE,NONE,NONE,NONE
+1367,South China Sea,NONE,NONE,NONE,NONE
+1368,Palawan Passage,NONE,NONE,NONE,NONE
+1369,Coast of Annam,NONE,NONE,NONE,NONE
+1370,Gulf of Tonkin,NONE,NONE,NONE,NONE
+1371,Guangzhou Bay,NONE,NONE,NONE,NONE
+1372,Taiwan Strait,NONE,NONE,NONE,NONE
+1373,Yang Tse Delta,NONE,NONE,NONE,NONE
+1374,Eastern Yellow Sea,NONE,NONE,NONE,NONE
+1375,Korea Bay,NONE,NONE,NONE,NONE
+1376,South Korean Sea,NONE,NONE,NONE,NONE
+1377,North Korean Sea,NONE,NONE,NONE,NONE
+1378,Olga Bay,NONE,NONE,NONE,NONE
+1379,Tatar Straits,NONE,NONE,NONE,NONE
+1380,Shantar Islands,NONE,NONE,NONE,NONE
+1381,Tauisk Bay,NONE,NONE,NONE,NONE
+1382,Bay of Komenskoie,NONE,NONE,NONE,NONE
+1383,Coast of Kamchatka,NONE,NONE,NONE,NONE
+1384,Okhotsk Sea,NONE,NONE,NONE,NONE
+1385,Coast of Sakhalin,NONE,NONE,NONE,NONE
+1386,Soya Strait,NONE,NONE,NONE,NONE
+1387,Tsugaru Strait,NONE,NONE,NONE,NONE
+1388,Yamato Basin,NONE,NONE,NONE,NONE
+1389,Amakusa Sea,NONE,NONE,NONE,NONE
+1390,Seto Inland Sea,NONE,NONE,NONE,NONE
+1391,Kii Channel,NONE,NONE,NONE,NONE
+1392,Ryukyu Islands,NONE,NONE,NONE,NONE
+1393,Luzon Strait,NONE,NONE,NONE,NONE
+1394,Paracel Islands,NONE,NONE,NONE,NONE
+1395,Manila Bay,NONE,NONE,NONE,NONE
+1396,Coast of Luzon,NONE,NONE,NONE,NONE
+1397,Visayan Sea,NONE,NONE,NONE,NONE
+1398,Sulu Sea,NONE,NONE,NONE,NONE
+1399,Sea of Celebes,NONE,NONE,NONE,NONE
+1400,Halmaheran Sea,NONE,NONE,NONE,NONE
+1401,Banda Sea,NONE,NONE,NONE,NONE
+1402,Mindanao Coast,NONE,NONE,NONE,NONE
+1403,Palau Islands,NONE,NONE,NONE,NONE
+1404,Cenderawasih Bay,NONE,NONE,NONE,NONE
+1405,Vitiaz Strait,NONE,NONE,NONE,NONE
+1406,Trobrian Islands,NONE,NONE,NONE,NONE
+1407,Torres Strait,NONE,NONE,NONE,NONE
+1408,Timor Sea,NONE,NONE,NONE,NONE
+1409,Arafura Sea,NONE,NONE,NONE,NONE
+1410,Gulf of Carpentaria,NONE,NONE,NONE,NONE
+1411,Great Barrier Reef,NONE,NONE,NONE,NONE
+1412,Coral Sea,NONE,NONE,NONE,NONE
+1413,Flinders Bay,NONE,NONE,NONE,NONE
+1414,Bass Strait,NONE,NONE,NONE,NONE
+1415,Kangaroo Island,NONE,NONE,NONE,NONE
+1416,Great Australian Bight,NONE,NONE,NONE,NONE
+1417,Cape Leeuwin,NONE,NONE,NONE,NONE
+1418,Houtman Abrolhos,NONE,NONE,NONE,NONE
+1419,Northwest Cape,NONE,NONE,NONE,NONE
+1420,Roebuck Bay,NONE,NONE,NONE,NONE
+1421,Western Tasman Sea,NONE,NONE,NONE,NONE
+1422,Macquarie Harbour,NONE,NONE,NONE,NONE
+1423,Cook Strait,NONE,NONE,NONE,NONE
+1424,Lord Howe Island,NONE,NONE,NONE,NONE
+1425,Northern Tasman Sea,NONE,NONE,NONE,NONE
+1426,Coast of New Zealand,NONE,NONE,NONE,NONE
+1427,Southern Tasman Sea,NONE,NONE,NONE,NONE
+1428,Canterbury Bight,NONE,NONE,NONE,NONE
+1429,New Caledonian Sea,NONE,NONE,NONE,NONE
+1430,Vanuatu Islands,NONE,NONE,NONE,NONE
+1431,Fiji Basin,NONE,NONE,NONE,NONE
+1432,Solomon Sea,NONE,NONE,NONE,NONE
+1433,Tuvalu Islands,NONE,NONE,NONE,NONE
+1434,Melanesia Sea,NONE,NONE,NONE,NONE
+1435,Mariana Islands,NONE,NONE,NONE,NONE
+1436,Philippine Sea,NONE,NONE,NONE,NONE
+1437,Northern Philippine Sea,NONE,NONE,NONE,NONE
+1438,Volcano Islands,NONE,NONE,NONE,NONE
+1439,Izu Islands,NONE,NONE,NONE,NONE
+1440,Sanriku Coast,NONE,NONE,NONE,NONE
+1441,Kuril Islands,NONE,NONE,NONE,NONE
+1442,Kamchatka Trench,NONE,NONE,NONE,NONE
+1443,Ulakhan Fault,NONE,NONE,NONE,NONE
+1444,Bay of Anadyr,NONE,NONE,NONE,NONE
+1445,Bering Sea,NONE,NONE,NONE,NONE
+1446,Horn of Africa,NONE,NONE,NONE,NONE
+1447,Coast of Pepper,NONE,NONE,NONE,NONE
+1448,Zanzibar Strait,NONE,NONE,NONE,NONE
+1449,Mozambique Channel,NONE,NONE,NONE,NONE
+1450,Diego Suarez Bay,NONE,NONE,NONE,NONE
+1451,Southwestern Arabian Sea,NONE,NONE,NONE,NONE
+1452,Northern Arabian Sea,NONE,NONE,NONE,NONE
+1453,The Seychelles,NONE,NONE,NONE,NONE
+1454,Coast of Tamatave,NONE,NONE,NONE,NONE
+1455,The Mascareignes,NONE,NONE,NONE,NONE
+1456,Coast of Menabe,NONE,NONE,NONE,NONE
+1457,Coast of Sofala,NONE,NONE,NONE,NONE
+1458,Coast of Natal,NONE,NONE,NONE,NONE
+1459,Coast of Ciskei,NONE,NONE,NONE,NONE
+1460,Cape of Good Hope,NONE,NONE,NONE,NONE
+1461,Coast of Namibia,NONE,NONE,NONE,NONE
+1462,Coast of Angola,NONE,NONE,NONE,NONE
+1463,Gulf of Kongo,NONE,NONE,NONE,NONE
+1464,Coast of Cameroon,NONE,NONE,NONE,NONE
+1465,Gulf of Guinea,NONE,NONE,NONE,NONE
+1466,Ivory Coast,NONE,NONE,NONE,NONE
+1467,Grain Coast,NONE,NONE,NONE,NONE
+1468,Coast of Gambia,NONE,NONE,NONE,NONE
+1469,Bay of Arguin,NONE,NONE,NONE,NONE
+1470,Mauretanian Coast,NONE,NONE,NONE,NONE
+1471,Cape Bojador,NONE,NONE,NONE,NONE
+1472,Coast of Morocco,NONE,NONE,NONE,NONE
+1473,Jan Mayen Sea,NONE,NONE,NONE,NONE
+1474,Spitzberg Sea,NONE,NONE,NONE,NONE
+1475,Icelandic Sea,NONE,NONE,NONE,NONE
+1476,Eastern Coast of Iceland,NONE,NONE,NONE,NONE
+1477,Western Coast of Iceland,NONE,NONE,NONE,NONE
+1478,Northeastern Atlantic,NONE,NONE,NONE,NONE
+1479,Rockall,NONE,NONE,NONE,NONE
+1480,Denmark Strait,NONE,NONE,NONE,NONE
+1481,Eastern Coast of Greenland,NONE,NONE,NONE,NONE
+1482,Western Coast of Greenland,NONE,NONE,NONE,NONE
+1483,Labrador Strait,NONE,NONE,NONE,NONE
+1484,Baffin Bay,NONE,NONE,NONE,NONE
+1485,Hudson Straits,NONE,NONE,NONE,NONE
+1486,James Bay,NONE,NONE,NONE,NONE
+1487,Western Hudson Bay,NONE,NONE,NONE,NONE
+1488,Eastern Hudson Bay,NONE,NONE,NONE,NONE
+1489,Foxe Basin,NONE,NONE,NONE,NONE
+1490,Gulf of St. Lawrence,NONE,NONE,NONE,NONE
+1491,Cabot Strait,NONE,NONE,NONE,NONE
+1492,Bay of Fundy,NONE,NONE,NONE,NONE
+1493,Strait of Belle Isle,NONE,NONE,NONE,NONE
+1494,Fortune Bay,NONE,NONE,NONE,NONE
+1495,Notre Dame Bay,NONE,NONE,NONE,NONE
+1496,Labrador Sea,NONE,NONE,NONE,NONE
+1497,Greenland Sea,NONE,NONE,NONE,NONE
+1498,Northern Atlantic,NONE,NONE,NONE,NONE
+1499,Massachusetts Bay,NONE,NONE,NONE,NONE
+1500,Delaware Bay,NONE,NONE,NONE,NONE
+1501,Cape Hatteras,NONE,NONE,NONE,NONE
+1502,Sea Islands,NONE,NONE,NONE,NONE
+1503,Bahama Banks,NONE,NONE,NONE,NONE
+1504,Western Sargasso Sea,NONE,NONE,NONE,NONE
+1505,Florida Straits,NONE,NONE,NONE,NONE
+1506,Apalachee Bay,NONE,NONE,NONE,NONE
+1507,Mobile Bay,NONE,NONE,NONE,NONE
+1508,Galveston Bay,NONE,NONE,NONE,NONE
+1509,Tampico Bay,NONE,NONE,NONE,NONE
+1510,Bay of Campeche,NONE,NONE,NONE,NONE
+1511,Gulf of Mexico,NONE,NONE,NONE,NONE
+1512,Yucatan Channel,NONE,NONE,NONE,NONE
+1513,Gulf of Honduras,NONE,NONE,NONE,NONE
+1514,Mosquito Coast,NONE,NONE,NONE,NONE
+1515,Gulf of Darien,NONE,NONE,NONE,NONE
+1516,Jamaica Channel,NONE,NONE,NONE,NONE
+1517,Central Caribbean,NONE,NONE,NONE,NONE
+1518,Northwestern Caribbean,NONE,NONE,NONE,NONE
+1519,Venezuelan Gulf,NONE,NONE,NONE,NONE
+1520,Venezuelan Sea,NONE,NONE,NONE,NONE
+1521,Eastern Caribbean,NONE,NONE,NONE,NONE
+1522,Windward Islands,NONE,NONE,NONE,NONE
+1523,Lesser Antilles,NONE,NONE,NONE,NONE
+1524,Turks & Caicos Sea,NONE,NONE,NONE,NONE
+1525,Bahama Channel,NONE,NONE,NONE,NONE
+1526,Mona Passage,NONE,NONE,NONE,NONE
+1527,Guyana Coast,NONE,NONE,NONE,NONE
+1528,Cape Orange,NONE,NONE,NONE,NONE
+1529,Amazonas Gulf,NONE,NONE,NONE,NONE
+1530,Coast of Brazil,NONE,NONE,NONE,NONE
+1531,Coast of Pernambuco,NONE,NONE,NONE,NONE
+1532,Coast of Porto Seguro,NONE,NONE,NONE,NONE
+1533,Costa Verde,NONE,NONE,NONE,NONE
+1534,Coast of Santa Catarina,NONE,NONE,NONE,NONE
+1535,Patos Lagoon,NONE,NONE,NONE,NONE
+1536,La Plata River,NONE,NONE,NONE,NONE
+1537,Northern Coast of Patagonia,NONE,NONE,NONE,NONE
+1538,Southern Coast of Patagonia,NONE,NONE,NONE,NONE
+1539,Magellan Strait,NONE,NONE,NONE,NONE
+1540,Gulf of Penas,NONE,NONE,NONE,NONE
+1541,Coast of Chile,NONE,NONE,NONE,NONE
+1542,Atacama Coast,NONE,NONE,NONE,NONE
+1543,Coast of Antofagasta,NONE,NONE,NONE,NONE
+1544,Arica Bend,NONE,NONE,NONE,NONE
+1545,Coast of Peru,NONE,NONE,NONE,NONE
+1546,Gulf of Guayaquil,NONE,NONE,NONE,NONE
+1547,Coast of Ecuador,NONE,NONE,NONE,NONE
+1548,Gulf of Panama,NONE,NONE,NONE,NONE
+1549,Costa Rica,NONE,NONE,NONE,NONE
+1550,Gulf of Tehuantepec,NONE,NONE,NONE,NONE
+1551,Manzanillo Bay,NONE,NONE,NONE,NONE
+1552,Mazatlan Bay,NONE,NONE,NONE,NONE
+1553,Gulf of California,NONE,NONE,NONE,NONE
+1554,Cape San Lucas,NONE,NONE,NONE,NONE
+1555,Gulf of Catalina,NONE,NONE,NONE,NONE
+1556,San Francisco Bay,NONE,NONE,NONE,NONE
+1557,Cape Blanco,NONE,NONE,NONE,NONE
+1558,Salish Sea,NONE,NONE,NONE,NONE
+1559,Hecate Strait,NONE,NONE,NONE,NONE
+1560,Glacier Bay,NONE,NONE,NONE,NONE
+1561,Cook Inlet,NONE,NONE,NONE,NONE
+1562,Norton Sound,NONE,NONE,NONE,NONE
+1563,Hatton Bank,NONE,NONE,NONE,NONE
+1564,Eastern Gibbs Fracture,NONE,NONE,NONE,NONE
+1565,Western Gibbs Fracture,NONE,NONE,NONE,NONE
+1566,Iberian Shelf,NONE,NONE,NONE,NONE
+1567,Sea of Azores,NONE,NONE,NONE,NONE
+1568,Corner Seamounts,NONE,NONE,NONE,NONE
+1569,Sable Island Bank,NONE,NONE,NONE,NONE
+1570,New England Seamounts,NONE,NONE,NONE,NONE
+1571,Blake Plateau,NONE,NONE,NONE,NONE
+1572,West Bermuda Sea,NONE,NONE,NONE,NONE
+1573,East Bermuda Sea,NONE,NONE,NONE,NONE
+1574,Antilles Current,NONE,NONE,NONE,NONE
+1575,Northern Guiana Basin,NONE,NONE,NONE,NONE
+1576,Guiana Basin,NONE,NONE,NONE,NONE
+1577,Southern Guiana Basin,NONE,NONE,NONE,NONE
+1578,Canary Approach,NONE,NONE,NONE,NONE
+1579,Cape Verde Approach,NONE,NONE,NONE,NONE
+1580,Central North Atlantic,NONE,NONE,NONE,NONE
+1581,North Equatorial Current,NONE,NONE,NONE,NONE
+1582,Northeast Sargasso Sea,NONE,NONE,NONE,NONE
+1583,Southeast Sargasso Sea,NONE,NONE,NONE,NONE
+1584,Romanche Gap,NONE,NONE,NONE,NONE
+1585,East Guinea Basin,NONE,NONE,NONE,NONE
+1586,West Guinea Basin,NONE,NONE,NONE,NONE
+1587,Coast of Falklands,NONE,NONE,NONE,NONE
+1588,Scotia Basin,NONE,NONE,NONE,NONE
+1589,Brazil-Malvinas Confluence Zone,NONE,NONE,NONE,NONE
+1590,South Brazil Current,NONE,NONE,NONE,NONE
+1591,Brazil Current,NONE,NONE,NONE,NONE
+1592,Rio Grande Rise,NONE,NONE,NONE,NONE
+1593,Argentine Basin,NONE,NONE,NONE,NONE
+1594,South Orkney Islands,NONE,NONE,NONE,NONE
+1595,East of Magellans,NONE,NONE,NONE,NONE
+1596,North Brazil Current,NONE,NONE,NONE,NONE
+1597,South Equatorial Current,NONE,NONE,NONE,NONE
+1598,Central South Atlantic,NONE,NONE,NONE,NONE
+1599,Brazil Basin,NONE,NONE,NONE,NONE
+1600,Saint Helena Island,NONE,NONE,NONE,NONE
+1601,Benguela Current,NONE,NONE,NONE,NONE
+1602,Walvis Ridge,NONE,NONE,NONE,NONE
+1603,Bouvet Island,NONE,NONE,NONE,NONE
+1604,Tristan da Cunha Islands,NONE,NONE,NONE,NONE
+1605,Southern Mid-Atlantic Ridget,NONE,NONE,NONE,NONE
+1606,South Atlantic Current,NONE,NONE,NONE,NONE
+1607,South Sandwich Islands,NONE,NONE,NONE,NONE
+1608,South Atlantic,NONE,NONE,NONE,NONE
+1609,South Atlantic Roaring Forties,NONE,NONE,NONE,NONE
+1610,Denmark Sea,NONE,NONE,NONE,NONE
+1611,Northern Bay of Bengal,NONE,NONE,NONE,NONE
+1612,Western Bay of Bengal,NONE,NONE,NONE,NONE
+1613,Southern Bay of Bengal,NONE,NONE,NONE,NONE
+1614,Ceylon Sea,NONE,NONE,NONE,NONE
+1615,Southeastern Arabian Sea,NONE,NONE,NONE,NONE
+1616,North Indian Ocean,NONE,NONE,NONE,NONE
+1617,Mascarene Plateau,NONE,NONE,NONE,NONE
+1618,Western Equatorial Counter Current,NONE,NONE,NONE,NONE
+1619,Coast of Maldives,NONE,NONE,NONE,NONE
+1620,Central Indian Ocean,NONE,NONE,NONE,NONE
+1621,Chagos Archipelago,NONE,NONE,NONE,NONE
+1622,Eastern Equatorial Counter Current,NONE,NONE,NONE,NONE
+1623,Ninetyeast Ridge,NONE,NONE,NONE,NONE
+1624,Northeast Indian Ocean,NONE,NONE,NONE,NONE
+1625,Marion Island,NONE,NONE,NONE,NONE
+1626,Natal Basin,NONE,NONE,NONE,NONE
+1627,Taolagnaro Bay,NONE,NONE,NONE,NONE
+1628,Crozet Islands,NONE,NONE,NONE,NONE
+1629,Crozet Basin,NONE,NONE,NONE,NONE
+1630,Madagascar Basin,NONE,NONE,NONE,NONE
+1631,Kerguelen Islands,NONE,NONE,NONE,NONE
+1632,Heard and McDonald Islands,NONE,NONE,NONE,NONE
+1633,South Indian Ocean,NONE,NONE,NONE,NONE
+1634,Indian Ocean Raging Fifties,NONE,NONE,NONE,NONE
+1635,South Australian Basin,NONE,NONE,NONE,NONE
+1636,Southwestern Indian Ridge,NONE,NONE,NONE,NONE
+1637,St Paul and Amsterdam Islands,NONE,NONE,NONE,NONE
+1638,Southeastern Indian Ridge,NONE,NONE,NONE,NONE
+1639,Naturaliste Plateau,NONE,NONE,NONE,NONE
+1640,Broken Ridge,NONE,NONE,NONE,NONE
+1641,East Indian Ocean,NONE,NONE,NONE,NONE
+1642,Zenith Plateau,NONE,NONE,NONE,NONE
+1643,Wallaby Plateau,NONE,NONE,NONE,NONE
+1644,West Australian Basin,NONE,NONE,NONE,NONE
+1645,Eastern Indian Ocean South Equatorial Current,NONE,NONE,NONE,NONE
+1646,Indian Ocean South Equatorial Current,NONE,NONE,NONE,NONE
+1647,Western Indian Ocean South Equatorial Current,NONE,NONE,NONE,NONE
+1648,Lake Tchad,NONE,NONE,NONE,NONE
+1649,Lake Victoria,NONE,NONE,NONE,NONE
+1650,Lake Tanganyika,NONE,NONE,NONE,NONE
+1651,Lake Malawi,NONE,NONE,NONE,NONE
+1652,White Sea,NONE,NONE,NONE,NONE
+1653,Lake Balchasj,NONE,NONE,NONE,NONE
+1654,Lake Bajkal,NONE,NONE,NONE,NONE
+1655,Poyang Lake,NONE,NONE,NONE,NONE
+1656,Lake Titicaca,NONE,NONE,NONE,NONE
+1657,Lake Nicaragua,NONE,NONE,NONE,NONE
+1658,Lake Okeechobee,NONE,NONE,NONE,NONE
+1659,Lake Ontario,NONE,NONE,NONE,NONE
+1660,Lake Erie,NONE,NONE,NONE,NONE
+1661,Lake Huron,NONE,NONE,NONE,NONE
+1662,Lake Michigan,NONE,NONE,NONE,NONE
+1663,Lake Superior,NONE,NONE,NONE,NONE
+1664,Lake Nipigon,NONE,NONE,NONE,NONE
+1665,Lake Winnipeg,NONE,NONE,NONE,NONE
+1666,Commander Basin,NONE,NONE,NONE,NONE
+1667,Emperor Ridge,NONE,NONE,NONE,NONE
+1668,Northwestern Pacific,NONE,NONE,NONE,NONE
+1669,Oyashio Current,NONE,NONE,NONE,NONE
+1670,Northern Kuroshio Current,NONE,NONE,NONE,NONE
+1671,Kuroshio Current,NONE,NONE,NONE,NONE
+1672,Western Pacific,NONE,NONE,NONE,NONE
+1673,Micronesia Sea,NONE,NONE,NONE,NONE
+1674,Mariana Trench,NONE,NONE,NONE,NONE
+1675,North Pacific Equatorial Current,NONE,NONE,NONE,NONE
+1676,Melanesian Basin,NONE,NONE,NONE,NONE
+1677,Kuskokwim Bay,NONE,NONE,NONE,NONE
+1678,Bering Strait,NONE,NONE,NONE,NONE
+1679,Shirshov Ridge,NONE,NONE,NONE,NONE
+1680,Aleutian Islands,NONE,NONE,NONE,NONE
+1681,Shumagin Islands,NONE,NONE,NONE,NONE
+1682,Gulf of Alaska,NONE,NONE,NONE,NONE
+1683,Western Aleutian Trench,NONE,NONE,NONE,NONE
+1684,Northern California Current,NONE,NONE,NONE,NONE
+1685,Eastern Aleutian Trench,NONE,NONE,NONE,NONE
+1686,Eastern North Pacific Drift,NONE,NONE,NONE,NONE
+1687,California Current,NONE,NONE,NONE,NONE
+1688,Murray Fracture Zone,NONE,NONE,NONE,NONE
+1689,North Pacific Drift,NONE,NONE,NONE,NONE
+1690,Western North Pacific Drift,NONE,NONE,NONE,NONE
+1691,Wake Island,NONE,NONE,NONE,NONE
+1692,Midway Island,NONE,NONE,NONE,NONE
+1693,Molokai Fracture Zone,NONE,NONE,NONE,NONE
+1694,Southern California Current,NONE,NONE,NONE,NONE
+1695,Revilla Gigedo Islands,NONE,NONE,NONE,NONE
+1696,Clarion Fracture Zone,NONE,NONE,NONE,NONE
+1697,Coast of Hawaii,NONE,NONE,NONE,NONE
+1698,Marshall Islands,NONE,NONE,NONE,NONE
+1699,Central Pacific Basin,NONE,NONE,NONE,NONE
+1700,Cocos Ridge,NONE,NONE,NONE,NONE
+1701,Guatemala Basin,NONE,NONE,NONE,NONE
+1702,Galapagos Islands,NONE,NONE,NONE,NONE
+1703,Nazca Ridge,NONE,NONE,NONE,NONE
+1704,Juan Fernandez Islands,NONE,NONE,NONE,NONE
+1705,Chile Rise,NONE,NONE,NONE,NONE
+1706,West of Magellans,NONE,NONE,NONE,NONE
+1707,Clipperton Island,NONE,NONE,NONE,NONE
+1708,Galapagos Rise,NONE,NONE,NONE,NONE
+1709,Peru Current,NONE,NONE,NONE,NONE
+1710,Humboldt Current,NONE,NONE,NONE,NONE
+1711,East Pacific Rise,NONE,NONE,NONE,NONE
+1712,South Equatorial Pacific Current,NONE,NONE,NONE,NONE
+1713,Easter Island,NONE,NONE,NONE,NONE
+1714,North Pacific Converge Zone,NONE,NONE,NONE,NONE
+1715,Eastern Equatorial Pacific Current,NONE,NONE,NONE,NONE
+1716,Clipperton Fracture Zone,NONE,NONE,NONE,NONE
+1717,Southern Humboldt Current,NONE,NONE,NONE,NONE
+1718,Mornington Abyssal Plain,NONE,NONE,NONE,NONE
+1719,South Pacific Raging Fifties,NONE,NONE,NONE,NONE
+1720,Tharp Fault,NONE,NONE,NONE,NONE
+1721,South Pacific Roaring Forties,NONE,NONE,NONE,NONE
+1722,Louisville Seamount Chain,NONE,NONE,NONE,NONE
+1723,Chatham Islands,NONE,NONE,NONE,NONE
+1724,Southeast Pacific,NONE,NONE,NONE,NONE
+1725,Tuamotu Islands,NONE,NONE,NONE,NONE
+1726,Samoa Islands,NONE,NONE,NONE,NONE
+1727,Bass Islands,NONE,NONE,NONE,NONE
+1728,Society Islands,NONE,NONE,NONE,NONE
+1729,South Pacific,NONE,NONE,NONE,NONE
+1730,East Pacific Ridge,NONE,NONE,NONE,NONE
+1731,Eltanin Fracture Zone,NONE,NONE,NONE,NONE
+1732,Kiribati Islands,NONE,NONE,NONE,NONE
+1733,Phoenix Islands,NONE,NONE,NONE,NONE
+1734,Gilbert Islands,NONE,NONE,NONE,NONE
+1735,Line Islands,NONE,NONE,NONE,NONE
+1736,Western Equatorial Pacific Counter Current,NONE,NONE,NONE,NONE
+1737,Marquesas Islands,NONE,NONE,NONE,NONE
+1738,Flint Island,NONE,NONE,NONE,NONE
+1739,Pitcairn Islands,NONE,NONE,NONE,NONE
+1740,Equatorial Pacific Counter Current,NONE,NONE,NONE,NONE
+1741,Tiki Basin,NONE,NONE,NONE,NONE
+1742,Upper Guelders,FRA,FRA,protestant,flemish
+1743,Cambray,FRA,FRA,protestant,wallonian
+1744,Antwerpen,FRA,FRA,protestant,flemish
+1745,Cantabria,SPA,SPA,catholic,castillian
+1746,Burgos,SPA,SPA,catholic,castillian
+1747,Caceres,SPA,SPA,catholic,leonese
+1748,Jaén,SPA,SPA,catholic,andalucian
+1749,Cadiz,SPA,SPA,catholic,andalucian
+1750,Alicante,SPA,SPA,catholic,catalan
+1751,Ceuta,SPA,SPA,sunni,moroccan
+1752,Rzhev,PLC,PLC,catholic,russian
+1753,Kostroma,PLC,PLC,catholic,russian
+1754,Murom,PLC,PLC,catholic,russian
+1755,Ustyug,PLC,PLC,catholic,russian
+1756,Bessarabia,PLC,PLC,catholic,ruthenian
+1757,Oberpfalz,GER,GER,protestant,bavarian
+1758,Hanover,GER,GER,protestant,lower_saxon
+1759,Potsdam,GER,GER,protestant,saxon
+1760,Koblenz,FRA,FRA,protestant,hessian
+1761,Pfalz,FRA,FRA,protestant,hessian
+1762,Niederhessen,GER,GER,protestant,hessian
+1763,Niederlausitz,PLC,PLC,catholic,saxon
+1764,Burgas,RUM,RUM,sunni,bulgarian
+1765,Sofia,RUM,ITA,sunni,bulgarian
+1766,Kosovo,RUM,FRA,orthodox,serbian
+1767,Slavonia,RUM,ITA,reformed,croatian
+1768,Lienz,ITA,ITA,catholic,austrian
+1769,Görz,ITA,ITA,reformed,slovene
+1770,Manhartsberg,RUM,FRA,protestant,austrian
+1771,Erz,BOH,BOH,protestant,czech
+1772,Pozsony,RUM,FRA,reformed,slovak
+1773,Achaea,RUM,RUM,orthodox,greek
+1774,Treviso,ITA,ITA,catholic,venetian
+1775,Holstein,FRA,FRA,protestant,danish
+1776,White Karelia,PLC,PLC,catholic,novgorodian
+1777,Kola,PLC,PLC,catholic,polish
+1778,Kasimov,PLC,PLC,catholic,russian
+1779,Rub' al Khali,NONE,NONE,NONE,NONE
+1780,Komi,PLC,PLC,catholic,polish
+1781,Western Siberia,NONE,NONE,NONE,NONE
+1782,Central Siberia,NONE,NONE,NONE,NONE
+1783,Eastern Siberia,NONE,NONE,NONE,NONE
+1784,Tian Shan,NONE,NONE,NONE,NONE
+1785,Pamir,NONE,NONE,NONE,NONE
+1786,Takla Makan,NONE,NONE,NONE,NONE
+1787,Himalaya,NONE,NONE,NONE,NONE
+1788,Arunachal,NONE,NONE,NONE,NONE
+1789,Papua,NONE,NONE,NONE,NONE
+1790,Western Australia,NONE,NONE,NONE,NONE
+1791,Central Australia,NONE,NONE,NONE,NONE
+1792,Merina,SKA,SKA,shamanism,madagasque
+1793,El Djouf,NONE,NONE,NONE,NONE
+1794,Central Sahara,NONE,NONE,NONE,NONE
+1795,East Sahara,NONE,NONE,NONE,NONE
+1796,Central Africa,NONE,NONE,NONE,NONE
+1797,Northern Congo Basin,NONE,NONE,NONE,NONE
+1798,Imatong,NONE,NONE,NONE,NONE
+1799,Urgoma,NONE,NONE,NONE,NONE
+1800,Lower Limpopo,GBR,RUM,catholic,portugese
+1801,Kalahari,NONE,NONE,NONE,NONE
+1802,Western Amazonas,NONE,NONE,NONE,NONE
+1803,Eastern Amazonas,NONE,NONE,NONE,NONE
+1804,Greenland,NONE,NONE,NONE,NONE
+1805,Ungava,NONE,NONE,NONE,NONE
+1806,Weagamow,NONE,NONE,NONE,NONE
+1807,Baffin,NONE,NONE,NONE,NONE
+1808,Great Basin,NONE,NONE,NONE,NONE
+1809,Só'taeo'o,C13,C13,anglican,american
+1810,Alaska,NONE,NONE,NONE,NONE
+1811,Nunavut,NONE,NONE,NONE,NONE
+1812,Northwest Territories,NONE,NONE,NONE,NONE
+1813,Saskatchewan,C12,C12,totemism,plains_cree
+1814,Columbia,NONE,NONE,NONE,NONE
+1815,Pathein,BHA,BHA,sikhism,burmese
+1816,Beijing,MNG,MNG,catholic,chihan
+1817,Nan,AYU,AYU,buddhism,northern_thai
+1818,Chikuzen,JAP,JAP,mahayana,kyushuan
+1819,Tosa,JAP,JAP,mahayana,japanese
+1820,Awa,JAP,JAP,mahayana,japanese
+1821,Nanjing,MNG,MNG,catholic,jianghuai
+1822,Suzhou,MNG,MNG,catholic,wu
+1823,Stung Treng,AYU,AYU,buddhism,khmer
+1824,Wenzhou,MNG,MNG,confucianism,wu
+1825,Aki,JAP,JAP,mahayana,japanese
+1826,Lika,RUM,REB,orthodox,croatian
+1827,Raska,RUM,FRA,orthodox,serbian
+1828,Donji Kraji,RUM,FRA,orthodox,bosnian
+1829,Quanzhou,MNG,MNG,confucianism,chimin
+1830,Tajima,JAP,JAP,mahayana,japanese
+1831,Herzegovina,RUM,FRA,orthodox,bosnian
+1832,Yamato,JAP,JAP,mahayana,japanese
+1833,Ji'an,MNG,MNG,confucianism,gan
+1834,Dorpat,PLC,PLC,catholic,estonian
+1835,Mino,JAP,JAP,mahayana,togoku
+1836,Luoyang,MNG,MNG,catholic,zhongyuan
+1837,Etchu,JAP,JAP,mahayana,togoku
+1838,Hefei,MNG,MNG,catholic,jianghuai
+1839,Suruga,JAP,JAP,mahayana,togoku
+1840,Guilin,WUU,WUU,confucianism,hakka
+1841,Marienburg,PLC,PLC,catholic,prussian
+1842,Narva,PLC,PLC,catholic,estonian
+1843,Kozuke,JAP,JAP,mahayana,togoku
+1844,Xiankhouang,WUU,WUU,buddhism,lao
+1845,Pyeongyang,PLC,PLC,catholic,korean
+1846,Amasya,RUM,RUM,sunni,turkish
+1847,Shiribeshi,JAP,JAP,mahayana,togoku
+1848,Hamid,RUM,RUM,sunni,turkish
+1849,Hama,RUM,RUM,sunni,al_suryah_arabic
+1850,Yaran,PLC,PLC,catholic,manchu
+1851,Coimbra,GBR,GBR,anglican,portugese
+1852,Tokachi,JAP,JAP,mahayana,togoku
+1853,Kastoria,RUM,RUM,orthodox,greek
+1854,Jaffa,RUM,RUM,sunni,al_suryah_arabic
+1855,Sidon,RUM,RUM,sunni,al_suryah_arabic
+1856,Abkhazia,PER,PER,sunni,georgian
+1857,Lauenburg,GER,GER,protestant,lower_saxon
+1858,Stettin,PLC,PLC,catholic,polish
+1859,Chelmno,PLC,PLC,catholic,polish
+1860,Norfolk,GBR,GBR,anglican,english
+1861,Derby,GBR,GBR,anglican,english
+1862,Cremona,ITA,ITA,catholic,lombard
+1863,Graz,RUM,FRA,reformed,austrian
+1864,Somogy,RUM,FRA,reformed,hungarian
+1865,Ghent,FRA,FRA,protestant,flemish
+1866,Namur,FRA,FRA,protestant,wallonian
+1867,Vaud,ITA,ITA,catholic,swiss
+1868,Augsburg,GER,GER,protestant,swabian
+1869,Zürich,ITA,ITA,catholic,swiss
+1870,St Gallen,ITA,ITA,catholic,swiss
+1871,Wallis,ITA,ITA,catholic,swiss
+1872,Ulm,GER,GER,protestant,swabian
+1873,Chur,ITA,ITA,catholic,swiss
+1874,Bremen,FRA,FRA,protestant,lower_saxon
+1875,Cuneo,ITA,ITA,catholic,piedmontese
+1876,Frankfurt,FRA,FRA,protestant,hessian
+1877,Charolais,FRA,FRA,protestant,burgundian
+1878,Aachen,FRA,FRA,protestant,hessian
+1879,Alençon,FRA,FRA,protestant,cosmopolitan_french
+1880,Sundgau,ITA,ITA,catholic,swabian
+1881,St. Martin,C10,C10,catholic,mexican
+1882,Annaba,ITA,REB,sunni,berber
+1883,Western Finnish Lakes,NONE,NONE,NONE,NONE
+1884,East Finnish Lakes,NONE,NONE,NONE,NONE
+1885,Central Finnish Lakes,NONE,NONE,NONE,NONE
+1886,Storavan,NONE,NONE,NONE,NONE
+1887,Storsjön,NONE,NONE,NONE,NONE
+1888,Kara Sea,NONE,NONE,NONE,NONE
+1889,Lake Geneva,NONE,NONE,NONE,NONE
+1890,Lake Constance,NONE,NONE,NONE,NONE
+1891,Lake Tuz,NONE,NONE,NONE,NONE
+1892,Lake Van,NONE,NONE,NONE,NONE
+1893,Lake Urmia,NONE,NONE,NONE,NONE
+1894,Sevan Lake,NONE,NONE,NONE,NONE
+1895,Lake Taihu,NONE,NONE,NONE,NONE
+1896,Lake Hongze,NONE,NONE,NONE,NONE
+1897,Dongting,NONE,NONE,NONE,NONE
+1898,Tonlé Sap Lake,NONE,NONE,NONE,NONE
+1899,Tana Lake,NONE,NONE,NONE,NONE
+1900,Lake Turkana,NONE,NONE,NONE,NONE
+1901,Mpangu,GBR,RUM,catholic,kongolese
+1902,Lake Poopo,NONE,NONE,NONE,NONE
+1903,Lake Champlain,NONE,NONE,NONE,NONE
+1904,Lake Saint-Jean,NONE,NONE,NONE,NONE
+1905,Lake Manicouagan,NONE,NONE,NONE,NONE
+1906,Lake Michikamau,NONE,NONE,NONE,NONE
+1907,Lake Bienville,NONE,NONE,NONE,NONE
+1908,Clearwater Lakes,NONE,NONE,NONE,NONE
+1909,Lake Minto,NONE,NONE,NONE,NONE
+1910,La Grande River,NONE,NONE,NONE,NONE
+1911,Lake Island,NONE,NONE,NONE,NONE
+1912,Lake Reindeer,NONE,NONE,NONE,NONE
+1913,Wollaston Lake,NONE,NONE,NONE,NONE
+1914,Great Slave Lake,NONE,NONE,NONE,NONE
+1915,Lake Athabasca,NONE,NONE,NONE,NONE
+1916,Dubawni Lake,NONE,NONE,NONE,NONE
+1917,Yathkyed Lake,NONE,NONE,NONE,NONE
+1918,Kasba Lake,NONE,NONE,NONE,NONE
+1919,Nueltin Lake,NONE,NONE,NONE,NONE
+1920,Wholdaia Lake,NONE,NONE,NONE,NONE
+1921,Peter Pond Lake,NONE,NONE,NONE,NONE
+1922,Great Salt Lake,NONE,NONE,NONE,NONE
+1923,Williston Lake,NONE,NONE,NONE,NONE
+1924,Greenland Tip,NONE,NONE,NONE,NONE
+1925,Tana,NONE,NONE,shamanism,bantu
+1926,Northern Baltic Sea,NONE,NONE,NONE,NONE
+1927,Eastern Baltic Sea,NONE,NONE,NONE,NONE
+1928,Western Sea of Åland,NONE,NONE,NONE,NONE
+1929,Western Norwegian Sea,NONE,NONE,NONE,NONE
+1930,Åland,PLC,PLC,catholic,polish
+1931,East Frisia,FRA,FRA,protestant,frisian
+1932,Gulf of Satalia,NONE,NONE,NONE,NONE
+1933,Bari,ITA,ITA,catholic,neapolitan
+1934,Lucania,ITA,ITA,catholic,neapolitan
+1935,Mitau,PLC,PLC,catholic,lithuanian
+1936,Kovno,PLC,PLC,catholic,lithuanian
+1937,Grodno,PLC,PLC,catholic,polish
+1938,Wizna,PLC,PLC,catholic,polish
+1939,Leczyca,PLC,PLC,catholic,polish
+1940,Belz,PLC,PLC,catholic,ruthenian
+1941,Turov,PLC,PLC,catholic,ruthenian
+1942,Zhytomyr,PLC,PLC,catholic,ruthenian
+1943,Bratslav,PLC,PLC,catholic,ruthenian
+1944,Cherkasy,PLC,PLC,catholic,ruthenian
+1945,Severia,PLC,PLC,catholic,ruthenian
+1946,Satara,BHA,BHA,sikhism,marathi
+1947,Gingee,BHA,BHA,sikhism,tamil
+1948,Bidar,BHA,BHA,sikhism,kannada
+1949,Penukonda,BHA,BHA,hinduism,telegu
+1950,Meghalaya,NONE,NONE,NONE,NONE
+1951,Hunyad,RUM,RUM,orthodox,transylvanian
+1952,Maramaros,RUM,FRA,orthodox,ruthenian
+1953,Szabolcs,RUM,GBR,reformed,hungarian
+1954,Torontál,RUM,GBR,reformed,hungarian
+1955,Arkhangelsk,PLC,PLC,catholic,novgorodian
+1956,Suzdal,PLC,PLC,catholic,russian
+1957,Galich,PLC,PLC,catholic,russian
+1958,Kargopol,PLC,PLC,catholic,novgorodian
+1959,Torzhok,PLC,PLC,catholic,novgorodian
+1960,Ostrov,PLC,PLC,catholic,novgorodian
+1961,Ladoga,PLC,PLC,catholic,novgorodian
+1962,Kudymkar,PLC,PLC,catholic,russian
+1963,Cherdyn,PLC,PLC,catholic,polish
+1964,Ust-Sysolsk,PLC,PLC,catholic,russian
+1965,Buzuluk,PLC,PLC,catholic,russian
+1966,Chelyaba,PLC,PLC,catholic,bashkir
+1967,Khujand,PER,PER,sunni,uzbehk
+1968,Kulob,PER,PER,sunni,uzbehk
+1969,Sozak,PER,PER,sunni,khazak
+1970,Syghnak,PER,PER,sunni,khazak
+1971,Beljamen,PLC,PLC,catholic,mishary
+1972,Udmurtia,PLC,PLC,catholic,russian
+1973,Urgench,PER,PER,sunni,uzbehk
+1974,Yedishkul,PLC,PLC,catholic,crimean
+1975,North Sea,NONE,NONE,NONE,NONE
+1976,Dead Sea,NONE,NONE,NONE,NONE
+1977,Mälaren,NONE,NONE,NONE,NONE
+1978,Shetland,GBR,GBR,anglican,norwegian
+1979,Färöarna,GBR,GBR,anglican,icelandic
+1980,Hokuriku Coast,NONE,NONE,NONE,NONE
+1981,Bornholm,GBR,GBR,protestant,danish
+1982,Blekinge,PLC,PLC,catholic,swedish
+1983,Lolland,GER,GER,protestant,danish
+1984,Nordjylland,GER,GER,protestant,danish
+1985,Närke,PLC,PLC,catholic,swedish
+1986,New Caledonia,GBR,GBR,catholic,portugese
+1987,Society Islands,GBR,GBR,catholic,portugese
+1988,Rapanui,GBR,GBR,catholic,portugese
+1989,Tonga,TOG,TOG,animism,polynesian
+1990,Tuvalu,JAP,JAP,mahayana,japanese
+1991,Gilbert Islands,JAP,JAP,mahayana,japanese
+1992,Nauru,GBR,GBR,catholic,portugese
+1993,Marshall Islands,JAP,JAP,mahayana,japanese
+1994,Wake,JAP,JAP,mahayana,japanese
+1995,Micronesia,JAP,JAP,mahayana,japanese
+1996,Palau,JAP,JAP,mahayana,japanese
+1997,Midway,JAP,JAP,mahayana,japanese
+1998,Christmas Island,JAP,JAP,mahayana,japanese
+1999,Cocos Island,GBR,GBR,catholic,portugese
+2000,Qinghai Lake,NONE,NONE,NONE,NONE
+2001,Siling Lake,NONE,NONE,NONE,NONE
+2002,Galápagos Islands,GBR,GBR,catholic,portugese
+2003,Ktunaxa,C20,C20,catholic,mexican
+2004,Kainaa,C12,C12,protestant,danish
+2005,Assapasca,C12,C12,protestant,danish
+2006,Ashalaho,C12,C12,protestant,danish
+2007,Sahnish,C02,C02,catholic,irish
+2008,Sihasapa,C13,C13,anglican,american
+2009,Oglala,C13,C13,anglican,american
+2010,Pequot,C02,C02,totemism,pequot
+2011,Senedo,C02,C02,totemism,powhatan
+2012,Ersegonteog,C12,C12,totemism,abenaki
+2013,Allesikantekw,C02,C02,totemism,massachusset
+2014,Natchitoches,C13,C13,totemism,caddo
+2015,Outchibou,C12,C12,totemism,anishinabe
+2016,Amahami,C02,C02,catholic,irish
+2017,Matiyininiwak,C12,C12,totemism,shoshone
+2018,Tsuu T'ina,BLA,BLA,totemism,blackfoot
+2019,Nimipu,C20,C20,catholic,mexican
+2020,Banakwut,C20,C20,totemism,shoshone
+2021,Miwok,C18,C18,catholic,mexican
+2022,Haida,C20,C20,catholic,mexican
+2023,Munsee,C02,C02,totemism,delaware
+2024,Garoowe,RUM,RUM,sunni,somali
+2025,South Georgia,NONE,NONE,NONE,NONE
+2026,Tanjore,BHA,BHA,sikhism,tamil
+2027,Arcot,BHA,BHA,sikhism,tamil
+2028,Mahur,BHA,BHA,sikhism,marathi
+2029,South Kanara,BHA,BHA,sikhism,kannada
+2030,Goa,BHA,BHA,sikhism,marathi
+2031,Morasanadu,BHA,BHA,hinduism,kannada
+2032,Malenadu,BHA,BHA,sikhism,kannada
+2033,Savanur,BHA,BHA,sikhism,kannada
+2034,Pune,BHA,BHA,sikhism,marathi
+2035,Gulbarga,BHA,BHA,sikhism,kannada
+2036,Baglana,BHA,BHA,sikhism,marathi
+2037,Warangal,BHA,BHA,sikhism,telegu
+2038,Midnapore,BHA,BHA,sikhism,bengali
+2039,Sunderbans,BHA,BHA,sikhism,bengali
+2040,Sadiya,BHA,BHA,sikhism,assamese
+2041,Manipur,BHA,BHA,sikhism,chin
+2042,Koch Hajo,BHA,BHA,sikhism,bengali
+2043,Balasore,BHA,BHA,sikhism,bengali
+2044,Bhagalpur,BHA,BHA,sikhism,bengali
+2045,Rangpur,BHA,BHA,sikhism,bengali
+2046,Nasirabad,BHA,BHA,sikhism,bengali
+2047,Tirhut,BHA,BHA,sikhism,bihari
+2048,Jeypore,BHA,BHA,hinduism,gondi
+2049,Khurda,BHA,BHA,sikhism,garjati
+2050,Chanda,BHA,BHA,sikhism,gondi
+2051,Gohilvad,BHA,BHA,sikhism,saurashtri
+2052,Halar,BHA,BHA,sikhism,saurashtri
+2053,Patan,BHA,BHA,sikhism,gujarati
+2054,Ahmadabad,BHA,BHA,sikhism,gujarati
+2055,Gorakhpur,BHA,BHA,sikhism,bihari
+2056,Rewakantha,BHA,BHA,sikhism,gujarati
+2057,Bhilsa,BHA,BHA,sikhism,malvi
+2058,Mewar,BHA,BHA,sikhism,rajput
+2059,Kalpi,BHA,BHA,sikhism,kanauji
+2060,Upper Doab,BHA,BHA,sikhism,kanauji
+2061,Katehar,BHA,BHA,sikhism,kanauji
+2062,Panipat,BHA,BHA,sikhism,kanauji
+2063,Etawah,BHA,BHA,sikhism,kanauji
+2064,Shekhawati,BHA,BHA,sikhism,rajput
+2065,Bhattiana,BHA,BHA,sikhism,rajput
+2066,Nagaur,BHA,BHA,sikhism,rajput
+2067,Gorwar,BHA,BHA,sikhism,rajput
+2068,Siwi,BHA,BHA,sikhism,panjabi
+2069,Kumaon,BHA,BHA,sikhism,kanauji
+2070,Chaubisi Rajya,BHA,BHA,vajrayana,nepali
+2071,Limbuwan,BHA,BHA,buddhism,nepali
+2072,Bhakkar,BHA,BHA,sikhism,sindhi
+2073,Gilgit,BHA,BHA,sikhism,panjabi
+2074,Ladakh,BHA,BHA,vajrayana,tibetan
+2075,Doaba,BHA,BHA,sikhism,panjabi
+2076,Sialkot,BHA,BHA,sikhism,panjabi
+2077,Margalla,BHA,BHA,sikhism,panjabi
+2078,Bannu,BHA,BHA,sikhism,panjabi
+2079,Derajat,BHA,BHA,sikhism,panjabi
+2080,Srikakulam,BHA,BHA,hinduism,telegu
+2081,Lakhnor,BHA,BHA,sikhism,bengali
+2082,Raipur,BHA,BHA,sikhism,gondi
+2083,Udayagiri,BHA,BHA,sikhism,telegu
+2084,Konaseema,BHA,BHA,sikhism,telegu
+2085,Tiruchirappalli,BHA,BHA,sikhism,tamil
+2086,Cholistan,BHA,BHA,sikhism,panjabi
+2087,Ajmer,BHA,BHA,sikhism,rajput
+2088,Umarkot,BHA,BHA,sikhism,sindhi
+2089,Chaul,BHA,BHA,sikhism,marathi
+2090,Kurnool,BHA,BHA,hinduism,telegu
+2091,Tripura,BHA,BHA,hinduism,chin
+2092,Mahadeo,BHA,BHA,sikhism,malvi
+2093,Mandsaur,BHA,BHA,sikhism,malvi
+2094,Bahreich,BHA,BHA,sikhism,avadhi
+2095,Varanasi,BHA,BHA,sikhism,bihari
+2096,Damin,BHA,BHA,sikhism,jharkhandi
+2097,Baghelkhand,BHA,BHA,sikhism,avadhi
+2098,Surguja,BHA,BHA,sikhism,bihari
+2099,Kandy,BHA,BHA,sikhism,sinhala
+2100,Vanni,BHA,BHA,sikhism,tamil
+2101,Tirunelveli,BHA,BHA,sikhism,tamil
+2102,Albazin,PLC,PLC,catholic,evenk
+2103,Udi,PLC,PLC,tengri_pagan_reformed,evenk
+2104,Birija,PLC,PLC,tengri_pagan_reformed,manchu
+2105,Kuru,PLC,PLC,tengri_pagan_reformed,manchu
+2106,Furdan,PLC,PLC,confucianism,manchu
+2107,Ningguta,PLC,PLC,catholic,manchu
+2108,Huncun,PLC,PLC,catholic,manchu
+2109,Boduna,PLC,PLC,tengri_pagan_reformed,chahar
+2110,Yehe,PLC,PLC,confucianism,manchu
+2111,Hetu Ala,PLC,PLC,catholic,manchu
+2112,Andong,PLC,PLC,catholic,shandong_culture
+2113,Gaizhou,MNG,MNG,confucianism,shandong_culture
+2114,Ereen,PLC,PLC,catholic,mongol
+2115,Chahar,PLC,PLC,catholic,mongol
+2116,Ih Huree,PLC,PLC,catholic,khalkha
+2117,Zasagt,PLC,PLC,catholic,khalkha
+2118,Urzhar,PLC,PLC,catholic,oirats
+2119,Chuguchak,PLC,PLC,catholic,oirats
+2120,Ili,PLC,PLC,catholic,uyghur
+2121,Kuqa,PER,PER,sunni,uyghur
+2122,Hami,PLC,PLC,catholic,oirats
+2123,Qakilik,PER,PER,sunni,oirats
+2124,Yarkand,BHA,BHA,vajrayana,tibetan
+2125,Kochkor,PER,PER,sunni,kirgiz
+2126,Chuy,PER,PER,sunni,kirgiz
+2127,Yashilkul,PER,PER,sunni,uzbehk
+2128,Tsaparang,BHA,BHA,vajrayana,tibetan
+2129,Changtang,NONE,NONE,NONE,NONE
+2130,Nyingchi,AYU,AYU,buddhism,tibetan
+2131,Qamdo,PHA,PHA,vajrayana,tibetan
+2132,Markam,AYU,AYU,buddhism,tibetan
+2133,Dege,PHA,PHA,vajrayana,tibetan
+2134,Rebgong,PLC,PLC,catholic,tibetan
+2135,Garze,AYU,AYU,buddhism,tibetan
+2136,Xuanhua,PLC,PLC,catholic,jin
+2137,Daming,MNG,MNG,catholic,chihan
+2138,Wuding,MNG,MNG,catholic,shandong_culture
+2139,Laizhou,MNG,MNG,catholic,shandong_culture
+2140,Yanzhou,MNG,MNG,catholic,zhongyuan
+2141,Xuzhou,MNG,MNG,catholic,zhongyuan
+2142,Huai'an,MNG,MNG,catholic,jianghuai
+2143,Fengyang,MNG,MNG,catholic,zhongyuan
+2144,Fuyang,MNG,MNG,catholic,zhongyuan
+2145,Zhenjiang,MNG,MNG,catholic,jianghuai
+2146,Ningguo,MNG,MNG,catholic,wu
+2147,Huizhou,MNG,MNG,catholic,wu
+2148,Shaoxin,MNG,MNG,confucianism,wu
+2149,Ningbo,MNG,MNG,confucianism,wu
+2150,Jinhua,MNG,MNG,confucianism,wu
+2151,Poyang,MNG,MNG,confucianism,gan
+2152,Jianning,MNG,MNG,confucianism,chimin
+2153,Tingzhou,MNG,MNG,confucianism,hakka
+2154,Tamsui,WUU,WUU,animism,chimin
+2155,Middag,WUU,WUU,animism,chimin
+2156,Chaochow,WUU,WUU,confucianism,chimin
+2157,Waichow,WUU,WUU,confucianism,hakka
+2158,Shiukwan,WUU,WUU,confucianism,hakka
+2159,Leichow,WUU,WUU,confucianism,chimin
+2160,Ngaichow,WUU,WUU,confucianism,chimin
+2161,Limchow,WUU,WUU,mahayana,cantonese
+2162,Ngchow,WUU,WUU,confucianism,cantonese
+2163,Liuzhou,WUU,WUU,confucianism,hakka
+2164,Namning,WUU,WUU,confucianism,hakka
+2165,Pu'er,AYU,AYU,buddhism,bai
+2166,Dehong,BHA,BHA,sikhism,shan
+2167,Lijiang,AYU,REB,buddhism,bai
+2168,Bozhou,AYU,AYU,animism,yi
+2169,Langzhong,WUU,WUU,confucianism,sichuanese
+2170,Songqu,MNG,MNG,catholic,tibetan
+2171,Xiangyang,MNG,MNG,catholic,hubei
+2172,Jingzhou,MNG,MNG,catholic,hubei
+2173,Yuanling,WUU,WUU,animism,sichuanese
+2174,Hengyang,WUU,WUU,animism,xiang
+2175,Runing,MNG,MNG,catholic,zhongyuan
+2176,Shangqiu,MNG,MNG,catholic,zhongyuan
+2177,Ningwu,MNG,MNG,catholic,jin
+2178,Lu'an,MNG,MNG,catholic,jin
+2179,Yan'an,PLC,PLC,catholic,jin
+2180,Tianshui,PLC,PLC,catholic,xibei
+2181,Pingliang,PLC,PLC,catholic,xibei
+2182,Liangzhou,PLC,PLC,catholic,xibei
+2183,Taozhou,PLC,PLC,catholic,tibetan
+2184,Xining,PLC,PLC,catholic,xibei
+2185,Mergen,PLC,PLC,tengri_pagan_reformed,manchu
+2186,Iman,PLC,PLC,confucianism,manchu
+2187,Sartu,KRC,KRC,tengri_pagan_reformed,chahar
+2188,Alchuka,MYR,MYR,tengri_pagan_reformed,manchu
+2189,Tsetserleg,PLC,PLC,catholic,polish
+2190,Bayankhongor,PLC,PLC,catholic,khalkha
+2191,Ejin,PLC,PLC,catholic,xibei
+2192,Korla,PER,PER,sunni,uyghur
+2193,Govi,PLC,PLC,catholic,mongol
+2194,Qilian,NONE,NONE,NONE,NONE
+2195,Adyghe,PLC,PLC,catholic,circassian
+2196,Guria,PER,PER,sunni,georgian
+2197,Kabardia,PER,PER,sunni,circassian
+2198,Khundzia,PER,PER,sunni,dagestani
+2199,Tarki,PER,PER,sunni,dagestani
+2200,Suleiman Range,NONE,NONE,NONE,NONE
+2201,Alania,PER,PER,sunni,circassian
+2202,Melikates,PER,PER,sunni,armenian
+2203,Kakheti,PER,PER,sunni,georgian
+2204,Kars,PER,PER,sunni,georgian
+2205,Nakhchivan,PER,PER,sunni,armenian
+2206,Urmia,PER,PER,sunni,kurdish
+2207,Maragheh,PER,PER,sunni,azerbaijani
+2208,Terek,PER,PER,sunni,dagestani
+2209,Ilam,PER,PER,sunni,kurdish
+2210,Kirmanshah,PER,PER,sunni,luri
+2211,Ardalan,PER,PER,sunni,kurdish
+2212,Zanjan,PER,PER,sunni,azerbaijani
+2213,Qom,PER,PER,sunni,persian
+2214,Golestan,PER,PER,sunni,mazandarani
+2215,Qazvin,PER,PER,sunni,azerbaijani
+2216,Semnan,PER,PER,sunni,persian
+2217,Yasuj,PER,PER,sunni,luri
+2218,Shiraz,PER,PER,sunni,persian
+2219,Bandar Langeh,PER,PER,sunni,persian
+2220,Bam,BHA,BHA,sikhism,rajput
+2221,Mashhad,PER,PER,sunni,khorasani
+2222,Ardakan,PER,PER,sunni,persian
+2223,Larestan,PER,PER,sunni,persian
+2224,Ferah,PER,PER,sunni,khorasani
+2225,Bamyan,PER,PER,sunni,afghani
+2226,Jalalabad,AFG,AFG,sunni,afghani
+2227,Kunduz,AFG,AFG,sunni,afghani
+2228,Maymana,AFG,AFG,sunni,afghani
+2229,Bust,PER,PER,sunni,afghani
+2230,Chakhansur,PER,PER,sunni,khorasani
+2231,Bela,BHA,BHA,sikhism,sindhi
+2232,Kharan,BHA,BHA,sunni,baluchi
+2233,Chabahar,BHA,BHA,sikhism,rajput
+2234,Rafsanjan,PER,PER,sunni,persian
+2235,Sabzevar,PER,PER,sunni,khorasani
+2236,Bojnord,PER,PER,sunni,khorasani
+2237,Tekrur,ITA,RUM,catholic,fulani
+2238,Kantor,ITA,RUM,catholic,fulani
+2239,Siine,JOL,JOL,shamanism,senegambian
+2240,Galam,ITA,RUM,sunni,fulani
+2241,Beafada,GBR,RUM,anglican,portugese
+2242,Karou,GBR,RUM,anglican,portugese
+2243,Termes,ITA,RUM,catholic,fulani
+2244,Tagant,ITA,RUM,catholic,fulani
+2245,Wagadu,ITA,RUM,catholic,fulani
+2246,Baghena,ITA,RUM,sunni,fulani
+2247,Hodh,ITA,RUM,sunni,tuareg
+2248,Do,ITA,RUM,catholic,mali
+2249,Sibiridugu,ITA,RUM,catholic,mali
+2250,Bendugu,ITA,RUM,sunni,bozo
+2251,Guinea,NONE,NONE,NONE,NONE
+2252,Lobi,ITA,RUM,catholic,dyola
+2253,Gwiriko,ITA,RUM,catholic,dyola
+2254,Bonoman,ITA,RUM,catholic,aka
+2255,Gyaaman,GBR,RUM,sunni,aka
+2256,Dagbon,ITA,RUM,catholic,dagomba
+2257,Denkyira,GBR,RUM,shamanism,aka
+2258,Cape Coast,GBR,RUM,shamanism,aka
+2259,Sah,ITA,RUM,shamanism,bambara
+2260,Mema,ITA,RUM,sunni,bambara
+2261,Kala,ITA,RUM,catholic,bozo
+2262,Karabara,ITA,RUM,sunni,songhai
+2263,Haayre,ITA,RUM,catholic,bozo
+2264,Hombori,ITA,RUM,catholic,songhai
+2265,Liptako,ITA,RUM,catholic,mossi
+2266,Bilanga,ITA,RUM,catholic,mossi
+2267,Tenkodogo,ITA,RUM,catholic,mossi
+2268,Aribanda,ITA,RUM,sunni,songhai
+2269,Zarmaganda,ITA,RUM,sunni,songhai
+2270,Dallol,ITA,RUM,catholic,songhai
+2271,Azawagh,ITA,RUM,sunni,tuareg
+2272,Azbin,ITA,RUM,sunni,tuareg
+2273,Ader,ITA,RUM,sunni,tuareg
+2274,Air,ITA,RUM,sunni,tuareg
+2275,Tenere,ITA,RUM,sunni,tuareg
+2276,Itesan,ITA,RUM,sunni,tuareg
+2277,Kawar,ITA,RUM,sunni,tuareg
+2278,Kebbi,ITA,RUM,shamanism,hausa
+2279,Daura,ITA,RUM,sunni,hausa
+2280,Biram,ITA,RUM,sunni,hausa
+2281,Rano,ITA,RUM,sunni,hausa
+2282,Muniyo,ITA,RUM,sunni,kanuri
+2283,Bedde,ITA,RUM,sunni,kanuri
+2284,Manga,ITA,RUM,sunni,kanuri
+2285,Marghi,ITA,RUM,catholic,kanuri
+2286,Logone,ITA,RUM,shamanism,kanuri
+2287,Kotoko,ITA,RUM,sunni,kanuri
+2288,Yao,ITA,RUM,sunni,bilala
+2289,Ondo,GBR,RUM,shamanism,yorumba
+2290,Ijebu,GBR,RUM,shamanism,yorumba
+2291,Ketu,ITA,RUM,catholic,yorumba
+2292,Moshi,ITA,RUM,shamanism,yorumba
+2293,Yawuri,ITA,RUM,catholic,hausa
+2294,Warri,GBR,RUM,shamanism,yorumba
+2295,Atakora,ITA,RUM,shamanism,dagomba
+2296,Karasi,RUM,RUM,sunni,turkish
+2297,Saruhan,RUM,RUM,sunni,turkish
+2298,Tekke,RUM,RUM,sunni,turkish
+2299,Bolu,RUM,RUM,sunni,turkish
+2300,Bozok,RUM,RUM,sunni,turkish
+2301,Kayseri,RUM,RUM,sunni,turkish
+2302,Içel,RUM,RUM,sunni,turkish
+2303,Malatya,RUM,RUM,sunni,turkish
+2304,Canik,RUM,RUM,sunni,turkish
+2305,Erzincan,RUM,RUM,coptic,armenian
+2306,Mush,RUM,RUM,coptic,armenian
+2307,Van,RUM,RUM,coptic,armenian
+2308,Urfa,RUM,RUM,sunni,kurdish
+2309,Sinjar,PER,PER,sunni,al_iraqiya_arabic
+2310,Tikrit,PER,PER,sunni,al_iraqiya_arabic
+2311,Samawat,PER,PER,sunni,al_iraqiya_arabic
+2312,Wasit,PER,PER,sunni,al_iraqiya_arabic
+2313,Antioch,RUM,RUM,sunni,al_suryah_arabic
+2314,Rahba,RUM,RUM,sunni,al_iraqiya_arabic
+2315,Suez,RUM,RUM,sunni,al_misr_arabic
+2316,Al Gharbia,RUM,RUM,sunni,al_misr_arabic
+2317,Minya,RUM,RUM,sunni,al_misr_arabic
+2318,Bahiriya,RUM,RUM,sunni,al_misr_arabic
+2319,Manfalut,RUM,RUM,sunni,al_misr_arabic
+2320,Ras Gharib,RUM,RUM,sunni,al_misr_arabic
+2321,Queseer,RUM,RUM,sunni,al_misr_arabic
+2322,Wadi Halfa,MAK,MAK,coptic,nubian
+2323,Sahra an Nübyah,BEJ,BEJ,coptic,nubian
+2324,Halaib,RUM,RUM,sunni,al_misr_arabic
+2325,Tarrana,RUM,RUM,sunni,al_misr_arabic
+2326,Bardiyah,RUM,RUM,sunni,al_misr_arabic
+2327,Maan,RUM,RUM,sunni,bedouin_arabic
+2328,Al Ula,RUM,RUM,sunni,bedouin_arabic
+2329,Yanbu,RUM,RUM,sunni,hejazi_culture
+2330,Ma'din Sulaym,RUM,RUM,sunni,hejazi_culture
+2331,Jeddah,RUM,REB,sunni,hejazi_culture
+2332,Turubah,RUM,REB,sunni,hejazi_culture
+2333,Zufra,RUM,RUM,sunni,gulf_arabic
+2334,Badiyat ash Sham,NONE,NONE,NONE,NONE
+2335,Dawasir,RUM,RUM,sunni,bedouin_arabic
+2336,Aflaj,RUM,RUM,sunni,bedouin_arabic
+2337,Buraydah,RUM,RUM,sunni,bedouin_arabic
+2338,Hafar,RUM,RUM,sunni,bedouin_arabic
+2339,Yabrin,RUM,RUM,sunni,bedouin_arabic
+2340,Grane,RUM,RUM,sunni,gulf_arabic
+2341,Masirah,PER,PER,sunni,omani_culture
+2342,Wusta,PER,PER,sunni,mahri_culture
+2343,Kathiri,HDR,HDR,sunni,yemeni_culture
+2344,Marib,RUM,RUM,sunni,yemeni_culture
+2345,Beihan,RUM,RUM,sunni,yemeni_culture
+2346,Jazan,RUM,REB,sunni,hejazi_culture
+2347,Hofuf,RUM,RUM,sunni,gulf_arabic
+2348,Chios,RUM,RUM,orthodox,greek
+2349,Kizil-Su,PER,PER,sunni,turkmeni
+2350,Konjikala,PER,PER,sunni,turkmeni
+2351,Shekty,PLC,PLC,catholic,khazak
+2352,Alty-Kuduk,PLC,PLC,catholic,khazak
+2353,Tortkara,PLC,PLC,catholic,khazak
+2354,Shegendyk,PLC,PLC,catholic,polish
+2355,Narym,PLC,PLC,catholic,khazak
+2356,Shymkent,PER,PER,sunni,uzbehk
+2357,Aksary,PLC,PLC,catholic,polish
+2358,Altyn,PLC,PLC,catholic,khazak
+2359,Baganaly,PLC,PLC,catholic,khazak
+2360,Tobykty,PLC,PLC,catholic,khazak
+2361,Dzhaman-Kuduk,PLC,PLC,catholic,khazak
+2362,Gurganj,PER,PER,sunni,turkmeni
+2363,Atakent,PER,PER,sunni,khazak
+2364,Talas,PER,PER,sunni,kirgiz
+2365,Orda,PLC,PLC,catholic,nogaybak
+2366,Utva,PLC,PLC,catholic,nogaybak
+2367,Lower Yik,PLC,PLC,catholic,nogaybak
+2368,Karamegdan,PLC,PLC,catholic,khazak
+2369,Upper Ishim,PLC,PLC,catholic,khazak
+2370,Kungirot,PER,PER,sunni,nogaybak
+2371,Song La,WUU,WUU,buddhism,lao
+2372,Hai Phong,WUU,WUU,mahayana,vietnamese
+2373,Hue,WUU,WUU,mahayana,vietnamese
+2374,Kauthara,ANN,ANN,mahayana,cham
+2375,Tay Nguyen,ANN,ANN,mahayana,cham
+2376,Prek Russey,AYU,AYU,buddhism,khmer
+2377,Teuk Khmao,AYU,AYU,buddhism,khmer
+2378,Kratie,AYU,AYU,buddhism,khmer
+2379,Battambang,AYU,AYU,buddhism,khmer
+2380,Phnom Penh,AYU,AYU,buddhism,khmer
+2381,Luang Namtha,AYU,AYU,buddhism,lao
+2382,Savanh Nakhone,CHK,CHK,buddhism,lao
+2383,Khukhanor Surin,AYU,AYU,buddhism,khmer
+2384,Nong Khai,AYU,AYU,buddhism,lao
+2385,Nongbua Lamphu,AYU,AYU,buddhism,lao
+2386,Chaiyaphum,AYU,AYU,buddhism,khmer
+2387,Phetchaburi,BHA,BHA,buddhism,central_thai
+2388,Phitsanulok,AYU,AYU,buddhism,central_thai
+2389,Phra Bang,BHA,BHA,buddhism,central_thai
+2390,Chaiya,BHA,BHA,buddhism,central_thai
+2391,Thalang,BHA,BHA,buddhism,central_thai
+2392,Selangor,AYU,AYU,buddhism,malayan
+2393,Terengganu,AYU,AYU,buddhism,malayan
+2394,Kedah,BHA,BHA,buddhism,malayan
+2395,Hkamti Long,BHA,BHA,buddhism,kachin
+2396,Mong Kawng,BHA,BHA,buddhism,kachin
+2397,Tamanthi,BHA,BHA,sikhism,shan
+2398,Thaungdut,BHA,BHA,sunni,chin
+2399,Pagan,BHA,BHA,sunni,burmese
+2400,Hsipaw,BHA,BHA,sikhism,shan
+2401,Mong Pai,BHA,BHA,sikhism,karen
+2402,Sandoway,BHA,BHA,sikhism,burmese
+2403,Moulmein,BHA,BHA,sikhism,mon
+2404,Mergui,BHA,BHA,buddhism,mon
+2405,Bender,PLC,PLC,catholic,ruthenian
+2406,Ingil,PLC,PLC,catholic,ruthenian
+2407,Pereyaslav,PLC,PLC,catholic,ruthenian
+2408,Yelets,PLC,PLC,catholic,ruthenian
+2409,Bahmut,PLC,PLC,catholic,ruthenian
+2410,Theodoro,PLC,PLC,catholic,goths
+2411,Mansur,PLC,PLC,catholic,crimean
+2412,Kyzyl-Yar,PLC,PLC,catholic,crimean
+2413,Tyn,PLC,PLC,catholic,crimean
+2414,Azaraba,PLC,PLC,catholic,crimean
+2415,Etkara,PLC,PLC,catholic,mishary
+2416,Majar,PLC,PLC,catholic,astrakhani
+2417,Kuma,PLC,PLC,catholic,astrakhani
+2418,Ukek,PLC,PLC,catholic,astrakhani
+2419,Kanadey,PLC,PLC,catholic,russian
+2420,Agyidel,PLC,PLC,catholic,bashkir
+2421,Juketau,PLC,PLC,catholic,russian
+2422,Veda-Suvar,PLC,PLC,catholic,russian
+2423,Alatyr,PLC,PLC,catholic,russian
+2424,Peremyshl,PLC,PLC,catholic,ruthenian
+2425,Nenets,NONE,NONE,NONE,NONE
+2426,Yamal,NONE,NONE,NONE,NONE
+2427,Ostyaki,PLC,PLC,catholic,polish
+2428,Yugan,PLC,PLC,catholic,ostyaki
+2429,Agan,PLC,PLC,catholic,ostyaki
+2430,Baykha,NONE,NONE,tengri_pagan_reformed,samoyed
+2431,Uchamin,PLC,PLC,catholic,polish
+2432,Chulym,NONE,NONE,tengri_pagan_reformed,tungus
+2433,Vah,PLC,PLC,catholic,ostyaki
+2434,Barnaul,PLC,PLC,catholic,polish
+2435,Nukhtui,PLC,PLC,catholic,polish
+2436,Chuna,PLC,PLC,catholic,polish
+2437,Seganka,PLC,PLC,catholic,polish
+2438,Kharya,PLC,PLC,catholic,polish
+2439,Yarmanka,PLC,PLC,catholic,polish
+2440,Kagyrgyn,CHV,CHV,tengri_pagan_reformed,kamchatkan
+2441,Iglino,PLC,PLC,catholic,polish
+2442,Ust-Kut,PLC,PLC,catholic,polish
+2443,Kan,PLC,PLC,catholic,polish
+2444,Bashgird,PLC,PLC,catholic,polish
+2445,Mangazea,NONE,NONE,tengri_pagan_reformed,samoyed
+2446,Chara,PLC,PLC,catholic,polish
+2447,Matrega,PLC,PLC,catholic,pontic_greek
+2448,Fezzan,ITA,RUM,catholic,tunisian
+2449,Jufra,ITA,RUM,catholic,tunisian
+2450,Ghadames,ITA,RUM,catholic,tunisian
+2451,Thubaqt,ITA,RUM,catholic,tunisian
+2452,Zuwarah,ITA,RUM,ibadi,tunisian
+2453,Sfax,ITA,RUM,sunni,tunisian
+2454,Kef,ITA,RUM,catholic,tunisian
+2455,Bizerte,ITA,RUM,catholic,tunisian
+2456,Touggourt,ITA,RUM,sunni,algerian
+2457,Mzab,ITA,PER,ibadi,berber
+2458,Hodna,ITA,ITA,sunni,algerian
+2459,Titteri,FRA,REB,protestant,algerian
+2460,Saoura,FRA,FRA,protestant,moroccan
+2461,Dahra,FRA,FRA,protestant,algerian
+2462,Ouarsenis,TLC,TLC,protestant,berber
+2463,Kasdir,TLC,TLC,protestant,berber
+2464,Ouarzazate,TLC,TLC,protestant,berber
+2465,Oujda,TLC,TLC,protestant,berber
+2466,Draa,FRA,FRA,protestant,moroccan
+2467,Meknes,SPA,SPA,catholic,moroccan
+2468,Tadla,SPA,SPA,catholic,moroccan
+2469,Dukkala,SPA,SPA,catholic,moroccan
+2470,Haha,SPA,SPA,sunni,berber
+2471,Chott el-Jerid,NONE,NONE,NONE,NONE
+2472,Ouargla,ITA,REB,sunni,berber
+2473,Sousse,ITA,RUM,catholic,tunisian
+2474,Tajarhi,ITA,RUM,sunni,tuareg
+2475,Djado,ITA,RUM,sunni,tuareg
+2476,Kuumeyay,C18,C18,protestant,piman
+2477,Ukom'nom,C18,C18,catholic,mexican
+2478,Tachi,C18,C18,protestant,mexican
+2479,Maidu,C18,C18,catholic,mexican
+2480,Shasta,C18,C18,catholic,mexican
+2481,Maqlaqs,C20,C20,catholic,catalan
+2482,Kalapuya,C20,C20,totemism,chinook
+2483,Umatalum,C20,C20,catholic,catalan
+2484,Aqokulo,C20,C20,catholic,catalan
+2485,Kwaiailk,C20,C20,catholic,catalan
+2486,Mamatchatpam,C20,C20,catholic,mexican
+2487,Sqeliz,C20,C20,catholic,mexican
+2488,Palus,C20,C20,catholic,mexican
+2489,Boho'inee,C20,C20,catholic,mexican
+2490,Kusiutta,C20,C20,totemism,shoshone
+2491,Hwalbay,C18,C18,protestant,piman
+2492,Bedonkohe,C08,C08,catholic,mexican
+2493,Hopituh,C18,C18,protestant,pueblo
+2494,Shiwinna,C08,C08,totemism,pueblo
+2495,Aa'ku,C08,C08,totemism,pueblo
+2496,Saldindé,C08,C08,totemism,mescalero
+2497,Tsès Sembai,C08,C08,catholic,mexican
+2498,Tahuundé,C08,C08,catholic,mexican
+2499,Coahuilteco,C08,C08,catholic,mexican
+2500,Tel Kondaha,C08,C08,catholic,mexican
+2501,Piikani,C12,C12,protestant,danish
+2502,Haaninin,C12,C12,protestant,danish
+2503,Ashshipite,C13,C13,anglican,american
+2504,Eeelalapito,C08,C08,totemism,kiowa
+2505,Tsetsehesahese,C13,C13,anglican,american
+2506,Kuccuntikka,C13,C13,anglican,american
+2507,Baachinena,C13,C13,anglican,american
+2508,Skiri,C13,C13,anglican,american
+2509,Utsetha,C13,C13,totemism,wichita
+2510,Hiraaca,DAN,DAN,anglican,dakota
+2511,Itscheabine,C02,C02,catholic,irish
+2512,Wahpekute,C02,C02,catholic,irish
+2513,Moingwena,C02,C02,totemism,illini
+2514,Mishigamaw,C13,C13,anglican,english
+2515,Satuskhdin,C13,C13,totemism,yoron
+2516,Adai,C13,C13,totemism,caddo
+2517,Bdewekhantunwan,C02,C02,totemism,dakota
+2518,La Pointe,C02,C02,totemism,anishinabe
+2519,Kilatika,C02,C02,catholic,irish
+2520,Mengkonkia,C02,C02,catholic,irish
+2521,Saginawe,C02,C02,totemism,anishinabe
+2522,Mascouten,C02,C02,totemism,mesquakie
+2523,Piankeshaw,C02,C02,catholic,irish
+2524,Waapi-nipi,C02,C02,catholic,irish
+2525,Chalahgawtha,C02,C02,totemism,tionontate
+2526,Shatteras,C02,C02,totemism,shawnee
+2527,Atali,C02,C02,totemism,creek
+2528,Yazoo,C13,C13,totemism,natchez
+2529,Natchez,C13,C13,totemism,natchez
+2530,Taneks-Haya,C02,C02,totemism,choctaw
+2531,Abihka,C02,C02,totemism,creek
+2532,Mabila,C02,C02,totemism,choctaw
+2533,Chatot,C02,C02,totemism,creek
+2534,Yustaga,C02,C02,totemism,yamasee
+2535,Calusa,C02,C02,totemism,yamasee
+2536,Mayaimi,C02,C02,totemism,arawak
+2537,Ichisi,C02,C02,totemism,yamasee
+2538,Ocute,C02,C02,totemism,yamasee
+2539,Mocama,C02,C02,totemism,yamasee
+2540,Etowah,C02,C02,totemism,creek
+2541,Saluda,C02,C02,totemism,cherokee
+2542,Cusabo,C02,C02,totemism,catawba
+2543,Waccamaw,C02,C02,protestant,danish
+2544,Yadkin,C02,C02,totemism,catawba
+2545,Waxhaw,C02,C02,protestant,danish
+2546,Chicora,C02,C02,protestant,danish
+2547,Roanoke,C02,C02,totemism,powhatan
+2548,Tutelo,C02,C02,totemism,yuchi
+2549,Moratok,C02,C02,catholic,irish
+2550,Rappahannock,C02,C02,totemism,powhatan
+2551,Calicula,C02,C02,catholic,irish
+2552,Manahoac,C02,C02,totemism,susquehannock
+2553,Patawomac,C02,C02,totemism,catawba
+2554,Nentego,C02,C02,totemism,powhatan
+2555,Honniasont,C02,C02,catholic,irish
+2556,Onojutta,C02,C02,totemism,susquehannock
+2557,Atrakwaye,C02,C02,catholic,irish
+2558,Espachomy,C02,C02,totemism,delaware
+2559,Tekontaroken,C02,C02,catholic,irish
+2560,Quiripi,C02,C02,protestant,danish
+2561,Wampanoag,C02,C02,totemism,massachusset
+2562,Penakuk,C02,C02,totemism,massachusset
+2563,Missiasik,C02,C02,catholic,irish
+2564,Sokoki,C02,C02,catholic,irish
+2565,Kinnipekw,C02,C02,protestant,danish
+2566,Peskotomuhkati,C02,C02,protestant,danish
+2567,Tobique,C02,C02,protestant,danish
+2568,Gespogoitnag,C12,C12,totemism,laurentian
+2569,Eskikeogag,C12,C12,protestant,danish
+2570,Wolastoqiyik,C12,C12,protestant,danish
+2571,Madawaska,C12,C12,protestant,danish
+2572,Sigenigteogag,C12,C12,totemism,mikmaq
+2573,Placentia,C12,C12,protestant,danish
+2574,Sikumiut,C12,C12,protestant,danish
+2575,Naskapi,C12,C12,protestant,danish
+2576,Ekuanitshu,C12,C12,totemism,innu
+2577,Pessamu,C12,C12,protestant,danish
+2578,Notiskuan,C12,C12,protestant,danish
+2579,Pekuakamiulnuatsh,C12,C12,protestant,danish
+2580,Atikamekw,C12,C12,protestant,danish
+2581,Timiskaming,C12,C12,protestant,danish
+2582,Animouski,C12,C12,protestant,danish
+2583,Kikonteku,C12,C12,totemism,laurentian
+2584,Masoliantekw,C12,C12,protestant,danish
+2585,Arendaronon,C12,C12,totemism,huron
+2586,Tionontate,C02,C02,totemism,tionontate
+2587,Odawa,C02,C02,totemism,anishinabe
+2588,Piscatang,C12,C12,protestant,danish
+2589,Kesagami,C12,C12,protestant,danish
+2590,Shaggami,C12,C12,totemism,cree
+2591,Outoulibi,C12,C12,protestant,danish
+2592,Maskekowak,C12,C12,protestant,danish
+2593,Wappus,C12,C12,protestant,danish
+2594,Quennebigonhelini,C12,C12,totemism,bungi
+2595,Kes-ye-hot'inne,C12,C12,protestant,danish
+2596,Mahmikiwiniyak,C12,C12,protestant,danish
+2597,Sipiwininiwak,C12,C12,protestant,danish
+2598,Ye Xa Yabine,C12,C12,protestant,danish
+2599,Ayabaskawiiniwak,F03,F03,totemism,chipewyan
+2600,Nihithawak,C12,C12,protestant,danish
+2601,Dane-zaa,C20,C20,totemism,athabascan
+2602,Siksikawa,C12,C12,protestant,danish
+2603,Tsek'ene,C20,C20,catholic,mexican
+2604,Dakelh,C20,C20,catholic,mexican
+2605,Secwepemc,C20,C20,catholic,mexican
+2606,Tsilhoqot'in,C20,C20,mahayana,japanese
+2607,Syilkx,C20,C20,catholic,catalan
+2608,Rocky Mountains,NONE,NONE,NONE,NONE
+2609,Nisga'a,C20,C20,totemism,chinook
+2610,Heiltsuk,C20,C20,mahayana,japanese
+2611,Kodiak,C20,C20,catholic,mexican
+2612,Eyak,C20,C20,catholic,catalan
+2613,Sitka,GBR,GBR,anglican,english
+2614,Cotoname,C08,C08,catholic,mexican
+2615,Guamares,GAM,GAM,animism,guamares
+2616,Seri,C08,C08,catholic,mexican
+2617,Huichol,C07,C07,nahuatl,tepic
+2618,Toboso,C08,C08,catholic,mexican
+2619,Laguneros,C08,C08,catholic,mexican
+2620,Nakipa,C08,C08,catholic,mexican
+2621,Tizapan,C07,C07,nahuatl,tepic
+2622,Cuitzeo,C07,C07,nahuatl,purepecha
+2623,Cutzamala,C07,C07,nahuatl,matlatzinca
+2624,Patzcuaro,C07,C07,nahuatl,purepecha
+2625,Hinonoeino,C08,C08,totemism,wichita
+2626,Tullucan,C08,C08,nahuatl,matlatzinca
+2627,Cihuatlan,C11,C11,nahuatl,tlapanec
+2628,Tepeacac,C08,C08,nahuatl,aztek
+2629,Coyolapan,C08,C08,nahuatl,mixtec
+2630,Tochtepec,C08,C08,mesoamerican_religion,chontales
+2631,Mixe,C08,C08,mesoamerican_religion,chontales
+2632,Xicallanco,C08,C08,mesoamerican_religion,chontales
+2633,Ceh Pech,C08,C08,mesoamerican_religion,yucatec
+2634,Uaymil,C08,C08,mesoamerican_religion,yucatec
+2635,Lacandon,C08,C08,mesoamerican_religion,lacandon
+2636,Chacujal,C08,C08,mesoamerican_religion,highland_mayan
+2637,Chortli,C08,C08,mesoamerican_religion,highland_mayan
+2638,Xoconochco,C08,C08,mesoamerican_religion,zapotek
+2639,Raritan,C02,C02,totemism,delaware
+2640,Lenca,C08,C08,animism,miskito
+2641,Tziccoac,C08,C08,mesoamerican_religion,wastek
+2642,Metztitlan,C08,C08,nahuatl,otomi
+2643,Apatzingan,C07,C07,nahuatl,purepecha
+2644,Cholula,C08,C08,nahuatl,aztek
+2645,Teloloapan,C11,C11,nahuatl,aztek
+2646,Coixtlahuacan,C08,C08,nahuatl,mixtec
+2647,Cuetlaxtlan,C08,C08,mesoamerican_religion,totonac
+2648,Yopitzinco,C08,C08,nahuatl,tlapanec
+2649,Tehuantepec,C08,C08,mesoamerican_religion,zapotek
+2650,Champutun,C08,C08,mesoamerican_religion,yucatec
+2651,Ah Canul,C08,C08,mesoamerican_religion,yucatec
+2652,Ecab,C08,C08,mesoamerican_religion,yucatec
+2653,Iximché,C08,C08,mesoamerican_religion,highland_mayan
+2654,Baracoa,C10,C10,catholic,mexican
+2655,Bayamo,C10,C10,catholic,mexican
+2656,Camaguey,C10,C10,catholic,mexican
+2657,Colima,C11,C11,nahuatl,tecos
+2658,Maguana,C10,C10,catholic,mexican
+2659,Magua,C10,C10,catholic,mexican
+2660,Managua,C08,C08,catholic,mexican
+2661,Uluas,C08,C08,catholic,mexican
+2662,Olancho,C08,C08,catholic,mexican
+2663,Nicoya,C08,C08,catholic,mexican
+2664,Veraguas,C08,C08,catholic,mexican
+2665,Eyeish,C08,C08,totemism,caddo
+2666,Tuintsundé,C08,C08,catholic,mexican
+2667,Cacaxtes,C08,C08,catholic,mexican
+2668,Borrado,C08,C08,catholic,mexican
+2669,Hasinai,C08,C08,totemism,caddo
+2670,Tahontaenrat,C02,C02,totemism,huron
+2671,Missisage,C12,C12,protestant,danish
+2672,Kitkehaki,C13,C13,anglican,american
+2673,Pasai,GBR,GBR,anglican,acehnese
+2674,Peureulak,GBR,GBR,buddhism,acehnese
+2675,Rokan,GBR,GBR,buddhism,sumatran
+2676,Indragiri,GBR,GBR,buddhism,sumatran
+2677,Jambi,GBR,GBR,buddhism,sumatran
+2678,Bangka,BHA,BHA,hinduism,sumatran
+2679,Belitung,JAP,JAP,mahayana,japanese
+2680,Muko-Muko,GBR,GBR,buddhism,sumatran
+2681,Pagarruyung,PSA,PSA,buddhism,sumatran
+2682,Pariaman,GBR,GBR,buddhism,sumatran
+2683,Mentawai,PER,PER,sunni,persian
+2684,Nias,PER,PER,sunni,persian
+2685,Gayo,GBR,GBR,sunni,acehnese
+2686,Bintan,GBR,GBR,buddhism,malayan
+2687,Pakuan,AYU,AYU,buddhism,sundanese
+2688,Sumedang,AYU,AYU,buddhism,sundanese
+2689,Pekalongan,AYU,AYU,buddhism,javanese
+2690,Kotagede,AYU,AYU,buddhism,javanese
+2691,Kediri,AYU,AYU,buddhism,javanese
+2692,Madura,AYU,AYU,buddhism,javanese
+2693,Lombok,AYU,AYU,buddhism,javanese
+2694,Gangneung,KOR,KOR,confucianism,korean
+2695,East Timor,HDR,HDR,sunni,yemeni_culture
+2696,Yamdena,HDR,REB,sunni,yemeni_culture
+2697,Tondo,WUU,WUU,hinduism,filipino
+2698,Pangasinan,WUU,WUU,hinduism,filipino
+2699,Bikol,HDR,HDR,sunni,filipino
+2700,Panay,WUU,WUU,hinduism,filipino
+2701,Tagloc,GBR,GBR,animism,filipino
+2702,Butuan,WUU,WUU,animism,filipino
+2703,Lehad Datu,KUT,KUT,sunni,bornean
+2704,Sibu,BEI,BEI,sunni,bornean
+2705,Sigalang,KUT,KUT,sunni,bornean
+2706,Katapang,GBR,PER,hinduism,bornean
+2707,Barito,KUT,KUT,sunni,bornean
+2708,Sampit,GBR,PER,catholic,portugese
+2709,Tarakan,KUT,KUT,sunni,bornean
+2710,Sambaliung,KUT,KUT,sunni,bornean
+2711,Bulungan,BEI,BEI,hinduism,bornean
+2712,Samarinda,KUT,KUT,sunni,bornean
+2713,Gorontalo,WUU,WUU,animism,sulawesi
+2714,Palu,GBR,GBR,animism,sulawesi
+2715,Palopo,AYU,AYU,buddhism,sulawesi
+2716,Buton,AYU,AYU,buddhism,sulawesi
+2717,Sula,GBR,GBR,animism,moluccan
+2718,Fak-Fak,GBR,GBR,catholic,portugese
+2719,Madang,GBR,GBR,catholic,portugese
+2720,Lae,GBR,GBR,catholic,portugese
+2721,Kerema,GBR,GBR,catholic,portugese
+2722,Daru,GBR,GBR,catholic,portugese
+2723,Yos Sudarso,GBR,GBR,catholic,portugese
+2724,Asmat,GBR,GBR,catholic,portugese
+2725,Aru,JAP,JAP,mahayana,moluccan
+2726,Malgana,C16,PER,catholic,portugese
+2727,Minang,C21,C21,dreamtime,nyoongah
+2728,Tiwi,BEI,BEI,dreamtime,gunwinyguan
+2729,Yolngu,C16,PER,dreamtime,gunwinyguan
+2730,Awngthim,C16,C16,catholic,portugese
+2731,Guugu Yimithirr,C16,C16,catholic,portugese
+2732,Wulgurukaba,C16,C16,catholic,portugese
+2733,Baiali,AWN,AWN,dreamtime,paman
+2734,Yuin,C19,C19,dreamtime,aboriginal
+2735,Gunditjmara,C19,C19,dreamtime,palawa
+2736,Nukunu,C16,C16,catholic,portugese
+2737,Wairarapa,TAK,TAK,animism,maori
+2738,Te Tau Ihu,WAI,WAI,animism,maori
+2739,Waikato,TAN,TAN,animism,maori
+2740,Borneo,NONE,NONE,NONE,NONE
+2741,Jeju,KOR,KOR,confucianism,korean
+2742,Yukjin,PLC,PLC,catholic,korean
+2743,Gyeongseong,PLC,PLC,catholic,korean
+2744,Yeongbyeon,PLC,PLC,catholic,korean
+2745,Gyeongju,KOR,KOR,confucianism,korean
+2746,Vidin,RUM,ITA,orthodox,bulgarian
+2747,Khara Narin Ula,PLC,PLC,catholic,xibei
+2748,Jianchang,AYU,AYU,buddhism,yi
+2749,Tikhvin,PLC,PLC,catholic,novgorodian
+2750,Plovdiv,RUM,FRA,sunni,bulgarian
+2751,Cuenca,SPA,SPA,catholic,castillian
+2752,Romsdal,FRA,FRA,protestant,norwegian
+2753,Narbonne,SPA,SPA,catholic,occitain
+2754,La Mancha,SPA,SPA,catholic,castillian
+2755,Soria,SPA,SPA,catholic,castillian
+2756,Welayta,WLY,WLY,coptic,sidamo
+2757,Kaffa,KAF,KAF,coptic,oromo
+2758,Illubabor,DAM,DAM,coptic,sidamo
+2759,Gambela,DAM,DAM,shamanism,oromo
+2760,Hadiya,RUM,RUM,shamanism,oromo
+2761,Arsi,RUM,RUM,shamanism,oromo
+2762,Damot,DAM,DAM,shamanism,oromo
+2763,Asosa,DAM,DAM,coptic,amhara
+2764,Ausa,RUM,RUM,sunni,afar
+2765,Assab,RUM,RUM,sunni,afar
+2766,Mendefera,MED,MED,coptic,tigray
+2767,Enderta,RUM,RUM,coptic,tigray
+2768,Angot,RUM,RUM,sunni,afar
+2769,Lasta,RUM,RUM,coptic,amhara
+2770,Agew,DAM,DAM,coptic,amhara
+2771,Semien,RUM,RUM,coptic,amhara
+2772,Dembiya,RUM,RUM,sunni,amhara
+2773,Mora,RUM,RUM,sunni,oromo
+2774,Kismayo,RUM,RUM,sunni,somali
+2775,Merca,RUM,RUM,sunni,somali
+2776,Afgooye,GLE,GLE,sunni,somali
+2777,Bardera,RUM,RUM,sunni,somali
+2778,Werder,RUM,RUM,sunni,somali
+2779,Afder,OGD,OGD,sunni,oromo
+2780,Beledweyne,RUM,RUM,sunni,somali
+2781,Gedo,GLE,GLE,sunni,somali
+2782,Warsheikh,RUM,RUM,sunni,somali
+2783,Hobyo,RUM,RUM,sunni,somali
+2784,Galkayo,RUM,RUM,sunni,somali
+2785,El Buur,RUM,RUM,sunni,somali
+2786,Bosaso,RUM,RUM,sunni,somali
+2787,Hamasien,MED,MED,coptic,tigray
+2788,Hafun,RUM,RUM,sunni,somali
+2789,Las Khorey,RUM,RUM,sunni,somali
+2790,Sanaag,RUM,RUM,sunni,somali
+2791,Ankober,RUM,RUM,shamanism,oromo
+2792,Togdheer,RUM,RUM,sunni,somali
+2793,Hargeisa,RUM,RUM,sunni,somali
+2794,Barawa,RUM,RUM,sunni,somali
+2795,Meregh,RUM,RUM,sunni,somali
+2796,Pate,MLI,MLI,sunni,swahili
+2797,Shendy,YAO,YAO,coptic,nubian
+2798,Soba,RUM,RUM,coptic,nubian
+2799,Sennar,DAM,DAM,coptic,nubian
+2800,Waylula,RUM,RUM,coptic,nubian
+2801,Medwa,RUM,RUM,shamanism,tunjur
+2802,Kobbe,RUM,RUM,shamanism,tunjur
+2803,Orinoco Delta,C23,C23,catholic,portugese
+2804,Guasipati,C04,C04,catholic,brazilian
+2805,Uyapari,C23,C23,protestant,saxon
+2806,Guajira,C14,C14,catholic,platinean
+2807,Altagracia,C14,C14,catholic,platinean
+2808,Coro,C14,C14,catholic,platinean
+2809,Llanos,C14,C14,catholic,platinean
+2810,Apure,C14,C14,catholic,platinean
+2811,Atabapo,C14,C14,catholic,platinean
+2812,Pore,C14,C14,catholic,platinean
+2813,Merida,C14,C14,catholic,platinean
+2814,Meta,C14,C14,catholic,platinean
+2815,Puerto Carreno,C14,C14,animism,guajiro
+2816,Guaviare,C14,C14,catholic,platinean
+2817,Neiva,C14,C14,catholic,platinean
+2818,Popayan,C14,C14,catholic,platinean
+2819,Darien,C14,C14,catholic,mexican
+2820,Esmeraldas,C14,C14,inti,cara
+2821,Piwra,C15,C15,inti,chimuan
+2822,Tucume,C15,C15,inti,chimuan
+2823,Moyobamba,C15,C15,inti,chachapoyan
+2824,Wankapampa,INC,INC,inti,inca
+2825,Pisqupampa,C15,C15,inti,inca
+2826,Chimbote,C15,C15,inti,chimuan
+2827,Huaraz,C15,C15,inti,inca
+2828,Camana,C15,C15,catholic,platinean
+2829,Ayaviri,C15,C15,inti,aimara
+2830,Quero,C15,C15,inti,inca
+2831,Tiahuanaco,C15,C15,inti,aimara
+2832,San Joaquin,C15,C15,catholic,platinean
+2833,Madre de Dios,C15,C15,catholic,platinean
+2834,Santa Cruz de la Sierra,C15,C15,catholic,platinean
+2835,Sucre,C15,C15,inti,aimara
+2836,Tucuman,C09,C09,inti,diaguita
+2837,Santa Catalina,C09,C09,inti,diaguita
+2838,Tarija,C15,C15,inti,aimara
+2839,Puna de Atacama,C09,C09,catholic,catalan
+2840,Calama,C17,C17,catholic,platinean
+2841,Antofagasta,C09,C09,catholic,catalan
+2842,Santiago del Estero,C09,C09,anglican,platinean
+2843,La Rioja,C09,C09,catholic,castillian
+2844,Chepes,C09,C09,anglican,platinean
+2845,San Juan,C09,C09,catholic,castillian
+2846,Quisquisacate,C09,C09,catholic,platinean
+2847,San Luis,C09,C09,anglican,platinean
+2848,Santa Fe,C09,C09,catholic,castillian
+2849,Rosario,C09,C09,catholic,platinean
+2850,Montevideo,C09,C09,catholic,platinean
+2851,Colonia,C09,C09,catholic,platinean
+2852,Salto,C09,C09,anglican,platinean
+2853,Yapeyú,C09,C09,anglican,castillian
+2854,Chaco Central,C09,C09,anglican,castillian
+2855,Misiones,C09,C09,animism,guarani
+2856,Highveld,GBR,RUM,catholic,portugese
+2857,Rio Grande do Sul,C04,C04,anglican,english
+2858,Santiago,C09,C09,anglican,castillian
+2859,Itapúa,C09,C09,anglican,platinean
+2860,Querandi,C09,C09,anglican,platinean
+2861,Sauce,C09,C09,anglican,platinean
+2862,Coquimbo,C09,C09,catholic,platinean
+2863,Rio Negro,C09,C09,catholic,platinean
+2864,Senqu,GBR,RUM,anglican,portugese
+2865,Puelches,C09,C09,anglican,platinean
+2866,Olavarria,C09,C09,anglican,platinean
+2867,Chanar,C09,C09,animism,mapuche
+2868,San Antonio,C09,C09,catholic,platinean
+2869,Florida Blanca,C09,C09,anglican,platinean
+2870,Tehuelmapu,C09,C09,anglican,platinean
+2871,Poya,C09,C09,anglican,platinean
+2872,Chiquiyami,C09,C09,animism,charruan
+2873,Chiloe,C09,C09,anglican,platinean
+2874,Aysen,C09,C09,anglican,platinean
+2875,Chubut,C09,C09,anglican,platinean
+2876,Teush,C09,C09,anglican,platinean
+2877,Mendoza,C09,C09,catholic,castillian
+2878,Matara,C09,C09,anglican,castillian
+2879,Santa Tecla,C09,C09,anglican,platinean
+2880,Griqualand,GBR,RUM,catholic,portugese
+2881,Corumba,C04,C04,catholic,portugese
+2882,Fuerte Borbon,C15,C15,catholic,platinean
+2883,Melodia,C15,C15,catholic,platinean
+2884,Povos das Missoes,C04,C04,animism,guarani
+2885,Barra,C04,C04,catholic,brazilian
+2886,Parnaiba,C04,C04,catholic,brazilian
+2887,Santa Catarina,C04,C04,catholic,brazilian
+2888,Cuiaba,C04,C04,catholic,portugese
+2889,Rio Branco,C04,C04,catholic,brazilian
+2890,Marajó,C04,C04,catholic,brazilian
+2891,Santo Antonio da Manga,C04,C04,catholic,brazilian
+2892,Araxas,C04,C04,catholic,brazilian
+2893,Ofaie,C04,C04,catholic,brazilian
+2894,Sao Joao del Rei,C04,C04,catholic,portugese
+2895,Castro,C04,C04,catholic,brazilian
+2896,Campinas,C04,C04,catholic,brazilian
+2897,Araraquara,C04,C04,catholic,brazilian
+2898,Serro,C04,C04,catholic,brazilian
+2899,Vila Rica,C04,C04,catholic,brazilian
+2900,Guapore,C15,C15,catholic,platinean
+2901,Cerejeiras,C15,C15,protestant,platinean
+2902,Vila Bela,C15,C15,catholic,platinean
+2903,Caceres,C04,C04,catholic,portugese
+2904,Diamantino,C04,C04,catholic,portugese
+2905,Rio Das Mortes,C04,C04,catholic,brazilian
+2906,Ipora,C04,C04,catholic,brazilian
+2907,Vila Boa,C04,C04,catholic,brazilian
+2908,Arrial dos Couros,C04,C04,animism,ge
+2909,Conceicao,C04,C04,catholic,brazilian
+2910,Pontal,C04,C04,catholic,brazilian
+2911,Natividad,C04,C04,catholic,brazilian
+2912,Sergipe,C04,C04,catholic,brazilian
+2913,Jeremoabo,C04,C04,catholic,brazilian
+2914,Inhambupe,C04,C04,catholic,brazilian
+2915,Pambu,C04,C04,catholic,brazilian
+2916,Rio Contas,C04,C04,animism,tupinamba
+2917,Paratinga,C04,C04,catholic,brazilian
+2918,Campo Largo,C04,C04,catholic,brazilian
+2919,Luziana,C04,C04,catholic,brazilian
+2920,Coxim,C04,C04,catholic,portugese
+2921,Alagoas,C04,C04,catholic,brazilian
+2922,Borborema,C04,C04,catholic,brazilian
+2923,Pastos Bons,C04,C04,catholic,brazilian
+2924,Timon,C04,C04,catholic,brazilian
+2925,Parnagua,C04,C04,animism,ge
+2926,Grajau,C04,C04,catholic,brazilian
+2927,Alcantara,C04,C04,catholic,brazilian
+2928,Tucurui,C04,C04,catholic,brazilian
+2929,Para,C04,C04,catholic,brazilian
+2930,Santarem,C04,C04,catholic,portugese
+2931,Pirara,C04,C04,catholic,brazilian
+2932,Wadai,ITA,RUM,shamanism,tunjur
+2933,Barcelos,C04,C04,catholic,brazilian
+2934,Manaus,C04,C04,catholic,brazilian
+2935,Muturu,C04,C04,catholic,brazilian
+2936,Guyana,NONE,NONE,NONE,NONE
+2937,Suriname,C04,C04,catholic,brazilian
+2938,Oiapoque,C04,C04,catholic,brazilian
+2939,Zaraza,C14,C14,catholic,platinean
+2940,Chichas,C15,C15,inti,aimara
+2941,Choquechaca,C15,C15,inti,aimara
+2942,Charcas,C15,C15,inti,aimara
+2943,Chachapoyas,C15,C15,inti,chachapoyan
+2944,Ucayali,C15,C15,catholic,platinean
+2945,Yurimaguas,C15,C15,catholic,platinean
+2946,Quillacas,C15,C15,inti,aimara
+2947,Macaya,C15,C15,inti,aimara
+2948,Matamba,YAK,YAK,shamanism,mbundu
+2949,Mbata,GBR,RUM,catholic,kongolese
+2950,Buhera,GBR,RUM,shamanism,shona
+2951,Manyika,GBR,RUM,shamanism,shona
+2952,Madanda,GBR,RUM,shamanism,shona
+2953,Hjälmaren,NONE,NONE,NONE,NONE
+2954,Djerba,ITA,RUM,ibadi,tunisian
+2955,Ingolstadt,GER,GER,protestant,bavarian
+2956,Straubing,GER,GER,protestant,bavarian
+2957,Regensburg,GER,GER,protestant,bavarian
+2958,Osterode,PLC,PLC,catholic,prussian
+2959,Tarnow,PLC,PLC,catholic,polish
+2960,Nowy Sacz,PLC,PLC,catholic,polish
+2961,Lwow,PLC,PLC,catholic,ruthenian
+2962,Rowne,PLC,PLC,catholic,ruthenian
+2963,Notec,PLC,PLC,catholic,polish
+2964,Altmark,GER,GER,protestant,saxon
+2965,Vogtland,GER,GER,protestant,saxon
+2966,Glogau,PLC,PLC,catholic,saxon
+2967,Eger,BOH,BOH,protestant,czech
+2968,Budejovice,BOH,BOH,protestant,czech
+2969,Sternberg,PLC,PLC,catholic,saxon
+2970,Hradecko,PLC,PLC,catholic,czech
+2971,Hoya,FRA,FRA,protestant,hannoverian
+2972,Paderborn,FRA,FRA,protestant,hannoverian
+2973,Meppen,FRA,FRA,protestant,hannoverian
+2974,Loon,FRA,FRA,protestant,flemish
+2975,Kleves,FRA,FRA,protestant,hessian
+2976,Perugia,ITA,ITA,catholic,umbrian
+2977,Urbino,ITA,ITA,catholic,umbrian
+2978,Arezzo,ITA,ITA,catholic,tuscan
+2979,Novara,ITA,ITA,catholic,lombard
+2980,Lucca,ITA,ITA,catholic,tuscan
+2981,Montferrat,ITA,ITA,catholic,piedmontese
+2982,Syracuse,SPA,SPA,catholic,sicilian
+2983,Salerno,ITA,ITA,catholic,neapolitan
+2984,Cosenza,ITA,ITA,catholic,neapolitan
+2985,Capitanata,ITA,ITA,catholic,neapolitan
+2986,Cagliari,ITA,ITA,catholic,sardinian
+2987,Urgell,SPA,SPA,catholic,catalan
+2988,Tarragona,SPA,SPA,catholic,catalan
+2989,Rioja,SPA,SPA,catholic,castillian
+2990,Teruel,SPA,SPA,catholic,aragonese
+2991,Forcalquier,SPA,SPA,catholic,occitain
+2992,Albenga,ITA,ITA,catholic,ligurian
+2993,Uckermark,PLC,PLC,catholic,pommeranian
+2994,Wolgast,PLC,PLC,catholic,polish
+2995,Stolp,PLC,PLC,catholic,polish
+2996,Wismar,GER,GER,protestant,pommeranian
+2997,Tuchola,PLC,PLC,catholic,prussian
+2998,Buzau,RUM,RUM,orthodox,romanian
+2999,Hormuz,RUM,RUM,sunni,gulf_arabic
+3000,Nis,RUM,FRA,orthodox,serbian
+3001,Skopje,RUM,RUM,orthodox,bulgarian
+3002,Visoki,RUM,FRA,orthodox,bosnian
+3003,Euboea,RUM,RUM,anglican,greek
+3004,PROV3004,NONE,NONE,NONE,NONE
+3005,PROV3005,NONE,NONE,NONE,NONE
+3006,PROV3006,NONE,NONE,NONE,NONE
+3007,PROV3007,NONE,NONE,NONE,NONE
+3008,PROV3008,NONE,NONE,NONE,NONE
+3009,PROV3009,NONE,NONE,NONE,NONE
+3010,PROV3010,NONE,NONE,NONE,NONE
+3011,PROV3011,NONE,NONE,NONE,NONE
+3012,PROV3012,NONE,NONE,NONE,NONE
+3013,PROV3013,NONE,NONE,NONE,NONE
+3014,PROV3014,NONE,NONE,NONE,NONE
+3015,PROV3015,NONE,NONE,NONE,NONE
+3016,PROV3016,NONE,NONE,NONE,NONE
+3017,PROV3017,NONE,NONE,NONE,NONE
+3018,PROV3018,NONE,NONE,NONE,NONE
+3019,PROV3019,NONE,NONE,NONE,NONE
+3020,PROV3020,NONE,NONE,NONE,NONE
+3021,PROV3021,NONE,NONE,NONE,NONE
+3022,PROV3022,NONE,NONE,NONE,NONE
+3023,PROV3023,NONE,NONE,NONE,NONE
+3024,PROV3024,NONE,NONE,NONE,NONE
+3025,PROV3025,NONE,NONE,NONE,NONE
+3026,PROV3026,NONE,NONE,NONE,NONE
+3027,PROV3027,NONE,NONE,NONE,NONE
+3028,PROV3028,NONE,NONE,NONE,NONE
+3029,PROV3029,NONE,NONE,NONE,NONE
+3030,PROV3030,NONE,NONE,NONE,NONE
+3031,PROV3031,NONE,NONE,NONE,NONE
+3032,PROV3032,NONE,NONE,NONE,NONE
+3033,PROV3033,NONE,NONE,NONE,NONE
+3034,PROV3034,NONE,NONE,NONE,NONE
+3035,PROV3035,NONE,NONE,NONE,NONE
+3036,PROV3036,NONE,NONE,NONE,NONE
+3037,PROV3037,NONE,NONE,NONE,NONE
+3038,PROV3038,NONE,NONE,NONE,NONE
+3039,PROV3039,NONE,NONE,NONE,NONE
+3040,PROV3040,NONE,NONE,NONE,NONE
+3041,PROV3041,NONE,NONE,NONE,NONE
+3042,PROV3042,NONE,NONE,NONE,NONE
+3043,PROV3043,NONE,NONE,NONE,NONE
+3044,PROV3044,NONE,NONE,NONE,NONE
+3045,PROV3045,NONE,NONE,NONE,NONE
+3046,PROV3046,NONE,NONE,NONE,NONE
+3047,PROV3047,NONE,NONE,NONE,NONE
+3048,PROV3048,NONE,NONE,NONE,NONE
+3049,PROV3049,NONE,NONE,NONE,NONE
+3050,PROV3050,NONE,NONE,NONE,NONE
+3051,PROV3051,NONE,NONE,NONE,NONE
+3052,PROV3052,NONE,NONE,NONE,NONE
+3053,PROV3053,NONE,NONE,NONE,NONE
+3054,PROV3054,NONE,NONE,NONE,NONE
+3055,PROV3055,NONE,NONE,NONE,NONE
+3056,PROV3056,NONE,NONE,NONE,NONE
+3057,PROV3057,NONE,NONE,NONE,NONE
+3058,PROV3058,NONE,NONE,NONE,NONE
+3059,PROV3059,NONE,NONE,NONE,NONE
+3060,PROV3060,NONE,NONE,NONE,NONE
+3061,PROV3061,NONE,NONE,NONE,NONE
+3062,PROV3062,NONE,NONE,NONE,NONE
+3063,PROV3063,NONE,NONE,NONE,NONE
+3064,PROV3064,NONE,NONE,NONE,NONE
+3065,PROV3065,NONE,NONE,NONE,NONE
+3066,PROV3066,NONE,NONE,NONE,NONE
+3067,PROV3067,NONE,NONE,NONE,NONE
+3068,PROV3068,NONE,NONE,NONE,NONE
+3069,PROV3069,NONE,NONE,NONE,NONE
+3070,PROV3070,NONE,NONE,NONE,NONE
+3071,PROV3071,NONE,NONE,NONE,NONE
+3072,PROV3072,NONE,NONE,NONE,NONE
+3073,PROV3073,NONE,NONE,NONE,NONE
+3074,PROV3074,NONE,NONE,NONE,NONE
+3075,PROV3075,NONE,NONE,NONE,NONE
+3076,PROV3076,NONE,NONE,NONE,NONE
+3077,PROV3077,NONE,NONE,NONE,NONE
+3078,PROV3078,NONE,NONE,NONE,NONE
+3079,PROV3079,NONE,NONE,NONE,NONE
+3080,PROV3080,NONE,NONE,NONE,NONE
+3081,PROV3081,NONE,NONE,NONE,NONE
+3082,PROV3082,NONE,NONE,NONE,NONE
+3083,PROV3083,NONE,NONE,NONE,NONE
+3084,PROV3084,NONE,NONE,NONE,NONE
+3085,PROV3085,NONE,NONE,NONE,NONE
+3086,PROV3086,NONE,NONE,NONE,NONE
+3087,PROV3087,NONE,NONE,NONE,NONE
+3088,PROV3088,NONE,NONE,NONE,NONE
+3089,PROV3089,NONE,NONE,NONE,NONE
+3090,PROV3090,NONE,NONE,NONE,NONE
+3091,PROV3091,NONE,NONE,NONE,NONE
+3092,PROV3092,NONE,NONE,NONE,NONE
+3093,PROV3093,NONE,NONE,NONE,NONE
+3094,PROV3094,NONE,NONE,NONE,NONE
+3095,PROV3095,NONE,NONE,NONE,NONE
+3096,PROV3096,NONE,NONE,NONE,NONE
+3097,PROV3097,NONE,NONE,NONE,NONE
+3098,PROV3098,NONE,NONE,NONE,NONE
+3099,PROV3099,NONE,NONE,NONE,NONE
+3100,PROV3100,NONE,NONE,NONE,NONE
+3101,PROV3101,NONE,NONE,NONE,NONE
+3102,PROV3102,NONE,NONE,NONE,NONE
+3103,PROV3103,NONE,NONE,NONE,NONE
+3104,PROV3104,NONE,NONE,NONE,NONE
+3105,PROV3105,NONE,NONE,NONE,NONE
+3106,PROV3106,NONE,NONE,NONE,NONE
+3107,PROV3107,NONE,NONE,NONE,NONE
+3108,PROV3108,NONE,NONE,NONE,NONE
+3109,PROV3109,NONE,NONE,NONE,NONE
+3110,PROV3110,NONE,NONE,NONE,NONE
+3111,PROV3111,NONE,NONE,NONE,NONE
+3112,PROV3112,NONE,NONE,NONE,NONE
+3113,PROV3113,NONE,NONE,NONE,NONE
+3114,PROV3114,NONE,NONE,NONE,NONE
+3115,PROV3115,NONE,NONE,NONE,NONE
+3116,PROV3116,NONE,NONE,NONE,NONE
+3117,PROV3117,NONE,NONE,NONE,NONE
+3118,PROV3118,NONE,NONE,NONE,NONE
+3119,PROV3119,NONE,NONE,NONE,NONE
+3120,PROV3120,NONE,NONE,NONE,NONE
+3121,PROV3121,NONE,NONE,NONE,NONE
+3122,PROV3122,NONE,NONE,NONE,NONE
+3123,PROV3123,NONE,NONE,NONE,NONE
+3124,PROV3124,NONE,NONE,NONE,NONE
+3125,PROV3125,NONE,NONE,NONE,NONE
+3126,PROV3126,NONE,NONE,NONE,NONE
+3127,PROV3127,NONE,NONE,NONE,NONE
+3128,PROV3128,NONE,NONE,NONE,NONE
+3129,PROV3129,NONE,NONE,NONE,NONE
+3130,PROV3130,NONE,NONE,NONE,NONE
+3131,PROV3131,NONE,NONE,NONE,NONE
+3132,PROV3132,NONE,NONE,NONE,NONE
+3133,PROV3133,NONE,NONE,NONE,NONE
+3134,PROV3134,NONE,NONE,NONE,NONE
+3135,PROV3135,NONE,NONE,NONE,NONE
+3136,PROV3136,NONE,NONE,NONE,NONE
+3137,PROV3137,NONE,NONE,NONE,NONE
+3138,PROV3138,NONE,NONE,NONE,NONE
+3139,PROV3139,NONE,NONE,NONE,NONE
+3140,PROV3140,NONE,NONE,NONE,NONE
+3141,PROV3141,NONE,NONE,NONE,NONE
+3142,PROV3142,NONE,NONE,NONE,NONE
+3143,PROV3143,NONE,NONE,NONE,NONE
+3144,PROV3144,NONE,NONE,NONE,NONE
+3145,PROV3145,NONE,NONE,NONE,NONE
+3146,PROV3146,NONE,NONE,NONE,NONE
+3147,PROV3147,NONE,NONE,NONE,NONE
+3148,PROV3148,NONE,NONE,NONE,NONE
+3149,PROV3149,NONE,NONE,NONE,NONE
+3150,PROV3150,NONE,NONE,NONE,NONE
+3151,PROV3151,NONE,NONE,NONE,NONE
+3152,PROV3152,NONE,NONE,NONE,NONE
+3153,PROV3153,NONE,NONE,NONE,NONE
+3154,PROV3154,NONE,NONE,NONE,NONE
+3155,PROV3155,NONE,NONE,NONE,NONE
+3156,PROV3156,NONE,NONE,NONE,NONE
+3157,PROV3157,NONE,NONE,NONE,NONE
+3158,PROV3158,NONE,NONE,NONE,NONE
+3159,PROV3159,NONE,NONE,NONE,NONE
+3160,PROV3160,NONE,NONE,NONE,NONE
+3161,PROV3161,NONE,NONE,NONE,NONE
+3162,PROV3162,NONE,NONE,NONE,NONE
+3163,PROV3163,NONE,NONE,NONE,NONE
+3164,PROV3164,NONE,NONE,NONE,NONE
+3165,PROV3165,NONE,NONE,NONE,NONE
+3166,PROV3166,NONE,NONE,NONE,NONE
+3167,PROV3167,NONE,NONE,NONE,NONE
+3168,PROV3168,NONE,NONE,NONE,NONE
+3169,PROV3169,NONE,NONE,NONE,NONE
+3170,PROV3170,NONE,NONE,NONE,NONE
+3171,PROV3171,NONE,NONE,NONE,NONE
+3172,PROV3172,NONE,NONE,NONE,NONE
+3173,PROV3173,NONE,NONE,NONE,NONE
+3174,PROV3174,NONE,NONE,NONE,NONE
+3175,PROV3175,NONE,NONE,NONE,NONE
+3176,PROV3176,NONE,NONE,NONE,NONE
+3177,PROV3177,NONE,NONE,NONE,NONE
+3178,PROV3178,NONE,NONE,NONE,NONE
+3179,PROV3179,NONE,NONE,NONE,NONE
+3180,PROV3180,NONE,NONE,NONE,NONE
+3181,PROV3181,NONE,NONE,NONE,NONE
+3182,PROV3182,NONE,NONE,NONE,NONE
+3183,PROV3183,NONE,NONE,NONE,NONE
+3184,PROV3184,NONE,NONE,NONE,NONE
+3185,PROV3185,NONE,NONE,NONE,NONE
+3186,PROV3186,NONE,NONE,NONE,NONE
+3187,PROV3187,NONE,NONE,NONE,NONE
+3188,PROV3188,NONE,NONE,NONE,NONE
+3189,PROV3189,NONE,NONE,NONE,NONE
+3190,PROV3190,NONE,NONE,NONE,NONE
+3191,PROV3191,NONE,NONE,NONE,NONE
+3192,PROV3192,NONE,NONE,NONE,NONE
+3193,PROV3193,NONE,NONE,NONE,NONE
+3194,PROV3194,NONE,NONE,NONE,NONE
+3195,PROV3195,NONE,NONE,NONE,NONE
+3196,PROV3196,NONE,NONE,NONE,NONE
+3197,PROV3197,NONE,NONE,NONE,NONE
+3198,PROV3198,NONE,NONE,NONE,NONE
+3199,PROV3199,NONE,NONE,NONE,NONE
+3200,PROV3200,NONE,NONE,NONE,NONE
+3201,PROV3201,NONE,NONE,NONE,NONE
+3202,PROV3202,NONE,NONE,NONE,NONE
+3203,PROV3203,NONE,NONE,NONE,NONE
+3204,PROV3204,NONE,NONE,NONE,NONE
+3205,PROV3205,NONE,NONE,NONE,NONE
+3206,PROV3206,NONE,NONE,NONE,NONE
+3207,PROV3207,NONE,NONE,NONE,NONE
+3208,PROV3208,NONE,NONE,NONE,NONE
+3209,PROV3209,NONE,NONE,NONE,NONE
+3210,PROV3210,NONE,NONE,NONE,NONE
+3211,PROV3211,NONE,NONE,NONE,NONE
+3212,PROV3212,NONE,NONE,NONE,NONE
+3213,PROV3213,NONE,NONE,NONE,NONE
+3214,PROV3214,NONE,NONE,NONE,NONE
+3215,PROV3215,NONE,NONE,NONE,NONE
+3216,PROV3216,NONE,NONE,NONE,NONE
+3217,PROV3217,NONE,NONE,NONE,NONE
+3218,PROV3218,NONE,NONE,NONE,NONE
+3219,PROV3219,NONE,NONE,NONE,NONE
+3220,PROV3220,NONE,NONE,NONE,NONE
+3221,PROV3221,NONE,NONE,NONE,NONE
+3222,PROV3222,NONE,NONE,NONE,NONE
+3223,PROV3223,NONE,NONE,NONE,NONE
+3224,PROV3224,NONE,NONE,NONE,NONE
+3225,PROV3225,NONE,NONE,NONE,NONE
+3226,PROV3226,NONE,NONE,NONE,NONE
+3227,PROV3227,NONE,NONE,NONE,NONE
+3228,PROV3228,NONE,NONE,NONE,NONE
+3229,PROV3229,NONE,NONE,NONE,NONE
+3230,PROV3230,NONE,NONE,NONE,NONE
+3231,PROV3231,NONE,NONE,NONE,NONE
+3232,PROV3232,NONE,NONE,NONE,NONE
+3233,PROV3233,NONE,NONE,NONE,NONE
+3234,PROV3234,NONE,NONE,NONE,NONE
+3235,PROV3235,NONE,NONE,NONE,NONE
+3236,PROV3236,NONE,NONE,NONE,NONE
+3237,PROV3237,NONE,NONE,NONE,NONE
+3238,PROV3238,NONE,NONE,NONE,NONE
+3239,PROV3239,NONE,NONE,NONE,NONE
+3240,PROV3240,NONE,NONE,NONE,NONE
+3241,PROV3241,NONE,NONE,NONE,NONE
+3242,PROV3242,NONE,NONE,NONE,NONE
+3243,PROV3243,NONE,NONE,NONE,NONE
+3244,PROV3244,NONE,NONE,NONE,NONE
+3245,PROV3245,NONE,NONE,NONE,NONE
+3246,PROV3246,NONE,NONE,NONE,NONE
+3247,PROV3247,NONE,NONE,NONE,NONE
+3248,PROV3248,NONE,NONE,NONE,NONE
+3249,PROV3249,NONE,NONE,NONE,NONE
+3250,PROV3250,NONE,NONE,NONE,NONE
+3251,PROV3251,NONE,NONE,NONE,NONE
+3252,PROV3252,NONE,NONE,NONE,NONE
+3253,PROV3253,NONE,NONE,NONE,NONE
+3254,PROV3254,NONE,NONE,NONE,NONE
+3255,PROV3255,NONE,NONE,NONE,NONE
+3256,PROV3256,NONE,NONE,NONE,NONE
+3257,PROV3257,NONE,NONE,NONE,NONE
+3258,PROV3258,NONE,NONE,NONE,NONE
+3259,PROV3259,NONE,NONE,NONE,NONE
+3260,PROV3260,NONE,NONE,NONE,NONE
+3261,PROV3261,NONE,NONE,NONE,NONE
+3262,PROV3262,NONE,NONE,NONE,NONE
+3263,PROV3263,NONE,NONE,NONE,NONE
+3264,PROV3264,NONE,NONE,NONE,NONE
+3265,PROV3265,NONE,NONE,NONE,NONE
+3266,PROV3266,NONE,NONE,NONE,NONE
+3267,PROV3267,NONE,NONE,NONE,NONE
+3268,PROV3268,NONE,NONE,NONE,NONE
+3269,PROV3269,NONE,NONE,NONE,NONE
+3270,PROV3270,NONE,NONE,NONE,NONE
+3271,PROV3271,NONE,NONE,NONE,NONE
+3272,PROV3272,NONE,NONE,NONE,NONE
+3273,PROV3273,NONE,NONE,NONE,NONE
+3274,PROV3274,NONE,NONE,NONE,NONE
+3275,PROV3275,NONE,NONE,NONE,NONE
+3276,PROV3276,NONE,NONE,NONE,NONE
+3277,PROV3277,NONE,NONE,NONE,NONE
+3278,PROV3278,NONE,NONE,NONE,NONE
+3279,PROV3279,NONE,NONE,NONE,NONE
+3280,PROV3280,NONE,NONE,NONE,NONE
+3281,PROV3281,NONE,NONE,NONE,NONE
+3282,PROV3282,NONE,NONE,NONE,NONE
+3283,PROV3283,NONE,NONE,NONE,NONE
+3284,PROV3284,NONE,NONE,NONE,NONE
+3285,PROV3285,NONE,NONE,NONE,NONE
+3286,PROV3286,NONE,NONE,NONE,NONE
+3287,PROV3287,NONE,NONE,NONE,NONE
+3288,PROV3288,NONE,NONE,NONE,NONE
+3289,PROV3289,NONE,NONE,NONE,NONE
+3290,PROV3290,NONE,NONE,NONE,NONE
+3291,PROV3291,NONE,NONE,NONE,NONE
+3292,PROV3292,NONE,NONE,NONE,NONE
+3293,PROV3293,NONE,NONE,NONE,NONE
+3294,PROV3294,NONE,NONE,NONE,NONE
+3295,PROV3295,NONE,NONE,NONE,NONE
+3296,PROV3296,NONE,NONE,NONE,NONE
+3297,PROV3297,NONE,NONE,NONE,NONE
+3298,PROV3298,NONE,NONE,NONE,NONE
+3299,PROV3299,NONE,NONE,NONE,NONE
+3300,PROV3300,NONE,NONE,NONE,NONE
+3301,PROV3301,NONE,NONE,NONE,NONE
+3302,PROV3302,NONE,NONE,NONE,NONE
+3303,PROV3303,NONE,NONE,NONE,NONE
+3304,PROV3304,NONE,NONE,NONE,NONE
+3305,PROV3305,NONE,NONE,NONE,NONE
+3306,PROV3306,NONE,NONE,NONE,NONE
+3307,PROV3307,NONE,NONE,NONE,NONE
+3308,PROV3308,NONE,NONE,NONE,NONE
+3309,PROV3309,NONE,NONE,NONE,NONE
+3310,PROV3310,NONE,NONE,NONE,NONE
+3311,PROV3311,NONE,NONE,NONE,NONE
+3312,PROV3312,NONE,NONE,NONE,NONE
+3313,PROV3313,NONE,NONE,NONE,NONE
+3314,PROV3314,NONE,NONE,NONE,NONE
+3315,PROV3315,NONE,NONE,NONE,NONE
+3316,PROV3316,NONE,NONE,NONE,NONE
+3317,PROV3317,NONE,NONE,NONE,NONE
+3318,PROV3318,NONE,NONE,NONE,NONE
+3319,PROV3319,NONE,NONE,NONE,NONE
+3320,PROV3320,NONE,NONE,NONE,NONE
+3321,PROV3321,NONE,NONE,NONE,NONE
+3322,PROV3322,NONE,NONE,NONE,NONE
+3323,PROV3323,NONE,NONE,NONE,NONE
+3324,PROV3324,NONE,NONE,NONE,NONE
+3325,PROV3325,NONE,NONE,NONE,NONE
+3326,PROV3326,NONE,NONE,NONE,NONE
+3327,PROV3327,NONE,NONE,NONE,NONE
+3328,PROV3328,NONE,NONE,NONE,NONE
+3329,PROV3329,NONE,NONE,NONE,NONE
+3330,PROV3330,NONE,NONE,NONE,NONE
+3331,PROV3331,NONE,NONE,NONE,NONE
+3332,PROV3332,NONE,NONE,NONE,NONE
+3333,PROV3333,NONE,NONE,NONE,NONE
+3334,PROV3334,NONE,NONE,NONE,NONE
+3335,PROV3335,NONE,NONE,NONE,NONE
+3336,PROV3336,NONE,NONE,NONE,NONE
+3337,PROV3337,NONE,NONE,NONE,NONE
+3338,PROV3338,NONE,NONE,NONE,NONE
+3339,PROV3339,NONE,NONE,NONE,NONE
+3340,PROV3340,NONE,NONE,NONE,NONE
+3341,PROV3341,NONE,NONE,NONE,NONE
+3342,PROV3342,NONE,NONE,NONE,NONE
+3343,PROV3343,NONE,NONE,NONE,NONE
+3344,PROV3344,NONE,NONE,NONE,NONE
+3345,PROV3345,NONE,NONE,NONE,NONE
+3346,PROV3346,NONE,NONE,NONE,NONE
+3347,PROV3347,NONE,NONE,NONE,NONE
+3348,PROV3348,NONE,NONE,NONE,NONE
+3349,PROV3349,NONE,NONE,NONE,NONE
+3350,PROV3350,NONE,NONE,NONE,NONE
+3351,PROV3351,NONE,NONE,NONE,NONE
+3352,PROV3352,NONE,NONE,NONE,NONE
+3353,PROV3353,NONE,NONE,NONE,NONE
+3354,PROV3354,NONE,NONE,NONE,NONE
+3355,PROV3355,NONE,NONE,NONE,NONE
+3356,PROV3356,NONE,NONE,NONE,NONE
+3357,PROV3357,NONE,NONE,NONE,NONE
+3358,PROV3358,NONE,NONE,NONE,NONE
+3359,PROV3359,NONE,NONE,NONE,NONE
+3360,PROV3360,NONE,NONE,NONE,NONE
+3361,PROV3361,NONE,NONE,NONE,NONE
+3362,PROV3362,NONE,NONE,NONE,NONE
+3363,PROV3363,NONE,NONE,NONE,NONE
+3364,PROV3364,NONE,NONE,NONE,NONE
+3365,PROV3365,NONE,NONE,NONE,NONE
+3366,PROV3366,NONE,NONE,NONE,NONE
+3367,PROV3367,NONE,NONE,NONE,NONE
+3368,PROV3368,NONE,NONE,NONE,NONE
+3369,PROV3369,NONE,NONE,NONE,NONE
+3370,PROV3370,NONE,NONE,NONE,NONE
+3371,PROV3371,NONE,NONE,NONE,NONE
+3372,PROV3372,NONE,NONE,NONE,NONE
+3373,PROV3373,NONE,NONE,NONE,NONE
+3374,PROV3374,NONE,NONE,NONE,NONE
+3375,PROV3375,NONE,NONE,NONE,NONE
+3376,PROV3376,NONE,NONE,NONE,NONE
+3377,PROV3377,NONE,NONE,NONE,NONE
+3378,PROV3378,NONE,NONE,NONE,NONE
+3379,PROV3379,NONE,NONE,NONE,NONE
+3380,PROV3380,NONE,NONE,NONE,NONE
+3381,PROV3381,NONE,NONE,NONE,NONE
+3382,PROV3382,NONE,NONE,NONE,NONE
+3383,PROV3383,NONE,NONE,NONE,NONE
+3384,PROV3384,NONE,NONE,NONE,NONE
+3385,PROV3385,NONE,NONE,NONE,NONE
+3386,PROV3386,NONE,NONE,NONE,NONE
+3387,PROV3387,NONE,NONE,NONE,NONE
+3388,PROV3388,NONE,NONE,NONE,NONE
+3389,PROV3389,NONE,NONE,NONE,NONE
+3390,PROV3390,NONE,NONE,NONE,NONE
+3391,PROV3391,NONE,NONE,NONE,NONE
+3392,PROV3392,NONE,NONE,NONE,NONE
+3393,PROV3393,NONE,NONE,NONE,NONE
+3394,PROV3394,NONE,NONE,NONE,NONE
+3395,PROV3395,NONE,NONE,NONE,NONE
+3396,PROV3396,NONE,NONE,NONE,NONE
+3397,PROV3397,NONE,NONE,NONE,NONE
+3398,PROV3398,NONE,NONE,NONE,NONE
+3399,PROV3399,NONE,NONE,NONE,NONE
+3400,PROV3400,NONE,NONE,NONE,NONE
+3401,PROV3401,NONE,NONE,NONE,NONE
+3402,PROV3402,NONE,NONE,NONE,NONE
+3403,PROV3403,NONE,NONE,NONE,NONE
+3404,PROV3404,NONE,NONE,NONE,NONE
+3405,PROV3405,NONE,NONE,NONE,NONE
+3406,PROV3406,NONE,NONE,NONE,NONE
+3407,PROV3407,NONE,NONE,NONE,NONE
+3408,PROV3408,NONE,NONE,NONE,NONE
+3409,PROV3409,NONE,NONE,NONE,NONE
+3410,PROV3410,NONE,NONE,NONE,NONE
+3411,PROV3411,NONE,NONE,NONE,NONE
+3412,PROV3412,NONE,NONE,NONE,NONE
+3413,PROV3413,NONE,NONE,NONE,NONE
+3414,PROV3414,NONE,NONE,NONE,NONE
+3415,PROV3415,NONE,NONE,NONE,NONE
+3416,PROV3416,NONE,NONE,NONE,NONE
+3417,PROV3417,NONE,NONE,NONE,NONE
+3418,PROV3418,NONE,NONE,NONE,NONE
+3419,PROV3419,NONE,NONE,NONE,NONE
+3420,PROV3420,NONE,NONE,NONE,NONE
+3421,PROV3421,NONE,NONE,NONE,NONE
+3422,PROV3422,NONE,NONE,NONE,NONE
+3423,PROV3423,NONE,NONE,NONE,NONE
+3424,PROV3424,NONE,NONE,NONE,NONE
+3425,PROV3425,NONE,NONE,NONE,NONE
+3426,PROV3426,NONE,NONE,NONE,NONE
+3427,PROV3427,NONE,NONE,NONE,NONE
+3428,PROV3428,NONE,NONE,NONE,NONE
+3429,PROV3429,NONE,NONE,NONE,NONE
+3430,PROV3430,NONE,NONE,NONE,NONE
+3431,PROV3431,NONE,NONE,NONE,NONE
+3432,PROV3432,NONE,NONE,NONE,NONE
+3433,PROV3433,NONE,NONE,NONE,NONE
+3434,PROV3434,NONE,NONE,NONE,NONE
+3435,PROV3435,NONE,NONE,NONE,NONE
+3436,PROV3436,NONE,NONE,NONE,NONE
+3437,PROV3437,NONE,NONE,NONE,NONE
+3438,PROV3438,NONE,NONE,NONE,NONE
+3439,PROV3439,NONE,NONE,NONE,NONE
+3440,PROV3440,NONE,NONE,NONE,NONE
+3441,PROV3441,NONE,NONE,NONE,NONE
+3442,PROV3442,NONE,NONE,NONE,NONE
+3443,PROV3443,NONE,NONE,NONE,NONE
+3444,PROV3444,NONE,NONE,NONE,NONE
+3445,PROV3445,NONE,NONE,NONE,NONE
+3446,PROV3446,NONE,NONE,NONE,NONE
+3447,PROV3447,NONE,NONE,NONE,NONE
+3448,PROV3448,NONE,NONE,NONE,NONE
+3449,PROV3449,NONE,NONE,NONE,NONE
+3450,PROV3450,NONE,NONE,NONE,NONE
+3451,PROV3451,NONE,NONE,NONE,NONE
+3452,PROV3452,NONE,NONE,NONE,NONE
+3453,PROV3453,NONE,NONE,NONE,NONE
+3454,PROV3454,NONE,NONE,NONE,NONE
+3455,PROV3455,NONE,NONE,NONE,NONE
+3456,PROV3456,NONE,NONE,NONE,NONE
+3457,PROV3457,NONE,NONE,NONE,NONE
+3458,PROV3458,NONE,NONE,NONE,NONE
+3459,PROV3459,NONE,NONE,NONE,NONE
+3460,PROV3460,NONE,NONE,NONE,NONE
+3461,PROV3461,NONE,NONE,NONE,NONE
+3462,PROV3462,NONE,NONE,NONE,NONE
+3463,PROV3463,NONE,NONE,NONE,NONE
+3464,PROV3464,NONE,NONE,NONE,NONE
+3465,PROV3465,NONE,NONE,NONE,NONE
+3466,PROV3466,NONE,NONE,NONE,NONE
+3467,PROV3467,NONE,NONE,NONE,NONE
+3468,PROV3468,NONE,NONE,NONE,NONE
+3469,PROV3469,NONE,NONE,NONE,NONE
+3470,PROV3470,NONE,NONE,NONE,NONE
+3471,PROV3471,NONE,NONE,NONE,NONE
+3472,PROV3472,NONE,NONE,NONE,NONE
+3473,PROV3473,NONE,NONE,NONE,NONE
+3474,PROV3474,NONE,NONE,NONE,NONE
+3475,PROV3475,NONE,NONE,NONE,NONE
+3476,PROV3476,NONE,NONE,NONE,NONE
+3477,PROV3477,NONE,NONE,NONE,NONE
+3478,PROV3478,NONE,NONE,NONE,NONE
+3479,PROV3479,NONE,NONE,NONE,NONE
+3480,PROV3480,NONE,NONE,NONE,NONE
+3481,PROV3481,NONE,NONE,NONE,NONE
+3482,PROV3482,NONE,NONE,NONE,NONE
+3483,PROV3483,NONE,NONE,NONE,NONE
+3484,PROV3484,NONE,NONE,NONE,NONE
+3485,PROV3485,NONE,NONE,NONE,NONE
+3486,PROV3486,NONE,NONE,NONE,NONE
+3487,PROV3487,NONE,NONE,NONE,NONE
+3488,PROV3488,NONE,NONE,NONE,NONE
+3489,PROV3489,NONE,NONE,NONE,NONE
+3490,PROV3490,NONE,NONE,NONE,NONE
+3491,PROV3491,NONE,NONE,NONE,NONE
+3492,PROV3492,NONE,NONE,NONE,NONE
+3493,PROV3493,NONE,NONE,NONE,NONE
+3494,PROV3494,NONE,NONE,NONE,NONE
+3495,PROV3495,NONE,NONE,NONE,NONE
+3496,PROV3496,NONE,NONE,NONE,NONE
+3497,PROV3497,NONE,NONE,NONE,NONE
+3498,PROV3498,NONE,NONE,NONE,NONE
+3499,PROV3499,NONE,NONE,NONE,NONE
+3500,PROV3500,NONE,NONE,NONE,NONE
+3501,PROV3501,NONE,NONE,NONE,NONE
+3502,PROV3502,NONE,NONE,NONE,NONE
+3503,PROV3503,NONE,NONE,NONE,NONE
+3504,PROV3504,NONE,NONE,NONE,NONE
+3505,PROV3505,NONE,NONE,NONE,NONE
+3506,PROV3506,NONE,NONE,NONE,NONE
+3507,PROV3507,NONE,NONE,NONE,NONE
+3508,PROV3508,NONE,NONE,NONE,NONE
+3509,PROV3509,NONE,NONE,NONE,NONE
+3510,PROV3510,NONE,NONE,NONE,NONE
+3511,PROV3511,NONE,NONE,NONE,NONE
+3512,PROV3512,NONE,NONE,NONE,NONE
+3513,PROV3513,NONE,NONE,NONE,NONE
+3514,PROV3514,NONE,NONE,NONE,NONE
+3515,PROV3515,NONE,NONE,NONE,NONE
+3516,PROV3516,NONE,NONE,NONE,NONE
+3517,PROV3517,NONE,NONE,NONE,NONE
+3518,PROV3518,NONE,NONE,NONE,NONE
+3519,PROV3519,NONE,NONE,NONE,NONE
+3520,PROV3520,NONE,NONE,NONE,NONE
+3521,PROV3521,NONE,NONE,NONE,NONE
+3522,PROV3522,NONE,NONE,NONE,NONE
+3523,PROV3523,NONE,NONE,NONE,NONE
+3524,PROV3524,NONE,NONE,NONE,NONE
+3525,PROV3525,NONE,NONE,NONE,NONE
+3526,PROV3526,NONE,NONE,NONE,NONE
+3527,PROV3527,NONE,NONE,NONE,NONE
+3528,PROV3528,NONE,NONE,NONE,NONE
+3529,PROV3529,NONE,NONE,NONE,NONE
+3530,PROV3530,NONE,NONE,NONE,NONE
+3531,PROV3531,NONE,NONE,NONE,NONE
+3532,PROV3532,NONE,NONE,NONE,NONE
+3533,PROV3533,NONE,NONE,NONE,NONE
+3534,PROV3534,NONE,NONE,NONE,NONE
+3535,PROV3535,NONE,NONE,NONE,NONE
+3536,PROV3536,NONE,NONE,NONE,NONE
+3537,PROV3537,NONE,NONE,NONE,NONE
+3538,PROV3538,NONE,NONE,NONE,NONE
+3539,PROV3539,NONE,NONE,NONE,NONE
+3540,PROV3540,NONE,NONE,NONE,NONE
+3541,PROV3541,NONE,NONE,NONE,NONE
+3542,PROV3542,NONE,NONE,NONE,NONE
+3543,PROV3543,NONE,NONE,NONE,NONE
+3544,PROV3544,NONE,NONE,NONE,NONE
+3545,PROV3545,NONE,NONE,NONE,NONE
+3546,PROV3546,NONE,NONE,NONE,NONE
+3547,PROV3547,NONE,NONE,NONE,NONE
+3548,PROV3548,NONE,NONE,NONE,NONE
+3549,PROV3549,NONE,NONE,NONE,NONE
+3550,PROV3550,NONE,NONE,NONE,NONE
+3551,PROV3551,NONE,NONE,NONE,NONE
+3552,PROV3552,NONE,NONE,NONE,NONE
+3553,PROV3553,NONE,NONE,NONE,NONE
+3554,PROV3554,NONE,NONE,NONE,NONE
+3555,PROV3555,NONE,NONE,NONE,NONE
+3556,PROV3556,NONE,NONE,NONE,NONE
+3557,PROV3557,NONE,NONE,NONE,NONE
+3558,PROV3558,NONE,NONE,NONE,NONE
+3559,PROV3559,NONE,NONE,NONE,NONE
+3560,PROV3560,NONE,NONE,NONE,NONE
+3561,PROV3561,NONE,NONE,NONE,NONE
+3562,PROV3562,NONE,NONE,NONE,NONE
+3563,PROV3563,NONE,NONE,NONE,NONE
+3564,PROV3564,NONE,NONE,NONE,NONE
+3565,PROV3565,NONE,NONE,NONE,NONE
+3566,PROV3566,NONE,NONE,NONE,NONE
+3567,PROV3567,NONE,NONE,NONE,NONE
+3568,PROV3568,NONE,NONE,NONE,NONE
+3569,PROV3569,NONE,NONE,NONE,NONE
+3570,PROV3570,NONE,NONE,NONE,NONE
+3571,PROV3571,NONE,NONE,NONE,NONE
+3572,PROV3572,NONE,NONE,NONE,NONE
+3573,PROV3573,NONE,NONE,NONE,NONE
+3574,PROV3574,NONE,NONE,NONE,NONE
+3575,PROV3575,NONE,NONE,NONE,NONE
+3576,PROV3576,NONE,NONE,NONE,NONE
+3577,PROV3577,NONE,NONE,NONE,NONE
+3578,PROV3578,NONE,NONE,NONE,NONE
+3579,PROV3579,NONE,NONE,NONE,NONE
+3580,PROV3580,NONE,NONE,NONE,NONE
+3581,PROV3581,NONE,NONE,NONE,NONE
+3582,PROV3582,NONE,NONE,NONE,NONE
+3583,PROV3583,NONE,NONE,NONE,NONE
+3584,PROV3584,NONE,NONE,NONE,NONE
+3585,PROV3585,NONE,NONE,NONE,NONE
+3586,PROV3586,NONE,NONE,NONE,NONE
+3587,PROV3587,NONE,NONE,NONE,NONE
+3588,PROV3588,NONE,NONE,NONE,NONE
+3589,PROV3589,NONE,NONE,NONE,NONE
+3590,PROV3590,NONE,NONE,NONE,NONE
+3591,PROV3591,NONE,NONE,NONE,NONE
+3592,PROV3592,NONE,NONE,NONE,NONE
+3593,PROV3593,NONE,NONE,NONE,NONE
+3594,PROV3594,NONE,NONE,NONE,NONE
+3595,PROV3595,NONE,NONE,NONE,NONE
+3596,PROV3596,NONE,NONE,NONE,NONE
+3597,PROV3597,NONE,NONE,NONE,NONE
+3598,PROV3598,NONE,NONE,NONE,NONE
+3599,PROV3599,NONE,NONE,NONE,NONE
+3600,PROV3600,NONE,NONE,NONE,NONE
+3601,PROV3601,NONE,NONE,NONE,NONE
+3602,PROV3602,NONE,NONE,NONE,NONE
+3603,PROV3603,NONE,NONE,NONE,NONE
+3604,PROV3604,NONE,NONE,NONE,NONE
+3605,PROV3605,NONE,NONE,NONE,NONE
+3606,PROV3606,NONE,NONE,NONE,NONE
+3607,PROV3607,NONE,NONE,NONE,NONE
+3608,PROV3608,NONE,NONE,NONE,NONE
+3609,PROV3609,NONE,NONE,NONE,NONE
+3610,PROV3610,NONE,NONE,NONE,NONE
+3611,PROV3611,NONE,NONE,NONE,NONE
+3612,PROV3612,NONE,NONE,NONE,NONE
+3613,PROV3613,NONE,NONE,NONE,NONE
+3614,PROV3614,NONE,NONE,NONE,NONE
+3615,PROV3615,NONE,NONE,NONE,NONE
+3616,PROV3616,NONE,NONE,NONE,NONE
+3617,PROV3617,NONE,NONE,NONE,NONE
+3618,PROV3618,NONE,NONE,NONE,NONE
+3619,PROV3619,NONE,NONE,NONE,NONE
+3620,PROV3620,NONE,NONE,NONE,NONE
+3621,PROV3621,NONE,NONE,NONE,NONE
+3622,PROV3622,NONE,NONE,NONE,NONE
+3623,PROV3623,NONE,NONE,NONE,NONE
+3624,PROV3624,NONE,NONE,NONE,NONE
+3625,PROV3625,NONE,NONE,NONE,NONE
+3626,PROV3626,NONE,NONE,NONE,NONE
+3627,PROV3627,NONE,NONE,NONE,NONE
+3628,PROV3628,NONE,NONE,NONE,NONE
+3629,PROV3629,NONE,NONE,NONE,NONE
+3630,PROV3630,NONE,NONE,NONE,NONE
+3631,PROV3631,NONE,NONE,NONE,NONE
+3632,PROV3632,NONE,NONE,NONE,NONE
+3633,PROV3633,NONE,NONE,NONE,NONE
+3634,PROV3634,NONE,NONE,NONE,NONE
+3635,PROV3635,NONE,NONE,NONE,NONE
+3636,PROV3636,NONE,NONE,NONE,NONE
+3637,PROV3637,NONE,NONE,NONE,NONE
+3638,PROV3638,NONE,NONE,NONE,NONE
+3639,PROV3639,NONE,NONE,NONE,NONE
+3640,PROV3640,NONE,NONE,NONE,NONE
+3641,PROV3641,NONE,NONE,NONE,NONE
+3642,PROV3642,NONE,NONE,NONE,NONE
+3643,PROV3643,NONE,NONE,NONE,NONE
+3644,PROV3644,NONE,NONE,NONE,NONE
+3645,PROV3645,NONE,NONE,NONE,NONE
+3646,PROV3646,NONE,NONE,NONE,NONE
+3647,PROV3647,NONE,NONE,NONE,NONE
+3648,PROV3648,NONE,NONE,NONE,NONE
+3649,PROV3649,NONE,NONE,NONE,NONE
+3650,PROV3650,NONE,NONE,NONE,NONE
+3651,PROV3651,NONE,NONE,NONE,NONE
+3652,PROV3652,NONE,NONE,NONE,NONE
+3653,PROV3653,NONE,NONE,NONE,NONE
+3654,PROV3654,NONE,NONE,NONE,NONE
+3655,PROV3655,NONE,NONE,NONE,NONE
+3656,PROV3656,NONE,NONE,NONE,NONE
+3657,PROV3657,NONE,NONE,NONE,NONE
+3658,PROV3658,NONE,NONE,NONE,NONE
+3659,PROV3659,NONE,NONE,NONE,NONE
+3660,PROV3660,NONE,NONE,NONE,NONE
+3661,PROV3661,NONE,NONE,NONE,NONE
+3662,PROV3662,NONE,NONE,NONE,NONE
+3663,PROV3663,NONE,NONE,NONE,NONE
+3664,PROV3664,NONE,NONE,NONE,NONE
+3665,PROV3665,NONE,NONE,NONE,NONE
+3666,PROV3666,NONE,NONE,NONE,NONE
+3667,PROV3667,NONE,NONE,NONE,NONE
+3668,PROV3668,NONE,NONE,NONE,NONE
+3669,PROV3669,NONE,NONE,NONE,NONE
+3670,PROV3670,NONE,NONE,NONE,NONE
+3671,PROV3671,NONE,NONE,NONE,NONE
+3672,PROV3672,NONE,NONE,NONE,NONE
+3673,PROV3673,NONE,NONE,NONE,NONE
+3674,PROV3674,NONE,NONE,NONE,NONE
+3675,PROV3675,NONE,NONE,NONE,NONE
+3676,PROV3676,NONE,NONE,NONE,NONE
+3677,PROV3677,NONE,NONE,NONE,NONE
+3678,PROV3678,NONE,NONE,NONE,NONE
+3679,PROV3679,NONE,NONE,NONE,NONE
+3680,PROV3680,NONE,NONE,NONE,NONE
+3681,PROV3681,NONE,NONE,NONE,NONE
+3682,PROV3682,NONE,NONE,NONE,NONE
+3683,PROV3683,NONE,NONE,NONE,NONE
+3684,PROV3684,NONE,NONE,NONE,NONE
+3685,PROV3685,NONE,NONE,NONE,NONE
+3686,PROV3686,NONE,NONE,NONE,NONE
+3687,PROV3687,NONE,NONE,NONE,NONE
+3688,PROV3688,NONE,NONE,NONE,NONE
+3689,PROV3689,NONE,NONE,NONE,NONE
+3690,PROV3690,NONE,NONE,NONE,NONE
+3691,PROV3691,NONE,NONE,NONE,NONE
+3692,PROV3692,NONE,NONE,NONE,NONE
+3693,PROV3693,NONE,NONE,NONE,NONE
+3694,PROV3694,NONE,NONE,NONE,NONE
+3695,PROV3695,NONE,NONE,NONE,NONE
+3696,PROV3696,NONE,NONE,NONE,NONE
+3697,PROV3697,NONE,NONE,NONE,NONE
+3698,PROV3698,NONE,NONE,NONE,NONE
+3699,PROV3699,NONE,NONE,NONE,NONE
+3700,PROV3700,NONE,NONE,NONE,NONE
+3701,PROV3701,NONE,NONE,NONE,NONE
+3702,PROV3702,NONE,NONE,NONE,NONE
+3703,PROV3703,NONE,NONE,NONE,NONE
+3704,PROV3704,NONE,NONE,NONE,NONE
+3705,PROV3705,NONE,NONE,NONE,NONE
+3706,PROV3706,NONE,NONE,NONE,NONE
+3707,PROV3707,NONE,NONE,NONE,NONE
+3708,PROV3708,NONE,NONE,NONE,NONE
+3709,PROV3709,NONE,NONE,NONE,NONE
+3710,PROV3710,NONE,NONE,NONE,NONE
+3711,PROV3711,NONE,NONE,NONE,NONE
+3712,PROV3712,NONE,NONE,NONE,NONE
+3713,PROV3713,NONE,NONE,NONE,NONE
+3714,PROV3714,NONE,NONE,NONE,NONE
+3715,PROV3715,NONE,NONE,NONE,NONE
+3716,PROV3716,NONE,NONE,NONE,NONE
+3717,PROV3717,NONE,NONE,NONE,NONE
+3718,PROV3718,NONE,NONE,NONE,NONE
+3719,PROV3719,NONE,NONE,NONE,NONE
+3720,PROV3720,NONE,NONE,NONE,NONE
+3721,PROV3721,NONE,NONE,NONE,NONE
+3722,PROV3722,NONE,NONE,NONE,NONE
+3723,PROV3723,NONE,NONE,NONE,NONE
+3724,PROV3724,NONE,NONE,NONE,NONE
+3725,PROV3725,NONE,NONE,NONE,NONE
+3726,PROV3726,NONE,NONE,NONE,NONE
+3727,PROV3727,NONE,NONE,NONE,NONE
+3728,PROV3728,NONE,NONE,NONE,NONE
+3729,PROV3729,NONE,NONE,NONE,NONE
+3730,PROV3730,NONE,NONE,NONE,NONE
+3731,PROV3731,NONE,NONE,NONE,NONE
+3732,PROV3732,NONE,NONE,NONE,NONE
+3733,PROV3733,NONE,NONE,NONE,NONE
+3734,PROV3734,NONE,NONE,NONE,NONE
+3735,PROV3735,NONE,NONE,NONE,NONE
+3736,PROV3736,NONE,NONE,NONE,NONE
+3737,PROV3737,NONE,NONE,NONE,NONE
+3738,PROV3738,NONE,NONE,NONE,NONE
+3739,PROV3739,NONE,NONE,NONE,NONE
+3740,PROV3740,NONE,NONE,NONE,NONE
+3741,PROV3741,NONE,NONE,NONE,NONE
+3742,PROV3742,NONE,NONE,NONE,NONE
+3743,PROV3743,NONE,NONE,NONE,NONE
+3744,PROV3744,NONE,NONE,NONE,NONE
+3745,PROV3745,NONE,NONE,NONE,NONE
+3746,PROV3746,NONE,NONE,NONE,NONE
+3747,PROV3747,NONE,NONE,NONE,NONE
+3748,PROV3748,NONE,NONE,NONE,NONE
+3749,PROV3749,NONE,NONE,NONE,NONE
+3750,PROV3750,NONE,NONE,NONE,NONE
+3751,PROV3751,NONE,NONE,NONE,NONE
+3752,PROV3752,NONE,NONE,NONE,NONE
+3753,PROV3753,NONE,NONE,NONE,NONE
+3754,PROV3754,NONE,NONE,NONE,NONE
+3755,PROV3755,NONE,NONE,NONE,NONE
+3756,PROV3756,NONE,NONE,NONE,NONE
+3757,PROV3757,NONE,NONE,NONE,NONE
+3758,PROV3758,NONE,NONE,NONE,NONE
+3759,PROV3759,NONE,NONE,NONE,NONE
+3760,PROV3760,NONE,NONE,NONE,NONE
+3761,PROV3761,NONE,NONE,NONE,NONE
+3762,PROV3762,NONE,NONE,NONE,NONE
+3763,PROV3763,NONE,NONE,NONE,NONE
+3764,PROV3764,NONE,NONE,NONE,NONE
+3765,PROV3765,NONE,NONE,NONE,NONE
+3766,PROV3766,NONE,NONE,NONE,NONE
+3767,PROV3767,NONE,NONE,NONE,NONE
+3768,PROV3768,NONE,NONE,NONE,NONE
+3769,PROV3769,NONE,NONE,NONE,NONE
+3770,PROV3770,NONE,NONE,NONE,NONE
+3771,PROV3771,NONE,NONE,NONE,NONE
+3772,PROV3772,NONE,NONE,NONE,NONE
+3773,PROV3773,NONE,NONE,NONE,NONE
+3774,PROV3774,NONE,NONE,NONE,NONE
+3775,PROV3775,NONE,NONE,NONE,NONE
+3776,PROV3776,NONE,NONE,NONE,NONE
+3777,PROV3777,NONE,NONE,NONE,NONE
+3778,PROV3778,NONE,NONE,NONE,NONE
+3779,PROV3779,NONE,NONE,NONE,NONE
+3780,PROV3780,NONE,NONE,NONE,NONE
+3781,PROV3781,NONE,NONE,NONE,NONE
+3782,PROV3782,NONE,NONE,NONE,NONE
+3783,PROV3783,NONE,NONE,NONE,NONE
+3784,PROV3784,NONE,NONE,NONE,NONE
+3785,PROV3785,NONE,NONE,NONE,NONE
+3786,PROV3786,NONE,NONE,NONE,NONE
+3787,PROV3787,NONE,NONE,NONE,NONE
+3788,PROV3788,NONE,NONE,NONE,NONE
+3789,PROV3789,NONE,NONE,NONE,NONE
+3790,PROV3790,NONE,NONE,NONE,NONE
+3791,PROV3791,NONE,NONE,NONE,NONE
+3792,PROV3792,NONE,NONE,NONE,NONE
+3793,PROV3793,NONE,NONE,NONE,NONE
+3794,PROV3794,NONE,NONE,NONE,NONE
+3795,PROV3795,NONE,NONE,NONE,NONE
+3796,PROV3796,NONE,NONE,NONE,NONE
+3797,PROV3797,NONE,NONE,NONE,NONE
+3798,PROV3798,NONE,NONE,NONE,NONE
+3799,PROV3799,NONE,NONE,NONE,NONE
+3800,PROV3800,NONE,NONE,NONE,NONE
+3801,PROV3801,NONE,NONE,NONE,NONE
+3802,PROV3802,NONE,NONE,NONE,NONE
+3803,PROV3803,NONE,NONE,NONE,NONE
+3804,PROV3804,NONE,NONE,NONE,NONE
+3805,PROV3805,NONE,NONE,NONE,NONE
+3806,PROV3806,NONE,NONE,NONE,NONE
+3807,PROV3807,NONE,NONE,NONE,NONE
+3808,PROV3808,NONE,NONE,NONE,NONE
+3809,PROV3809,NONE,NONE,NONE,NONE
+3810,PROV3810,NONE,NONE,NONE,NONE
+3811,PROV3811,NONE,NONE,NONE,NONE
+3812,PROV3812,NONE,NONE,NONE,NONE
+3813,PROV3813,NONE,NONE,NONE,NONE
+3814,PROV3814,NONE,NONE,NONE,NONE
+3815,PROV3815,NONE,NONE,NONE,NONE
+3816,PROV3816,NONE,NONE,NONE,NONE
+3817,PROV3817,NONE,NONE,NONE,NONE
+3818,PROV3818,NONE,NONE,NONE,NONE
+3819,PROV3819,NONE,NONE,NONE,NONE
+3820,PROV3820,NONE,NONE,NONE,NONE
+3821,PROV3821,NONE,NONE,NONE,NONE
+3822,PROV3822,NONE,NONE,NONE,NONE
+3823,PROV3823,NONE,NONE,NONE,NONE
+3824,PROV3824,NONE,NONE,NONE,NONE
+3825,PROV3825,NONE,NONE,NONE,NONE
+3826,PROV3826,NONE,NONE,NONE,NONE
+3827,PROV3827,NONE,NONE,NONE,NONE
+3828,PROV3828,NONE,NONE,NONE,NONE
+3829,PROV3829,NONE,NONE,NONE,NONE
+3830,PROV3830,NONE,NONE,NONE,NONE
+3831,PROV3831,NONE,NONE,NONE,NONE
+3832,PROV3832,NONE,NONE,NONE,NONE
+3833,PROV3833,NONE,NONE,NONE,NONE
+3834,PROV3834,NONE,NONE,NONE,NONE
+3835,PROV3835,NONE,NONE,NONE,NONE
+3836,PROV3836,NONE,NONE,NONE,NONE
+3837,PROV3837,NONE,NONE,NONE,NONE
+3838,PROV3838,NONE,NONE,NONE,NONE
+3839,PROV3839,NONE,NONE,NONE,NONE
+3840,PROV3840,NONE,NONE,NONE,NONE
+3841,PROV3841,NONE,NONE,NONE,NONE
+3842,PROV3842,NONE,NONE,NONE,NONE
+3843,PROV3843,NONE,NONE,NONE,NONE
+3844,PROV3844,NONE,NONE,NONE,NONE
+3845,PROV3845,NONE,NONE,NONE,NONE
+3846,PROV3846,NONE,NONE,NONE,NONE
+3847,PROV3847,NONE,NONE,NONE,NONE
+3848,PROV3848,NONE,NONE,NONE,NONE
+3849,PROV3849,NONE,NONE,NONE,NONE
+3850,PROV3850,NONE,NONE,NONE,NONE
+3851,PROV3851,NONE,NONE,NONE,NONE
+3852,PROV3852,NONE,NONE,NONE,NONE
+3853,PROV3853,NONE,NONE,NONE,NONE
+3854,PROV3854,NONE,NONE,NONE,NONE
+3855,PROV3855,NONE,NONE,NONE,NONE
+3856,PROV3856,NONE,NONE,NONE,NONE
+3857,PROV3857,NONE,NONE,NONE,NONE
+3858,PROV3858,NONE,NONE,NONE,NONE
+3859,PROV3859,NONE,NONE,NONE,NONE
+3860,PROV3860,NONE,NONE,NONE,NONE
+3861,PROV3861,NONE,NONE,NONE,NONE
+3862,PROV3862,NONE,NONE,NONE,NONE
+3863,PROV3863,NONE,NONE,NONE,NONE
+3864,PROV3864,NONE,NONE,NONE,NONE
+3865,PROV3865,NONE,NONE,NONE,NONE
+3866,PROV3866,NONE,NONE,NONE,NONE
+3867,PROV3867,NONE,NONE,NONE,NONE
+3868,PROV3868,NONE,NONE,NONE,NONE
+3869,PROV3869,NONE,NONE,NONE,NONE
+3870,PROV3870,NONE,NONE,NONE,NONE
+3871,PROV3871,NONE,NONE,NONE,NONE
+3872,PROV3872,NONE,NONE,NONE,NONE
+3873,PROV3873,NONE,NONE,NONE,NONE
+3874,PROV3874,NONE,NONE,NONE,NONE
+3875,PROV3875,NONE,NONE,NONE,NONE
+3876,PROV3876,NONE,NONE,NONE,NONE
+3877,PROV3877,NONE,NONE,NONE,NONE
+3878,PROV3878,NONE,NONE,NONE,NONE
+3879,PROV3879,NONE,NONE,NONE,NONE
+3880,PROV3880,NONE,NONE,NONE,NONE
+3881,PROV3881,NONE,NONE,NONE,NONE
+3882,PROV3882,NONE,NONE,NONE,NONE
+3883,PROV3883,NONE,NONE,NONE,NONE
+3884,PROV3884,NONE,NONE,NONE,NONE
+3885,PROV3885,NONE,NONE,NONE,NONE
+3886,PROV3886,NONE,NONE,NONE,NONE
+3887,PROV3887,NONE,NONE,NONE,NONE
+3888,PROV3888,NONE,NONE,NONE,NONE
+3889,PROV3889,NONE,NONE,NONE,NONE
+3890,PROV3890,NONE,NONE,NONE,NONE
+3891,PROV3891,NONE,NONE,NONE,NONE
+3892,PROV3892,NONE,NONE,NONE,NONE
+3893,PROV3893,NONE,NONE,NONE,NONE
+3894,PROV3894,NONE,NONE,NONE,NONE
+3895,PROV3895,NONE,NONE,NONE,NONE
+3896,PROV3896,NONE,NONE,NONE,NONE
+3897,PROV3897,NONE,NONE,NONE,NONE
+3898,PROV3898,NONE,NONE,NONE,NONE
+3899,PROV3899,NONE,NONE,NONE,NONE
+3900,PROV3900,NONE,NONE,NONE,NONE
+3901,PROV3901,NONE,NONE,NONE,NONE
+3902,PROV3902,NONE,NONE,NONE,NONE
+3903,PROV3903,NONE,NONE,NONE,NONE
+3904,PROV3904,NONE,NONE,NONE,NONE
+3905,PROV3905,NONE,NONE,NONE,NONE
+3906,PROV3906,NONE,NONE,NONE,NONE
+3907,PROV3907,NONE,NONE,NONE,NONE
+3908,PROV3908,NONE,NONE,NONE,NONE
+3909,PROV3909,NONE,NONE,NONE,NONE
+3910,PROV3910,NONE,NONE,NONE,NONE
+3911,PROV3911,NONE,NONE,NONE,NONE
+3912,PROV3912,NONE,NONE,NONE,NONE
+3913,PROV3913,NONE,NONE,NONE,NONE
+3914,PROV3914,NONE,NONE,NONE,NONE
+3915,PROV3915,NONE,NONE,NONE,NONE
+3916,PROV3916,NONE,NONE,NONE,NONE
+3917,PROV3917,NONE,NONE,NONE,NONE
+3918,PROV3918,NONE,NONE,NONE,NONE
+3919,PROV3919,NONE,NONE,NONE,NONE
+3920,PROV3920,NONE,NONE,NONE,NONE
+3921,PROV3921,NONE,NONE,NONE,NONE
+3922,PROV3922,NONE,NONE,NONE,NONE
+3923,PROV3923,NONE,NONE,NONE,NONE
+3924,PROV3924,NONE,NONE,NONE,NONE
+3925,PROV3925,NONE,NONE,NONE,NONE
+3926,PROV3926,NONE,NONE,NONE,NONE
+3927,PROV3927,NONE,NONE,NONE,NONE
+3928,PROV3928,NONE,NONE,NONE,NONE
+3929,PROV3929,NONE,NONE,NONE,NONE
+3930,PROV3930,NONE,NONE,NONE,NONE
+3931,PROV3931,NONE,NONE,NONE,NONE
+3932,PROV3932,NONE,NONE,NONE,NONE
+3933,PROV3933,NONE,NONE,NONE,NONE
+3934,PROV3934,NONE,NONE,NONE,NONE
+3935,PROV3935,NONE,NONE,NONE,NONE
+3936,PROV3936,NONE,NONE,NONE,NONE
+3937,PROV3937,NONE,NONE,NONE,NONE
+3938,PROV3938,NONE,NONE,NONE,NONE
+3939,PROV3939,NONE,NONE,NONE,NONE
+3940,PROV3940,NONE,NONE,NONE,NONE
+3941,PROV3941,NONE,NONE,NONE,NONE
+3942,PROV3942,NONE,NONE,NONE,NONE
+3943,PROV3943,NONE,NONE,NONE,NONE
+3944,PROV3944,NONE,NONE,NONE,NONE
+3945,PROV3945,NONE,NONE,NONE,NONE
+3946,PROV3946,NONE,NONE,NONE,NONE
+3947,PROV3947,NONE,NONE,NONE,NONE
+3948,PROV3948,NONE,NONE,NONE,NONE
+3949,PROV3949,NONE,NONE,NONE,NONE
+3950,PROV3950,NONE,NONE,NONE,NONE
+3951,PROV3951,NONE,NONE,NONE,NONE
+3952,PROV3952,NONE,NONE,NONE,NONE
+3953,PROV3953,NONE,NONE,NONE,NONE
+3954,PROV3954,NONE,NONE,NONE,NONE
+3955,PROV3955,NONE,NONE,NONE,NONE
+3956,PROV3956,NONE,NONE,NONE,NONE
+3957,PROV3957,NONE,NONE,NONE,NONE
+3958,PROV3958,NONE,NONE,NONE,NONE
+3959,PROV3959,NONE,NONE,NONE,NONE
+3960,PROV3960,NONE,NONE,NONE,NONE
+3961,PROV3961,NONE,NONE,NONE,NONE
+3962,PROV3962,NONE,NONE,NONE,NONE
+3963,PROV3963,NONE,NONE,NONE,NONE
+3964,PROV3964,NONE,NONE,NONE,NONE
+3965,PROV3965,NONE,NONE,NONE,NONE
+3966,PROV3966,NONE,NONE,NONE,NONE
+3967,PROV3967,NONE,NONE,NONE,NONE
+3968,PROV3968,NONE,NONE,NONE,NONE
+3969,PROV3969,NONE,NONE,NONE,NONE
+3970,PROV3970,NONE,NONE,NONE,NONE
+3971,PROV3971,NONE,NONE,NONE,NONE
+3972,PROV3972,NONE,NONE,NONE,NONE
+3973,PROV3973,NONE,NONE,NONE,NONE
+3974,PROV3974,NONE,NONE,NONE,NONE
+3975,PROV3975,NONE,NONE,NONE,NONE
+3976,PROV3976,NONE,NONE,NONE,NONE
+3977,PROV3977,NONE,NONE,NONE,NONE
+3978,PROV3978,NONE,NONE,NONE,NONE
+3979,PROV3979,NONE,NONE,NONE,NONE
+3980,PROV3980,NONE,NONE,NONE,NONE
+3981,PROV3981,NONE,NONE,NONE,NONE
+3982,PROV3982,NONE,NONE,NONE,NONE
+3983,PROV3983,NONE,NONE,NONE,NONE
+3984,PROV3984,NONE,NONE,NONE,NONE
+3985,PROV3985,NONE,NONE,NONE,NONE
+3986,PROV3986,NONE,NONE,NONE,NONE
+3987,PROV3987,NONE,NONE,NONE,NONE
+3988,PROV3988,NONE,NONE,NONE,NONE
+3989,PROV3989,NONE,NONE,NONE,NONE
+3990,PROV3990,NONE,NONE,NONE,NONE
+3991,PROV3991,NONE,NONE,NONE,NONE
+3992,PROV3992,NONE,NONE,NONE,NONE
+3993,PROV3993,NONE,NONE,NONE,NONE
+3994,PROV3994,NONE,NONE,NONE,NONE
+3995,PROV3995,NONE,NONE,NONE,NONE
+3996,PROV3996,NONE,NONE,NONE,NONE
+3997,PROV3997,NONE,NONE,NONE,NONE
+3998,PROV3998,NONE,NONE,NONE,NONE
+3999,PROV3999,NONE,NONE,NONE,NONE
+4000,PROV4000,NONE,NONE,NONE,NONE
+4001,PROV4001,NONE,NONE,NONE,NONE
+4002,PROV4002,NONE,NONE,NONE,NONE
+4003,PROV4003,NONE,NONE,NONE,NONE
+4004,PROV4004,NONE,NONE,NONE,NONE
+4005,PROV4005,NONE,NONE,NONE,NONE
+4006,PROV4006,NONE,NONE,NONE,NONE
+4007,PROV4007,NONE,NONE,NONE,NONE
+4008,PROV4008,NONE,NONE,NONE,NONE
+4009,PROV4009,NONE,NONE,NONE,NONE
+4010,PROV4010,NONE,NONE,NONE,NONE
+4011,PROV4011,NONE,NONE,NONE,NONE
+4012,PROV4012,NONE,NONE,NONE,NONE
+4013,PROV4013,NONE,NONE,NONE,NONE
+4014,PROV4014,NONE,NONE,NONE,NONE
+4015,PROV4015,NONE,NONE,NONE,NONE
+4016,PROV4016,NONE,NONE,NONE,NONE
+4017,PROV4017,NONE,NONE,NONE,NONE
+4018,PROV4018,NONE,NONE,NONE,NONE
+4019,PROV4019,NONE,NONE,NONE,NONE
+4020,Comoros,SPA,SPA,catholic,madagasque
+4021,Antankara,RUM,GBR,shamanism,madagasque
+4022,Iboina,RUM,GBR,shamanism,madagasque
+4023,Tsimihety,SKA,SKA,shamanism,madagasque
+4024,Maroantsetra,RUM,REB,shamanism,madagasque
+4025,Vatomandry,SKA,SKA,shamanism,madagasque
+4026,Antemoro,GBR,REB,sunni,madagasque
+4027,Betsileo,SKA,SKA,shamanism,madagasque
+4028,Mahafaly,GBR,REB,sunni,madagasque
+4029,Antanosy,GBR,REB,sunni,madagasque
+4030,Bara,SKA,SKA,shamanism,madagasque
+4031,Antsalova,SKA,SKA,shamanism,madagasque
+4032,Fiherana,SKA,SKA,shamanism,madagasque
+4033,Al Qadarif,DAM,DAM,protestant,nubian
+4034,Makua,GBR,RUM,shamanism,makua
+4035,Ngindo,NONE,NONE,shamanism,makua
+4036,Wayao,NONE,NONE,shamanism,makua
+4037,Katsekera,ZAN,ZAN,shamanism,nyasa
+4038,Lolo,GBR,RUM,shamanism,nyasa
+4039,Lundu,GBR,RUM,shamanism,nyasa
+4040,Kalonga,ZAN,ZAN,shamanism,nyasa
+4041,Kinga,NONE,NONE,shamanism,bena
+4042,Makonde,NONE,NONE,shamanism,makua
+4043,Phangwa,NONE,NONE,shamanism,nyasa
+4044,Ngonde,ZAN,ZAN,shamanism,nyasa
+4045,Tumbuka,ZAN,ZAN,shamanism,nyasa
+4046,Lala,NONE,NONE,shamanism,bemba
+4047,Nsenga,GBR,RUM,shamanism,nyasa
+4048,Lomwe,GBR,RUM,shamanism,makua
+4049,Ibo,RUM,RUM,sunni,swahili
+4050,Luangwa,NONE,NONE,shamanism,bemba
+4051,Ewaso Ngiro,NONE,NONE,sunni,somali
+4052,Dawa,NONE,NONE,sunni,somali
+4053,Turkana,NONE,NONE,shamanism,acholi
+4054,Kuria,NONE,NONE,shamanism,masaba
+4055,Shamba,RUM,RUM,shamanism,swahili
+4056,Gogo,NONE,NONE,shamanism,takama
+4057,Nyatura,NONE,NONE,shamanism,takama
+4058,Zigua,NONE,NONE,shamanism,swahili
+4059,Shaga,NONE,NONE,shamanism,masaba
+4060,Kikuyu,NONE,NONE,shamanism,bantu
+4061,Buzinza,RUM,RUM,shamanism,takama
+4062,Busoga,RUM,RUM,shamanism,masaba
+4063,Karagwe,RUM,RUM,shamanism,ganda
+4064,Buganda,BUG,BUG,shamanism,ganda
+4065,Bunyoro,RUM,RUM,shamanism,ganda
+4066,Nkore,RUM,RUM,shamanism,ganda
+4067,Nduga,BUU,BUU,shamanism,rwandan
+4068,Bafuriru,BUU,BUU,shamanism,rwandan
+4069,Bushubi,RUM,RUM,shamanism,rwandan
+4070,Nkoma,BUU,BUU,shamanism,rwandan
+4071,Buyogoma,RUM,RUM,shamanism,rwandan
+4072,Ruguru,RUM,RUM,shamanism,rwandan
+4073,Hehe,NONE,NONE,shamanism,bena
+4074,Pubungo,RUM,RUM,shamanism,acholi
+4075,Lango,NONE,NONE,shamanism,acholi
+4076,Muhambwe,NONE,NONE,shamanism,takama
+4077,Rukwa,NONE,NONE,shamanism,bena
+4078,Mayumba,GBR,RUM,shamanism,kongolese
+4079,Ngoyo,GBR,RUM,shamanism,kongolese
+4080,Soyo,GBR,RUM,shamanism,kongolese
+4081,Songo,YAK,YAK,shamanism,kongolese
+4082,Kasanje,YAK,YAK,shamanism,mbangala
+4083,Shinje,YAK,YAK,shamanism,mbangala
+4084,Malem,YAK,YAK,shamanism,mbangala
+4085,Yaka,YAK,YAK,shamanism,yaka
+4086,Nunu,YAK,YAK,shamanism,kuba
+4087,Kumbana,YAK,YAK,shamanism,yaka
+4088,Munene,YAK,YAK,shamanism,kuba
+4089,Kuba,YAK,YAK,shamanism,kuba
+4090,Songye,YAK,YAK,shamanism,luba
+4091,Mpasu,YAK,YAK,shamanism,lunda
+4092,Rund,YAK,YAK,shamanism,lunda
+4093,Lwena,YAK,YAK,shamanism,lunda
+4094,Chokwe,YAK,YAK,shamanism,chokwe
+4095,Ishindi,YAK,YAK,shamanism,chokwe
+4096,Kalundwe,YAK,YAK,shamanism,luba
+4097,Luba,YAK,YAK,shamanism,luba
+4098,Upemba,YAK,YAK,shamanism,luba
+4099,Hemba,KIK,KIK,shamanism,luba
+4100,Luapula,KIK,KIK,shamanism,luba
+4101,Lualaba,KIK,KIK,shamanism,luba
+4102,Bemba,NONE,NONE,shamanism,bemba
+4103,Tabwa,KIK,KIK,shamanism,luba
+4104,Lamba,NONE,NONE,shamanism,bemba
+4105,Kusu,YAK,YAK,shamanism,luba
+4106,Lenje,NONE,NONE,shamanism,bemba
+4107,Kanongesha,YAK,YAK,shamanism,luba
+4108,Kaonde,NONE,NONE,shamanism,bemba
+4109,Lega,NONE,NONE,shamanism,luba
+4110,Sutherland,GBR,GBR,anglican,highland_scottish
+4111,Saintonge,FRA,FRA,protestant,cosmopolitan_french
+4112,Quercy,SPA,SPA,catholic,gascon
+4113,Rovaniemi,PLC,PLC,catholic,polish
+4114,Jokkmokk,PLC,PLC,catholic,sapmi
+4115,Mazyr,PLC,PLC,catholic,ruthenian
+4116,Oka,PLC,PLC,catholic,russian
+4117,Bezhetsk,PLC,PLC,catholic,novgorodian
+4118,Cork,GBR,GBR,anglican,irish
+4119,Sligo,GBR,GBR,anglican,irish
+4120,Kildare,GBR,GBR,anglican,irish
+4121,Ulster,GBR,GBR,anglican,irish
+4122,Shenkursk,PLC,PLC,catholic,novgorodian
+4123,Pirkanmaa,PLC,PLC,catholic,finnish
+4124,Karelia,PLC,PLC,catholic,polish
+4125,Szolnok,RUM,ITA,reformed,hungarian
+4126,Bacs,RUM,ITA,orthodox,hungarian
+4127,Turda,RUM,RUM,orthodox,transylvanian
+4128,Királyföld,RUM,RUM,catholic,transylvanian
+4129,Ust-Vym,PLC,PLC,catholic,novgorodian
+4130,Somerset,GBR,GBR,anglican,english
+4131,Mutsu,JAP,JAP,mahayana,togoku
+4132,Mweru,NONE,NONE,NONE,NONE
+4133,Kivu,NONE,NONE,NONE,NONE
+4134,Rutanzige,NONE,NONE,NONE,NONE
+4135,Lake Albert,NONE,NONE,NONE,NONE
+4136,Zaysan,NONE,NONE,NONE,NONE
+4137,Alakol,NONE,NONE,NONE,NONE
+4138,Issyk-Kul,NONE,NONE,NONE,NONE
+4139,Oulujärvi,NONE,NONE,NONE,NONE
+4140,Saimaa,NONE,NONE,NONE,NONE
+4141,Dithmarschen,FRA,FRA,protestant,lower_saxon
+4142,Østjylland,GER,GER,protestant,danish
+4143,Smålenene,FRA,FRA,protestant,norwegian
+4144,Bratsberg,FRA,FRA,protestant,norwegian
+4145,Agdesiden,FRA,FRA,protestant,norwegian
+4146,Langfjella,NONE,NONE,NONE,NONE
+4147,Rostov,PLC,PLC,catholic,russian
+4148,Luki,PLC,PLC,catholic,novgorodian
+4149,Kolding,GER,GER,protestant,danish
+4150,Évora,GBR,GBR,catholic,portugese
+4151,Enare,PLC,PLC,catholic,polish
+4152,Kainuu,PLC,PLC,catholic,polish
+4153,The Scandes,NONE,NONE,NONE,NONE
+4154,The Pyrenees,NONE,NONE,NONE,NONE
+4155,The Carpathians,NONE,NONE,NONE,NONE
+4156,The Caucasus,NONE,NONE,NONE,NONE
+4157,The Alps,NONE,NONE,NONE,NONE
+4158,Janjiro,KAF,KAF,coptic,oromo
+4159,The Alps,NONE,NONE,NONE,NONE
+4160,The Alps,NONE,NONE,NONE,NONE
+4161,The Alps,NONE,NONE,NONE,NONE
+4162,The Alps,NONE,NONE,NONE,NONE
+4163,Elfsborg,PLC,PLC,catholic,swedish
+4164,Dal,PLC,PLC,catholic,swedish
+4165,Göinge,PLC,PLC,catholic,swedish
+4166,Tiohärad,SWE,SWE,catholic,swedish
+4167,High Atlas,NONE,NONE,NONE,NONE
+4168,High Atlas,NONE,NONE,NONE,NONE
+4169,Aures,NONE,NONE,NONE,NONE
+4170,Zagros,NONE,NONE,NONE,NONE
+4171,Abarquh,PER,PER,sunni,persian
+4172,Zagros,NONE,NONE,NONE,NONE
+4173,Syrmia,RUM,ITA,orthodox,serbian
+4174,Durrës,ALB,ALB,orthodox,albanian
+4175,Lezhë,ALB,ALB,orthodox,albanian
+4176,Branicevo,RUM,ITA,orthodox,serbian
+4177,Alborz,NONE,NONE,NONE,NONE
+4178,Pontic Mountains,NONE,NONE,NONE,NONE
+4179,Hakkari Mountains,NONE,NONE,NONE,NONE
+4180,Hyuga,JAP,JAP,mahayana,kyushuan
+4181,Higo,JAP,JAP,mahayana,kyushuan
+4182,Hizen,JAP,JAP,mahayana,kyushuan
+4183,Iwami,JAP,JAP,mahayana,japanese
+4184,Bizen,JAP,JAP,mahayana,japanese
+4185,Tango,JAP,JAP,mahayana,japanese
+4186,Iyo,JAP,JAP,mahayana,japanese
+4187,Kii,JAP,JAP,mahayana,japanese
+4188,Shinano,JAP,JAP,mahayana,togoku
+4189,Sagami,JAP,JAP,mahayana,togoku
+4190,Shimousa,JAP,JAP,mahayana,togoku
+4191,Shimotsuke,JAP,JAP,mahayana,togoku
+4192,Ugo,JAP,JAP,mahayana,togoku
+4193,Oshima,JAP,JAP,mahayana,togoku
+4194,Yongping,MNG,MNG,catholic,chihan
+4195,Zhending,MNG,MNG,catholic,chihan
+4196,Haizhou,MNG,MNG,catholic,jianghuai
+4197,Huangzhou,MNG,MNG,catholic,hubei
+4198,Fengxiang,PLC,PLC,catholic,xibei
+4199,Tongren,AYU,AYU,buddhism,miao
+4200,Hulan,MHX,MHX,catholic,manchu
+4201,Jianzhou,MJZ,MJZ,catholic,manchu
+4202,Taining,PLC,PLC,tengri_pagan_reformed,chahar
+4203,Ju Ud,PLC,PLC,catholic,mongol
+4204,Anding,PLC,PLC,catholic,oirats
+4205,Nagchu,PHA,PHA,vajrayana,tibetan
+4206,Balikul,PLC,PLC,catholic,oirats
+4207,Turpan,PLC,PLC,catholic,uyghur
+4208,Qurqara-usu,PLC,PLC,catholic,uyghur
+4209,Maralbexi,PER,PER,sunni,uyghur
+4210,Yangi Hissar,PER,PER,sunni,uyghur
+4211,Dazhou,PLC,PLC,catholic,sichuanese
+4212,Jiazhou,WUU,WUU,confucianism,sichuanese
+4213,Luzhou,WUU,WUU,confucianism,sichuanese
+4214,Ulch,PLC,PLC,tengri_pagan_reformed,nivkh
+4215,Fudali,PLC,PLC,tengri_pagan_reformed,manchu
+4216,Oroch,NHX,NHX,tengri_pagan_reformed,manchu
+4217,Pijin,NHX,NHX,tengri_pagan_reformed,manchu
+4218,Buteha,KRC,KRC,tengri_pagan_reformed,chahar
+4219,Bayan Tumen,PLC,PLC,catholic,khalkha
+4220,Khiagt,KHA,KHA,catholic,khalkha
+4221,Dundgovi,PLC,PLC,catholic,khalkha
+4222,Ulaangom,PLC,PLC,catholic,oirats
+4223,Hetao,PLC,PLC,catholic,mongol
+4224,Tokai Sea,NONE,NONE,NONE,NONE
+4225,Hokkaido Coast,NONE,NONE,NONE,NONE
+4226,Japan Basin,NONE,NONE,NONE,NONE
+4227,Jinju,KOR,KOR,confucianism,korean
+4228,Naju,KOR,KOR,confucianism,korean
+4229,Chungju,KOR,KOR,confucianism,korean
+4230,Suwon,PLC,PLC,confucianism,korean
+4231,Haeju,PLC,PLC,confucianism,korean
+4232,Ganggye,PLC,PLC,catholic,korean
+4233,Bohai Sea,NONE,NONE,NONE,NONE
+4234,Western Yellow Sea,NONE,NONE,NONE,NONE
+4235,Vistula Lagoon,NONE,NONE,NONE,NONE
+4236,Trencin,RUM,ITA,reformed,slovak
+4237,Olomouc,PLC,PLC,catholic,czech
+4238,Liegnitz,PLC,PLC,catholic,saxon
+4239,Belgrade,RUM,ITA,orthodox,serbian
+4240,Fejér,RUM,GBR,reformed,hungarian
+4241,Wenden,PLC,PLC,catholic,polish
+4242,Ula,PLC,PLC,catholic,polish
+4243,Toropets,PLC,PLC,catholic,ruthenian
+4244,Trubchevsk,PLC,PLC,catholic,ruthenian
+4245,Vyazma,PLC,PLC,catholic,russian
+4246,Mstislav,PLC,PLC,catholic,ruthenian
+4247,Owrucz,PLC,PLC,catholic,ruthenian
+4248,Kashin,PLC,PLC,catholic,russian
+4249,Zubtsov,PLC,PLC,catholic,russian
+4250,Mologa,PLC,PLC,catholic,russian
+4251,Mozhaisk,PLC,PLC,catholic,russian
+4252,Kolomna,PLC,PLC,catholic,russian
+4253,Yuriev,PLC,PLC,catholic,russian
+4254,Starodub,PLC,PLC,catholic,russian
+4255,Pronsk,PLC,PLC,catholic,polish
+4256,Solvychegodsk,PLC,PLC,catholic,novgorodian
+4257,Mezen,PLC,PLC,catholic,novgorodian
+4258,Onega,PLC,PLC,catholic,novgorodian
+4259,Velsk,PLC,PLC,catholic,russian
+4260,Vyshny Volochyok,PLC,PLC,catholic,novgorodian
+4261,Ustyuzhna,PLC,PLC,catholic,novgorodian
+4262,Totma,PLC,PLC,catholic,russian
+4263,Sol Galitskaya,PLC,PLC,catholic,russian
+4264,Tetyushi,PLC,PLC,catholic,russian
+4265,Ar-Chally,PLC,PLC,catholic,russian
+4266,Izhkar,PLC,PLC,catholic,russian
+4267,Bolgar,PLC,PLC,catholic,russian
+4268,Aqabah,RUM,RUM,sunni,bedouin_arabic
+4269,Al Wajh,RUM,RUM,sunni,bedouin_arabic
+4270,Azraq,RUM,RUM,sunni,bedouin_arabic
+4271,Suwayda,RUM,RUM,sunni,bedouin_arabic
+4272,Al Jawf,RUM,RUM,sunni,bedouin_arabic
+4273,Al-Kariatan,RUM,RUM,sunni,bedouin_arabic
+4274,Sudayr,RUM,RUM,sunni,bedouin_arabic
+4275,Al-Yamamah,RUM,RUM,sunni,bedouin_arabic
+4276,Jabal Tubaiq,NONE,NONE,NONE,NONE
+4277,Taif,RUM,REB,sunni,hejazi_culture
+4278,Qunfudhah,RUM,REB,sunni,hejazi_culture
+4279,Zabid,RUM,REB,sunni,yemeni_culture
+4280,Taiz,RUM,RUM,sunni,yemeni_culture
+4281,Dhamar,RUM,RUM,sunni,yemeni_culture
+4282,Sahda,RUM,RUM,sunni,yemeni_culture
+4283,Shihr,RUM,RUM,sunni,yemeni_culture
+4284,Al Ghaydah,HDR,HDR,sunni,mahri_culture
+4285,Baraimi,PER,PER,sunni,persian
+4286,Ash Sharqiyah,BHA,BHA,sunni,omani_culture
+4287,Ibra,PER,PER,sunni,persian
+4288,Shatt,PER,PER,sunni,al_iraqiya_arabic
+4289,Shushtar,PER,PER,sunni,persian
+4290,Hoveyzeh,PER,PER,sunni,al_iraqiya_arabic
+4291,Qazaniya,PER,PER,sunni,al_iraqiya_arabic
+4292,Mardin,PER,PER,sunni,kurdish
+4293,Arbil,PER,PER,sunni,kurdish
+4294,Sulaimaniyah,PER,PER,sunni,kurdish
+4295,Hisn Kayfa,RUM,RUM,sunni,kurdish
+4296,Bitlis,RUM,RUM,sunni,kurdish
+4297,Homs,RUM,RUM,sunni,al_suryah_arabic
+4298,Ayntab,RUM,RUM,sunni,turkish
+4299,Shamakhi,PER,PER,sunni,azerbaijani
+4300,Mianeh,PER,PER,sunni,azerbaijani
+4301,Kartli,PER,PER,sunni,georgian
+4302,Bayazid,PER,PER,sunni,armenian
+4303,Oltu,PER,PER,sunni,georgian
+4304,Khoy,PER,PER,sunni,azerbaijani
+4305,Shaki,PER,PER,sunni,azerbaijani
+4306,Lakia,PER,PER,sunni,dagestani
+4307,Aksaray,RUM,RUM,sunni,turkish
+4308,Denizli,RUM,RUM,sunni,turkish
+4309,Aydin,RUM,RUM,sunni,turkish
+4310,Divrigi,RUM,RUM,sunni,turkish
+4311,Karahisar,RUM,RUM,sunni,turkish
+4312,Sultanönü,RUM,RUM,sunni,turkish
+4313,Kangiri,RUM,RUM,sunni,turkish
+4314,Kirshehir,RUM,RUM,sunni,turkish
+4315,Tokat,RUM,RUM,sunni,turkish
+4316,Sharqiya,RUM,RUM,sunni,al_misr_arabic
+4317,Buhaira,RUM,RUM,sunni,al_misr_arabic
+4318,Atfih,RUM,RUM,sunni,al_misr_arabic
+4319,Isna,RUM,RUM,sunni,al_misr_arabic
+4320,Girga,RUM,RUM,sunni,al_misr_arabic
+4321,Egyptian Desert,NONE,NONE,NONE,NONE
+4322,Egyptian Desert,NONE,NONE,NONE,NONE
+4323,Farafreh,RUM,RUM,sunni,al_misr_arabic
+4324,Ghuriyan,PER,PER,sunni,khorasani
+4325,Sarakhs,PER,PER,sunni,khorasani
+4326,Nishapur,PER,PER,sunni,khorasani
+4327,Jask,BHA,BHA,sunni,gulf_arabic
+4328,Chagai,NONE,NONE,NONE,NONE
+4329,Fasa,PER,PER,sunni,persian
+4330,Darab,PER,PER,sunni,persian
+4331,Kazerun,PER,PER,sunni,luri
+4332,Siraf,PER,PER,sunni,persian
+4333,Dahlak Archipelago,NONE,NONE,NONE,NONE
+4334,Tabas,PER,PER,sunni,khorasani
+4335,Kashan,PER,PER,sunni,persian
+4336,Tun,PER,PER,sunni,khorasani
+4337,Savah,PER,PER,sunni,persian
+4338,Soltanieh,PER,PER,sunni,azerbaijani
+4339,Rasht,PER,PER,sunni,mazandarani
+4340,Astara,PER,PER,sunni,azerbaijani
+4341,Sari,PER,PER,sunni,mazandarani
+4342,Malamir,PER,PER,sunni,luri
+4343,Termez,PER,PER,sunni,uzbehk
+4344,Kish,PER,PER,sunni,uzbehk
+4345,Saidabad,PER,PER,sunni,persian
+4346,Qamr Bay,NONE,NONE,NONE,NONE
+4347,Pirate Coast,NONE,NONE,NONE,NONE
+4348,Ifugao,SPA,SPA,catholic,filipino
+4349,Laguna,WUU,WUU,hinduism,filipino
+4350,Mindoro,WUU,WUU,hinduism,filipino
+4351,Buglas,WUU,WUU,hinduism,filipino
+4352,Cebu,WUU,WUU,hinduism,filipino
+4353,Leyte,GBR,GBR,anglican,filipino
+4354,Zamboanga,GBR,PER,animism,filipino
+4355,Caraga,GBR,GBR,anglican,filipino
+4356,Taytay,HDR,HDR,sunni,filipino
+4357,Cuyo Archipelago,NONE,NONE,NONE,NONE
+4358,Philippine Trench,NONE,NONE,NONE,NONE
+4359,Ise,JAP,JAP,mahayana,japanese
+4360,Mikawa,JAP,JAP,mahayana,togoku
+4361,Roxburghshire,GBR,GBR,anglican,scottish
+4362,Dumfries,GBR,GBR,anglican,scottish
+4363,Argyll,GBR,GBR,anglican,highland_scottish
+4364,Inner Hebrides,GBR,GBR,anglican,highland_scottish
+4365,Mann,GBR,GBR,anglican,highland_scottish
+4366,Montgomery,GBR,GBR,anglican,welsh
+4367,Hull,GBR,GBR,anglican,english
+4368,Scarborough,GBR,GBR,anglican,english
+4369,Carmarthen,GBR,GBR,anglican,welsh
+4370,Bedfordshire,GBR,GBR,anglican,english
+4371,Sussex,GBR,GBR,anglican,english
+4372,Coventry,GBR,GBR,anglican,english
+4373,Devon,GBR,GBR,anglican,english
+4374,Dorset,GBR,GBR,anglican,english
+4375,Chester,GBR,GBR,anglican,english
+4376,Leicester,GBR,GBR,anglican,english
+4377,Ormond,GBR,GBR,anglican,irish
+4378,Desmond,GBR,GBR,anglican,irish
+4379,Midlands,GBR,GBR,anglican,irish
+4380,Donegal,GBR,GBR,anglican,irish
+4381,Oversticht,FRA,FRA,protestant,dutch
+4382,Groningen,FRA,FRA,protestant,frisian
+4383,Den Haag,FRA,FRA,protestant,dutch
+4384,Rennais,GBR,GBR,anglican,breton
+4385,Cotentin,FRA,FRA,protestant,normand
+4386,Bas-Poitou,FRA,FRA,protestant,cosmopolitan_french
+4387,Angoumois,FRA,FRA,protestant,cosmopolitan_french
+4388,Chartres,FRA,FRA,protestant,cosmopolitan_french
+4389,Touraine,FRA,FRA,protestant,cosmopolitan_french
+4390,Troyes,FRA,FRA,protestant,cosmopolitan_french
+4391,Vivarais,SPA,SPA,catholic,occitain
+4392,Auxerrois,FRA,FRA,protestant,burgundian
+4393,Tabayin,BHA,BHA,sikhism,burmese
+4394,Salin,BHA,BHA,sikhism,burmese
+4395,Yamethin,BHA,BHA,sikhism,burmese
+4396,Prome,BHA,BHA,sikhism,burmese
+4397,Yawnghwe,BHA,BHA,sikhism,shan
+4398,Mawkmai,BHA,BHA,sikhism,shan
+4399,Dagon,BHA,BHA,sikhism,mon
+4400,Naga Hills,NONE,NONE,NONE,NONE
+4401,Arakan Mountains,NONE,NONE,NONE,NONE
+4402,Gaoligong Mountains,NONE,NONE,NONE,NONE
+4403,Hengduan Mountains,NONE,NONE,NONE,NONE
+4404,Minsin,BHA,BHA,buddhism,kachin
+4405,Katha,BHA,BHA,sikhism,shan
+4406,Mong Kung,BHA,BHA,sikhism,shan
+4407,Ruhunu,BHA,BHA,sikhism,sinhala
+4408,Salavata,BHA,BHA,sikhism,sinhala
+4409,Trincomale,BHA,BHA,sikhism,tamil
+4410,Kumari,BHA,BHA,sikhism,tamil
+4411,Samana,BHA,BHA,sikhism,panjabi
+4412,Dindigul,BHA,BHA,sikhism,tamil
+4413,Cannanore,BHA,BHA,sikhism,kannada
+4414,Salem,BHA,BHA,sikhism,tamil
+4415,Negapatam,BHA,BHA,hinduism,tamil
+4416,Tranqebar,BHA,BHA,sikhism,tamil
+4417,Kanchipuram,BHA,BHA,sikhism,tamil
+4418,Nellore,BHA,BHA,sikhism,telegu
+4419,Adanki,BHA,BHA,sikhism,telegu
+4420,Chandragiri,BHA,BHA,sikhism,telegu
+4421,Seringapatam,BHA,BHA,hinduism,kannada
+4422,Sira,BHA,BHA,hinduism,kannada
+4423,Gutti,BHA,BHA,hinduism,telegu
+4424,Adavani,BHA,BHA,hinduism,telegu
+4425,Kondavidu,BHA,BHA,sikhism,telegu
+4426,Chitradurg,BHA,BHA,hinduism,kannada
+4427,Honnavara,BHA,BHA,sikhism,kannada
+4428,Mudgal,BHA,BHA,hinduism,kannada
+4429,Rajapur,BHA,BHA,sikhism,marathi
+4430,Daman,BHA,BHA,sikhism,marathi
+4431,Kolhapur,BHA,BHA,sikhism,marathi
+4432,Junir,BHA,BHA,sikhism,marathi
+4433,Nasik,BHA,BHA,sikhism,marathi
+4434,Dharangaon,BHA,BHA,sikhism,marathi
+4435,Sholhapur,BHA,BHA,sikhism,marathi
+4436,Devarakonda,BHA,BHA,sikhism,kannada
+4437,Paithre,BHA,BHA,sikhism,marathi
+4438,Nander,BHA,BHA,sikhism,marathi
+4439,Khamammet,BHA,BHA,sikhism,telegu
+4440,Narayanpur,BHA,BHA,sikhism,assamese
+4441,Ganjam,BHA,BHA,sikhism,telegu
+4442,Washim,BHA,BHA,sikhism,marathi
+4443,Karanja,BHA,BHA,sikhism,marathi
+4444,Manidurg,BHA,BHA,sikhism,telegu
+4445,Kanker,BHA,BHA,hinduism,gondi
+4446,Kalahandi,BHA,BHA,hinduism,gondi
+4447,Patna,BHA,BHA,sikhism,gondi
+4448,Parlakhimedi,BHA,BHA,hinduism,gondi
+4449,Jammu,BHA,BHA,sikhism,panjabi
+4450,Mayurbhanj,BHA,BHA,sikhism,bengali
+4451,Sonpur,BHA,BHA,sikhism,garjati
+4452,Ratanpur,BHA,BHA,sikhism,gondi
+4453,Thalner,BHA,BHA,sikhism,marathi
+4454,Porbandar,BHA,BHA,sikhism,saurashtri
+4455,Diu,BHA,BHA,sikhism,saurashtri
+4456,Jhalavad,BHA,BHA,sikhism,saurashtri
+4457,Khambhat,BHA,BHA,sikhism,gujarati
+4458,Narbada,BHA,BHA,sikhism,malvi
+4459,Saugor,BHA,BHA,sikhism,malvi
+4460,Handia,BHA,BHA,sikhism,malvi
+4461,Ujjain,BHA,BHA,sikhism,malvi
+4462,Vagad,BHA,BHA,sikhism,rajput
+4463,Bhatnair,BHA,BHA,sikhism,rajput
+4464,Bundi,BHA,BHA,sikhism,rajput
+4465,Ranthambore,BHA,BHA,sikhism,rajput
+4466,Mahoba,BHA,BHA,sikhism,avadhi
+4467,Kalinjar,BHA,BHA,sikhism,avadhi
+4468,Bandogarh,BHA,BHA,sikhism,vindhyan
+4469,Rohtasgarh,BHA,BHA,sikhism,bihari
+4470,Soumelpur,BHA,BHA,sikhism,bihari
+4471,Bishnupur,BHA,BHA,sikhism,bengali
+4472,Monghyr,BHA,BHA,sikhism,bihari
+4473,Chakla,BHA,BHA,hinduism,chin
+4474,Sonargaon,BHA,BHA,sikhism,bengali
+4475,Fathabad,BHA,BHA,sikhism,bengali
+4476,Nadia,BHA,BHA,sikhism,bengali
+4477,Satgaon,BHA,BHA,sikhism,bengali
+4478,Haibatnagar,BHA,BHA,sikhism,bengali
+4479,Goraghat,BHA,BHA,sikhism,bengali
+4480,Mahikantha,BHA,BHA,sikhism,gujarati
+4481,Punakha,BHA,BHA,sikhism,tibetan
+4482,Sikkim,BHA,BHA,buddhism,nepali
+4483,Morang,BHA,BHA,vajrayana,nepali
+4484,Makwanpur,BHA,BHA,vajrayana,nepali
+4485,Palpa,BHA,BHA,vajrayana,nepali
+4486,Purnia,BHA,BHA,sikhism,bihari
+4487,Saran,BHA,BHA,sikhism,bihari
+4488,Champaran,BHA,BHA,sikhism,bihari
+4489,Hajipur,BHA,BHA,sikhism,bihari
+4490,Ghazipur,BHA,BHA,sikhism,bihari
+4491,Dang,BHA,BHA,sikhism,avadhi
+4492,Doti,BHA,BHA,sikhism,avadhi
+4493,Sirmur,BHA,BHA,sikhism,panjabi
+4494,Khairabad,BHA,BHA,sikhism,avadhi
+4495,Feyzabad,BHA,BHA,sikhism,avadhi
+4496,Kora,BHA,BHA,sikhism,avadhi
+4497,Kannauj,BHA,BHA,sikhism,avadhi
+4498,Sambhal,BHA,BHA,sikhism,kanauji
+4499,Bareily,BHA,BHA,sikhism,kanauji
+4500,Bharatpur,BHA,BHA,sikhism,rajput
+4501,Bhilwara,BHA,BHA,sikhism,rajput
+4502,Merta,BHA,BHA,sikhism,rajput
+4503,Mansura,BHA,BHA,sikhism,sindhi
+4504,Nasirpur,BHA,BHA,sikhism,sindhi
+4505,Khairpur,BHA,BHA,sikhism,sindhi
+4506,Barmer,BHA,BHA,sikhism,rajput
+4507,Churu,BHA,BHA,sikhism,rajput
+4508,Bahawalpur,BHA,BHA,sikhism,panjabi
+4509,Karor,BHA,BHA,sikhism,panjabi
+4510,Shorkot,BHA,BHA,sikhism,panjabi
+4511,Bhera,BHA,BHA,sikhism,panjabi
+4512,Bharuch,BHA,BHA,sikhism,gujarati
+4513,Dipalpur,BHA,BHA,sikhism,panjabi
+4514,Sakya,BHA,BHA,vajrayana,tibetan
+4515,Gyirong,BHA,BHA,vajrayana,tibetan
+4516,Purang,BHA,BHA,vajrayana,tibetan
+4517,Nedong,AYU,AYU,buddhism,tibetan
+4518,Tsurphu,BHA,BHA,vajrayana,tibetan
+4519,Damxung,BHA,BHA,vajrayana,tibetan
+4520,Rutog,BHA,BHA,vajrayana,tibetan
+4521,Skardu,BHA,BHA,sunni,kashmiri
+4522,Aqenganggyai,NONE,NONE,NONE,NONE
+4523,Inowroclaw,PLC,PLC,catholic,polish
+4524,Dobrzyn,PLC,PLC,catholic,polish
+4525,Rawa,PLC,PLC,catholic,polish
+4526,Gniezno,PLC,PLC,catholic,polish
+4527,Checiny,PLC,PLC,catholic,polish
+4528,Kujawy,PLC,PLC,catholic,polish
+4529,Iasi,PLC,PLC,catholic,ruthenian
+4530,Birlad,PLC,PLC,catholic,ruthenian
+4531,Giurgiu,RUM,GBR,orthodox,romanian
+4532,Severin,RUM,RUM,orthodox,romanian
+4533,Wielun,PLC,PLC,catholic,polish
+4534,Upita,PLC,PLC,catholic,lithuanian
+4535,Wilkimierz,PLC,PLC,catholic,lithuanian
+4536,Lida,PLC,PLC,catholic,lithuanian
+4537,Nowogrodek,PLC,PLC,catholic,polish
+4538,Chelm,PLC,PLC,catholic,ruthenian
+4539,Kremenets,PLC,PLC,catholic,ruthenian
+4540,Winnica,PLC,PLC,catholic,ruthenian
+4541,Drohobycz,PLC,PLC,catholic,ruthenian
+4542,Lubnie,PLC,PLC,catholic,ruthenian
+4543,Rylsk,PLC,PLC,catholic,ruthenian
+4544,Bobrujsk,PLC,PLC,catholic,ruthenian
+4545,Sluck,PLC,PLC,catholic,ruthenian
+4546,Málaga,SPA,SPA,catholic,andalucian
+4547,Albacete,SPA,SPA,catholic,andalucian
+4548,Huelva,SPA,SPA,catholic,andalucian
+4549,Xàtiva,SPA,SPA,catholic,catalan
+4550,Castelló,SPA,SPA,catholic,catalan
+4551,Ávila,SPA,SPA,catholic,castillian
+4552,Palencia,SPA,SPA,catholic,castillian
+4553,Zamora,SPA,SPA,catholic,leonese
+4554,Lugo,SPA,SPA,catholic,galician
+4555,Pontevedra,SPA,SPA,catholic,galician
+4556,Aveiro,GBR,GBR,anglican,portugese
+4557,Calatayud,SPA,SPA,catholic,aragonese
+4558,Orense,SPA,SPA,catholic,galician
+4559,Menorca,SPA,SPA,catholic,catalan
+4560,Ibiza,SPA,SPA,catholic,catalan
+4561,Tétouan,SPA,SPA,sunni,moroccan
+4562,Mers el Kebir,FRA,REB,protestant,algerian
+4563,Salé,SPA,SPA,catholic,moroccan
+4564,Anfa,SPA,SPA,catholic,moroccan
+4565,Tenerife,SPA,SPA,catholic,castillian
+4566,Kairwan,ITA,RUM,catholic,tunisian
+4567,Sabha,ITA,RUM,catholic,tunisian
+4568,Demnate,FRA,FRA,protestant,moroccan
+4569,High Atlas,NONE,NONE,NONE,NONE
+4570,Texcoco,C08,C08,nahuatl,aztek
+4571,Tlacopan,C08,C08,nahuatl,aztek
+4572,Malinalco,C08,C08,nahuatl,matlatzinca
+4573,Acambaro,C07,C07,nahuatl,otomi
+4574,Ihuatzio,C07,C07,nahuatl,purepecha
+4575,Puruaran,C07,C07,nahuatl,purepecha
+4576,Amaxocotlan,C08,C08,nahuatl,tepic
+4577,Tohono,C08,C08,catholic,mexican
+4578,Tzapotzingo,C08,C08,nahuatl,tepic
+4579,Sayula,C11,C11,nahuatl,tecos
+4580,Tecoman,C11,C11,nahuatl,tecos
+4581,Yohualtepec,C08,C08,nahuatl,mixtec
+4582,Teotitlan,C08,C08,nahuatl,aztek
+4583,Xocotla,C08,C08,nahuatl,aztek
+4584,Mitla,C08,C08,mesoamerican_religion,zapotek
+4585,Tzotzil,C08,C08,mesoamerican_religion,lacandon
+4586,Jakaltek,C08,C08,mesoamerican_religion,lacandon
+4587,Qumarkaj,C08,C08,mesoamerican_religion,highland_mayan
+4588,Kobox,C08,C08,mesoamerican_religion,putun
+4589,Moran,C08,C08,mesoamerican_religion,putun
+4590,Xiu,C08,C08,mesoamerican_religion,yucatec
+4591,Chikinchel,C08,C08,mesoamerican_religion,yucatec
+4592,Ulva,C08,C08,catholic,mexican
+4593,Xicaque,C08,C08,catholic,mexican
+4594,Tzul,C08,C08,mesoamerican_religion,putun
+4595,Guaymi,C08,C08,catholic,mexican
+4596,Kuna,C14,C14,catholic,platinean
+4597,Talamanca,C08,C08,protestant,mexican
+4598,Cuauhtochco,C08,C08,nahuatl,totonac
+4599,Sinu,C14,C14,catholic,platinean
+4600,Magangué,C14,C14,inti,muisca
+4601,Chimila,C14,C14,catholic,platinean
+4602,Motilones,C14,C14,animism,guajiro
+4603,Moniquira,C14,C14,inti,muisca
+4604,Pastos,C14,C14,catholic,platinean
+4605,Putumayos,C14,C14,catholic,platinean
+4606,Chichitames,C08,C08,catholic,mexican
+4607,Pijaos,C14,C14,animism,guajiro
+4608,Achaguas,C14,C14,inti,guajiro
+4609,Variquicimeto,C14,C14,catholic,platinean
+4610,Yukpa,C14,C14,catholic,platinean
+4611,Wayuu,C14,C14,catholic,platinean
+4612,Tacarigua,C14,C14,catholic,platinean
+4613,Guanaguanare,C14,C14,catholic,platinean
+4614,Tuneo,C14,C14,inti,guajiro
+4615,Guanipa,C14,C14,catholic,platinean
+4616,Anzoategui,C14,C14,catholic,platinean
+4617,Guaju,C14,C14,catholic,platinean
+4618,Yaquimo,C10,C10,protestant,mexican
+4619,Marien,C10,C10,catholic,mexican
+4620,Ciguayo,C10,C10,catholic,mexican
+4621,Higuey,C10,C10,catholic,mexican
+4622,Canimar,C10,C10,catholic,mexican
+4623,Escambrey,C10,C10,catholic,mexican
+4624,Guane,C10,C10,catholic,mexican
+4625,Mayaca,C02,C02,totemism,yamasee
+4626,Potano,C02,C02,totemism,yamasee
+4627,Tanu,C08,C08,totemism,caddo
+4628,Nitahendé,C08,C08,totemism,mescalero
+4629,Ndawe Qoha,C08,C08,catholic,mexican
+4630,Natahéndé,C08,C08,totemism,mescalero
+4631,Naflat,C08,C08,totemism,pueblo
+4632,Tsi'ya,C08,C08,catholic,mexican
+4633,Sobaipuri,C08,C08,totemism,piman
+4634,Tsék'aadn,C18,C18,protestant,apache
+4635,Taaqtam,C18,C18,totemism,piman
+4636,Choinumni,YKT,YKT,totemism,yokuts
+4637,Ohlone,C18,C18,catholic,mexican
+4638,Wint'uh,C18,C18,catholic,mexican
+4639,Paipai,C08,C08,catholic,mexican
+4640,Tecpatitlan,C07,C07,nahuatl,tepic
+4641,Xilotepec,C11,C11,nahuatl,otomi
+4642,Pame,C08,C08,animism,chichimecan
+4643,Xiconaque,C11,C11,catholic,mexican
+4644,Jocome,C08,C08,catholic,mexican
+4645,Xochipillan,C08,C08,catholic,mexican
+4646,Tarahumara,C08,C08,totemism,piman
+4647,Xecora,C08,C08,animism,chichimecan
+4648,Acaxee,C08,C08,totemism,chichimecan
+4649,Mayo,C08,C08,catholic,mexican
+4650,Opata,C08,C08,catholic,mexican
+4651,Tsushima,JAP,JAP,mahayana,kyushuan
+4652,Haicheng,MNG,MNG,confucianism,shandong_culture
+4653,Maolian,PLC,PLC,catholic,manchu
+4654,Fu'erhe,PLC,PLC,catholic,manchu
+4655,Shilimian,NHX,NHX,animism,manchu
+4656,Wolanhe,NHX,NHX,tengri_pagan_reformed,manchu
+4657,Changbai Mountains,NONE,NONE,NONE,NONE
+4658,Nangha'er,PLC,PLC,tengri_pagan_reformed,nivkh
+4659,Tulutingshan,PLC,PLC,tengri_pagan_reformed,evenk
+4660,Tunhe,PLC,PLC,tengri_pagan_reformed,manchu
+4661,Edala,PLC,PLC,confucianism,manchu
+4662,Halacha,PLC,PLC,catholic,evenk
+4663,Hurha,PLC,PLC,tengri_pagan_reformed,manchu
+4664,Oroqen,PLC,PLC,catholic,evenk
+4665,West Buteha,KRC,KRC,tengri_pagan_reformed,chahar
+4666,Barag,PLC,PLC,catholic,khalkha
+4667,Bayan-Uul,PLC,PLC,catholic,khalkha
+4668,Orkhon,PLC,PLC,catholic,polish
+4669,Sainshand,PLC,PLC,catholic,khalkha
+4670,Urad,PLC,PLC,catholic,mongol
+4671,Kalgan,PLC,PLC,catholic,mongol
+4672,Josutu,PLC,PLC,catholic,chahar
+4673,Ujimqin,PLC,PLC,catholic,mongol
+4674,Korchin,KRC,KRC,tengri_pagan_reformed,chahar
+4675,Bayisingtu,PLC,PLC,catholic,chahar
+4676,Badain Jaran,OIR,OIR,sunni,mongol
+4677,Noyon,PLC,PLC,catholic,mongol
+4678,Qaraqorum,PLC,PLC,catholic,khalkha
+4679,Khovsgol,PLC,PLC,catholic,polish
+4680,Zakhchin,PLC,PLC,catholic,khalkha
+4681,Olgii,PLC,PLC,catholic,oirats
+4682,Monkhkhairkhan,PLC,PLC,catholic,oirats
+4683,Altay,PLC,PLC,catholic,oirats
+4684,Dzhemenika,PLC,PLC,catholic,oirats
+4685,Karagandy,PLC,PLC,catholic,khazak
+4686,Ekibastuz,PLC,PLC,catholic,polish
+4687,Imakia,PLC,PLC,catholic,polish
+4688,Baraba,PLC,PLC,catholic,polish
+4689,Om,PLC,PLC,catholic,polish
+4690,Ishim,PLC,PLC,catholic,polish
+4691,As,NONE,NONE,tengri_pagan_reformed,ostyaki
+4692,Turgay,PLC,PLC,catholic,khazak
+4693,Keriya,PER,PER,sunni,uyghur
+4694,Foix,SPA,SPA,catholic,gascon
+4695,Carcassonne,SPA,SPA,catholic,occitain
+4696,Toulon,SPA,SPA,catholic,occitain
+4697,La Marche,FRA,FRA,protestant,gascon
+4698,Cephalonia,RUM,RUM,orthodox,greek
+4699,Arta,RUM,RUM,orthodox,greek
+4700,Lesbos,RUM,RUM,orthodox,greek
+4701,Corinth,RUM,RUM,orthodox,greek
+4702,Siroz,RUM,RUM,orthodox,greek
+4703,Kostendil,RUM,RUM,sunni,bulgarian
+4704,Tirnovo,RUM,GBR,sunni,bulgarian
+4705,Gumulcine,RUM,RUM,sunni,greek
+4706,Tolcu,RUM,RUM,orthodox,bulgarian
+4707,Wasserburg,GER,GER,protestant,bavarian
+4708,Freising,GER,GER,protestant,bavarian
+4709,Passau,GER,GER,protestant,bavarian
+4710,Bregenz,ITA,ITA,catholic,austrian
+4711,Donauwörth,GER,GER,protestant,swabian
+4712,Constance,GER,GER,protestant,swabian
+4713,Urach,ITA,ITA,catholic,swabian
+4714,Durlach,FRA,FRA,protestant,swabian
+4715,Rothenburg,FRA,FRA,protestant,franconian
+4716,Coburg,GER,GER,protestant,franconian
+4717,Bayreuth,GER,GER,protestant,franconian
+4718,Aschaffenburg,FRA,FRA,protestant,franconian
+4719,Bresse,FRA,FRA,protestant,occitain
+4720,Geneva,ITA,ITA,catholic,swiss
+4721,Fribourg,ITA,ITA,catholic,swiss
+4722,Illanz,ITA,ITA,catholic,swiss
+4723,Opole,PLC,PLC,catholic,schlesian
+4724,Pardubice,PLC,PLC,catholic,czech
+4725,Jindrichuv Hradec,BOH,BOH,protestant,czech
+4726,Ostrava,PLC,PLC,catholic,czech
+4727,Saluzzo,ITA,ITA,catholic,piedmontese
+4728,Pavia,ITA,ITA,catholic,lombard
+4729,Padova,ITA,ITA,catholic,venetian
+4730,Bologna,ITA,ITA,catholic,romagnan
+4731,Spoleto,ITA,ITA,catholic,umbrian
+4732,Terracina,ITA,ITA,catholic,umbrian
+4733,Molise,ITA,ITA,catholic,neapolitan
+4734,Avellino,ITA,ITA,catholic,neapolitan
+4735,Arborea,SPA,SPA,catholic,sardinian
+4736,Trapani,SPA,SPA,catholic,sicilian
+4737,Girgenti,SPA,SPA,catholic,sicilian
+4738,Trieste,ITA,ITA,reformed,slovene
+4739,Bergamo,ITA,ITA,catholic,lombard
+4740,Como,ITA,ITA,catholic,lombard
+4741,Halle,GER,GER,protestant,saxon
+4742,Goslar,GER,GER,protestant,saxon
+4743,Weimar,GER,GER,protestant,saxon
+4744,Zwickau,GER,GER,protestant,saxon
+4745,Rügen,PLC,PLC,catholic,polish
+4746,Stargard,PLC,PLC,catholic,polish
+4747,Dramburg,PLC,PLC,catholic,pommeranian
+4748,Brandenburg,GER,GER,protestant,saxon
+4749,Neubrandenburg,GER,GER,protestant,pommeranian
+4750,Krujë,ALB,ALB,orthodox,albanian
+4751,Cilli,RUM,REB,reformed,slovene
+4752,Rijeka,RUM,GBR,protestant,croatian
+4753,Zadar,DAL,DAL,orthodox,dalmatian
+4754,Kotor,RUM,FRA,orthodox,serbian
+4755,Podrinje,RUM,GBR,orthodox,bosnian
+4756,Bjelovar,RUM,GBR,reformed,croatian
+4757,Kolubara,RUM,GBR,orthodox,serbian
+4758,Etschtal,ITA,ITA,catholic,austrian
+4759,Oberkärnten,ITA,ITA,reformed,austrian
+4760,Innbaiern,GER,GER,protestant,bavarian
+4761,Traungau,RUM,SLZ,reformed,austrian
+4762,Wienerwald,RUM,FRA,reformed,austrian
+4763,The Alps,NONE,NONE,NONE,NONE
+4764,Salins,FRA,FRA,protestant,burgundian
+4765,Mulhouse,FRA,FRA,protestant,swabian
+4766,Verdun,FRA,FRA,protestant,burgundian
+4767,Zweibrücken,FRA,FRA,protestant,hessian
+4768,Jülich,FRA,FRA,protestant,hessian
+4769,Lille,FRA,FRA,protestant,wallonian
+4770,Den Bosch,FRA,FRA,protestant,dutch
+4771,Verden,FRA,FRA,protestant,lower_saxon
+4772,Celle,GER,GER,protestant,lower_saxon
+4773,Göttingen,FRA,FRA,protestant,lower_saxon
+4774,Fulda,GER,GER,protestant,hessian
+4775,Ravensberg,FRA,FRA,protestant,hannoverian
+4776,Blois,FRA,FRA,protestant,cosmopolitan_french
+4777,Forez,FRA,FRA,protestant,occitain
+4778,Görlitz,PLC,PLC,catholic,saxon
+4779,Gallipoli,RUM,FRA,sunni,greek
+4780,Ohrid,RUM,RUM,orthodox,bulgarian
+4781,Transvaal,GBR,RUM,catholic,portugese
+4782,Tswana,GBR,RUM,anglican,portugese
+4783,Swazi,GBR,RUM,anglican,portugese
+4784,Upper Limpopo,GBR,RUM,catholic,portugese
+4785,Sheffield,GBR,GBR,anglican,english
+4786,Prignitz,GER,GER,protestant,saxon
+4787,Ribatejo,GBR,GBR,catholic,portugese
+4788,Plasencia,SPA,SPA,catholic,leonese
+4789,Segovia,SPA,SPA,catholic,castillian
+4790,Pangguyanan,AYU,AYU,buddhism,sundanese
+4791,Cirebon,AYU,AYU,buddhism,sundanese
+4792,Kendal,AYU,AYU,buddhism,javanese
+4793,Pajang,AYU,AYU,buddhism,javanese
+4794,Malang,AYU,AYU,buddhism,javanese
+4795,Bone,AYU,AYU,buddhism,sulawesi
+4796,Kendari,JAP,JAP,mahayana,sulawesi
+4797,Soppeng,AYU,AYU,buddhism,sulawesi
+4798,Wajo,AYU,AYU,buddhism,sulawesi
+4799,Sangkulirang,KUT,KUT,sunni,bornean
+4800,Paser,KUT,KUT,sunni,bornean
+4801,Batulican,KUT,KUT,sunni,bornean
+4802,Pontianak,KUT,KUT,confucianism,hakka
+4803,Meliau,KUT,KUT,sunni,bornean
+4804,Kuching,KUT,KUT,sunni,bornean
+4805,Bintulu,BEI,BEI,sunni,bornean
+4806,Kapit,KUT,KUT,sunni,bornean
+4807,North Borneo,NONE,NONE,NONE,NONE
+4808,Sumatra,NONE,NONE,NONE,NONE
+4809,Langkat,GBR,GBR,sunni,acehnese
+4810,Deli,GBR,GBR,sunni,sumatran
+4811,Barus,GBR,GBR,hinduism,sumatran
+4812,Gerik,BHA,BHA,buddhism,malayan
+4813,Penang,BHA,BHA,buddhism,malayan
+4814,Semantan,AYU,AYU,buddhism,malayan
+4815,Singapura,GBR,GBR,buddhism,malayan
+4816,Rengat,GBR,GBR,buddhism,sumatran
+4817,Padang,GBR,GBR,buddhism,sumatran
+4818,Indrapura,GBR,GBR,buddhism,sumatran
+4819,Quang Ninh,WUU,WUU,mahayana,vietnamese
+4820,Hung Hoa,TOK,TOK,mahayana,vietnamese
+4821,Nghe An,ANN,ANN,mahayana,vietnamese
+4822,Amaravati,ANN,ANN,mahayana,cham
+4823,Jarai,ANN,ANN,mahayana,cham
+4824,Rhade,ANN,ANN,mahayana,cham
+4825,Pursat,AYU,AYU,buddhism,khmer
+4826,Kampot,AYU,AYU,buddhism,khmer
+4827,Kampom Pous Thom,AYU,AYU,buddhism,khmer
+4828,Preah Vihear,AYU,AYU,buddhism,khmer
+4829,Raung Dapey,AYU,AYU,buddhism,khmer
+4830,Rayong,AYU,AYU,buddhism,central_thai
+4831,Bangkok,BHA,BHA,buddhism,central_thai
+4832,Lavo,AYU,AYU,buddhism,central_thai
+4833,Phetchabun,AYU,AYU,buddhism,central_thai
+4834,Suphanburi,AYU,AYU,buddhism,central_thai
+4835,Kanchanburi,BHA,BHA,buddhism,central_thai
+4836,Si Thep,AYU,AYU,buddhism,khmer
+4837,Muang Ngoi,AYU,AYU,buddhism,lao
+4838,Roi Et,AYU,AYU,buddhism,lao
+4839,Champasak,AYU,AYU,buddhism,lao
+4840,Xekong,CHK,CHK,buddhism,lao
+4841,Lamphun,AYU,AYU,buddhism,northern_thai
+4842,Lampang,AYU,AYU,buddhism,northern_thai
+4843,Annamite Mountains,NONE,NONE,NONE,NONE
+4844,Dawna Hills,NONE,NONE,NONE,NONE
+4845,Mamuju,GBR,GBR,catholic,sulawesi
+4846,Woolna,C16,PER,catholic,portugese
+4847,Yunawa,C16,PER,catholic,portugese
+4848,Mingin,C16,C16,protestant,portugese
+4849,Kurtjar,C16,PER,catholic,portugese
+4850,Biri,C16,C16,dreamtime,paman
+4851,Gureng,C16,C16,catholic,portugese
+4852,Wuli-Wuli,C21,C21,dreamtime,gamilaraay
+4853,Bidjara,C21,C21,dreamtime,gunwinyguan
+4854,Badtjala,C21,C21,anglican,english
+4855,Yiman,C21,C21,anglican,english
+4856,Barunggam,C16,C16,dreamtime,paman
+4857,Bundjalung,C16,C16,catholic,portugese
+4858,Tharawal,C19,C19,dreamtime,aboriginal
+4859,Gundungurra,C19,C19,dreamtime,kulin
+4860,Dharug,C19,C19,dreamtime,gamilaraay
+4861,Waveroo,C19,C19,dreamtime,kulin
+4862,Ngadjuri,C19,C19,catholic,catalan
+4863,Nyaki-Nyaki,C21,C21,dreamtime,nyoongah
+4864,Yuat,C21,PER,anglican,english
+4865,Kurrama,C16,PER,catholic,portugese
+4866,Mangala,C16,PER,catholic,portugese
+4867,Wunambul,C16,C16,catholic,portugese
+4868,Pyemmairrener,C16,C16,dreamtime,yura
+4869,Peerapper,C21,REB,dreamtime,palawa
+4870,Willandra Lakes,NONE,NONE,NONE,NONE
+4871,Cowasuk,C02,C02,totemism,mahican
+4872,Wenrohonon,C13,C13,totemism,tionontate
+4873,Pegwaki,C02,C02,catholic,irish
+4874,Westenhuck,C02,C02,catholic,irish
+4875,Welhikhane,C02,C02,totemism,iroquois
+4876,Scahentowanen,C02,C02,catholic,irish
+4877,Nottoway,C02,C02,totemism,powhatan
+4878,Eno,C02,C02,totemism,catawba
+4879,Kituwah,C02,C02,totemism,catawba
+4880,Combahee,C02,C02,totemism,yamasee
+4881,Sawokli,C02,C02,totemism,creek
+4882,Etali,C02,C02,totemism,cherokee
+4883,Napochi,C02,C02,totemism,chickasaw
+4884,Houma,C02,C02,totemism,natchez
+4885,Avoyel,C13,C13,totemism,natchez
+4886,Nasoni,C13,C13,totemism,caddo
+4887,Cochati,C13,C13,totemism,chickasaw
+4888,Tatteroa,C02,C02,catholic,irish
+4889,Mohetan,C02,C02,totemism,shawnee
+4890,Kichessipirini,C12,C12,totemism,algonquin
+4891,Piktuk,C12,C12,protestant,danish
+4892,Iroquet,C12,C12,protestant,danish
+4893,Nebesek,C12,C12,protestant,danish
+4894,Ottagotouemin,C12,C12,protestant,danish
+4895,Batiscan,C12,C12,totemism,algonquin
+4896,Meductic,C12,C12,protestant,danish
+4897,Keinouche,C12,C12,totemism,algonquin
+4898,Noquet,C13,C13,totemism,anishinabe
+4899,Mamaceqtaw,C13,C13,totemism,anishinabe
+4900,Otoe,C02,C02,catholic,irish
+4901,Saone,C02,C02,catholic,irish
+4902,Makandwewin,C02,C02,totemism,cheyenne
+4903,Chinko,C02,C02,totemism,shawnee
+4904,Espeminkia,C02,C02,totemism,osage
+4905,Tapouaro,C02,C02,totemism,illini
+4906,Coiracoentanon,C02,C02,totemism,illini
+4907,Mosopelea,C13,C13,totemism,anishinabe
+4908,Tawehash,C13,C13,totemism,wichita
+4909,Kitsash,C08,C08,totemism,wichita
+4910,Tawakoni,C08,C08,totemism,wichita
+4911,Nabaydacu,C08,C08,totemism,caddo
+4912,Kaniatarowanen,C12,C12,protestant,danish
+4913,Aniyutsi,C13,C13,totemism,yuchi
+4914,Neozho,C13,C13,anglican,american
+4915,Pitahawirata,C13,C13,totemism,pawnee
+4916,Panka,C13,C13,anglican,american
+4917,Selis,C08,C08,totemism,dakota
+4918,Hunkpapha,C13,C13,anglican,american
+4919,Sihabi,C02,C02,catholic,irish
+4920,Wadopabina,C13,C13,totemism,nakota
+4921,Kuttawa,C02,C02,totemism,shawnee
+4922,Pepikokia,C02,C02,totemism,miami
+4923,Pacaha,C13,C13,totemism,yoron
+4924,Laurentian Massif,NONE,NONE,NONE,NONE
+4925,White Mountains,NONE,NONE,NONE,NONE
+4926,Adirondacks,NONE,NONE,NONE,NONE
+4927,Blue Mountains,NONE,NONE,NONE,NONE
+4928,Allegheny Front,NONE,NONE,NONE,NONE
+4929,Appalachians,NONE,NONE,NONE,NONE
+4930,Alleghenies,NONE,NONE,NONE,NONE
+4931,Cumberland Mountains,NONE,NONE,NONE,NONE
+4932,Great Smoky Mountains,NONE,NONE,NONE,NONE
+4933,Blue Ridge,NONE,NONE,NONE,NONE
+4934,Maui,MAU,MAU,animism,polynesian
+4935,Oahu,OAH,OAH,animism,polynesian
+4936,Kauai,KAA,KAA,animism,polynesian
+4937,Lau,LAI,LAI,animism,melanesian
+4938,Vanua Levu,VNL,VNL,animism,melanesian
+4939,Te Urewera,MAA,MAA,animism,maori
+4940,Lake Tulare,NONE,NONE,NONE,NONE
+4941,Lake Cahuilla,NONE,NONE,NONE,NONE

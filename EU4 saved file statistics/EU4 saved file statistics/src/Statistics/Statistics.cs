@@ -249,7 +249,7 @@ namespace EU4_saved_file_statistics
         }
 
         /// <summary>
-        /// Returns everything from a line after a sign (su.
+        /// Returns everything from a line after a sign, for instance '{'.
         /// </summary>
         /// <param name="line">Text line.</param>
         /// <param name="character">The character that we should get text after.</param>

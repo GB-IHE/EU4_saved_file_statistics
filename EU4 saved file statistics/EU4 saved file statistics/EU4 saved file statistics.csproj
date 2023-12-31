@@ -91,6 +91,7 @@
     <Compile Include="src\ExportStatistics\ExportStatistics.cs" />
     <Compile Include="src\Statistics\CountryStatistics.cs" />
     <Compile Include="src\Statistics\IDData.cs" />
+    <Compile Include="src\Statistics\PlayerStatistics.cs" />
     <Compile Include="src\Statistics\ProvinceStatistics.cs" />
     <Compile Include="src\SaveFile\SaveFile.cs" />
     <Compile Include="src\Forms\frmMain.cs">
